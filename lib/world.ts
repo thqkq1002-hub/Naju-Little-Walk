@@ -30,6 +30,7 @@ export type World = {
   portals?: Portal[];
   boats?: import('./boat-navigation.ts').BoatDefinition[];
   navigationWater?: import('./boat-navigation.ts').NavigationWater;
+  npcs?: import('./npc.ts').NpcDefinition[];
   lighting?: { exposure: number; ambient: number; sun: number };
 };
 

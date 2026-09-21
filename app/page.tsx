@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { ArrowUpRight, Footprints, MapPin, Map, RotateCcw, Pause, MoveUpRight, ArrowUp, ArrowDown, ArrowLeft, ArrowRight, Compass } from 'lucide-react';
+import { ArrowUpRight, Footprints, MapPin, Map, RotateCcw, Pause, MoveUpRight, ArrowUp, ArrowDown, ArrowLeft, ArrowRight, Compass, MessageCircle, Volume2, VolumeX } from 'lucide-react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { movePlayer, moveOnFloors, reachableFloor, worldObstacles, solidCollider, worldFloors, floorHeight, currentPlace, type World } from '@/lib/world';
@@ -13,9 +13,11 @@ import { canTravelTo, mapSolids, mapColor } from '@/lib/map-navigation';
 import type { Point } from '@/lib/world';
 import MapTravel from './map-travel';
 import { BoatFleet, type BoatHud } from '@/lib/boat-fleet';
+import { NpcTroupe } from '@/lib/npc';
 
-type ViewState = { x: number; z: number; yaw: number; place: string; detail: string; indoor: boolean };
-type Engine = { start: () => void; pause: () => void; reset: () => void; overview: () => void; key: (key: string, down: boolean) => void; travel: (point: Point, height?:number) => boolean; boatAction: (action:string,id?:string)=>void };
+type ViewState = { x: number; z: number; yaw: number; place: string; detail: string; indoor: boolean; npc: string | null };
+type Talk = { id: string; name: string; lines: string[]; line: number };
+type Engine = { start: () => void; pause: () => void; reset: () => void; overview: () => void; key: (key: string, down: boolean) => void; travel: (point: Point, height?:number) => boolean; boatAction: (action:string,id?:string)=>void; talk: () => void };
 
 export default function Home() {
   const host = useRef<HTMLDivElement>(null);
@@ -28,9 +30,26 @@ export default function Home() {
   const [mapOpen,setMapOpen] = useState(false);
   const [error, setError] = useState('');
   const [boatHud,setBoatHud] = useState<BoatHud|null>(null);
+  const [talk, setTalk] = useState<Talk | null>(null);
+  const [voice, setVoice] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    try { return window.localStorage.getItem('naju-walk-voice') === '1'; } catch { return false; }
+  });
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try { window.localStorage.setItem('naju-walk-voice', voice ? '1' : '0'); } catch { /* private mode */ }
+  }, [voice]);
+  useEffect(() => {
+    if (!voice || !talk || typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+    const utterance = new SpeechSynthesisUtterance(talk.lines[talk.line]);
+    utterance.lang = 'ko-KR'; utterance.rate = 0.95;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utterance);
+    return () => window.speechSynthesis.cancel();
+  }, [voice, talk]);
   const [destinationId, setDestinationId] = useState<DestinationId>('geumseonggwan');
   const destination = destinations[destinationId];
-  const [view, setView] = useState<ViewState>({ x: 0, z: 0, yaw: 0, place: '금성관 주변', detail: '', indoor: false });
+  const [view, setView] = useState<ViewState>({ x: 0, z: 0, yaw: 0, place: '금성관 주변', detail: '', indoor: false, npc: null });
 
   useEffect(() => {
     const selectedId = destinationFromSearch(window.location.search);
@@ -89,6 +108,9 @@ export default function Home() {
       const fleet=new BoatFleet(data);
       await fleet.load(scene);
       if(disposed){scene.traverse(disposeObject);return;}
+      const npcTroupe=new NpcTroupe(data.npcs??[]);
+      await npcTroupe.load(scene);
+      if(disposed){scene.traverse(disposeObject);return;}
       const camera = new THREE.PerspectiveCamera(60, 1, 0.12, selectedId !== 'geumseonggwan' ? 1800 : 1000);
       const colliders = data.solids.filter(s => s.collision).map(solidCollider);
       const floors = worldFloors(data.solids);
@@ -113,8 +135,13 @@ export default function Home() {
       };
       const pause = () => {
         fleet.stop();
-        playing = false; keys.clear(); drag = false; setActive(false);
+        playing = false; keys.clear(); drag = false; setActive(false); setTalk(null);
         if (document.pointerLockElement === canvas) document.exitPointerLock();
+      };
+      const talkAction = () => {
+        const npc = npcTroupe.nearest(px, pz);
+        if (!npc) return;
+        setTalk(prev => (!prev || prev.id !== npc.id) ? { id: npc.id, name: npc.name, lines: npc.lines, line: 0 } : prev.line + 1 < prev.lines.length ? { ...prev, line: prev.line + 1 } : null);
       };
       const start = () => {
         playing = true; bird = false; setActive(true); setStarted(true); setOverview(false);
@@ -139,8 +166,8 @@ export default function Home() {
         start();
       };
       engine.current = {
-        start, pause, boatAction,
-        reset: () => { fleet.reset();px = data.spawn.x; pz = data.spawn.z; elevation=reachableFloor(px,pz,0,floors)??0; yaw = data.spawn.yaw; pitch = 0; start(); },
+        start, pause, boatAction, talk: talkAction,
+        reset: () => { fleet.reset();setTalk(null);px = data.spawn.x; pz = data.spawn.z; elevation=reachableFloor(px,pz,0,floors)??0; yaw = data.spawn.yaw; pitch = 0; start(); },
         overview: () => { pause(); bird = true; setOverview(true); },
         key: (key, down) => { if (down) keys.add(key); else keys.delete(key); },
         travel: (point,height=0) => {
@@ -176,7 +203,7 @@ export default function Home() {
         if (e.target instanceof HTMLButtonElement || e.target instanceof HTMLAnchorElement) return;
         if (e.code === 'Escape') { pause(); return; }
         if (!playing) return;
-        if(e.code==='KeyF'&&!e.repeat){e.preventDefault();const hud=fleet.hud([px,pz],elevation);if(hud.mode==='helm')boatAction('deck');else if(hud.aboard)boatAction('helm');else if(hud.near)boatAction('board',hud.near);return;}
+        if(e.code==='KeyF'&&!e.repeat){e.preventDefault();const hud=fleet.hud([px,pz],elevation);if(hud.mode==='helm')boatAction('deck');else if(hud.aboard)boatAction('helm');else if(hud.near)boatAction('board',hud.near);else talkAction();return;}
         if (['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','KeyQ','KeyE','ShiftLeft','ShiftRight','Space'].includes(e.code)) { e.preventDefault(); keys.add(e.code); }
       }) as EventListener);
       listen(window, 'keyup', ((e: KeyboardEvent) => { keys.delete(e.code); }) as EventListener);
@@ -235,7 +262,9 @@ export default function Home() {
           const hud=fleet.hud([px,pz],elevation);if(fleet.vessels.length)setBoatHud(hud);
           const place = currentPlace(px, pz, data.places, data.verticalNavigation?elevation:undefined);
           const doorway=data.portals?.find(p=>Math.hypot(p.position[0]-px,p.position[1]-pz)<4 && Math.abs((p.height??0)-elevation)<.6);
-          setView({ x: px, z: pz, yaw, place: fleet.passenger?.vessel.definition.name ?? place?.name ?? selected.area, detail: hud.aboard?(hud.mode==='helm'?'W 전진 · S 후진 · A D 방향 · Space 제동':'갑판과 객실을 걸어서 둘러보세요. F를 누르면 운전석으로 이동합니다.'):doorway?doorway.label:place?.description ?? '길을 따라 천천히 둘러보세요.', indoor: !!hud.aboard || (place?.indoor ?? place?.id === 'interior') }); lastHud = now;
+          const npcNear=npcTroupe.nearest(px,pz);
+          setTalk(prev=>!prev?prev:(!npcNear||npcNear.id!==prev.id)?null:prev);
+          setView({ x: px, z: pz, yaw, place: fleet.passenger?.vessel.definition.name ?? place?.name ?? selected.area, detail: hud.aboard?(hud.mode==='helm'?'W 전진 · S 후진 · A D 방향 · Space 제동':'갑판과 객실을 걸어서 둘러보세요. F를 누르면 운전석으로 이동합니다.'):doorway?doorway.label:npcNear?`${npcNear.name}: F를 눌러 이야기 나누기`:place?.description ?? '길을 따라 천천히 둘러보세요.', indoor: !!hud.aboard || (place?.indoor ?? place?.id === 'interior'), npc: npcNear?.name ?? null }); lastHud = now;
         }
         renderer.render(scene, camera); animation = requestAnimationFrame(frame);
       };
@@ -291,8 +320,14 @@ export default function Home() {
         <div className="welcome-help"><span><kbd>W A S D</kbd> 이동</span><span>마우스 / 드래그로 둘러보기</span></div>
         {error && <div className="error-message" role="alert">{error}<button onClick={() => window.location.reload()}>다시 불러오기</button></div>}
       </section>}
-      {active && <><div className="crosshair" aria-hidden="true" />{!boatHud?.aboard&&<div className="place-card"><span className="place-icon"><MapPin size={21} /></span><div><span>{view.indoor ? '실내에 도착했어요' : '지금 걷는 곳'}</span><strong>{view.place}</strong><p>{view.detail}</p></div></div>}
+      {active && <><div className="crosshair" aria-hidden="true" />{!boatHud?.aboard&&!talk&&<div className="place-card"><span className="place-icon"><MapPin size={21} /></span><div><span>{view.indoor ? '실내에 도착했어요' : '지금 걷는 곳'}</span><strong>{view.place}</strong><p>{view.detail}</p></div></div>}
+        {view.npc&&!talk&&!boatHud?.aboard&&<button className="npc-prompt" onClick={()=>engine.current?.talk()}><MessageCircle size={16}/>{view.npc} · F</button>}
         <div className="touch-controls" aria-label="이동 버튼"><button aria-label="앞으로" {...press('KeyW')}><ArrowUp /></button><div><button aria-label="왼쪽으로" {...press('KeyA')}><ArrowLeft /></button><button aria-label="뒤로" {...press('KeyS')}><ArrowDown /></button><button aria-label="오른쪽으로" {...press('KeyD')}><ArrowRight /></button></div><div className="turn-controls"><button aria-label="왼쪽 보기" {...press('KeyQ')}>↶</button><button aria-label="오른쪽 보기" {...press('KeyE')}>↷</button></div></div></>}
+      {active && talk && <aside className="npc-panel" aria-label="문화해설사와의 대화">
+        <div className="npc-panel-title"><span>{talk.name}</span><div className="npc-panel-title-actions"><button className="npc-voice-toggle" aria-pressed={voice} aria-label={voice?'음성 안내 끄기':'음성으로 듣기'} onClick={()=>setVoice(v=>!v)}>{voice?<Volume2 size={15}/>:<VolumeX size={15}/>}</button><small>{talk.line+1} / {talk.lines.length}</small></div></div>
+        <p>{talk.lines[talk.line]}</p>
+        <button onClick={()=>engine.current?.talk()}>{talk.line+1<talk.lines.length?'다음 이야기 · F':'마치기 · F'}</button>
+      </aside>}
       {boatHud&&(active||!!boatHud.aboard)&&!mapOpen&&<aside className={`boat-panel ${boatHud.aboard?'aboard':'at-shore'}`} aria-label="황포돛배 승선과 조종">
         <div className="boat-panel-title"><span>{boatHud.aboard?view.place:'영산강 황포돛배'}</span>{boatHud.aboard&&<strong>{boatHud.speed.toFixed(1)} <small>km/h</small></strong>}</div>
         {boatHud.aboard?<>
