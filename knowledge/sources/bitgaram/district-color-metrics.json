@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "recolored_materials": 38,
+    "building_meshes": 174,
+    "building_shells": 816,
+    "roof_faces": 811,
+    "sports_courts": 36,
+    "paving_inlays": 24
+  },
+  "palette_file": "district-palette.json",
+  "reference": "User drone and Esri imagery color families; per-building paint and roof colors are estimates.",
+  "triangles": 2108582,
+  "parts": [
+    {
+      "name": "bitgaram-overview.glb",
+      "bytes": 31310408,
+      "gzip_bytes": 9561291
+    },
+    {
+      "name": "bitgaram-overview-part2.glb",
+      "bytes": 31296508,
+      "gzip_bytes": 10191713
+    }
+  ]
+}

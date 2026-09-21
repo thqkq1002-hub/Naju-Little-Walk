@@ -1,0 +1,17 @@
+work/
+outputs/
+Temp/
+assets/
+knowledge/
+node_modules/
+dist/
+.next/
+.vinext/
+.wrangler/
+.git/
+.openai/
+*.tsbuildinfo
+**/*.blend
+**/*.blend1
+**/__pycache__/
+**/*.pyc

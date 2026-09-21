@@ -1,0 +1,13 @@
+{
+  "trees_replaced": 1317,
+  "rounded_parts": 169,
+  "shared_tree_meshes": 3,
+  "flower_prototypes": 3,
+  "glb_bytes": 19362668,
+  "compressed_bytes": 8116360,
+  "note": "Blender authored near/far variants. Three.js instances matching 48m tree cells and 24m flower cells. Browser FPS not measured.",
+  "detail_distances": {
+    "trees": 80,
+    "flowers_hedges": 28
+  }
+}

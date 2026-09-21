@@ -6,7 +6,8 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { movePlayer, moveOnFloors, reachableFloor, worldObstacles, solidCollider, worldFloors, floorHeight, currentPlace, type World } from '@/lib/world';
 import { destinations, destinationFromSearch, type DestinationId } from '@/lib/destinations';
-import { batchStaticScene } from '@/lib/static-scene';
+import { batchStaticScene, updateVegetationDetail } from '@/lib/static-scene';
+import { createLocalLights } from '@/lib/local-lights';
 import { unpackModel } from '@/lib/model-transport';
 import { sceneArrival, portalAt, portalHref } from '@/lib/scene-travel';
 import { canTravelTo, mapSolids, mapColor } from '@/lib/map-navigation';
@@ -14,12 +15,19 @@ import type { Point } from '@/lib/world';
 import MapTravel from './map-travel';
 import { BoatFleet, type BoatHud } from '@/lib/boat-fleet';
 import { NpcTroupe } from '@/lib/npc';
+import BitgaramHub from './bitgaram-hub';
 
 type ViewState = { x: number; z: number; yaw: number; place: string; detail: string; indoor: boolean; npc: string | null };
 type Talk = { id: string; name: string; lines: string[]; line: number };
 type Engine = { start: () => void; pause: () => void; reset: () => void; overview: () => void; key: (key: string, down: boolean) => void; travel: (point: Point, height?:number) => boolean; boatAction: (action:string,id?:string)=>void; talk: () => void };
 
 export default function Home() {
+  const [hub,setHub]=useState(false);
+  useEffect(()=>setHub(new URLSearchParams(window.location.search).get('place')==='bitgaram'),[]);
+  return hub?<BitgaramHub/>:<Explorer/>;
+}
+
+function Explorer() {
   const host = useRef<HTMLDivElement>(null);
   const engine = useRef<Engine | null>(null);
   const [world, setWorld] = useState<World | null>(null);
@@ -28,6 +36,8 @@ export default function Home() {
   const [started, setStarted] = useState(false);
   const [overview, setOverview] = useState(true);
   const [mapOpen,setMapOpen] = useState(false);
+  const [welcomeExpanded,setWelcomeExpanded] = useState(false);
+  const [minimapExpanded,setMinimapExpanded] = useState(false);
   const [error, setError] = useState('');
   const [boatHud,setBoatHud] = useState<BoatHud|null>(null);
   const [talk, setTalk] = useState<Talk | null>(null);
@@ -54,6 +64,7 @@ export default function Home() {
   useEffect(() => {
     const selectedId = destinationFromSearch(window.location.search);
     const selected = destinations[selectedId];
+    const optimizedCampus=selectedId==='bitgaram-kepco'||selectedId==='bitgaram-kentech'||selectedId==='naju-arboretum'||selectedId==='deudeulgang';
     setDestinationId(selectedId);
     document.title = `나주 산책 — ${selected.area}`;
     const mount = host.current!;
@@ -66,8 +77,9 @@ export default function Home() {
       const data: World = await response.json();
       if (disposed) return;
       setWorld(data);
-      renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.75));
+      // Keep centimeter-separated landscape layers stable at city overview distances.
+      renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance', logarithmicDepthBuffer: selectedId.startsWith('bitgaram') || selectedId==='deudeulgang' });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, optimizedCampus?1.25:1.75));
       renderer.shadowMap.enabled = true;
       renderer.shadowMap.type = THREE.PCFShadowMap;
       renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -86,8 +98,14 @@ export default function Home() {
       sun.shadow.camera.left = sun.shadow.camera.bottom = -165;
       sun.shadow.camera.right = sun.shadow.camera.top = 165;
       sun.shadow.camera.far = 420; sun.shadow.normalBias = 0.06;
+      if(selectedId==='bitgaram-kentech'){
+        sun.position.set(-220,420,220);sun.target.position.set(30,0,20);scene.add(sun.target);
+        sun.shadow.camera.left=sun.shadow.camera.bottom=-340;
+        sun.shadow.camera.right=sun.shadow.camera.top=340;sun.shadow.camera.far=1000;
+      }
       scene.add(sun);
-      for (const fixture of data.lights ?? []) {
+      const localLights=optimizedCampus?createLocalLights(scene,data.lights??[]):undefined;
+      for (const fixture of optimizedCampus?[]:data.lights ?? []) {
         const light = new THREE.PointLight(fixture.color, fixture.intensity, fixture.distance, 2);
         light.position.set(...fixture.position);
         scene.add(light);
@@ -100,11 +118,35 @@ export default function Home() {
         return loader.parseAsync(await unpackModel(await response.arrayBuffer()),'');
       })();
       if (disposed) { gltf.scene.traverse(disposeObject); return; }
-      gltf.scene.traverse(o => { if (o instanceof THREE.Mesh) { o.castShadow = !o.name.startsWith('ground'); o.receiveShadow = true; } });
+      gltf.scene.traverse(o => { if (o instanceof THREE.Mesh) {
+        const landscape=selectedId.startsWith('bitgaram')&&/^(context_ground|lake_osm_|estimated_hill|surrounding_park_lawn|surrounding_mapped_paths|surrounding_parking|surrounding_recreation)/.test(o.name);
+        const riverSurface=selectedId==='deudeulgang'&&/^(path_|road_|mapped_river_water|water_glint|pine_litter_patch|understory_moss|crop_row|satellite_field)/.test(o.name);
+        o.castShadow = !o.name.startsWith('ground')&&!landscape&&!riverSurface&&!o.userData.no_shadow;
+        o.receiveShadow = !o.userData.no_receive_shadow && !(landscape && o.name!=='estimated_hill');
+        if(o.userData.photo_panorama){
+          o.castShadow=false;o.receiveShadow=false;o.renderOrder=-100;
+          // Blender exports pure emission as an emissive PBR material in this version.
+          const original=Array.isArray(o.material)?o.material:[o.material];
+          const unlit=original.map(m=>{
+            const p=m as THREE.MeshStandardMaterial;
+            const material=new THREE.MeshBasicMaterial({map:p.emissiveMap??p.map,side:m.side});
+            m.dispose();return material;
+          });
+          o.material=Array.isArray(o.material)?unlit:unlit[0];
+          for(const material of Array.isArray(o.material)?o.material:[o.material]){
+            material.toneMapped=false;material.fog=false;material.depthWrite=false;
+          }
+        }
+      } });
       batchStaticScene(gltf.scene);
       const roofParts: THREE.Object3D[]=[];
       gltf.scene.traverse(o=>{if(o.userData.hide_in_overview)roofParts.push(o);});
       scene.add(gltf.scene);
+      if(optimizedCampus){
+        gltf.scene.traverse(o=>{o.updateMatrix();o.matrixAutoUpdate=false;});
+        renderer.shadowMap.autoUpdate=false;
+        renderer.shadowMap.needsUpdate=true;
+      }
       const fleet=new BoatFleet(data);
       await fleet.load(scene);
       if(disposed){scene.traverse(disposeObject);return;}
@@ -167,7 +209,7 @@ export default function Home() {
       };
       engine.current = {
         start, pause, boatAction, talk: talkAction,
-        reset: () => { fleet.reset();setTalk(null);px = data.spawn.x; pz = data.spawn.z; elevation=reachableFloor(px,pz,0,floors)??0; yaw = data.spawn.yaw; pitch = 0; start(); },
+        reset: () => { fleet.reset();setTalk(null);px = data.spawn.x; pz = data.spawn.z; elevation=reachableFloor(px,pz,data.spawn.height??0,floors)??0; yaw = data.spawn.yaw; pitch = 0; start(); },
         overview: () => { pause(); bird = true; setOverview(true); },
         key: (key, down) => { if (down) keys.add(key); else keys.delete(key); },
         travel: (point,height=0) => {
@@ -231,7 +273,8 @@ export default function Home() {
       // Door travel opens at eye level. Pointer lock still waits for a user gesture.
       if(arrival.entered){playing=true;bird=false;setActive(true);setStarted(true);setOverview(false);canvas.focus({preventScroll:true});}
       let changingScene=false;
-      let last = performance.now(), lastHud = 0;
+      let last = performance.now(), lastHud = 0, lastLightUpdate=-Infinity;
+      let shadowBird: boolean|undefined;
       const frame = (now: number) => {
         if (disposed || !renderer) return;
         const dt = Math.min((now - last) / 1000, 0.06); last = now;
@@ -258,6 +301,9 @@ export default function Home() {
         if (bird) {
           camera.position.set(center.x + Math.sin(orbit) * Math.cos(orbitElevation) * orbitRadius, Math.sin(orbitElevation) * orbitRadius, center.z + Math.cos(orbit) * Math.cos(orbitElevation) * orbitRadius); camera.lookAt(center);
         } else { camera.position.set(px, 1.72 + (data.verticalNavigation?elevation:floorHeight(px, pz, floors)), pz); camera.rotation.order = 'YXZ'; camera.rotation.set(pitch, yaw, 0); }
+        if(localLights && now-lastLightUpdate>150){localLights.update(camera.position);lastLightUpdate=now;}
+        if((selectedId==='naju-arboretum'||selectedId==='deudeulgang') && updateVegetationDetail(gltf.scene,camera.position))renderer.shadowMap.needsUpdate=true;
+        if(optimizedCampus && shadowBird!==bird){renderer.shadowMap.needsUpdate=true;shadowBird=bird;}
         if (now - lastHud > 180) {
           const hud=fleet.hud([px,pz],elevation);if(fleet.vessels.length)setBoatHud(hud);
           const place = currentPlace(px, pz, data.places, data.verticalNavigation?elevation:undefined);
@@ -293,14 +339,16 @@ export default function Home() {
       <div className="scene" ref={host} /><div className="vignette" />
       <header className="topbar">
         <div className="brand"><span className="brand-mark"><Compass size={25} strokeWidth={1.4} /></span><div><strong>나주 산책</strong><span>NAJU, ON FOOT</span></div></div>
-        <div className="location-pill"><span className="live-dot" /><span>{destination.area}</span><span className="pill-divider" /><span>{'parent' in destination?'사진 참고 실내':'실제 지도 기반'}</span></div>
+        <div className="location-pill"><span className="live-dot" /><span>{destination.area}</span><span className="pill-divider" /><span>{destinationId.startsWith('bitgaram')?'사진·지도 참고':'parent' in destination?'사진 참고 실내':'실제 지도 기반'}</span></div>
         <div className="view-actions"><button className={overview ? 'active' : ''} onClick={() => engine.current?.overview()} disabled={!ready}><MoveUpRight size={16} />전체 보기</button><button className={!overview ? 'active' : ''} onClick={() => boatHud?.aboard?engine.current?.boatAction('deck'):engine.current?.start()} disabled={!ready}><Footprints size={16} />걷기</button></div>
       </header>
       <nav className="destination-nav" aria-label="산책 장소">
         <button onClick={openMap}><Map size={18}/><span>지도로 이동</span><ArrowUpRight size={16}/></button>
       </nav>
-      {world && <aside className="minimap" aria-label="현재 위치 지도">
-        <div className="map-heading"><span>{'parent' in destination?'실내 지도':'동네 지도'}</span><span>{'parent' in destination?'출구 ↓':'N ↑'}</span></div>
+      {active && !!world?.sceneLinks?.length && <nav className="scene-signposts" aria-label="장소 이동 푯말">{world.sceneLinks.filter(link=>Object.hasOwn(destinations,link.target)).map(link=><a key={link.target} href={`/?place=${encodeURIComponent(link.target)}`}><MapPin size={18}/><span>{link.label}</span><ArrowUpRight size={16}/></a>)}</nav>}
+      {world && !minimapExpanded && <button className="minimap-toggle" aria-expanded={false} aria-controls="location-minimap" onClick={()=>setMinimapExpanded(true)}><Map size={17}/>미니맵 펼치기</button>}
+      {world && minimapExpanded && <aside id="location-minimap" className="minimap" aria-label="현재 위치 지도">
+        <div className="map-heading"><span>{destinationId.startsWith('bitgaram')?'장소 지도':'parent' in destination?'실내 지도':'동네 지도'}</span><button className="panel-fold" aria-expanded={true} aria-controls="location-minimap" onClick={()=>setMinimapExpanded(false)}>접기 −</button></div>
         <svg viewBox={`${world.bounds[0]} ${world.bounds[2]} ${world.bounds[1] - world.bounds[0]} ${world.bounds[3] - world.bounds[2]}`} role="img" aria-label={`현재 위치: ${view.place}`} onClick={openMap}>
           <rect x={world.bounds[0]} y={world.bounds[2]} width={world.bounds[1] - world.bounds[0]} height={world.bounds[3] - world.bounds[2]} fill="#e5e8df" />
           {mapSolids(world).map((s, i) => <polygon key={i} points={solidCollider(s).map(p => p.join(',')).join(' ')} fill={mapColor(s.name)} stroke={s.kind === 'building' ? '#9aada2' : 'none'} strokeWidth="0.7" />)}
@@ -312,12 +360,13 @@ export default function Home() {
         </svg><div className="map-legend"><span className="you-dot" />내 위치<span>약 {Math.round((world.bounds[1] - world.bounds[0]) / 10) * 10}m 구역</span></div>
         <button className="minimap-travel" onClick={openMap}>지도 열고 이동하기 <ArrowUpRight size={14}/></button>
       </aside>}
-      {!active && !boatHud?.aboard && <section className="welcome" aria-label="산책 시작">
-        <div className="eyebrow"><span />나주 · {destination.name}</div>
+      {!active && !boatHud?.aboard && <section className={`welcome${welcomeExpanded?'':' welcome-compact'}`} aria-label="산책 시작">
+        <button className="welcome-fold panel-fold" aria-expanded={welcomeExpanded} aria-controls="walk-introduction" onClick={()=>setWelcomeExpanded(v=>!v)}>{welcomeExpanded?'안내 접기 −':'이용 안내 +'}</button>
+        {welcomeExpanded && <div id="walk-introduction"><div className="eyebrow"><span />나주 · {destination.name}</div>
         <h1>{started ? '잠시, 쉬어가기.' : <>{destination.heading[0]}<br />{destination.heading[1]}</>}</h1>
-        <p>{started ? '산책을 이어가거나, 위에서 동네를 둘러보세요.' : <>{destination.introduction[0]}<br />{destination.introduction[1]}</>}</p>
+        <p>{started ? '산책을 이어가거나, 위에서 동네를 둘러보세요.' : <>{destination.introduction[0]}<br />{destination.introduction[1]}</>}</p></div>}
         <button className="start-button" onClick={() => engine.current?.start()} disabled={!ready || !!error}><Footprints size={20} /><span>{error ? '화면을 열 수 없어요' : !ready ? '동네 불러오는 중…' : started ? '이어서 걷기' : '산책 시작하기'}</span><ArrowUpRight size={21} /></button>
-        <div className="welcome-help"><span><kbd>W A S D</kbd> 이동</span><span>마우스 / 드래그로 둘러보기</span></div>
+        {welcomeExpanded && <div className="welcome-help"><span><kbd>W A S D</kbd> 이동</span><span>마우스 / 드래그로 둘러보기</span></div>}
         {error && <div className="error-message" role="alert">{error}<button onClick={() => window.location.reload()}>다시 불러오기</button></div>}
       </section>}
       {active && <><div className="crosshair" aria-hidden="true" />{!boatHud?.aboard&&!talk&&<div className="place-card"><span className="place-icon"><MapPin size={21} /></span><div><span>{view.indoor ? '실내에 도착했어요' : '지금 걷는 곳'}</span><strong>{view.place}</strong><p>{view.detail}</p></div></div>}

@@ -2,6 +2,32 @@
 
 금성관 주변의 실제 OpenStreetMap 건물 윤곽과 도로 좌표를 **Blender 4.5 LTS**에서 입체로 제작하고, Blender에서 내보낸 GLB를 **Three.js**로 불러와 탐험합니다.
 
+## Vercel 배포
+
+[Vercel 운영 주소](https://naju-little-walk.vercel.app/) · [드들강 산책](https://naju-little-walk.vercel.app/?place=deudeulgang)
+
+2026-09-21 첫 Vercel 배포는 검증한 `dist/client`의 정적 파일 45개를 직접 업로드했습니다. GitHub 자동 배포 연결은 설정하지 않았습니다.
+
+`vercel.json`은 정적 웹 빌드(`npm run build`)와 배포 폴더(`dist/client`)를 지정합니다. GitHub `codex/bitgaram-place-walks` 브랜치의 최신 작업 또는 동일한 정적 빌드 결과를 배포합니다. GitHub 기본 `main` 브랜치는 변경하지 않습니다. 프레임워크 자동 감지 대신 일반 정적 프로젝트 설정을 사용합니다.
+
+`.vercelignore`는 Blender 원본·도구, 참고 자료와 임시 파일을 업로드에서 제외합니다. 완성된 빌드에는 무손실 압축한 `.glb.gz`만 들어가며, 중복된 `.glb`는 포함하지 않습니다. 모델 로더가 gzip 압축을 해제하므로 별도의 `Content-Encoding` 설정은 필요하지 않습니다. `/?place=deudeulgang` 등 기존 장소 주소를 그대로 사용할 수 있습니다.
+
+설정 근거: [Vercel 프로젝트 설정](https://vercel.com/docs/project-configuration).
+
+## 드들강 솔밭과 전체 맵 채색
+
+`/?place=deudeulgang`에서 소나무 숲길, 노래비, 강변과 남쪽 쉼터를 산책할 수 있습니다. OSM 보행로·시설 위치와 Esri 위성영상, 2025년 현장 사진을 참고했습니다. 소나무 280그루의 위치·수형과 세부 시설 치수는 추정입니다. Blender 편집본은 `outputs/deudeulgang/deudeulgang-pine-grove-v3.blend`입니다.
+
+기존 모든 맵과 두 황포돛배의 색감을 Blender에서 조정했습니다. `outputs/palette-v51`에 새 전체 장면 편집본을 보관하고, 기존 정점·이미지·애니메이션을 유지한 채 재질 값만 GLB에 반영합니다. [사진 근거, 제작 방법과 추정 범위](knowledge/deudeulgang-and-map-palette-2026-09-20.md)를 확인하세요.
+
+## 빛가람 장소별 산책 초안
+
+`/?place=bitgaram`의 Blender 조감 화면에서 푯말을 누르면 전망대 주변 공원, 전망실, 한국전력 본사 입구·1층, KENTECH 캠퍼스·1층을 각각 불러옵니다. KENTECH는 OSM 윤곽과 항공·정면 사진을 참고해 확장 강의동, 연구·지원동, RC 생활관, 운동장과 앞마당을 구성했습니다. 높이·도서관 마감과 1층 내부 배치는 추정이며, 근거는 `knowledge/kentech-campus-2026-09-20.md`에 기록합니다.
+
+- Blender 원본: `outputs/bitgaram/*.blend` — 사용자가 직접 수정한 뒤에는 생성 스크립트로 덮어쓰지 않습니다.
+- 제작 근거와 재현 범위: [빛가람 제작 기록](knowledge/bitgaram-progress.md)
+- 전체 안내 `bitgaram`, 공원 `bitgaram-park`, 전망실 `bitgaram-observatory`, 한국전력 `bitgaram-kepco`, KENTECH `bitgaram-kentech`.
+
 ## 영산포 강변 · 홍어거리 · 두 전시관
 
 선착장 맞은편 **상가·주택·창고 20개**의 지붕과 정면·골목 측면을 보강했습니다. 주소점과 사진을 연결한 홍어세상·금성수산, 그 사이 담장 주택, 푸른 박공지붕 창고군을 구분하고 위성사진에서 확인한 **약 168m 주차·진입 포장**을 추가했습니다. `/?place=yeongsanpo&at=riverfront-shops`에서 확인할 수 있습니다. 최신 외부 편집본은 `outputs/yeongsanpo-riverfront.blend`이며 [관찰 근거·추정 범위](knowledge/yeongsanpo-riverfront-detail.md)를 기록했습니다.

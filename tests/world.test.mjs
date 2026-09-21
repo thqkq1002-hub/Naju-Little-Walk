@@ -17,6 +17,108 @@ const bogamColliders=bogam.solids.filter(s=>s.collision).map(solidCollider);
 const museum=JSON.parse(fs.readFileSync(new URL('../public/bogam-museum-world.json',import.meta.url),'utf8'));
 const museumFloors=worldFloors(museum.solids), museumObstacles=worldObstacles(museum.solids);
 
+test('Bitgaram compressed downloads restore the exact authored Blender models',async()=>{
+  for(const id of ['park','overview','observatory']){
+    const raw=fs.readFileSync(new URL(`../public/models/bitgaram-${id}.glb`,import.meta.url));
+    const packed=fs.readFileSync(new URL(`../public/models/bitgaram-${id}.glb.gz`,import.meta.url));
+    const restored=await unpackModel(packed.buffer.slice(packed.byteOffset,packed.byteOffset+packed.byteLength));
+    assert.ok(Buffer.from(restored).equals(raw));
+    assert.ok(packed.length<raw.length,'Transport is smaller than the original');
+  }
+});
+
+test('observatory uses an embedded panorama instead of the old exterior blocks',()=>{
+  const raw=fs.readFileSync(new URL('../public/models/bitgaram-observatory.glb',import.meta.url));
+  const gltf=JSON.parse(raw.subarray(20,20+raw.readUInt32LE(12)).toString());
+  const node=gltf.nodes.find(n=>n.extras?.photo_panorama);
+  assert.ok(node,'Panorama is part of the 3D model');
+  const material=gltf.materials[gltf.meshes[node.mesh].primitives[0].material];
+  assert.ok(material.extensions?.KHR_materials_unlit || (material.emissiveTexture && material.emissiveFactor?.every(v=>v===1) && material.pbrMetallicRoughness?.baseColorFactor?.slice(0,3).every(v=>v===0)),'Photo exports as unlit or emission-only with a black surface');
+  assert.ok(gltf.images.some(i=>i.bufferView!==undefined),'Panorama texture travels inside the GLB');
+  assert.ok(!gltf.nodes.some(n=>/^(context_|lake_osm_|photo_wrap_)/.test(n.name??'')),'Old background geometry must not hide the panorama');
+});
+
+test('park aerial roof has an open oculus and physical supports block walking',()=>{
+  const {scene}=readModel(new URL('../public/models/bitgaram-park.glb',import.meta.url));
+  const roof=scene.getObjectByName('aerial_roof_open_oval');
+  assert.ok(roof,'Detailed exterior roof is exported');
+  assert.ok(!roof.userData.hide_in_overview,'Exterior roof stays visible in the aerial view');
+  const downward=(x,z)=>new THREE.Raycaster(new THREE.Vector3(x,40,z),new THREE.Vector3(0,-1,0),0,8).intersectObject(roof,true);
+  assert.equal(downward(-2,0).length,0,'Central oval opening remains open');
+  assert.ok(downward(10,0).length,'Outer roof annulus covers the viewing room');
+  const w=JSON.parse(fs.readFileSync(new URL('../public/bitgaram-park-world.json',import.meta.url),'utf8'));
+  const columns=w.solids.filter(s=>s.name==='aerial_column_body');
+  assert.equal(columns.length,6);
+  for(const c of columns){
+    const pts=solidCollider(c),x=pts.reduce((s,p)=>s+p[0],0)/pts.length,z=pts.reduce((s,p)=>s+p[1],0)/pts.length;
+    assert.equal(canTravelTo([x,z],w,16),false,'Support must block visitors');
+  }
+  assert.equal(canTravelTo([0,5.8],w,16),false,'The glazed entrance drum is not a pass-through prop');
+  walkRoute(w,[[0,21],[0,8]],16);
+  const shell=w.solids.find(s=>s.name==='photo_exhibition_shell');
+  assert.ok(shell&&shell.collision,'Exhibition shell retains a physical boundary');
+});
+
+test('Bitgaram timber guards are physical and the exhibition garden is open above',()=>{
+  const w=JSON.parse(fs.readFileSync(new URL('../public/bitgaram-park-world.json',import.meta.url),'utf8'));
+  const guards=w.solids.filter(s=>s.name==='timber_walk_guard');
+  assert.ok(guards.length>200);
+  const obstacles=worldObstacles(w.solids);
+  for(const guard of guards){
+    const p=solidCollider(guard),x=p.reduce((s,a)=>s+a[0],0)/p.length,z=p.reduce((s,a)=>s+a[1],0)/p.length;
+    assert.ok(blocksWalking(x,z,guard.position[1]+.05,obstacles));
+  }
+  const {scene}=readModel(new URL('../public/models/bitgaram-park.glb',import.meta.url));
+  assert.equal(scene.getObjectByName('timber_walk_guard'),undefined,'Collision proxies are not visible solid walls');
+  const ray=new THREE.Raycaster(new THREE.Vector3(0,20,130),new THREE.Vector3(0,-1,0),0,15);
+  assert.equal(ray.intersectObject(scene.getObjectByName('photo_exhibition_sloped_shell'),true).length,0,'Old closed roof removed');
+  assert.ok(ray.intersectObject(scene.getObjectByName('context_roof_garden_paving'),true).length,'Roof terrace floor remains');
+  const building=solidCollider(w.solids.find(s=>s.name==='photo_exhibition_shell'));
+  scene.traverse(o=>{
+    if(o.name.startsWith('aerial_woodland_canopy')){
+      const p=o.getWorldPosition(new THREE.Vector3());
+      assert.equal(hitsPolygon(p.x,p.z,building,0),false,'Woodland trunks must not emerge through the roof garden');
+    }
+  });
+});
+
+test('Bitgaram signs load valid scenes and preserve elevated park spawn',()=>{
+  for(const id of ['bitgaram-park','bitgaram-observatory','bitgaram-kepco','bitgaram-kentech']){
+    const w=JSON.parse(fs.readFileSync(new URL(`../public/${id}-world.json`,import.meta.url),'utf8'));
+    const a=sceneArrival(w,'');
+    assert.ok(canTravelTo([a.x,a.z],w,a.height),id);
+    for(const link of w.sceneLinks) assert.ok(destinations[link.target],link.target);
+    if(id==='bitgaram-park'){
+      assert.equal(a.height,16);
+      const path=Array.from({length:121},(_,i)=>[12+6*Math.sin(i/35),16+i*.68]);
+      const end=walkRoute(w,[[a.x,a.z],...path],16);
+      assert.ok(end.height<5,'Path descends to the lower rest area');
+    } else if(id==='bitgaram-observatory'){
+      // Empty room: former furniture and central core positions are now walkable.
+      walkRoute(w,[[0,7],[6,7],[6,2],[10,0],[7,-8],[-5,-8],[-5,-4],[-10,0],[-6,0],[-6,7],[0,7]]);
+      assert.equal(canTravelTo([8,4],w),true,'Removed bench must not leave an invisible collider');
+      walkRoute(w,[[0,7],[0,0],[0,-7],[8,4]]);
+      assert.equal(canTravelTo([12.85,0],w),false,'Inner guard contains visitors');
+      assert.equal(canTravelTo([13.8,0],w),false,'Glazing must contain visitors');
+    } else {
+      const lobby=w.places.find(p=>p.id==='lobby').arrival;
+      walkRoute(w,[[a.x,a.z],lobby,[a.x,a.z]]);
+    }
+  }
+  const overview=JSON.parse(fs.readFileSync(new URL('../public/bitgaram-overview.json',import.meta.url),'utf8'));
+  assert.equal(overview.pins.length,3);
+  for(const p of overview.pins)assert.ok(p.x>0&&p.x<100&&p.y>0&&p.y<100,'Pin inside rendered map');
+});
+
+test('KEPCO overview retains the tower and the extended front courtyard connects to the lobby',()=>{
+  const {scene}=readModel(new URL('../public/models/bitgaram-kepco.glb',import.meta.url));
+  const tower=scene.getObjectByName('central_tower');
+  assert.ok(tower&&!tower.userData.hide_in_overview,'Tower must remain visible in the outdoor overview');
+  const w=JSON.parse(fs.readFileSync(new URL('../public/bitgaram-kepco-world.json',import.meta.url),'utf8'));
+  const p=[w.spawn.x,w.spawn.z],lobby=w.places.find(p=>p.id==='lobby').arrival;
+  walkRoute(w,[p,[p[0],p[1]+20],p,lobby,p]);
+});
+
 const yeongsanWorlds=Object.fromEntries(['yeongsanpo','yeongsanpo-history','yeongsanpo-literature'].map(id=>[id,JSON.parse(fs.readFileSync(new URL(`../public/${id}-world.json`,import.meta.url),'utf8'))]));
 test('literature ceilings enclose the reported sky gaps and the stair landing',()=>{
   const {scene}=readModel(new URL('../public/models/yeongsanpo-literature.glb',import.meta.url));
@@ -550,7 +652,7 @@ test('map relocation rejects obstacles, nonfinite coordinates and out-of-bounds 
   assert.equal(destinationFromSearch('?place=bogam'),'bogam');
   for(const d of Object.values(destinations)){
     const w=JSON.parse(fs.readFileSync(new URL('../public'+d.worldUrl,import.meta.url),'utf8'));
-    assert.ok(canTravelTo([w.spawn.x,w.spawn.z],w));
+    assert.ok(canTravelTo([w.spawn.x,w.spawn.z],w,w.spawn.height??0));
     for(const p of w.places){
       const target=mapArrival(p,w);
       assert.ok(target,`No accessible arrival for ${d.name} / ${p.name}`);

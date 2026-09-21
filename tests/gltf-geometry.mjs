@@ -17,7 +17,7 @@ export function readModel(path) {
   };
   const material=new THREE.MeshBasicMaterial({side:THREE.FrontSide});
   const nodes=gltf.nodes.map(n=>{
-    const group=new THREE.Group();group.name=n.name??'';
+    const group=new THREE.Group();group.name=n.name??'';group.userData={...(n.extras??{})};
     if(n.matrix){group.matrix.fromArray(n.matrix);group.matrix.decompose(group.position,group.quaternion,group.scale);}
     else{if(n.translation)group.position.fromArray(n.translation);if(n.rotation)group.quaternion.fromArray(n.rotation);if(n.scale)group.scale.fromArray(n.scale);}
     if(n.mesh!==undefined)for(const p of gltf.meshes[n.mesh].primitives){

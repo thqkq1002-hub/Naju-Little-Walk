@@ -1,0 +1,23 @@
+{
+  "pins": [
+    {
+      "id": "bitgaram-kentech",
+      "label": "KENTECH",
+      "x": 64.943,
+      "y": 73.441
+    },
+    {
+      "id": "bitgaram-kepco",
+      "label": "한국전력 본사",
+      "x": 43.541,
+      "y": 18.967
+    },
+    {
+      "id": "bitgaram-park",
+      "label": "호수공원 · 전망대",
+      "x": 44.535,
+      "y": 48.203
+    }
+  ],
+  "source": "© OpenStreetMap contributors, ODbL 1.0"
+}

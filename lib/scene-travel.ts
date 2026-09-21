@@ -7,7 +7,7 @@ export function sceneArrival(world: World, search: string) {
   const key=new URLSearchParams(search).get('at');
   const arrival=key && Object.hasOwn(world.arrivals??{},key) ? world.arrivals![key] : undefined;
   if(arrival && canTravelTo([arrival.x,arrival.z],world,arrival.height??0))return { ...arrival, entered:true };
-  return {...world.spawn,height:0,entered:false};
+  return {...world.spawn,height:world.spawn.height??0,entered:false};
 }
 
 export function portalAt(world: World,x: number,z: number,height=0): Portal | undefined {

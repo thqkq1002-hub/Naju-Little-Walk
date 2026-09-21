@@ -1,7 +1,7 @@
 import { hitsPolygon, solidCollider, reachableFloor, blocksWalking, worldFloors, worldObstacles, type Point, type Place, type World } from './world.ts';
 
-export const regionalBounds = [126.625, 126.729, 34.985, 35.044] as const;
-export const regionalSize = [1000, 694] as const;
+export const regionalBounds = [126.625, 126.87, 34.985, 35.044] as const;
+export const regionalSize = [1000, 400] as const;
 
 export function regionalPoint(lon: number, lat: number): Point {
   return [(lon-regionalBounds[0])/(regionalBounds[1]-regionalBounds[0])*regionalSize[0], (regionalBounds[3]-lat)/(regionalBounds[3]-regionalBounds[2])*regionalSize[1]];
@@ -32,7 +32,7 @@ export function mapArrival(place: Place, world: World): Point | null {
 }
 
 export function mapSolids(world: World) {
-  return world.solids.filter(s=>/^(osm-building|photo-building|context_.*_wall|mapped_reservoir_water|mapped_river_water|ground_floor|road_|road-edge|hall-wall|rail-ballast|walk-floor_platform|mound_|path_|replica_outline|exhibit-case|museum-wall|walk-floor_bridge|walk-floor_cafe|walk-floor_dock|walk-floor_riverfront)/.test(s.name));
+  return world.solids.filter(s=>/^(osm-building|photo-building|context_.*_wall|mapped_reservoir_water|mapped_river_water|ground_floor|road_|road-edge|hall-wall|rail-ballast|walk-floor_platform|walk-floor_approach|walk-floor_turnaround|mound_|path_|replica_outline|exhibit-case|museum-wall|walk-floor_bridge|walk-floor_cafe|walk-floor_dock|walk-floor_riverfront|campus_building_|campus_upper_envelope_|rc_residence_|library_annular_envelope|campus_parking_|sports_court_|athletics_track_red|football_pitch)/.test(s.name));
 }
 
 export function mapColor(name: string): string {

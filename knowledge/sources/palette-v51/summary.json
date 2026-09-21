@@ -1,0 +1,87 @@
+[
+  {
+    "model": "bitgaram-kentech.glb",
+    "changed": 28,
+    "protected": 1
+  },
+  {
+    "model": "bitgaram-kepco.glb",
+    "changed": 63,
+    "protected": 1
+  },
+  {
+    "model": "bitgaram-observatory.glb",
+    "changed": 16,
+    "protected": 3
+  },
+  {
+    "model": "bitgaram-overview-part2.glb",
+    "changed": 137,
+    "protected": 124
+  },
+  {
+    "model": "bitgaram-overview.glb",
+    "changed": 128,
+    "protected": 130
+  },
+  {
+    "model": "bitgaram-park.glb",
+    "changed": 87,
+    "protected": 2
+  },
+  {
+    "model": "bogam-museum.glb",
+    "changed": 67,
+    "protected": 16
+  },
+  {
+    "model": "bogam-tumuli.glb",
+    "changed": 23,
+    "protected": 1
+  },
+  {
+    "model": "dasi-elementary.glb",
+    "changed": 127,
+    "protected": 3
+  },
+  {
+    "model": "dasi-neighborhood.glb",
+    "changed": 233,
+    "protected": 3
+  },
+  {
+    "model": "geumseonggwan.glb",
+    "changed": 207,
+    "protected": 0
+  },
+  {
+    "model": "naju-arboretum.glb",
+    "changed": 61,
+    "protected": 7
+  },
+  {
+    "model": "najuho.glb",
+    "changed": 20,
+    "protected": 6
+  },
+  {
+    "model": "wanggeonho.glb",
+    "changed": 17,
+    "protected": 7
+  },
+  {
+    "model": "yeongsanpo-history.glb",
+    "changed": 66,
+    "protected": 3
+  },
+  {
+    "model": "yeongsanpo-literature.glb",
+    "changed": 123,
+    "protected": 21
+  },
+  {
+    "model": "yeongsanpo.glb",
+    "changed": 491,
+    "protected": 15
+  }
+]

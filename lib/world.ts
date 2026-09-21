@@ -19,7 +19,7 @@ export type World = {
   subtitle: string;
   source: string;
   bounds: [number, number, number, number];
-  spawn: { x: number; z: number; yaw: number };
+  spawn: { x: number; z: number; yaw: number; height?: number };
   solids: Solid[];
   signs: Sign[];
   places: Place[];
@@ -28,6 +28,7 @@ export type World = {
   requireFloor?: boolean;
   arrivals?: Record<string, Arrival>;
   portals?: Portal[];
+  sceneLinks?: {label:string;target:string}[];
   boats?: import('./boat-navigation.ts').BoatDefinition[];
   navigationWater?: import('./boat-navigation.ts').NavigationWater;
   npcs?: import('./npc.ts').NpcDefinition[];
