@@ -4,7 +4,7 @@ import { batchStaticScene } from './static-scene.ts';
 import { unpackModel } from './model-transport.ts';
 import type { Point } from './world.ts';
 
-export type NpcDefinition = { id: string; name: string; modelUrl: string; position: Point; yaw: number; radius: number; lines: string[] };
+export type NpcDefinition = { id: string; name: string; modelUrl: string; position: Point; height?: number; yaw: number; radius: number; lines: string[] };
 
 export class NpcTroupe {
   private members: { definition: NpcDefinition; object: THREE.Group }[] = [];
@@ -25,7 +25,7 @@ export class NpcTroupe {
         cache.set(definition.modelUrl, template);
       }
       const object = template.clone(true);
-      object.position.set(definition.position[0], 0, definition.position[1]);
+      object.position.set(definition.position[0], definition.height ?? 0, definition.position[1]);
       object.rotation.y = definition.yaw;
       scene.add(object);
       this.members.push({ definition, object });
