@@ -14,7 +14,7 @@ import { canTravelTo, mapSolids, mapColor } from '@/lib/map-navigation';
 import type { Point } from '@/lib/world';
 import MapTravel from './map-travel';
 import { BoatFleet, type BoatHud } from '@/lib/boat-fleet';
-import { NpcTroupe } from '@/lib/npc';
+import { NpcTroupe, speechText } from '@/lib/npc';
 import { FullscreenButton, useScreenMode } from './screen-mode';
 import WalkGuide from './walk-guide';
 import { pixelRatioFor, type GraphicsQuality } from '@/lib/display-mode';
@@ -55,7 +55,9 @@ export default function Explorer() {
   }, [voice]);
   useEffect(() => {
     if (!voice || !talk || typeof window === 'undefined' || !('speechSynthesis' in window)) return;
-    const utterance = new SpeechSynthesisUtterance(talk.lines[talk.line]);
+    const spoken = speechText(talk.lines[talk.line]);
+    if (!spoken) return;
+    const utterance = new SpeechSynthesisUtterance(spoken);
     utterance.lang = 'ko-KR'; utterance.rate = 0.95;
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(utterance);

@@ -6,9 +6,18 @@ import type { Point } from './world.ts';
 
 export type NpcDefinition = { id: string; name: string; modelUrl: string; position: Point; height?: number; yaw: number; radius: number; lines: string[] };
 
+const PICTOGRAPHS = /[\p{Extended_Pictographic}\p{Emoji_Modifier}\u{FE0F}\u{200D}]/gu;
+
+/** Speech engines announce or stumble over emoji, so a spoken line drops them
+ * and closes the gap they leave in front of punctuation. */
+export function speechText(line: string): string {
+  return line.replace(PICTOGRAPHS, '').replace(/\s+([,.!?:;])/g, '$1').replace(/\s{2,}/g, ' ').trim();
+}
+
 export class NpcTroupe {
   private members: { definition: NpcDefinition; object: THREE.Group }[] = [];
-  constructor(private definitions: NpcDefinition[]) {}
+  private definitions: NpcDefinition[];
+  constructor(definitions: NpcDefinition[]) { this.definitions = definitions; }
   async load(scene: THREE.Scene) {
     const loader = new GLTFLoader();
     const cache = new Map<string, THREE.Group>();
