@@ -1,0 +1,1906 @@
+{
+  "source": "© OpenStreetMap contributors, ODbL 1.0",
+  "source_url": "https://api.openstreetmap.org/api/0.6/map?bbox=126.6369,35.0157,126.6432,35.0196",
+  "origin": {
+    "lat": 35.017517,
+    "lon": 126.6400205
+  },
+  "campus_osm_id": "963585633",
+  "buildings": [
+    {
+      "osm_id": "963585634",
+      "name": "교사동",
+      "footprint": [
+        [
+          -45.96714778307044,
+          -13.525379999863674
+        ],
+        [
+          -36.14830245147035,
+          -51.14040800044478
+        ],
+        [
+          -25.025747850818615,
+          -48.17929599985291
+        ],
+        [
+          -31.325489842024023,
+          -23.53304800054076
+        ],
+        [
+          -13.538519329768553,
+          -20.57193599994889
+        ],
+        [
+          -1.8598369997320214,
+          -22.976448000364087
+        ],
+        [
+          -5.196603379927542,
+          -26.87264800001884
+        ],
+        [
+          -6.126521878497971,
+          -33.17336000008879
+        ],
+        [
+          -2.972092459797195,
+          -38.36087200059637
+        ],
+        [
+          2.3977310315422025,
+          -40.398027999882515
+        ],
+        [
+          7.22054364098853,
+          -39.84142800049682
+        ],
+        [
+          12.225693211929602,
+          -57.44112000051473
+        ],
+        [
+          49.28568046569135,
+          -48.36854000048248
+        ],
+        [
+          46.32270485468146,
+          -35.388627999874416
+        ],
+        [
+          14.632541092259112,
+          -43.54838400031298
+        ],
+        [
+          11.851902442743969,
+          -35.76711600034258
+        ],
+        [
+          14.076413362874316,
+          -30.757716000334483
+        ],
+        [
+          13.337948671994775,
+          -25.481148000368137
+        ],
+        [
+          11.669565481249224,
+          -22.052491999849337
+        ],
+        [
+          42.06513682340724,
+          -15.195180000393691
+        ],
+        [
+          40.022962864771635,
+          -2.2152680005766
+        ],
+        [
+          7.22054364098853,
+          -10.564268000062782
+        ],
+        [
+          -13.90319325016688,
+          -8.148624000308473
+        ]
+      ],
+      "height": 8.3,
+      "height_source": "Photo-informed estimate, not measured"
+    },
+    {
+      "osm_id": "963585635",
+      "name": "서쪽 별동",
+      "footprint": [
+        [
+          -74.13820820509811,
+          -22.60909200002601
+        ],
+        [
+          -55.421319192976625,
+          -16.864980000132732
+        ],
+        [
+          -45.96714778307044,
+          -48.17929599985291
+        ],
+        [
+          -65.05782756437755,
+          -53.36680800036049
+        ]
+      ],
+      "height": 6.2,
+      "height_source": "Photo-informed estimate, not measured"
+    },
+    {
+      "osm_id": "605798599",
+      "name": "다시역",
+      "footprint": [
+        [
+          83.94793668661531,
+          83.63471599971689
+        ],
+        [
+          82.23396925711555,
+          99.29744000003751
+        ],
+        [
+          117.22443200717535,
+          103.11571599957261
+        ],
+        [
+          118.93839943797069,
+          87.45299200004297
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 1,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "southeast-street-building-10",
+      "source": "OpenStreetMap",
+      "trace_matches": [
+        "southeast-street-building-10"
+      ]
+    },
+    {
+      "osm_id": "963585621",
+      "name": "지도 건물 963585621",
+      "footprint": [
+        [
+          -259.29227490626573,
+          -206.5765240000141
+        ],
+        [
+          -235.20556240280484,
+          -194.4426440005921
+        ],
+        [
+          -228.93317095666578,
+          -206.89935199983182
+        ],
+        [
+          -253.01988346012666,
+          -219.0332320000448
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 1,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585622",
+      "name": "지도 건물 963585622",
+      "footprint": [
+        [
+          -247.74122844888686,
+          -161.35833999996208
+        ],
+        [
+          -233.11780420411947,
+          -157.0057280005105
+        ],
+        [
+          -228.1217714819657,
+          -180.03783599994307
+        ],
+        [
+          -242.93664953571957,
+          -184.01196000050845
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 1,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585623",
+      "name": "지도 건물 963585623",
+      "footprint": [
+        [
+          -260.44099775888895,
+          -152.37481600017958
+        ],
+        [
+          -256.12872863877766,
+          -165.76661200006413
+        ],
+        [
+          -275.7573024544861,
+          -172.08958800039426
+        ],
+        [
+          -280.06957157330186,
+          -158.6977920005097
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 1,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585624",
+      "name": "지도 건물 963585624",
+      "footprint": [
+        [
+          -266.5401690923206,
+          -202.16825199991206
+        ],
+        [
+          -255.51789982055575,
+          -233.79426400011084
+        ],
+        [
+          -264.5800467649973,
+          -236.9446200005413
+        ],
+        [
+          -275.5931991892704,
+          -205.3297400004726
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 1,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585625",
+      "name": "탑클래스아파트",
+      "footprint": [
+        [
+          -224.80323879804922,
+          -77.95739600060415
+        ],
+        [
+          -190.02246355195933,
+          -58.77696000030596
+        ],
+        [
+          -184.20591450631818,
+          -69.31896400010856
+        ],
+        [
+          -218.97757290491631,
+          -88.49940000040675
+        ]
+      ],
+      "height": 29.4,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 10,
+      "floors_source": "https://kbland.kr/se/c/426959",
+      "roof_color_source": "W03",
+      "source": "OpenStreetMap",
+      "trace_matches": [
+        "W03"
+      ]
+    },
+    {
+      "osm_id": "963585626",
+      "name": "다시파출소",
+      "footprint": [
+        [
+          -211.61115969369553,
+          -2.7162080001028244
+        ],
+        [
+          -199.13931158523795,
+          -1.792252000379051
+        ],
+        [
+          -198.09999090899333,
+          -15.707252000050005
+        ],
+        [
+          -210.5809558662382,
+          -16.642339999903868
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 1,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585627",
+      "name": "지도 건물 963585627",
+      "footprint": [
+        [
+          -196.42249087075604,
+          0.9573520001140423
+        ],
+        [
+          -198.24586047793,
+          17.95591599943492
+        ],
+        [
+          -184.8987949571479,
+          19.926279999522478
+        ],
+        [
+          -184.8987949571479,
+          2.0816839998065007
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 1,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585628",
+      "name": "지도 건물 963585628",
+      "footprint": [
+        [
+          -260.8147885280746,
+          2.560359999863522
+        ],
+        [
+          -245.57141861629802,
+          3.662428000086777
+        ],
+        [
+          -243.80275009796117,
+          -20.57193599994889
+        ],
+        [
+          -259.0552368572295,
+          -21.685136000302236
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 1,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585629",
+      "name": "지도 건물 963585629",
+      "footprint": [
+        [
+          -236.17194829522893,
+          17.699879999606765
+        ],
+        [
+          -233.8015678061619,
+          2.7050759999727347
+        ],
+        [
+          -242.30758702121864,
+          1.3581040000514122
+        ],
+        [
+          -244.67796750899006,
+          16.352907999685442
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 1,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585630",
+      "name": "지도 건물 963585630",
+      "footprint": [
+        [
+          -289.013199493873,
+          -0.4675439999269315
+        ],
+        [
+          -264.53446252494746,
+          1.0575399997028967
+        ],
+        [
+          -263.303688041012,
+          -18.746287999970548
+        ],
+        [
+          -287.7733081611502,
+          -20.271372000391352
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 1,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585631",
+      "name": "지도 건물 963585631",
+      "footprint": [
+        [
+          -168.27878099379473,
+          23.07663599995294
+        ],
+        [
+          -144.91229948493435,
+          25.737183999405318
+        ],
+        [
+          -143.18009835785998,
+          10.530871999672513
+        ],
+        [
+          -166.55569671550765,
+          7.870323999429161
+        ]
+      ],
+      "height": 5,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 1,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "W16",
+      "source": "OpenStreetMap",
+      "trace_matches": [
+        "W16"
+      ]
+    },
+    {
+      "osm_id": "963585632",
+      "name": "지도 건물 963585632",
+      "footprint": [
+        [
+          -143.18009835785998,
+          10.530871999672513
+        ],
+        [
+          -136.92594060799993,
+          11.154263999838747
+        ],
+        [
+          -138.83136184648617,
+          26.494159999550675
+        ],
+        [
+          -144.91229948493435,
+          25.737183999405318
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 1,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585637",
+      "name": "중앙아파트",
+      "footprint": [
+        [
+          -120.02330435426511,
+          -226.2801640000987
+        ],
+        [
+          -91.70637436459634,
+          -214.20194400053617
+        ],
+        [
+          -85.80777368634733,
+          -228.00562400048818
+        ],
+        [
+          -114.12470367731167,
+          -240.10610800031088
+        ]
+      ],
+      "height": 14.9,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 5,
+      "floors_source": "https://kbland.kr/se/c/554475",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585638",
+      "name": "신우아파트",
+      "footprint": [
+        [
+          -132.35839974386892,
+          -198.76186000044441
+        ],
+        [
+          -104.04146975290456,
+          -187.36269200011662
+        ],
+        [
+          -98.29785549237953,
+          -201.63391599999557
+        ],
+        [
+          -126.61478548204829,
+          -213.03308400032336
+        ]
+      ],
+      "height": 12.0,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 4,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585639",
+      "name": "다시성당",
+      "footprint": [
+        [
+          -144.374405450533,
+          -146.05183999984945
+        ],
+        [
+          -136.06895689325006,
+          -154.7125360006052
+        ],
+        [
+          -150.79266646560876,
+          -168.82791200024485
+        ],
+        [
+          -159.107231871679,
+          -160.16721600028006
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 1,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585641",
+      "name": "남도아파트",
+      "footprint": [
+        [
+          -59.47831656777265,
+          -220.17982799999743
+        ],
+        [
+          -48.82983806519344,
+          -216.9515480002383
+        ],
+        [
+          -35.92949809871312,
+          -249.21208399994242
+        ],
+        [
+          -46.249770072156494,
+          -253.4088479999457
+        ]
+      ],
+      "height": 12.0,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 4,
+      "floors_source": "https://zippoom.com/부동산/전남-나주시-다시면-남도아파트/p1mcqu",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585644",
+      "name": "지도 건물 963585644",
+      "footprint": [
+        [
+          -155.95280245297823,
+          3.1058279999101046
+        ],
+        [
+          -146.80860387592887,
+          7.681079999590565
+        ],
+        [
+          -141.43878038458945,
+          -7.2246680005847
+        ],
+        [
+          -151.75905235803282,
+          -11.41030000045788
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 1,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "Unverified neutral material",
+      "source": "OpenStreetMap",
+      "trace_matches": []
+    },
+    {
+      "osm_id": "963585646",
+      "name": "영동아파트",
+      "footprint": [
+        [
+          -238.79760052831568,
+          159.66627599996286
+        ],
+        [
+          -203.61568396926938,
+          172.2009080001132
+        ],
+        [
+          -199.3672327854869,
+          160.278535999999
+        ],
+        [
+          -234.5582661933205,
+          147.75503599997876
+        ]
+      ],
+      "height": 12.0,
+      "height_source": "Estimated metres; no surveyed height",
+      "floors": 4,
+      "floors_source": "Unverified model estimate",
+      "roof_color_source": "W27",
+      "source": "OpenStreetMap",
+      "trace_matches": [
+        "W27"
+      ]
+    },
+    {
+      "trace_id": "W02",
+      "name": "북서쪽 주 건물 동남측 회색 지붕",
+      "footprint": [
+        [
+          -132.96,
+          -176.42
+        ],
+        [
+          -116.82,
+          -162.73
+        ],
+        [
+          -128.07,
+          -150.5
+        ],
+        [
+          -142.25,
+          -163.71
+        ]
+      ],
+      "height": 5,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103817/223287"
+    },
+    {
+      "trace_id": "W04",
+      "name": "서쪽 밝은 청색 긴 지붕",
+      "footprint": [
+        [
+          -260.61,
+          -78.61
+        ],
+        [
+          -235.67,
+          -66.39
+        ],
+        [
+          -244.47,
+          -50.25
+        ],
+        [
+          -268.92,
+          -64.43
+        ]
+      ],
+      "height": 5.2,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103818/223286"
+    },
+    {
+      "trace_id": "W05",
+      "name": "서쪽 남동 방향 밝은 청색 긴 지붕",
+      "footprint": [
+        [
+          -228.82,
+          -59.54
+        ],
+        [
+          -204.37,
+          -47.8
+        ],
+        [
+          -212.68,
+          -33.62
+        ],
+        [
+          -239.09,
+          -46.82
+        ]
+      ],
+      "height": 5.2,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103818/223286"
+    },
+    {
+      "trace_id": "W06",
+      "name": "서쪽 남단 밝은 청색 장방형 지붕",
+      "footprint": [
+        [
+          -258.65,
+          -39.98
+        ],
+        [
+          -231.26,
+          -38.51
+        ],
+        [
+          -231.26,
+          -21.88
+        ],
+        [
+          -260.12,
+          -24.33
+        ]
+      ],
+      "height": 4.8,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103818/223286"
+    },
+    {
+      "trace_id": "W07",
+      "name": "북서 주거지 북단 적갈색 지붕",
+      "footprint": [
+        [
+          -87.48,
+          -131.43
+        ],
+        [
+          -68.4,
+          -123.12
+        ],
+        [
+          -75.25,
+          -109.91
+        ],
+        [
+          -93.84,
+          -118.23
+        ]
+      ],
+      "height": 4.3,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103818/223287"
+    },
+    {
+      "trace_id": "W09",
+      "name": "북서 골목 옆 길쭉한 회청색 지붕",
+      "footprint": [
+        [
+          -97.75,
+          -116.76
+        ],
+        [
+          -87.48,
+          -110.4
+        ],
+        [
+          -99.22,
+          -89.37
+        ],
+        [
+          -109.49,
+          -95.73
+        ]
+      ],
+      "height": 4.5,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103818/223287"
+    },
+    {
+      "trace_id": "W10",
+      "name": "북서 도로 옆 적갈색 소형 지붕",
+      "footprint": [
+        [
+          -122.2,
+          -96.71
+        ],
+        [
+          -110.95,
+          -90.84
+        ],
+        [
+          -116.33,
+          -77.63
+        ],
+        [
+          -127.58,
+          -83.99
+        ]
+      ],
+      "height": 4.1,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103818/223287"
+    },
+    {
+      "trace_id": "W11",
+      "name": "도로 굽이 안쪽 옅은 회청색 지붕",
+      "footprint": [
+        [
+          -131.01,
+          -80.57
+        ],
+        [
+          -120.25,
+          -75.68
+        ],
+        [
+          -124.65,
+          -64.92
+        ],
+        [
+          -137.36,
+          -68.83
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103818/223287"
+    },
+    {
+      "trace_id": "W12",
+      "name": "학교 서북측 골목의 녹청색 지붕",
+      "footprint": [
+        [
+          -101.17,
+          -69.32
+        ],
+        [
+          -90.9,
+          -62.96
+        ],
+        [
+          -98.73,
+          -49.76
+        ],
+        [
+          -106.55,
+          -56.6
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103818/223287"
+    },
+    {
+      "trace_id": "W13",
+      "name": "서측 도로와 나란한 길고 어두운 지붕",
+      "footprint": [
+        [
+          -144.21,
+          -64.43
+        ],
+        [
+          -135.9,
+          -60.03
+        ],
+        [
+          -146.17,
+          -35.09
+        ],
+        [
+          -153.99,
+          -39
+        ]
+      ],
+      "height": 4.2,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103818/223287"
+    },
+    {
+      "trace_id": "W14",
+      "name": "학교 서측의 좁은 붉은 지붕",
+      "footprint": [
+        [
+          -109.98,
+          -40.95
+        ],
+        [
+          -104.11,
+          -38.02
+        ],
+        [
+          -111.93,
+          -20.9
+        ],
+        [
+          -117.31,
+          -23.35
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103818/223287"
+    },
+    {
+      "trace_id": "W15",
+      "name": "학교 서남측 밝은 회청색 큰 지붕",
+      "footprint": [
+        [
+          -173.07,
+          39.25
+        ],
+        [
+          -153.5,
+          42.68
+        ],
+        [
+          -157.41,
+          62.73
+        ],
+        [
+          -176,
+          58.33
+        ]
+      ],
+      "height": 5,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103819/223287"
+    },
+    {
+      "trace_id": "W17",
+      "name": "서남측 짙은 자주회색 장방형 지붕",
+      "footprint": [
+        [
+          -117.8,
+          43.65
+        ],
+        [
+          -106.06,
+          44.14
+        ],
+        [
+          -107.04,
+          57.84
+        ],
+        [
+          -118.78,
+          55.88
+        ]
+      ],
+      "height": 4.1,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103819/223287"
+    },
+    {
+      "trace_id": "W18",
+      "name": "남쪽 도로 북측의 작은 청색 지붕",
+      "footprint": [
+        [
+          -135.41,
+          58.81
+        ],
+        [
+          -123.67,
+          59.79
+        ],
+        [
+          -124.65,
+          68.11
+        ],
+        [
+          -136.87,
+          67.13
+        ]
+      ],
+      "height": 3.7,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103819/223287"
+    },
+    {
+      "trace_id": "W19",
+      "name": "남쪽 도로 북측의 좁은 청록색 지붕",
+      "footprint": [
+        [
+          -145.19,
+          68.11
+        ],
+        [
+          -126.6,
+          69.57
+        ],
+        [
+          -128.07,
+          75.44
+        ],
+        [
+          -146.17,
+          73.98
+        ]
+      ],
+      "height": 3.3,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103819/223287"
+    },
+    {
+      "trace_id": "W20",
+      "name": "남쪽 도로 북측의 작은 갈색 지붕",
+      "footprint": [
+        [
+          -148.61,
+          58.81
+        ],
+        [
+          -139.32,
+          60.77
+        ],
+        [
+          -141.28,
+          68.11
+        ],
+        [
+          -151.55,
+          66.15
+        ]
+      ],
+      "height": 3.5,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103819/223287"
+    },
+    {
+      "trace_id": "W21",
+      "name": "서쪽 큰 도로 북측 적갈색 지붕; 조사 경계 일부 교차",
+      "footprint": [
+        [
+          -276.26,
+          27.51
+        ],
+        [
+          -256.21,
+          28.49
+        ],
+        [
+          -256.7,
+          43.65
+        ],
+        [
+          -276.75,
+          41.7
+        ]
+      ],
+      "height": 4.2,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103819/223286"
+    },
+    {
+      "trace_id": "W22",
+      "name": "서쪽 큰 도로 북측 회청색 지붕",
+      "footprint": [
+        [
+          -242.02,
+          32.89
+        ],
+        [
+          -227.84,
+          35.34
+        ],
+        [
+          -229.8,
+          48.54
+        ],
+        [
+          -243,
+          44.63
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103819/223286"
+    },
+    {
+      "trace_id": "W23",
+      "name": "서쪽 큰 도로 북측 작은 회갈색 지붕",
+      "footprint": [
+        [
+          -251.8,
+          32.89
+        ],
+        [
+          -243.49,
+          34.85
+        ],
+        [
+          -245.45,
+          46.59
+        ],
+        [
+          -254.25,
+          44.14
+        ]
+      ],
+      "height": 3.5,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103819/223286"
+    },
+    {
+      "trace_id": "W24",
+      "name": "서쪽 교차로 남서편 밝은 회갈색 지붕",
+      "footprint": [
+        [
+          -202.41,
+          31.43
+        ],
+        [
+          -188.72,
+          34.36
+        ],
+        [
+          -195.07,
+          50.5
+        ],
+        [
+          -206.81,
+          43.16
+        ]
+      ],
+      "height": 4.1,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103819/223286"
+    },
+    {
+      "trace_id": "W25",
+      "name": "큰 도로 남측 적갈색 지붕",
+      "footprint": [
+        [
+          -243,
+          90.6
+        ],
+        [
+          -227.84,
+          92.56
+        ],
+        [
+          -228.82,
+          104.3
+        ],
+        [
+          -245.45,
+          102.34
+        ]
+      ],
+      "height": 4,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103819/223286"
+    },
+    {
+      "trace_id": "W26",
+      "name": "큰 도로 남측 붉은색 지붕",
+      "footprint": [
+        [
+          -207.3,
+          83.76
+        ],
+        [
+          -194.09,
+          86.2
+        ],
+        [
+          -197.03,
+          97.45
+        ],
+        [
+          -210.23,
+          95.01
+        ]
+      ],
+      "height": 4,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103819/223286"
+    },
+    {
+      "trace_id": "W28",
+      "name": "농경지 북서 모퉁이의 회색 지붕",
+      "footprint": [
+        [
+          -145.68,
+          120.44
+        ],
+        [
+          -125.63,
+          122.88
+        ],
+        [
+          -127.58,
+          134.13
+        ],
+        [
+          -147.14,
+          131.2
+        ]
+      ],
+      "height": 4.2,
+      "height_source": "모델 표현용 가정(m). 영상에서 실제 높이·층수는 확정할 수 없음.",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "18/103820/223287"
+    },
+    {
+      "trace_id": "east-north-house-01",
+      "name": "북동 마을 남단 적갈색 지붕. X=0 경계에 걸치며 중심이 동쪽.",
+      "footprint": [
+        [
+          -3.4,
+          -157.8
+        ],
+        [
+          9.4,
+          -156.9
+        ],
+        [
+          8.4,
+          -146.1
+        ],
+        [
+          -4.3,
+          -147.1
+        ]
+      ],
+      "height": 4,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103817-223288.jpg"
+    },
+    {
+      "trace_id": "east-north-house-02",
+      "name": "길을 따라 비스듬하게 놓인 길고 밝은 지붕.",
+      "footprint": [
+        [
+          45.5,
+          -175
+        ],
+        [
+          55.3,
+          -173
+        ],
+        [
+          50.9,
+          -148.5
+        ],
+        [
+          41.1,
+          -151
+        ]
+      ],
+      "height": 4.2,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103817-223288.jpg"
+    },
+    {
+      "trace_id": "east-north-house-03",
+      "name": "",
+      "footprint": [
+        [
+          17.7,
+          -130.5
+        ],
+        [
+          34.3,
+          -125.1
+        ],
+        [
+          29.4,
+          -115.8
+        ],
+        [
+          14.2,
+          -120.7
+        ]
+      ],
+      "height": 4.2,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103818-223288.jpg"
+    },
+    {
+      "trace_id": "east-north-house-04",
+      "name": "",
+      "footprint": [
+        [
+          4.5,
+          -119.7
+        ],
+        [
+          20.6,
+          -113.3
+        ],
+        [
+          16.2,
+          -103.1
+        ],
+        [
+          -0.4,
+          -110.4
+        ]
+      ],
+      "height": 4,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103818-223288.jpg"
+    },
+    {
+      "trace_id": "east-north-house-05",
+      "name": "",
+      "footprint": [
+        [
+          35.3,
+          -112.4
+        ],
+        [
+          50.9,
+          -109.4
+        ],
+        [
+          49.5,
+          -98.2
+        ],
+        [
+          32.3,
+          -102.1
+        ]
+      ],
+      "height": 4.5,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103818-223288.jpg"
+    },
+    {
+      "trace_id": "east-north-house-06",
+      "name": "일부 청색 지붕 가장자리와 붙어 보이는 복합 지붕; 정밀 건물 경계 미확인.",
+      "footprint": [
+        [
+          -1.9,
+          -101.6
+        ],
+        [
+          11.8,
+          -99.2
+        ],
+        [
+          19.1,
+          -90.4
+        ],
+        [
+          9.4,
+          -83
+        ],
+        [
+          0.1,
+          -89.4
+        ]
+      ],
+      "height": 4,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103818-223288.jpg"
+    },
+    {
+      "trace_id": "east-field-building-01",
+      "name": "농지 서쪽 통행로 옆 청색 지붕의 꺾인 건물. 외곽은 근사치.",
+      "footprint": [
+        [
+          101.8,
+          -133.4
+        ],
+        [
+          120.9,
+          -124.6
+        ],
+        [
+          116,
+          -113.8
+        ],
+        [
+          107.2,
+          -117.7
+        ],
+        [
+          103.3,
+          -101.6
+        ],
+        [
+          109.6,
+          -98.2
+        ],
+        [
+          104.7,
+          -87.9
+        ],
+        [
+          94.5,
+          -92.3
+        ],
+        [
+          93.5,
+          -104.5
+        ]
+      ],
+      "height": 4.8,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103818-223289.jpg"
+    },
+    {
+      "trace_id": "east-field-building-02",
+      "name": "북동 도로 남쪽 작은 청록색 지붕.",
+      "footprint": [
+        [
+          250,
+          -129.5
+        ],
+        [
+          267.1,
+          -120.7
+        ],
+        [
+          262.7,
+          -113.3
+        ],
+        [
+          246.1,
+          -122.1
+        ]
+      ],
+      "height": 3.8,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103818-223290.jpg"
+    },
+    {
+      "trace_id": "south-street-building-01",
+      "name": "남쪽 도로 남측의 좁고 긴 회색 지붕.",
+      "footprint": [
+        [
+          2,
+          63.7
+        ],
+        [
+          13.3,
+          64.7
+        ],
+        [
+          9.8,
+          82.8
+        ],
+        [
+          -0.9,
+          81.8
+        ]
+      ],
+      "height": 4.2,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103819-223288.jpg"
+    },
+    {
+      "trace_id": "south-street-building-02",
+      "name": "",
+      "footprint": [
+        [
+          16.7,
+          66.6
+        ],
+        [
+          25,
+          67.1
+        ],
+        [
+          24,
+          78.4
+        ],
+        [
+          15.2,
+          77.4
+        ]
+      ],
+      "height": 4,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103819-223288.jpg"
+    },
+    {
+      "trace_id": "south-street-building-03",
+      "name": "",
+      "footprint": [
+        [
+          26.5,
+          68.1
+        ],
+        [
+          34.8,
+          69.1
+        ],
+        [
+          32.8,
+          83.3
+        ],
+        [
+          25,
+          82.3
+        ]
+      ],
+      "height": 4,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103819-223288.jpg"
+    },
+    {
+      "trace_id": "southeast-street-building-01",
+      "name": "",
+      "footprint": [
+        [
+          90.5,
+          33.4
+        ],
+        [
+          98.4,
+          33.9
+        ],
+        [
+          97.9,
+          46.6
+        ],
+        [
+          89.6,
+          45.6
+        ]
+      ],
+      "height": 4.2,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103819-223289.jpg"
+    },
+    {
+      "trace_id": "southeast-street-building-03",
+      "name": "",
+      "footprint": [
+        [
+          83.7,
+          58.8
+        ],
+        [
+          92,
+          59.3
+        ],
+        [
+          92,
+          65.7
+        ],
+        [
+          84.2,
+          66.2
+        ]
+      ],
+      "height": 3.2,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103819-223289.jpg"
+    },
+    {
+      "trace_id": "southeast-street-building-04",
+      "name": "",
+      "footprint": [
+        [
+          96.9,
+          56.9
+        ],
+        [
+          108.1,
+          58.8
+        ],
+        [
+          106.7,
+          70.1
+        ],
+        [
+          96.9,
+          69.1
+        ]
+      ],
+      "height": 4.2,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103819-223289.jpg"
+    },
+    {
+      "trace_id": "southeast-street-building-05",
+      "name": "",
+      "footprint": [
+        [
+          106.7,
+          44.1
+        ],
+        [
+          117.4,
+          42.2
+        ],
+        [
+          120.4,
+          56.4
+        ],
+        [
+          109.1,
+          58.8
+        ]
+      ],
+      "height": 4.5,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103819-223289.jpg"
+    },
+    {
+      "trace_id": "southeast-street-building-06",
+      "name": "",
+      "footprint": [
+        [
+          119.4,
+          42.2
+        ],
+        [
+          128.2,
+          40.2
+        ],
+        [
+          130.6,
+          50
+        ],
+        [
+          121.8,
+          52.9
+        ]
+      ],
+      "height": 3.5,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103819-223289.jpg"
+    },
+    {
+      "trace_id": "southeast-street-building-07",
+      "name": "",
+      "footprint": [
+        [
+          122.8,
+          53.4
+        ],
+        [
+          129.2,
+          52
+        ],
+        [
+          130.6,
+          61.7
+        ],
+        [
+          123.8,
+          62.7
+        ]
+      ],
+      "height": 3.5,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103819-223289.jpg"
+    },
+    {
+      "trace_id": "southeast-street-building-08",
+      "name": "",
+      "footprint": [
+        [
+          126.7,
+          62.7
+        ],
+        [
+          139.4,
+          63.2
+        ],
+        [
+          139.4,
+          71.5
+        ],
+        [
+          126.2,
+          71
+        ]
+      ],
+      "height": 4.2,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103819-223289.jpg"
+    },
+    {
+      "trace_id": "southeast-street-building-09",
+      "name": "",
+      "footprint": [
+        [
+          147.3,
+          55.9
+        ],
+        [
+          160,
+          56.4
+        ],
+        [
+          161.9,
+          63.7
+        ],
+        [
+          149.7,
+          66.6
+        ],
+        [
+          145.3,
+          62.7
+        ]
+      ],
+      "height": 4.3,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103819-223289.jpg"
+    },
+    {
+      "trace_id": "east-greenhouse-shed-01",
+      "name": "",
+      "footprint": [
+        [
+          247,
+          74.5
+        ],
+        [
+          256.8,
+          77.9
+        ],
+        [
+          252.4,
+          90.6
+        ],
+        [
+          243.6,
+          86.7
+        ]
+      ],
+      "height": 3.5,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103819-223290.jpg"
+    },
+    {
+      "trace_id": "east-northeast-warehouse-01",
+      "name": "북동쪽 큰 도로 아래 넓은 작업장에 놓인 긴 청록색 지붕.",
+      "footprint": [
+        [
+          108.1,
+          -201.9
+        ],
+        [
+          137.5,
+          -190.1
+        ],
+        [
+          131.6,
+          -176.9
+        ],
+        [
+          102.8,
+          -189.6
+        ]
+      ],
+      "height": 5,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103817-223289.jpg"
+    },
+    {
+      "trace_id": "east-northeast-shed-01",
+      "name": "담당 북쪽 경계 가까이의 작은 밝은 부속 지붕. 북서쪽에 더 큰 청록 지붕은 중심이 Z=-210 밖이라 생략.",
+      "footprint": [
+        [
+          78.8,
+          -198.4
+        ],
+        [
+          88.1,
+          -195.5
+        ],
+        [
+          86.1,
+          -189.6
+        ],
+        [
+          76.8,
+          -192.6
+        ]
+      ],
+      "height": 3.2,
+      "height_source": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "source": "2022-10-14 Esri/Vantor imagery: manually observed roof silhouette",
+      "source_tile": "esri-tile18-103817-223289.jpg"
+    }
+  ],
+  "limitations": [
+    "School boundary and two building footprints use OpenStreetMap coordinates.",
+    "Two-story brick facades, light window frames, round emblem, ivy, stone gate and barrel roof are photo-informed.",
+    "Heights, window counts, emblem placement, paths, individual trees, gate location and details are approximate.",
+    "Lawn, parking, south grove and southeast structures are visually traced from Esri World Imagery dated 2022-10-14, with roughly 5m or greater placement uncertainty; 2025/2026 photos inform appearance. Southeast building ownership and current changes are unverified.",
+    "The court and blue-roof structure are photo-informed without surveyed footprints. Matching the barrel roof to the west OSM building is an inference.",
+    "Flat terrain. The first-floor corridor, classroom, reading room and furniture are illustrative, not the real school interior. Upper floors remain exterior-only.",
+    "Neighborhood covers 570 x 440 m. Mapped building footprints take precedence over manually traced roof silhouettes; duplicate traces are recorded.",
+    "The satellite image date is 2022-10-14 with approximately 5 m source accuracy; hidden and low-contrast structures may be omitted. This is not a complete current survey or photogrammetric reconstruction.",
+    "Top Class apartment 10 floors, Jungang/Taeheung 5 floors and Namdo 4 floors are address-matched public listings. Their metre heights and all other neighborhood heights/window layouts are estimates.",
+    "Dasi station facade uses a photograph dated 2014-06-16; present-day condition is unverified. Railway alignments/platform outlines use OSM, gauge 1.435 m; rail elevation, catenary mast positions and utility poles are estimates.",
+    "Terrain remains flat; no measured elevation data. Road widths, parcel textures and individual vegetation are approximate. Agricultural covers are surfaces without building collisions.",
+    "School gate is aligned with the intersection of mapped entrance service road 592336461 and campus boundary; the photo-derived pier geometry and opening width are estimates."
+  ]
+}

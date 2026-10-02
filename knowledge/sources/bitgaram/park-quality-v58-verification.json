@@ -1,0 +1,14 @@
+{
+  "protected_meshes": 8370,
+  "protected_geometry_and_transforms_identical": true,
+  "paired_trees": 2422,
+  "paired_transforms_identical": true,
+  "embedded_images": 3,
+  "alpha_mode": "MASK",
+  "gzip_exact": true,
+  "glb_bytes": 27702036,
+  "gzip_bytes": 4614881,
+  "source": "outputs/palette-v51/bitgaram-park-color-v51.blend",
+  "candidate": "outputs/quality-v58/bitgaram-park-crowns-v58.blend",
+  "note": "Botanical spray atlas is an original procedural drawing, not a photograph. Individual tree species remain estimated."
+}

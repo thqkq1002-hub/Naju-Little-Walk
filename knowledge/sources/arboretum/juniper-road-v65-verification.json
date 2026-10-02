@@ -1,0 +1,12 @@
+{
+  "source": "outputs\\quality-v64\\naju-arboretum-juniper-avenue-v64.blend",
+  "revision": "outputs\\quality-v65\\naju-arboretum-juniper-road-v65.blend",
+  "protected_meshes": 15711,
+  "protected_geometry_matches_source": true,
+  "trimmed_overlapping_research_rows": 13,
+  "retained_all_object_transforms": true,
+  "clear_asphalt_probes": 900,
+  "walking_surface_matches_model": true,
+  "new_walking_floors": 3,
+  "other_world_state_unchanged": true
+}

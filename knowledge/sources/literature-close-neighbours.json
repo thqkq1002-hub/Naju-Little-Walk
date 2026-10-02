@@ -1,0 +1,443 @@
+{
+  "title": "문학관 정원 경계에 붙은 이웃 지붕 추가 관찰",
+  "recorded": "2026-09-08",
+  "coordinateOrder": "WGS84 [longitude,latitude] and existing city world [X,Z]",
+  "worldOrigin": [
+    126.7105,
+    35.0008
+  ],
+  "image": "work/yeongsanpo-satellite-preview.jpg",
+  "originalImage": "Temp/yeongsanpo-port-refs/esri-z19-reference.jpg",
+  "imageSize": [
+    1300,
+    1000
+  ],
+  "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+  "sourceBounds": [
+    126.70600891113281,
+    34.99794122085655,
+    126.71493530273438,
+    35.00356583976917
+  ],
+  "sourceExtent": {
+    "zoom": 19,
+    "tileXMin": 446673,
+    "tileYMin": 207663,
+    "tileXMax": 446685,
+    "tileYMax": 207672,
+    "width": 3328,
+    "height": 2560,
+    "bounds": [
+      126.70600891113281,
+      34.99794122085655,
+      126.71493530273438,
+      35.00356583976917
+    ],
+    "crs": "EPSG:3857 tiles, bounds EPSG:4326 lon/lat",
+    "northUp": true,
+    "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+    "usage": "Local visual reference only; do not redistribute source imagery or tiles."
+  },
+  "imageryCaptureDate": "unknown; not a current survey",
+  "method": "Reinspected a new original-resolution crop around preview pixels [960,600]-[1110,745], plus the existing museum crop. Only clearly visible roofs omitted from both previous sets are included.",
+  "usage": "Authored numerical observation data only. Source imagery and tiles are local reference and must not be redistributed. OSM roads/buildings and authored museum collision clearances take priority.",
+  "candidateCount": 5,
+  "roofCount": 5,
+  "roofs": [
+    {
+      "id": "literature_neighbour_north_green",
+      "pixelFootprint": [
+        [
+          974,
+          639
+        ],
+        [
+          984,
+          637
+        ],
+        [
+          985,
+          633
+        ],
+        [
+          1012,
+          628
+        ],
+        [
+          1020,
+          650
+        ],
+        [
+          992,
+          657
+        ],
+        [
+          991,
+          663
+        ],
+        [
+          978,
+          666
+        ]
+      ],
+      "footprint": [
+        [
+          126.71269684,
+          34.99997175
+        ],
+        [
+          126.7127655,
+          34.999983
+        ],
+        [
+          126.71277237,
+          35.0000055
+        ],
+        [
+          126.71295776,
+          35.00003362
+        ],
+        [
+          126.7130127,
+          34.99990988
+        ],
+        [
+          126.71282043,
+          34.99987051
+        ],
+        [
+          126.71281357,
+          34.99983676
+        ],
+        [
+          126.7127243,
+          34.99981989
+        ]
+      ],
+      "worldFootprint": [
+        [
+          200.323,
+          92.201
+        ],
+        [
+          206.584,
+          90.948
+        ],
+        [
+          207.211,
+          88.444
+        ],
+        [
+          224.116,
+          85.313
+        ],
+        [
+          229.126,
+          99.088
+        ],
+        [
+          211.593,
+          103.471
+        ],
+        [
+          210.968,
+          107.228
+        ],
+        [
+          202.827,
+          109.106
+        ]
+      ],
+      "height": 6,
+      "roofColor": "#74a58c",
+      "wallColor": "#bfb8aa",
+      "heightBasis": "Estimated context massing only, not measured. No exact floor count asserted.",
+      "facadeBasis": "Plain walls. No doors/signs/windows inferred from satellite.",
+      "observed": "Clear green flat roof immediately north-west of museum, including a lower-looking narrow west return. Connected roof sections have different apparent levels; 6m is only a simplified context height.",
+      "confidence": "medium: visible roof plane; wall lines and eaves unmeasured",
+      "reviewFlags": [],
+      "authoredMuseumProximityMetres": 14.18,
+      "integrationNote": "Neighbour roofs intentionally lie close to the authored museum. Compare actual model wall/roof envelope before applying; do not silently move the museum or fill its access gap."
+    },
+    {
+      "id": "literature_neighbour_east_long",
+      "pixelFootprint": [
+        [
+          1033,
+          639
+        ],
+        [
+          1046,
+          636
+        ],
+        [
+          1056,
+          679
+        ],
+        [
+          1043,
+          682
+        ]
+      ],
+      "footprint": [
+        [
+          126.71310196,
+          34.99997175
+        ],
+        [
+          126.71319122,
+          34.99998863
+        ],
+        [
+          126.71325989,
+          34.99974677
+        ],
+        [
+          126.71317062,
+          34.99972989
+        ]
+      ],
+      "worldFootprint": [
+        [
+          237.265,
+          92.201
+        ],
+        [
+          245.405,
+          90.322
+        ],
+        [
+          251.666,
+          117.246
+        ],
+        [
+          243.526,
+          119.125
+        ]
+      ],
+      "height": 5.2,
+      "roofColor": "#adb3ac",
+      "wallColor": "#bfb8aa",
+      "heightBasis": "Estimated context massing only, not measured. No exact floor count asserted.",
+      "facadeBasis": "Plain walls. No doors/signs/windows inferred from satellite.",
+      "observed": "Long narrow pale-grey roof east of museum, parallel to the main road. Keep the visible gap between this roof and museum; exact floor count unknown.",
+      "confidence": "medium: visible roof plane; wall lines and eaves unmeasured",
+      "reviewFlags": [],
+      "authoredMuseumProximityMetres": 24.28,
+      "integrationNote": "Neighbour roofs intentionally lie close to the authored museum. Compare actual model wall/roof envelope before applying; do not silently move the museum or fill its access gap."
+    },
+    {
+      "id": "literature_neighbour_southeast_brown",
+      "pixelFootprint": [
+        [
+          1041,
+          695
+        ],
+        [
+          1065,
+          690
+        ],
+        [
+          1068,
+          703
+        ],
+        [
+          1045,
+          708
+        ]
+      ],
+      "footprint": [
+        [
+          126.71315689,
+          34.99965677
+        ],
+        [
+          126.71332169,
+          34.99968489
+        ],
+        [
+          126.71334229,
+          34.99961177
+        ],
+        [
+          126.71318436,
+          34.99958365
+        ]
+      ],
+      "worldFootprint": [
+        [
+          242.274,
+          127.264
+        ],
+        [
+          257.302,
+          124.134
+        ],
+        [
+          259.18,
+          132.274
+        ],
+        [
+          244.779,
+          135.404
+        ]
+      ],
+      "height": 4.4,
+      "roofColor": "#82675f",
+      "wallColor": "#bfb8aa",
+      "heightBasis": "Estimated context massing only, not measured. No exact floor count asserted.",
+      "facadeBasis": "Plain walls. No doors/signs/windows inferred from satellite.",
+      "observed": "Clear brown rectangular roof east/southeast of garden, on the road frontage.",
+      "confidence": "medium: visible roof plane; wall lines and eaves unmeasured",
+      "reviewFlags": [],
+      "authoredMuseumProximityMetres": 37.4,
+      "integrationNote": "Neighbour roofs intentionally lie close to the authored museum. Compare actual model wall/roof envelope before applying; do not silently move the museum or fill its access gap."
+    },
+    {
+      "id": "literature_neighbour_southeast_blue",
+      "pixelFootprint": [
+        [
+          1046,
+          710
+        ],
+        [
+          1069,
+          705
+        ],
+        [
+          1072,
+          715
+        ],
+        [
+          1049,
+          720
+        ]
+      ],
+      "footprint": [
+        [
+          126.71319122,
+          34.9995724
+        ],
+        [
+          126.71334915,
+          34.99960052
+        ],
+        [
+          126.71336975,
+          34.99954428
+        ],
+        [
+          126.71321182,
+          34.99951615
+        ]
+      ],
+      "worldFootprint": [
+        [
+          245.405,
+          136.656
+        ],
+        [
+          259.806,
+          133.526
+        ],
+        [
+          261.684,
+          139.787
+        ],
+        [
+          247.283,
+          142.918
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#5d94b9",
+      "wallColor": "#bfb8aa",
+      "heightBasis": "Estimated context massing only, not measured. No exact floor count asserted.",
+      "facadeBasis": "Plain walls. No doors/signs/windows inferred from satellite.",
+      "observed": "Clear blue sheet roof immediately south of the brown neighbour. Roof sections may belong to one connected property; ownership unknown.",
+      "confidence": "medium: visible roof plane; wall lines and eaves unmeasured",
+      "reviewFlags": [],
+      "authoredMuseumProximityMetres": 44.79,
+      "integrationNote": "Neighbour roofs intentionally lie close to the authored museum. Compare actual model wall/roof envelope before applying; do not silently move the museum or fill its access gap."
+    },
+    {
+      "id": "literature_neighbour_garden_shed",
+      "pixelFootprint": [
+        [
+          1027,
+          724
+        ],
+        [
+          1038,
+          722
+        ],
+        [
+          1040,
+          731
+        ],
+        [
+          1028,
+          733
+        ]
+      ],
+      "footprint": [
+        [
+          126.71306076,
+          34.99949365
+        ],
+        [
+          126.71313629,
+          34.9995049
+        ],
+        [
+          126.71315002,
+          34.99945428
+        ],
+        [
+          126.71306763,
+          34.99944303
+        ]
+      ],
+      "worldFootprint": [
+        [
+          233.508,
+          145.423
+        ],
+        [
+          240.396,
+          144.171
+        ],
+        [
+          241.648,
+          149.806
+        ],
+        [
+          234.135,
+          151.058
+        ]
+      ],
+      "height": 2.7,
+      "roofColor": "#6d9fbd",
+      "wallColor": "#bfb8aa",
+      "heightBasis": "Estimated context massing only, not measured. No exact floor count asserted.",
+      "facadeBasis": "Plain walls. No doors/signs/windows inferred from satellite.",
+      "observed": "Small clearly blue-roofed structure at the garden southeast edge, west of street-front neighbours. Function unknown; do not label as a museum facility.",
+      "confidence": "medium: visible roof plane; wall lines and eaves unmeasured",
+      "reviewFlags": [],
+      "authoredMuseumProximityMetres": 43.04,
+      "integrationNote": "Neighbour roofs intentionally lie close to the authored museum. Compare actual model wall/roof envelope before applying; do not silently move the museum or fill its access gap."
+    }
+  ],
+  "surfaces": [],
+  "routes": [],
+  "validation": {
+    "existingRoofsCompared": 99,
+    "existingOrMuseumOverlaps": [],
+    "newRoofOverlaps": []
+  },
+  "integrationWarnings": [
+    "The authored museum GPS is near the observed roof north-west corner, rather than its roof centre. These close neighbours can therefore expose existing model georeferencing differences. Use model clearance review.",
+    "All heights and wall colours are inferred. The north roof has apparent stepped sections; the unified height is a massing simplification.",
+    "Do not add collision on the museum west lane or on the visible garden approach."
+  ]
+}

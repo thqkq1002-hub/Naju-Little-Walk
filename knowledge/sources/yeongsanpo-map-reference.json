@@ -1,0 +1,783 @@
+{
+  "title": "영산포 실외 제작용 지도·사진 관찰 자료",
+  "recorded": "2026-09-08",
+  "coordinateOrder": "WGS84 [longitude, latitude]",
+  "bounds": [
+    126.706,
+    34.998,
+    126.7148,
+    35.0036
+  ],
+  "sources": [
+    {
+      "kind": "map",
+      "url": "https://www.openstreetmap.org/relation/8318383",
+      "license": "OpenStreetMap contributors, ODbL",
+      "localSource": "area.osm",
+      "note": "The local FeatureCollection omitted untagged member ways. River bank is from member way/591627502."
+    },
+    {
+      "kind": "official tourism photos",
+      "url": "https://www.naju.go.kr/tour/sights/tour10",
+      "localSource": "naju-port.html"
+    },
+    {
+      "kind": "official tourism photos",
+      "url": "https://www.naju.go.kr/tour/recommend/experience/sailboat",
+      "localSource": "naju-boat.html"
+    },
+    {
+      "kind": "museum archive measurements",
+      "url": "https://archive.much.go.kr/data/01/folderView.do?jobdirSeq=1216",
+      "photoYear": 2018
+    },
+    {
+      "kind": "tourism article",
+      "url": "https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=cb2a8ef7-2ddb-4a23-9752-12a42c07d2cc",
+      "published": "2019-06",
+      "note": "Historic visitor information; do not reuse operating hours or prices as current."
+    }
+  ],
+  "river": {
+    "osmId": "way/591627502",
+    "parentRelation": "relation/8318383",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            126.706,
+            34.99920699336787
+          ],
+          [
+            126.7067099,
+            34.9993882
+          ],
+          [
+            126.7082729,
+            34.9996926
+          ],
+          [
+            126.7094168,
+            35.0000189
+          ],
+          [
+            126.7097591,
+            35.0001911
+          ],
+          [
+            126.7101332,
+            35.0005275
+          ],
+          [
+            126.7115749,
+            35.0014767
+          ],
+          [
+            126.7123323,
+            35.0020461
+          ],
+          [
+            126.7127314,
+            35.0025366
+          ],
+          [
+            126.7129785,
+            35.0023664
+          ],
+          [
+            126.7135956,
+            35.0021979
+          ],
+          [
+            126.7139777,
+            35.0019929
+          ],
+          [
+            126.7144153,
+            35.0018399
+          ],
+          [
+            126.7146344,
+            35.0017325
+          ],
+          [
+            126.7147593,
+            35.0018844
+          ],
+          [
+            126.7148,
+            35.00193389722456
+          ],
+          [
+            126.7148,
+            35.00205108203187
+          ],
+          [
+            126.7142443,
+            35.002208
+          ],
+          [
+            126.714183,
+            35.0023727
+          ],
+          [
+            126.714126,
+            35.002526
+          ],
+          [
+            126.7139408,
+            35.0025046
+          ],
+          [
+            126.7131776,
+            35.0027105
+          ],
+          [
+            126.713123,
+            35.0028778
+          ],
+          [
+            126.7134664,
+            35.0030238
+          ],
+          [
+            126.71417936049625,
+            35.0036
+          ],
+          [
+            126.71179047397383,
+            35.0036
+          ],
+          [
+            126.7108551,
+            35.0028709
+          ],
+          [
+            126.7103415,
+            35.0025557
+          ],
+          [
+            126.7097141,
+            35.0023738
+          ],
+          [
+            126.7087771,
+            35.0021081
+          ],
+          [
+            126.7087346,
+            35.0018153
+          ],
+          [
+            126.7075182,
+            35.0014743
+          ],
+          [
+            126.7065049,
+            35.0013425
+          ],
+          [
+            126.7060365,
+            35.0011641
+          ],
+          [
+            126.706,
+            35.00115881073509
+          ],
+          [
+            126.706,
+            34.99920699336787
+          ]
+        ]
+      ]
+    },
+    "method": "Original OSM outer-bank chain clipped to the model bounds. The open chain is closed at endpoints west of the model region before clipping; only the resulting boundary outside the requested map is artificial.",
+    "surveyAccuracy": "OSM approximation; water levels and reeds are seasonal."
+  },
+  "southBankLine": {
+    "osmId": "way/591627502",
+    "coordinates": [
+      [
+        126.7067099,
+        34.9993882
+      ],
+      [
+        126.7082729,
+        34.9996926
+      ],
+      [
+        126.7094168,
+        35.0000189
+      ],
+      [
+        126.7097591,
+        35.0001911
+      ],
+      [
+        126.7101332,
+        35.0005275
+      ],
+      [
+        126.7115749,
+        35.0014767
+      ],
+      [
+        126.7123323,
+        35.0020461
+      ],
+      [
+        126.7127314,
+        35.0025366
+      ]
+    ],
+    "note": "Ordered southwest to northeast, along the river side facing Hong-eo street. This is the water/vegetation edge, not the road centre or top of retaining wall."
+  },
+  "roads": [
+    {
+      "osmId": "way/729505193",
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "등대길",
+        "name:en": "Deungdae-gil",
+        "name:ko": "등대길",
+        "oneway": "no",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          126.7058031,
+          34.998788
+        ],
+        [
+          126.706416,
+          34.998926
+        ],
+        [
+          126.7065266,
+          34.9989509
+        ],
+        [
+          126.7072757,
+          34.9991328
+        ],
+        [
+          126.7078863,
+          34.9992715
+        ],
+        [
+          126.7083808,
+          34.9993994
+        ],
+        [
+          126.7099496,
+          34.9998506
+        ],
+        [
+          126.7100709,
+          34.9999063
+        ]
+      ]
+    },
+    {
+      "osmId": "way/729505189",
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "선창길",
+        "name:en": "Seonchang-gil",
+        "name:ko": "선창길",
+        "oneway": "no",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          126.7100709,
+          34.9999063
+        ],
+        [
+          126.7102139,
+          34.9999893
+        ],
+        [
+          126.7113952,
+          35.0009311
+        ],
+        [
+          126.7117212,
+          35.001126
+        ],
+        [
+          126.7119695,
+          35.0011846
+        ],
+        [
+          126.712207,
+          35.0012304
+        ],
+        [
+          126.7129968,
+          35.0013727
+        ]
+      ]
+    },
+    {
+      "osmId": "way/130634137",
+      "tags": {
+        "highway": "residential",
+        "name": "영산3길",
+        "name:en": "Yeongsan 3-gil",
+        "name:ko": "영산3길"
+      },
+      "coordinates": [
+        [
+          126.7101379,
+          34.9997477
+        ],
+        [
+          126.7114193,
+          35.0004849
+        ],
+        [
+          126.7116547,
+          35.0007905
+        ],
+        [
+          126.7123664,
+          35.0009112
+        ],
+        [
+          126.7130269,
+          35.0010315
+        ],
+        [
+          126.7131285,
+          35.00105
+        ],
+        [
+          126.7132286,
+          35.0010693
+        ],
+        [
+          126.7133388,
+          35.001085
+        ],
+        [
+          126.7136663,
+          35.0011379
+        ],
+        [
+          126.7143788,
+          35.0012676
+        ],
+        [
+          126.7146381,
+          35.0013115
+        ],
+        [
+          126.7149584,
+          35.0013537
+        ],
+        [
+          126.7150818,
+          35.0013753
+        ],
+        [
+          126.7151483,
+          35.0013882
+        ],
+        [
+          126.7152118,
+          35.0014255
+        ]
+      ]
+    },
+    {
+      "osmId": "way/130634066",
+      "tags": {
+        "highway": "residential",
+        "name": "영산2길",
+        "name:en": "Yeongsan 2-gil",
+        "name:ko": "영산2길"
+      },
+      "coordinates": [
+        [
+          126.7102086,
+          34.9995811
+        ],
+        [
+          126.711072,
+          34.9997433
+        ],
+        [
+          126.712587,
+          34.9999895
+        ],
+        [
+          126.7133681,
+          35.0000879
+        ]
+      ]
+    },
+    {
+      "osmId": "way/303738250",
+      "tags": {
+        "bicycle": "designated",
+        "bridge": "yes",
+        "bridge:name": "영산교",
+        "cycleway": "track",
+        "highway": "tertiary",
+        "lanes": "2",
+        "oneway": "no",
+        "oneway:bicycle": "no",
+        "review": "no",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          126.7100166,
+          35.0000068
+        ],
+        [
+          126.7096309,
+          35.0007862
+        ],
+        [
+          126.7091946,
+          35.0015963
+        ],
+        [
+          126.7083461,
+          35.0031825
+        ]
+      ]
+    },
+    {
+      "osmId": "way/320473144",
+      "tags": {
+        "bridge": "yes",
+        "bridge:name": "영산대교",
+        "bridge:name:ko": "영산대교",
+        "highway": "primary",
+        "lanes": "2",
+        "layer": "1",
+        "oneway": "no",
+        "ref": "13"
+      },
+      "coordinates": [
+        [
+          126.7129419,
+          35.0014853
+        ],
+        [
+          126.7112756,
+          35.0048159
+        ]
+      ]
+    },
+    {
+      "osmId": "way/68862718",
+      "tags": {
+        "highway": "primary",
+        "name": "예향로",
+        "name:en": "Yehyang-ro",
+        "name:ko": "예향로",
+        "ref": "13"
+      },
+      "coordinates": [
+        [
+          126.714073,
+          34.9948722
+        ],
+        [
+          126.7141276,
+          34.9949367
+        ],
+        [
+          126.7141983,
+          34.9950407
+        ],
+        [
+          126.7142364,
+          34.9951092
+        ],
+        [
+          126.714269,
+          34.99518
+        ],
+        [
+          126.7142987,
+          34.9952594
+        ],
+        [
+          126.7143115,
+          34.9953543
+        ],
+        [
+          126.7142712,
+          34.9957619
+        ],
+        [
+          126.7141451,
+          34.9963908
+        ],
+        [
+          126.7140463,
+          34.9968631
+        ],
+        [
+          126.7138718,
+          34.9978433
+        ],
+        [
+          126.7138009,
+          34.998178
+        ],
+        [
+          126.7136419,
+          34.9989283
+        ],
+        [
+          126.7136207,
+          34.9990279
+        ],
+        [
+          126.7135213,
+          34.9994438
+        ],
+        [
+          126.7133681,
+          35.0000879
+        ],
+        [
+          126.7133456,
+          35.0001785
+        ]
+      ]
+    },
+    {
+      "osmId": "way/1221055787",
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "예향로",
+        "name:en": "Yehyang-ro",
+        "name:ko": "예향로",
+        "ref": "13"
+      },
+      "coordinates": [
+        [
+          126.7133456,
+          35.0001785
+        ],
+        [
+          126.7131705,
+          35.0009352
+        ],
+        [
+          126.7131258,
+          35.0010931
+        ],
+        [
+          126.7130671,
+          35.0012371
+        ],
+        [
+          126.7130251,
+          35.0013185
+        ]
+      ]
+    },
+    {
+      "osmId": "way/1221055788",
+      "tags": {
+        "highway": "primary",
+        "name": "예향로",
+        "name:en": "Yehyang-ro",
+        "name:ko": "예향로",
+        "ref": "13"
+      },
+      "coordinates": [
+        [
+          126.7130251,
+          35.0013185
+        ],
+        [
+          126.7129968,
+          35.0013727
+        ],
+        [
+          126.7129652,
+          35.0014467
+        ],
+        [
+          126.7129419,
+          35.0014853
+        ]
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "landing-entry",
+      "name": "영산포 등대와 황포돛배 공식 관광 지도점",
+      "coordinates": [
+        126.709523986186,
+        34.9996677769553
+      ],
+      "basis": "Naju official page map marker; entry neighbourhood rather than exact mooring"
+    },
+    {
+      "id": "lighthouse",
+      "name": "영산포 자기수위표·등대",
+      "coordinates": [
+        126.7089297388,
+        34.9996157647
+      ],
+      "basis": "KTO location redistributed in saved lighthouse-ktourmap.html; consistent with same south-bank site on imagery",
+      "dimensionsMetres": {
+        "height": 8.65,
+        "areaSquareMetres": 6.1
+      },
+      "dimensionSource": "대한민국역사박물관 근현대사아카이브"
+    },
+    {
+      "id": "history-gallery",
+      "name": "영산포 역사갤러리",
+      "coordinates": [
+        126.71150385132393,
+        35.00072132227382
+      ],
+      "basis": "KTO map coordinates in saved gallery-ktourmap.html; independently verified by gallery research agent"
+    },
+    {
+      "id": "literature-museum",
+      "name": "타오르는 강 문학관",
+      "coordinates": [
+        126.7131349264,
+        34.9995047359
+      ],
+      "basis": "KTO map coordinates in saved literature-ktourmap.html; defer museum agent for exact facade placement"
+    },
+    {
+      "id": "hong-eo-street-start",
+      "name": "홍어거리 영산3길 서남쪽 입구",
+      "coordinates": [
+        126.7101379,
+        34.9997477
+      ],
+      "basis": "OSM road/130634137 start; photographic street cluster"
+    },
+    {
+      "id": "hong-eo-street",
+      "name": "영산포 홍어거리",
+      "coordinates": [
+        126.71078,
+        35.0001
+      ],
+      "basis": "Representative point on OSM 영산3길; street extends toward history gallery; not a single surveyed landmark"
+    }
+  ],
+  "placementWarnings": [
+    "boat-ktourmap.html pin [126.7074824191,35.0027033036] lies across the river near the sports park. Do not use it for the official south-bank lighthouse landing reconstruction.",
+    "The exact position and direction of a moored boat changes. Model the photographed mooring arrangement as an estimated scene placement.",
+    "Current official photos show a tiled-cabin Najuho and a larger brown vessel with two flat-roof cabins and blue/red flags. They do not show large yellow working sails raised.",
+    "Historical sail imagery can inform a separate illustrative vessel or mural, but must not be described as the exact present-day moored fleet.",
+    "Use the OSM bank for geographic arrangement, and official photos for deck height and retaining wall form; no exact surveyed elevation is available."
+  ],
+  "photoObservations": {
+    "landing": [
+      "The riverside road is elevated above a broad lower dark-brown timber deck, reached by a very wide stair with silver anti-slip strips and yellow landing strips.",
+      "The lighthouse stands against a near-vertical concrete retaining wall at the lower deck. Upper deck railings are silver metal horizontal rails; outer edges of stairs have brown railings.",
+      "The retaining wall has blue/turquoise and ochre maritime murals, with rhythmically spaced triangular buttresses. Make original stylised motifs instead of embedding copyrighted mural photography.",
+      "A narrow white/light-grey triangulated metal gangway runs down from the landing toward a floating charcoal rectangular ticket/waiting structure beside the tiled-cabin boat.",
+      "Lower deck edge contains black rubber fenders, cleats and mooring ropes; broad stair structures with triangular wooden side-cheeks bridge into the large tourist boat."
+    ],
+    "lighthouse": [
+      "White cylindrical concrete shaft supports a widening flared cone with radial supports, circular balcony and white slender metal railing.",
+      "Upper lantern room is short cylindrical white housing with small rectangular windows and shallow projecting circular cap; this is not a tall conical red-roof lighthouse.",
+      "Black-and-white water-gauge scale is on the shaft; low timber fence and a slim freestanding grey interpretation slab surround the bottom."
+    ],
+    "najuho": [
+      "Deep brown plank hull with slightly raised ends, open fore/aft seating, timber perimeter railing with two horizontal bars, side decks around a glazed central wooden cabin.",
+      "Cabin roof is grey tiled Korean hipped-gable form, sharply upturned eaves with cyan/blue ornamental end pieces.",
+      "Rectangular framed windows with green/blue reflected glazing; brown doors. Orange ring buoys on cabin sides.",
+      "Yellow fender ropes/bundles hang down from the hull in four or more locations. Red flag with yellow emblem and blue flag with yellow dragon appear at opposite ends.",
+      "Scale estimate from photo only: approximately 18-22 m long and 5-6 m broad; do not treat as a measured specification."
+    ],
+    "largeBoat": [
+      "Long deep brown hull with upturned ends, two separated low rectangular flat-roof timber cabins, turquoise/green windows, open deck and long perimeter seating.",
+      "Four tall silver-grey flag poles carry blue, white and red flags. There are orange/cream ring buoys, ropes and box-like wood deck fixtures.",
+      "Scale estimate from photo only: approximately 27-32 m long and 7-9 m broad; do not treat as a measured specification."
+    ],
+    "street": [
+      "The walk from the dock to the gallery passes the south end of Yeongsangyo. Cross from Deungdae-gil to the northeast-running Yeongsan 3-gil lane.",
+      "The riverfront is Seonchang-gil north of the shops; Yeongsan 3-gil runs through the narrow shop cluster approximately parallel, then bends northeast to the gallery.",
+      "Hong-eo storefronts are mostly low 1-2 storey masonry/plaster volumes, often blue or green roofs, red/blue/white large Korean signs and awnings; do not invent exact store identities where facade references are missing."
+    ]
+  },
+  "photoFiles": [
+    {
+      "url": "https://www.naju.go.kr/ybmodule.file/smartour/smartour_tour/1380x1/1762913772.jpg",
+      "file": "photos/naju-1762913772.jpg"
+    },
+    {
+      "url": "https://www.naju.go.kr/ybmodule.file/smartour/smartour_tour/1380x1/1762913778.jpg",
+      "file": "photos/naju-1762913778.jpg"
+    },
+    {
+      "url": "https://www.naju.go.kr/ybmodule.file/smartour/smartour_tour/1380x1/1762913785.jpg",
+      "file": "photos/naju-1762913785.jpg"
+    },
+    {
+      "url": "https://www.naju.go.kr/ybmodule.file/smartour/smartour_tour/1380x1/1762913790.jpg",
+      "file": "photos/naju-1762913790.jpg"
+    },
+    {
+      "url": "https://www.naju.go.kr/ybmodule.file/smartour/smartour_tour/1380x1/1762913794.jpg",
+      "file": "photos/naju-1762913794.jpg"
+    },
+    {
+      "url": "https://www.naju.go.kr/ybmodule.file/smartour/smartour_tour/1380x1/1762913799.jpg",
+      "file": "photos/naju-1762913799.jpg"
+    },
+    {
+      "url": "https://www.naju.go.kr/contents/2362/sailboat1.jpg",
+      "file": "photos/naju-sailboat1.jpg"
+    },
+    {
+      "url": "https://www.naju.go.kr/contents/2362/sailboat2.jpg",
+      "file": "photos/naju-sailboat2.jpg"
+    },
+    {
+      "url": "https://www.naju.go.kr/contents/2362/sailboat3.jpg",
+      "file": "photos/naju-sailboat3.jpg"
+    },
+    {
+      "url": "https://www.naju.go.kr/contents/2362/sailboat4.jpg",
+      "file": "photos/naju-sailboat4.jpg"
+    },
+    {
+      "url": "https://www.naju.go.kr/contents/2362/sailboat5.jpg",
+      "file": "photos/naju-sailboat5.jpg"
+    },
+    {
+      "url": "https://tong.visitkorea.or.kr/cms/resource/83/4103983_image2_1.jpg",
+      "file": "photos/boat-4103983_image2_1.jpg"
+    },
+    {
+      "url": "https://tong.visitkorea.or.kr/cms/resource/04/3534204_image2_1.jpg",
+      "file": "photos/lighthouse-3534204_image2_1.jpg"
+    },
+    {
+      "url": "https://tong.visitkorea.or.kr/cms/resource/91/3014591_image2_1.jpg",
+      "file": "photos/gallery-3014591_image2_1.jpg"
+    },
+    {
+      "url": "https://tong.visitkorea.or.kr/cms/resource/37/3562237_image2_1.jpg",
+      "file": "photos/literature-3562237_image2_1.jpg"
+    }
+  ]
+}

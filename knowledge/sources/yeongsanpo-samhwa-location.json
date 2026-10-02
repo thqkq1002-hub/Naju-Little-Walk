@@ -1,0 +1,94 @@
+{
+  "title": "삼화홍어 제공 좌표와 기존 OSM 지붕 연결",
+  "recorded": "2026-09-08",
+  "providedName": "삼화홍어 / 삼화상회",
+  "providedAddress": "영산포로 204",
+  "providedPoint": [
+    126.710368482031,
+    34.9995336864071
+  ],
+  "providedPointWorld": [
+    -11.993,
+    140.966
+  ],
+  "providedPointPixel": [
+    634.9085297435522,
+    716.882807656657
+  ],
+  "pointSourceBasis": "Third-party building address JSON-LD: https://zippoom.com/review/QoX9k-j9bfCwKxfZXM3HDB ; building number 204 visually matched to KTO photos 3346413 and 3346416. Not a KTO coordinate or survey.",
+  "existingBuildingId": "way/1000416564",
+  "footprint": [
+    [
+      126.7103171,
+      34.9994698
+    ],
+    [
+      126.7102834,
+      34.9995821
+    ],
+    [
+      126.7104611,
+      34.999618
+    ],
+    [
+      126.7104905,
+      34.9995049
+    ],
+    [
+      126.7103171,
+      34.9994698
+    ]
+  ],
+  "worldFootprint": [
+    [
+      -16.678,
+      148.078
+    ],
+    [
+      -19.751,
+      135.577
+    ],
+    [
+      -3.547,
+      131.58
+    ],
+    [
+      -0.866,
+      144.171
+    ],
+    [
+      -16.678,
+      148.078
+    ]
+  ],
+  "pixelFootprint": [
+    [
+      627.4254791089334,
+      728.2409868872492
+    ],
+    [
+      622.5175608880818,
+      708.2754893286619
+    ],
+    [
+      648.3969991095364,
+      701.892924666754
+    ],
+    [
+      652.6786844420712,
+      722.0006606745301
+    ],
+    [
+      627.4254791089334,
+      728.2409868872492
+    ]
+  ],
+  "footprintSource": "OpenStreetMap existing feature in knowledge/sources/yeongsanpo-osm.geojson; retain OSM attribution and ODbL notice",
+  "action": "associate a detailed storefront with existing OSM building; do not add a duplicate context roof",
+  "observation": "The provided point lies inside the existing OSM building polygon. Original-resolution imagery shows a distinct broad pale grey/white rectangular roof at this location. The satellite image alone does not verify the name, address, storey count or facade details.",
+  "confidence": "high for point inside existing polygon; medium for satellite roof-to-building alignment; storefront identity depends on the independently supplied KTO evidence",
+  "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+  "captureDate": "unknown",
+  "image": "Temp/yeongsanpo-port-refs/esri-z19-reference.jpg",
+  "verificationImage": "Temp/yeongsanpo-round2-refs/samhwa-existing-roof-review.png"
+}

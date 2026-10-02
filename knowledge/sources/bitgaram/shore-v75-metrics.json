@@ -1,0 +1,25 @@
+{
+  "before": {
+    "glb_bytes": 22458728,
+    "gzip_bytes": 4909078,
+    "shared_geometry_triangles": 308946,
+    "mesh_count": 4650
+  },
+  "after": {
+    "glb_bytes": 13647460,
+    "gzip_bytes": 3408331,
+    "shared_geometry_triangles": 161497,
+    "mesh_count": 4542,
+    "image_count": 6
+  },
+  "protected_meshes": 10903,
+  "water_meshes_unchanged": [
+    "lake_osm_334275809",
+    "lake_osm_534052766",
+    "lake_osm_1080671721",
+    "lake_osm_1080671722"
+  ],
+  "world_unchanged": true,
+  "visual_context_only": true,
+  "gzip_exact": true
+}

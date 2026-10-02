@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (244683 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="34.9952000" minlon="126.6558000" maxlat="34.9970000" maxlon="126.6583000"/>
+ <node id="4631199018" visible="true" version="2" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9955749" lon="126.6547229"/>
+ <node id="4655075939" visible="true" version="2" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9964101" lon="126.6568456"/>
+ <node id="4655075940" visible="true" version="2" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9963987" lon="126.6573969"/>
+ <node id="4655075941" visible="true" version="2" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9959741" lon="126.6573871"/>
+ <node id="4655075942" visible="true" version="2" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9956991" lon="126.6572093"/>
+ <node id="4655075943" visible="true" version="2" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9956806" lon="126.6566690"/>
+ <node id="4655123036" visible="true" version="1" changeset="45735947" timestamp="2017-02-02T05:32:22Z" user="PLAN 31" uid="5244470" lat="34.9958496" lon="126.6549418"/>
+ <node id="4655123037" visible="true" version="1" changeset="45735947" timestamp="2017-02-02T05:32:22Z" user="PLAN 31" uid="5244470" lat="34.9963454" lon="126.6567001"/>
+ <node id="4655123038" visible="true" version="1" changeset="45735947" timestamp="2017-02-02T05:32:22Z" user="PLAN 31" uid="5244470" lat="34.9958624" lon="126.6567106"/>
+ <node id="4655123039" visible="true" version="1" changeset="45735947" timestamp="2017-02-02T05:32:22Z" user="PLAN 31" uid="5244470" lat="34.9951401" lon="126.6557401"/>
+ <node id="4655123040" visible="true" version="1" changeset="45735947" timestamp="2017-02-02T05:32:22Z" user="PLAN 31" uid="5244470" lat="34.9955119" lon="126.6550513"/>
+ <node id="9980933876" visible="true" version="2" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9942426" lon="126.6570627"/>
+ <node id="10656646686" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9957078" lon="126.6544428"/>
+ <node id="10656646687" visible="true" version="2" changeset="140642012" timestamp="2023-08-31T15:42:53Z" user="PLAN 31" uid="5244470" lat="34.9958096" lon="126.6545234"/>
+ <node id="10656646688" visible="true" version="2" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9959707" lon="126.6550203"/>
+ <node id="10656646689" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9962161" lon="126.6556231"/>
+ <node id="10656646690" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9963017" lon="126.6558726"/>
+ <node id="10656646691" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9963852" lon="126.6561595"/>
+ <node id="10656646692" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9964556" lon="126.6564841"/>
+ <node id="10656646693" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9965698" lon="126.6570661"/>
+ <node id="10656646694" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9965984" lon="126.6571546"/>
+ <node id="10656646695" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9966401" lon="126.6572056"/>
+ <node id="10656646696" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9970664" lon="126.6575918"/>
+ <node id="10656646697" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9972531" lon="126.6577152"/>
+ <node id="10656646698" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9974026" lon="126.6578037"/>
+ <node id="10656646699" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9975410" lon="126.6578681"/>
+ <node id="10656646700" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9975915" lon="126.6578815"/>
+ <node id="10656646701" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9976574" lon="126.6578601"/>
+ <node id="10656646702" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9977190" lon="126.6578493"/>
+ <node id="10656646703" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9977959" lon="126.6578493"/>
+ <node id="10656646704" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9979013" lon="126.6578681"/>
+ <node id="10656646705" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9981364" lon="126.6579244"/>
+ <node id="10656646706" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9982287" lon="126.6579137"/>
+ <node id="10656646707" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9985231" lon="126.6578654"/>
+ <node id="10656646708" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9985956" lon="126.6578762"/>
+ <node id="10656646709" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9986813" lon="126.6579057"/>
+ <node id="10656646710" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9989208" lon="126.6580156"/>
+ <node id="10656646715" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9972321" lon="126.6571442"/>
+ <node id="10656646716" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9975133" lon="126.6569124"/>
+ <node id="10656646717" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9972089" lon="126.6571866"/>
+ <node id="10656646718" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9971712" lon="126.6572273"/>
+ <node id="10656646719" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9971233" lon="126.6572539"/>
+ <node id="10656646720" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9970610" lon="126.6572698"/>
+ <node id="10656646721" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9970306" lon="126.6572663"/>
+ <node id="10656646722" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9969885" lon="126.6572433"/>
+ <node id="10656646723" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9969552" lon="126.6571990"/>
+ <node id="10656646724" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9969204" lon="126.6571336"/>
+ <node id="10656646725" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9967061" lon="126.6572654"/>
+ <node id="10656646726" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9969421" lon="126.6570999"/>
+ <node id="10656646727" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9969784" lon="126.6570628"/>
+ <node id="10656646728" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9971610" lon="126.6569354"/>
+ <node id="10656646779" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9963473" lon="126.6560292"/>
+ <node id="10656646798" visible="true" version="2" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9961158" lon="126.6553907"/>
+ <node id="10656646831" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9959411" lon="126.6567394"/>
+ <node id="10656646832" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9959660" lon="126.6559968"/>
+ <node id="10656646833" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9959545" lon="126.6558941"/>
+ <node id="10656646834" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199" lat="34.9959296" lon="126.6557820"/>
+ <node id="11159252930" visible="true" version="1" changeset="140642012" timestamp="2023-08-31T15:42:53Z" user="PLAN 31" uid="5244470" lat="34.9943532" lon="126.6570991"/>
+ <node id="11159252931" visible="true" version="1" changeset="140642012" timestamp="2023-08-31T15:42:53Z" user="PLAN 31" uid="5244470" lat="34.9945114" lon="126.6571045"/>
+ <node id="11159252932" visible="true" version="1" changeset="140642012" timestamp="2023-08-31T15:42:53Z" user="PLAN 31" uid="5244470" lat="34.9947927" lon="126.6570026"/>
+ <node id="11159252933" visible="true" version="1" changeset="140642012" timestamp="2023-08-31T15:42:53Z" user="PLAN 31" uid="5244470" lat="34.9949509" lon="126.6570938"/>
+ <node id="11159252934" visible="true" version="1" changeset="140642012" timestamp="2023-08-31T15:42:53Z" user="PLAN 31" uid="5244470" lat="34.9951003" lon="126.6570562"/>
+ <node id="11159252935" visible="true" version="1" changeset="140642012" timestamp="2023-08-31T15:42:53Z" user="PLAN 31" uid="5244470" lat="34.9954475" lon="126.6571903"/>
+ <node id="11212391344" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9957962" lon="126.6566598"/>
+ <node id="11212391345" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9958099" lon="126.6568281"/>
+ <node id="11212391372" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9963528" lon="126.6560480"/>
+ <node id="11212391373" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9964312" lon="126.6559970"/>
+ <node id="11212391374" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9965119" lon="126.6559370"/>
+ <node id="11212391375" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9966487" lon="126.6558514"/>
+ <node id="11212391376" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9967680" lon="126.6558064"/>
+ <node id="11212391377" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9968435" lon="126.6557871"/>
+ <node id="11212391378" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9969856" lon="126.6557400"/>
+ <node id="11212391379" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9970575" lon="126.6557336"/>
+ <node id="11212391380" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9971435" lon="126.6556907"/>
+ <node id="11212391381" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9972645" lon="126.6556265"/>
+ <node id="11212391382" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9973277" lon="126.6558192"/>
+ <node id="11212391383" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9973856" lon="126.6560291"/>
+ <node id="11212391384" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9974382" lon="126.6562133"/>
+ <node id="11212391385" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9974943" lon="126.6563739"/>
+ <node id="11212391386" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9975434" lon="126.6564938"/>
+ <node id="11212391393" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9962328" lon="126.6556718"/>
+ <node id="11212391395" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9960668" lon="126.6552654"/>
+ <node id="11212391400" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199" lat="34.9970313" lon="126.6557359"/>
+ <way id="471352007" visible="true" version="2" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199">
+  <nd ref="4655075939"/>
+  <nd ref="4655075940"/>
+  <nd ref="4655075941"/>
+  <nd ref="4655075942"/>
+  <nd ref="4655075943"/>
+  <nd ref="11212391344"/>
+  <nd ref="11212391345"/>
+  <nd ref="4655075939"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="고분전시관"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+ <way id="471353314" visible="true" version="2" changeset="140642587" timestamp="2023-08-31T15:54:34Z" user="PLAN 31" uid="5244470">
+  <nd ref="4655123036"/>
+  <nd ref="4655123037"/>
+  <nd ref="4655123038"/>
+  <nd ref="4655123039"/>
+  <nd ref="4655123040"/>
+  <nd ref="4655123036"/>
+  <tag k="amenity" v="parking"/>
+  <tag k="name" v="주차장"/>
+ </way>
+ <way id="1145003241" visible="true" version="2" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199">
+  <nd ref="10656646686"/>
+  <nd ref="10656646687"/>
+  <nd ref="10656646688"/>
+  <nd ref="11212391395"/>
+  <nd ref="10656646798"/>
+  <nd ref="10656646689"/>
+  <nd ref="11212391393"/>
+  <nd ref="10656646690"/>
+  <nd ref="10656646779"/>
+  <nd ref="11212391372"/>
+  <nd ref="10656646691"/>
+  <nd ref="10656646692"/>
+  <nd ref="10656646693"/>
+  <nd ref="10656646694"/>
+  <nd ref="10656646695"/>
+  <nd ref="10656646725"/>
+  <nd ref="10656646696"/>
+  <nd ref="10656646697"/>
+  <nd ref="10656646698"/>
+  <nd ref="10656646699"/>
+  <nd ref="10656646700"/>
+  <nd ref="10656646701"/>
+  <nd ref="10656646702"/>
+  <nd ref="10656646703"/>
+  <nd ref="10656646704"/>
+  <nd ref="10656646705"/>
+  <nd ref="10656646706"/>
+  <nd ref="10656646707"/>
+  <nd ref="10656646708"/>
+  <nd ref="10656646709"/>
+  <nd ref="10656646710"/>
+  <tag k="highway" v="residential"/>
+ </way>
+ <way id="1145003243" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199">
+  <nd ref="10656646716"/>
+  <nd ref="10656646715"/>
+  <nd ref="10656646717"/>
+  <nd ref="10656646718"/>
+  <nd ref="10656646719"/>
+  <nd ref="10656646720"/>
+  <nd ref="10656646721"/>
+  <nd ref="10656646722"/>
+  <nd ref="10656646723"/>
+  <nd ref="10656646724"/>
+  <tag k="highway" v="service"/>
+ </way>
+ <way id="1145003244" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199">
+  <nd ref="10656646725"/>
+  <nd ref="10656646724"/>
+  <nd ref="10656646726"/>
+  <nd ref="10656646727"/>
+  <nd ref="10656646728"/>
+  <tag k="highway" v="service"/>
+ </way>
+ <way id="1145003254" visible="true" version="1" changeset="132516541" timestamp="2023-02-14T03:23:56Z" user="FUKUTAN" uid="5207199">
+  <nd ref="10656646831"/>
+  <nd ref="10656646832"/>
+  <nd ref="10656646833"/>
+  <nd ref="10656646834"/>
+  <nd ref="4631199018"/>
+  <tag k="highway" v="service"/>
+  <tag k="service" v="parking_aisle"/>
+ </way>
+ <way id="1203968488" visible="true" version="1" changeset="140642012" timestamp="2023-08-31T15:42:53Z" user="PLAN 31" uid="5244470">
+  <nd ref="9980933876"/>
+  <nd ref="11159252930"/>
+  <nd ref="11159252931"/>
+  <nd ref="11159252932"/>
+  <nd ref="11159252933"/>
+  <nd ref="11159252934"/>
+  <nd ref="11159252935"/>
+  <tag k="highway" v="unclassified"/>
+ </way>
+ <way id="1210289539" visible="true" version="1" changeset="141646428" timestamp="2023-09-23T13:56:28Z" user="FUKUTAN" uid="5207199">
+  <nd ref="11212391372"/>
+  <nd ref="11212391373"/>
+  <nd ref="11212391374"/>
+  <nd ref="11212391375"/>
+  <nd ref="11212391376"/>
+  <nd ref="11212391377"/>
+  <nd ref="11212391378"/>
+  <nd ref="11212391400"/>
+  <nd ref="11212391379"/>
+  <nd ref="11212391380"/>
+  <nd ref="11212391381"/>
+  <nd ref="11212391382"/>
+  <nd ref="11212391383"/>
+  <nd ref="11212391384"/>
+  <nd ref="11212391385"/>
+  <nd ref="11212391386"/>
+  <tag k="highway" v="service"/>
+ </way>
+</osm>

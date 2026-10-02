@@ -1,0 +1,13 @@
+{
+  "site_version": 61,
+  "project_id": "appgprj_6a9ec6467ab88191b8aa7ee65f066fd1",
+  "version_id": "appgprj_6a9ec6467ab88191b8aa7ee65f066fd1~appgver_a1b99c4fc40881919fd6840c1454281c",
+  "source_commit": "7fb74021d87183fde7574665c327c8132e233c89",
+  "deployment_id": "appgdep_6abe50e0348c8191903275963c193520",
+  "status": "succeeded",
+  "url": "https://naju-little-walk.reinhardt5559.chatgpt.site",
+  "tests_passed": 85,
+  "typescript": "passed",
+  "build": "passed",
+  "android_hardware_verified": false
+}

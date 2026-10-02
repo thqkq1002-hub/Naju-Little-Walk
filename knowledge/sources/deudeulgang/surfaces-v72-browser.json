@@ -1,0 +1,21 @@
+{
+  "view": "pine-path",
+  "checks": [
+    {
+      "width": 1024,
+      "height": 768,
+      "brandHeight": 60.8,
+      "gapAboveLocationButton": 7.2,
+      "topbarOverlap": false
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "brandHeight": 54.5,
+      "gapAboveLocationButton": 2.5,
+      "topbarOverlap": false
+    }
+  ],
+  "console": [],
+  "scope": "In-app desktop browser with verified DOM viewport sizes, not real Android tablet testing."
+}

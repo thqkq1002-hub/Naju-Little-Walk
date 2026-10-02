@@ -1,0 +1,383 @@
+{
+  "source": "Esri World Imagery export, retrieval 2026-09-16, acquisition date unverified",
+  "traces": [
+    {
+      "name": "traced_building_visitor",
+      "pixels": [
+        [
+          351,
+          451
+        ],
+        [
+          389,
+          459
+        ],
+        [
+          368,
+          532
+        ],
+        [
+          337,
+          521
+        ]
+      ],
+      "height_estimate": 4.5
+    },
+    {
+      "name": "traced_building_research",
+      "pixels": [
+        [
+          1260,
+          776
+        ],
+        [
+          1313,
+          799
+        ],
+        [
+          1300,
+          862
+        ],
+        [
+          1241,
+          839
+        ]
+      ],
+      "height_estimate": 8
+    },
+    {
+      "name": "traced_building_office",
+      "pixels": [
+        [
+          1221,
+          682
+        ],
+        [
+          1251,
+          689
+        ],
+        [
+          1237,
+          758
+        ],
+        [
+          1206,
+          751
+        ]
+      ],
+      "height_estimate": 5
+    },
+    {
+      "name": "traced_building_nursery_office",
+      "pixels": [
+        [
+          1222,
+          899
+        ],
+        [
+          1253,
+          908
+        ],
+        [
+          1237,
+          965
+        ],
+        [
+          1207,
+          957
+        ]
+      ],
+      "height_estimate": 4
+    },
+    {
+      "name": "traced_greenhouse_0",
+      "pixels": [
+        [
+          1039,
+          271
+        ],
+        [
+          1058,
+          276
+        ],
+        [
+          1039,
+          368
+        ],
+        [
+          1021,
+          363
+        ]
+      ],
+      "height_estimate": 3.5
+    },
+    {
+      "name": "traced_greenhouse_1",
+      "pixels": [
+        [
+          796,
+          767
+        ],
+        [
+          821,
+          774
+        ],
+        [
+          801,
+          858
+        ],
+        [
+          779,
+          852
+        ]
+      ],
+      "height_estimate": 3.5
+    },
+    {
+      "name": "traced_greenhouse_2",
+      "pixels": [
+        [
+          752,
+          904
+        ],
+        [
+          792,
+          913
+        ],
+        [
+          774,
+          977
+        ],
+        [
+          736,
+          969
+        ]
+      ],
+      "height_estimate": 3.5
+    },
+    {
+      "name": "traced_greenhouse_3",
+      "pixels": [
+        [
+          1164,
+          879
+        ],
+        [
+          1200,
+          888
+        ],
+        [
+          1180,
+          962
+        ],
+        [
+          1144,
+          951
+        ]
+      ],
+      "height_estimate": 3.5
+    },
+    {
+      "name": "traced_research_plot_0",
+      "pixels": [
+        [
+          822,
+          373
+        ],
+        [
+          949,
+          410
+        ],
+        [
+          917,
+          511
+        ],
+        [
+          793,
+          476
+        ]
+      ],
+      "height_estimate": 0.012
+    },
+    {
+      "name": "traced_research_plot_1",
+      "pixels": [
+        [
+          951,
+          414
+        ],
+        [
+          1138,
+          463
+        ],
+        [
+          1107,
+          566
+        ],
+        [
+          920,
+          515
+        ]
+      ],
+      "height_estimate": 0.012
+    },
+    {
+      "name": "traced_research_plot_2",
+      "pixels": [
+        [
+          651,
+          135
+        ],
+        [
+          765,
+          159
+        ],
+        [
+          751,
+          219
+        ],
+        [
+          636,
+          191
+        ]
+      ],
+      "height_estimate": 0.012
+    },
+    {
+      "name": "traced_research_plot_3",
+      "pixels": [
+        [
+          668,
+          282
+        ],
+        [
+          826,
+          321
+        ],
+        [
+          793,
+          380
+        ],
+        [
+          650,
+          344
+        ]
+      ],
+      "height_estimate": 0.012
+    },
+    {
+      "name": "garden_curved_walk",
+      "pixels": [
+        [
+          475,
+          394
+        ],
+        [
+          512,
+          422
+        ],
+        [
+          555,
+          432
+        ],
+        [
+          605,
+          413
+        ],
+        [
+          645,
+          383
+        ],
+        [
+          641,
+          352
+        ],
+        [
+          619,
+          328
+        ],
+        [
+          593,
+          326
+        ],
+        [
+          572,
+          343
+        ],
+        [
+          567,
+          374
+        ],
+        [
+          586,
+          397
+        ]
+      ],
+      "width_estimate": 2.3
+    },
+    {
+      "name": "garden_outer_walk",
+      "pixels": [
+        [
+          485,
+          432
+        ],
+        [
+          557,
+          455
+        ],
+        [
+          658,
+          483
+        ],
+        [
+          719,
+          493
+        ],
+        [
+          753,
+          470
+        ],
+        [
+          776,
+          410
+        ],
+        [
+          770,
+          369
+        ],
+        [
+          750,
+          350
+        ],
+        [
+          722,
+          358
+        ],
+        [
+          700,
+          389
+        ],
+        [
+          687,
+          449
+        ]
+      ],
+      "width_estimate": 2.2
+    },
+    {
+      "name": "garden_connection",
+      "pixels": [
+        [
+          627,
+          288
+        ],
+        [
+          621,
+          328
+        ]
+      ],
+      "width_estimate": 2
+    }
+  ]
+}

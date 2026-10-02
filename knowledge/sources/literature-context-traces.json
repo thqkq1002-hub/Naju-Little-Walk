@@ -1,0 +1,3505 @@
+{
+  "title": "문학관 주변 남안 추가 지붕·공간 관찰",
+  "recorded": "2026-09-08",
+  "coordinateOrder": "WGS84 [longitude,latitude] and existing city world [X,Z]",
+  "worldOrigin": [
+    126.7105,
+    35.0008
+  ],
+  "image": "work/yeongsanpo-satellite-preview.jpg",
+  "originalImage": "Temp/yeongsanpo-port-refs/esri-z19-reference.jpg",
+  "imageSize": [
+    1300,
+    1000
+  ],
+  "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+  "sourceBounds": [
+    126.70600891113281,
+    34.99794122085655,
+    126.71493530273438,
+    35.00356583976917
+  ],
+  "sourceExtent": {
+    "zoom": 19,
+    "tileXMin": 446673,
+    "tileYMin": 207663,
+    "tileXMax": 446685,
+    "tileYMax": 207672,
+    "width": 3328,
+    "height": 2560,
+    "bounds": [
+      126.70600891113281,
+      34.99794122085655,
+      126.71493530273438,
+      35.00356583976917
+    ],
+    "crs": "EPSG:3857 tiles, bounds EPSG:4326 lon/lat",
+    "northUp": true,
+    "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+    "usage": "Local visual reference only; do not redistribute source imagery or tiles."
+  },
+  "imageryCaptureDate": "unknown; not a current survey",
+  "method": "Manually inspected the full Esri image and original-resolution crops. All pixel coordinates refer to the 1300x1000 preview; WGS84 uses exact original Web Mercator tile extent.",
+  "usage": "Authored numerical observation data only. Source imagery and tiles are local reference and must not be redistributed. OSM roads/buildings and authored museum collision clearances take priority.",
+  "observations": [
+    "The broad unmodelled land south/southwest of the museum is predominantly a dense low-rise neighbourhood, with narrow lanes and small planted plots, not a broad empty meadow.",
+    "A pale paved parking area lies west of the north-south museum lane.",
+    "The museum open garden extends south/southwest; separate surrounding roofs border the north and south edges.",
+    "The supplied museum GPS lies near the roof north-west edge on this image, not its apparent roof centre. Preserve the authored building unless explicitly correcting georeferencing.",
+    "Roof outlines include visual eaves/parallax. Every height, wall material and surface colour is inferred, not surveyed."
+  ],
+  "candidateCount": 38,
+  "roofCount": 33,
+  "roofs": [
+    {
+      "id": "context_01",
+      "pixelFootprint": [
+        [
+          869,
+          653
+        ],
+        [
+          895,
+          648
+        ],
+        [
+          901,
+          670
+        ],
+        [
+          875,
+          676
+        ]
+      ],
+      "footprint": [
+        [
+          126.71197586,
+          34.99989301
+        ],
+        [
+          126.71215439,
+          34.99992113
+        ],
+        [
+          126.71219559,
+          34.99979739
+        ],
+        [
+          126.71201706,
+          34.99976364
+        ]
+      ],
+      "worldFootprint": [
+        [
+          134.579,
+          100.966
+        ],
+        [
+          150.859,
+          97.836
+        ],
+        [
+          154.616,
+          111.611
+        ],
+        [
+          138.336,
+          115.368
+        ]
+      ],
+      "height": 4.5,
+      "roofColor": "#555e58",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [
+        "near mapped road way/130634066; inspect before use"
+      ],
+      "areaSquareMetres": 242.3
+    },
+    {
+      "id": "context_02",
+      "pixelFootprint": [
+        [
+          901,
+          651
+        ],
+        [
+          920,
+          647
+        ],
+        [
+          928,
+          677
+        ],
+        [
+          909,
+          682
+        ]
+      ],
+      "footprint": [
+        [
+          126.71219559,
+          34.99990426
+        ],
+        [
+          126.71232605,
+          34.99992676
+        ],
+        [
+          126.71238098,
+          34.99975802
+        ],
+        [
+          126.71225052,
+          34.99972989
+        ]
+      ],
+      "worldFootprint": [
+        [
+          154.616,
+          99.714
+        ],
+        [
+          166.512,
+          97.209
+        ],
+        [
+          171.521,
+          115.993
+        ],
+        [
+          159.625,
+          119.125
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#a6b2b1",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [
+        "near mapped road way/130634066; inspect before use"
+      ],
+      "areaSquareMetres": 241.3
+    },
+    {
+      "id": "context_03",
+      "pixelFootprint": [
+        [
+          930,
+          650
+        ],
+        [
+          943,
+          648
+        ],
+        [
+          950,
+          676
+        ],
+        [
+          936,
+          679
+        ]
+      ],
+      "footprint": [
+        [
+          126.71239471,
+          34.99990988
+        ],
+        [
+          126.71248398,
+          34.99992113
+        ],
+        [
+          126.71253204,
+          34.99976364
+        ],
+        [
+          126.71243591,
+          34.99974677
+        ]
+      ],
+      "worldFootprint": [
+        [
+          172.773,
+          99.088
+        ],
+        [
+          180.913,
+          97.836
+        ],
+        [
+          185.296,
+          115.368
+        ],
+        [
+          176.53,
+          117.246
+        ]
+      ],
+      "height": 3.4,
+      "roofColor": "#a4aaa4",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 157.21
+    },
+    {
+      "id": "context_04",
+      "pixelFootprint": [
+        [
+          932,
+          685
+        ],
+        [
+          950,
+          681
+        ],
+        [
+          955,
+          699
+        ],
+        [
+          936,
+          704
+        ]
+      ],
+      "footprint": [
+        [
+          126.71240845,
+          34.99971302
+        ],
+        [
+          126.71253204,
+          34.99973552
+        ],
+        [
+          126.71256638,
+          34.99963427
+        ],
+        [
+          126.71243591,
+          34.99960615
+        ]
+      ],
+      "worldFootprint": [
+        [
+          174.026,
+          121.003
+        ],
+        [
+          185.296,
+          118.498
+        ],
+        [
+          188.427,
+          129.769
+        ],
+        [
+          176.53,
+          132.899
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#527fa9",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 142.12
+    },
+    {
+      "id": "context_05",
+      "pixelFootprint": [
+        [
+          863,
+          724
+        ],
+        [
+          882,
+          723
+        ],
+        [
+          884,
+          757
+        ],
+        [
+          866,
+          759
+        ]
+      ],
+      "footprint": [
+        [
+          126.71193466,
+          34.99949365
+        ],
+        [
+          126.71206512,
+          34.99949928
+        ],
+        [
+          126.71207886,
+          34.99930804
+        ],
+        [
+          126.71195526,
+          34.99929679
+        ]
+      ],
+      "worldFootprint": [
+        [
+          130.823,
+          145.423
+        ],
+        [
+          142.719,
+          144.796
+        ],
+        [
+          143.972,
+          166.085
+        ],
+        [
+          132.701,
+          167.337
+        ]
+      ],
+      "height": 3.7,
+      "roofColor": "#9ac5d6",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 251.69
+    },
+    {
+      "id": "context_06",
+      "pixelFootprint": [
+        [
+          800,
+          713
+        ],
+        [
+          814,
+          711
+        ],
+        [
+          816,
+          730
+        ],
+        [
+          803,
+          732
+        ]
+      ],
+      "footprint": [
+        [
+          126.71150208,
+          34.99955553
+        ],
+        [
+          126.71159821,
+          34.99956678
+        ],
+        [
+          126.71161194,
+          34.99945991
+        ],
+        [
+          126.71152267,
+          34.99944866
+        ]
+      ],
+      "worldFootprint": [
+        [
+          91.377,
+          138.534
+        ],
+        [
+          100.143,
+          137.282
+        ],
+        [
+          101.395,
+          149.179
+        ],
+        [
+          93.254,
+          150.431
+        ]
+      ],
+      "height": 3.3,
+      "roofColor": "#74aaa8",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 102.53
+    },
+    {
+      "id": "context_07",
+      "pixelFootprint": [
+        [
+          819,
+          710
+        ],
+        [
+          833,
+          710
+        ],
+        [
+          837,
+          751
+        ],
+        [
+          817,
+          753
+        ],
+        [
+          812,
+          733
+        ],
+        [
+          819,
+          732
+        ]
+      ],
+      "footprint": [
+        [
+          126.71163254,
+          34.9995724
+        ],
+        [
+          126.71172867,
+          34.9995724
+        ],
+        [
+          126.71175613,
+          34.99934179
+        ],
+        [
+          126.7116188,
+          34.99933054
+        ],
+        [
+          126.71158447,
+          34.99944303
+        ],
+        [
+          126.71163254,
+          34.99944866
+        ]
+      ],
+      "worldFootprint": [
+        [
+          103.273,
+          136.656
+        ],
+        [
+          112.039,
+          136.656
+        ],
+        [
+          114.543,
+          162.328
+        ],
+        [
+          102.02,
+          163.58
+        ],
+        [
+          98.89,
+          151.058
+        ],
+        [
+          103.273,
+          150.431
+        ]
+      ],
+      "height": 3.9,
+      "roofColor": "#4b6463",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 300.11
+    },
+    {
+      "id": "context_08",
+      "pixelFootprint": [
+        [
+          796,
+          667
+        ],
+        [
+          823,
+          663
+        ],
+        [
+          824,
+          679
+        ],
+        [
+          798,
+          683
+        ]
+      ],
+      "footprint": [
+        [
+          126.71147461,
+          34.99981426
+        ],
+        [
+          126.71166,
+          34.99983676
+        ],
+        [
+          126.71166687,
+          34.99974677
+        ],
+        [
+          126.71148834,
+          34.99972427
+        ]
+      ],
+      "worldFootprint": [
+        [
+          88.872,
+          109.733
+        ],
+        [
+          105.777,
+          107.228
+        ],
+        [
+          106.404,
+          117.246
+        ],
+        [
+          90.124,
+          119.75
+        ]
+      ],
+      "height": 3.3,
+      "roofColor": "#6e5149",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [
+        "near mapped road way/130634066; inspect before use"
+      ],
+      "areaSquareMetres": 168.57
+    },
+    {
+      "id": "context_11",
+      "pixelFootprint": [
+        [
+          833,
+          792
+        ],
+        [
+          845,
+          789
+        ],
+        [
+          848,
+          799
+        ],
+        [
+          837,
+          802
+        ]
+      ],
+      "footprint": [
+        [
+          126.71172867,
+          34.99911117
+        ],
+        [
+          126.71181107,
+          34.99912805
+        ],
+        [
+          126.71183167,
+          34.9990718
+        ],
+        [
+          126.71175613,
+          34.99905493
+        ]
+      ],
+      "worldFootprint": [
+        [
+          112.039,
+          188.001
+        ],
+        [
+          119.553,
+          186.121
+        ],
+        [
+          121.431,
+          192.383
+        ],
+        [
+          114.543,
+          194.261
+        ]
+      ],
+      "height": 3,
+      "roofColor": "#91b6c8",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 49.2
+    },
+    {
+      "id": "context_12",
+      "pixelFootprint": [
+        [
+          830,
+          812
+        ],
+        [
+          849,
+          813
+        ],
+        [
+          847,
+          832
+        ],
+        [
+          829,
+          830
+        ]
+      ],
+      "footprint": [
+        [
+          126.71170807,
+          34.99899868
+        ],
+        [
+          126.71183853,
+          34.99899305
+        ],
+        [
+          126.7118248,
+          34.99888618
+        ],
+        [
+          126.7117012,
+          34.99889743
+        ]
+      ],
+      "worldFootprint": [
+        [
+          110.16,
+          200.523
+        ],
+        [
+          122.057,
+          201.15
+        ],
+        [
+          120.805,
+          213.046
+        ],
+        [
+          109.534,
+          211.794
+        ]
+      ],
+      "height": 3.4,
+      "roofColor": "#465657",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 135.07
+    },
+    {
+      "id": "context_13",
+      "pixelFootprint": [
+        [
+          784,
+          830
+        ],
+        [
+          811,
+          834
+        ],
+        [
+          811,
+          844
+        ],
+        [
+          785,
+          842
+        ]
+      ],
+      "footprint": [
+        [
+          126.71139221,
+          34.99889743
+        ],
+        [
+          126.71157761,
+          34.99887493
+        ],
+        [
+          126.71157761,
+          34.99881869
+        ],
+        [
+          126.71139908,
+          34.99882994
+        ]
+      ],
+      "worldFootprint": [
+        [
+          81.358,
+          211.794
+        ],
+        [
+          98.264,
+          214.299
+        ],
+        [
+          98.264,
+          220.559
+        ],
+        [
+          81.985,
+          219.307
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#7f8792",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 113.68
+    },
+    {
+      "id": "context_14",
+      "pixelFootprint": [
+        [
+          886,
+          783
+        ],
+        [
+          903,
+          779
+        ],
+        [
+          906,
+          791
+        ],
+        [
+          889,
+          795
+        ]
+      ],
+      "footprint": [
+        [
+          126.71209259,
+          34.9991618
+        ],
+        [
+          126.71220932,
+          34.99918429
+        ],
+        [
+          126.71222992,
+          34.9991168
+        ],
+        [
+          126.71211319,
+          34.9990943
+        ]
+      ],
+      "worldFootprint": [
+        [
+          145.224,
+          182.364
+        ],
+        [
+          155.868,
+          179.861
+        ],
+        [
+          157.746,
+          187.374
+        ],
+        [
+          147.102,
+          189.879
+        ]
+      ],
+      "height": 3.3,
+      "roofColor": "#5a7388",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 84.68
+    },
+    {
+      "id": "context_15",
+      "pixelFootprint": [
+        [
+          890,
+          799
+        ],
+        [
+          910,
+          795
+        ],
+        [
+          913,
+          808
+        ],
+        [
+          897,
+          813
+        ]
+      ],
+      "footprint": [
+        [
+          126.71212006,
+          34.9990718
+        ],
+        [
+          126.71225739,
+          34.9990943
+        ],
+        [
+          126.71227798,
+          34.99902118
+        ],
+        [
+          126.71216812,
+          34.99899305
+        ]
+      ],
+      "worldFootprint": [
+        [
+          147.729,
+          192.383
+        ],
+        [
+          160.251,
+          189.879
+        ],
+        [
+          162.129,
+          198.018
+        ],
+        [
+          152.111,
+          201.15
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#8d766c",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 104.09
+    },
+    {
+      "id": "context_16",
+      "pixelFootprint": [
+        [
+          913,
+          783
+        ],
+        [
+          922,
+          779
+        ],
+        [
+          929,
+          791
+        ],
+        [
+          918,
+          795
+        ]
+      ],
+      "footprint": [
+        [
+          126.71227798,
+          34.9991618
+        ],
+        [
+          126.71233978,
+          34.99918429
+        ],
+        [
+          126.71238785,
+          34.9991168
+        ],
+        [
+          126.71231232,
+          34.9990943
+        ]
+      ],
+      "worldFootprint": [
+        [
+          162.129,
+          182.364
+        ],
+        [
+          167.764,
+          179.861
+        ],
+        [
+          172.148,
+          187.374
+        ],
+        [
+          165.26,
+          189.879
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#b08873",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 56.46
+    },
+    {
+      "id": "context_17",
+      "pixelFootprint": [
+        [
+          925,
+          779
+        ],
+        [
+          936,
+          775
+        ],
+        [
+          944,
+          791
+        ],
+        [
+          933,
+          796
+        ]
+      ],
+      "footprint": [
+        [
+          126.71236038,
+          34.99918429
+        ],
+        [
+          126.71243591,
+          34.99920679
+        ],
+        [
+          126.71249084,
+          34.9991168
+        ],
+        [
+          126.71241531,
+          34.99908867
+        ]
+      ],
+      "worldFootprint": [
+        [
+          169.643,
+          179.861
+        ],
+        [
+          176.53,
+          177.356
+        ],
+        [
+          181.539,
+          187.374
+        ],
+        [
+          174.652,
+          190.505
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#6bacc1",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 85.26
+    },
+    {
+      "id": "context_18",
+      "pixelFootprint": [
+        [
+          912,
+          812
+        ],
+        [
+          939,
+          805
+        ],
+        [
+          944,
+          822
+        ],
+        [
+          920,
+          830
+        ]
+      ],
+      "footprint": [
+        [
+          126.71227112,
+          34.99899868
+        ],
+        [
+          126.71245651,
+          34.99903805
+        ],
+        [
+          126.71249084,
+          34.99894243
+        ],
+        [
+          126.71232605,
+          34.99889743
+        ]
+      ],
+      "worldFootprint": [
+        [
+          161.503,
+          200.523
+        ],
+        [
+          178.409,
+          196.14
+        ],
+        [
+          181.539,
+          206.785
+        ],
+        [
+          166.512,
+          211.794
+        ]
+      ],
+      "height": 3.7,
+      "roofColor": "#43504c",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 194.07
+    },
+    {
+      "id": "context_19",
+      "pixelFootprint": [
+        [
+          996,
+          744
+        ],
+        [
+          1015,
+          741
+        ],
+        [
+          1018,
+          752
+        ],
+        [
+          997,
+          756
+        ]
+      ],
+      "footprint": [
+        [
+          126.7128479,
+          34.99938116
+        ],
+        [
+          126.71297836,
+          34.99939803
+        ],
+        [
+          126.71299896,
+          34.99933616
+        ],
+        [
+          126.71285477,
+          34.99931366
+        ]
+      ],
+      "worldFootprint": [
+        [
+          214.098,
+          157.945
+        ],
+        [
+          225.994,
+          156.067
+        ],
+        [
+          227.873,
+          162.955
+        ],
+        [
+          214.725,
+          165.459
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#77b79b",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 92.92
+    },
+    {
+      "id": "context_20",
+      "pixelFootprint": [
+        [
+          1023,
+          743
+        ],
+        [
+          1038,
+          740
+        ],
+        [
+          1043,
+          756
+        ],
+        [
+          1027,
+          760
+        ]
+      ],
+      "footprint": [
+        [
+          126.71303329,
+          34.99938678
+        ],
+        [
+          126.71313629,
+          34.99940366
+        ],
+        [
+          126.71317062,
+          34.99931366
+        ],
+        [
+          126.71306076,
+          34.99929116
+        ]
+      ],
+      "worldFootprint": [
+        [
+          231.003,
+          157.32
+        ],
+        [
+          240.396,
+          155.441
+        ],
+        [
+          243.526,
+          165.459
+        ],
+        [
+          233.508,
+          167.964
+        ]
+      ],
+      "height": 3.8,
+      "roofColor": "#5d9bc4",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 106.44
+    },
+    {
+      "id": "context_21",
+      "pixelFootprint": [
+        [
+          1040,
+          739
+        ],
+        [
+          1071,
+          733
+        ],
+        [
+          1078,
+          751
+        ],
+        [
+          1046,
+          758
+        ]
+      ],
+      "footprint": [
+        [
+          126.71315002,
+          34.99940928
+        ],
+        [
+          126.71336288,
+          34.99944303
+        ],
+        [
+          126.71341095,
+          34.99934179
+        ],
+        [
+          126.71319122,
+          34.99930241
+        ]
+      ],
+      "worldFootprint": [
+        [
+          241.648,
+          154.815
+        ],
+        [
+          261.058,
+          151.058
+        ],
+        [
+          265.441,
+          162.328
+        ],
+        [
+          245.405,
+          166.712
+        ]
+      ],
+      "height": 4.3,
+      "roofColor": "#6a9cbb",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 245.03
+    },
+    {
+      "id": "context_22",
+      "pixelFootprint": [
+        [
+          1029,
+          764
+        ],
+        [
+          1059,
+          759
+        ],
+        [
+          1064,
+          775
+        ],
+        [
+          1033,
+          781
+        ]
+      ],
+      "footprint": [
+        [
+          126.71307449,
+          34.99926867
+        ],
+        [
+          126.71328049,
+          34.99929679
+        ],
+        [
+          126.71331482,
+          34.99920679
+        ],
+        [
+          126.71310196,
+          34.99917305
+        ]
+      ],
+      "worldFootprint": [
+        [
+          234.76,
+          170.468
+        ],
+        [
+          253.545,
+          167.337
+        ],
+        [
+          256.675,
+          177.356
+        ],
+        [
+          237.265,
+          181.112
+        ]
+      ],
+      "height": 3.7,
+      "roofColor": "#a6c5b3",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 207.01
+    },
+    {
+      "id": "context_25",
+      "pixelFootprint": [
+        [
+          1013,
+          833
+        ],
+        [
+          1028,
+          826
+        ],
+        [
+          1037,
+          839
+        ],
+        [
+          1023,
+          846
+        ]
+      ],
+      "footprint": [
+        [
+          126.71296463,
+          34.99888056
+        ],
+        [
+          126.71306763,
+          34.99891993
+        ],
+        [
+          126.71312943,
+          34.99884681
+        ],
+        [
+          126.71303329,
+          34.99880744
+        ]
+      ],
+      "worldFootprint": [
+        [
+          224.742,
+          213.672
+        ],
+        [
+          234.135,
+          209.289
+        ],
+        [
+          239.77,
+          217.429
+        ],
+        [
+          231.003,
+          221.812
+        ]
+      ],
+      "height": 4,
+      "roofColor": "#548bb2",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 99.98
+    },
+    {
+      "id": "context_26",
+      "pixelFootprint": [
+        [
+          1000,
+          847
+        ],
+        [
+          1018,
+          840
+        ],
+        [
+          1029,
+          860
+        ],
+        [
+          1008,
+          869
+        ]
+      ],
+      "footprint": [
+        [
+          126.71287537,
+          34.99880181
+        ],
+        [
+          126.71299896,
+          34.99884119
+        ],
+        [
+          126.71307449,
+          34.99872869
+        ],
+        [
+          126.7129303,
+          34.99867807
+        ]
+      ],
+      "worldFootprint": [
+        [
+          216.603,
+          222.439
+        ],
+        [
+          227.873,
+          218.055
+        ],
+        [
+          234.76,
+          230.578
+        ],
+        [
+          221.612,
+          236.213
+        ]
+      ],
+      "height": 4.1,
+      "roofColor": "#64a496",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 190.33
+    },
+    {
+      "id": "context_27",
+      "pixelFootprint": [
+        [
+          1030,
+          846
+        ],
+        [
+          1043,
+          840
+        ],
+        [
+          1049,
+          849
+        ],
+        [
+          1036,
+          857
+        ]
+      ],
+      "footprint": [
+        [
+          126.71308136,
+          34.99880744
+        ],
+        [
+          126.71317062,
+          34.99884119
+        ],
+        [
+          126.71321182,
+          34.99879056
+        ],
+        [
+          126.71312256,
+          34.99874557
+        ]
+      ],
+      "worldFootprint": [
+        [
+          235.387,
+          221.812
+        ],
+        [
+          243.526,
+          218.055
+        ],
+        [
+          247.283,
+          223.691
+        ],
+        [
+          239.144,
+          228.699
+        ]
+      ],
+      "height": 3.4,
+      "roofColor": "#3c4d48",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 67.43
+    },
+    {
+      "id": "context_28",
+      "pixelFootprint": [
+        [
+          1050,
+          851
+        ],
+        [
+          1063,
+          846
+        ],
+        [
+          1070,
+          865
+        ],
+        [
+          1055,
+          871
+        ]
+      ],
+      "footprint": [
+        [
+          126.71321869,
+          34.99877931
+        ],
+        [
+          126.71330795,
+          34.99880744
+        ],
+        [
+          126.71335602,
+          34.99870057
+        ],
+        [
+          126.71325302,
+          34.99866682
+        ]
+      ],
+      "worldFootprint": [
+        [
+          247.909,
+          224.943
+        ],
+        [
+          256.049,
+          221.812
+        ],
+        [
+          260.432,
+          233.709
+        ],
+        [
+          251.04,
+          237.466
+        ]
+      ],
+      "height": 3.7,
+      "roofColor": "#82b4c4",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 119.97
+    },
+    {
+      "id": "context_29",
+      "pixelFootprint": [
+        [
+          1030,
+          874
+        ],
+        [
+          1043,
+          873
+        ],
+        [
+          1044,
+          884
+        ],
+        [
+          1033,
+          886
+        ]
+      ],
+      "footprint": [
+        [
+          126.71308136,
+          34.99864994
+        ],
+        [
+          126.71317062,
+          34.99865557
+        ],
+        [
+          126.71317749,
+          34.9985937
+        ],
+        [
+          126.71310196,
+          34.99858245
+        ]
+      ],
+      "worldFootprint": [
+        [
+          235.387,
+          239.345
+        ],
+        [
+          243.526,
+          238.718
+        ],
+        [
+          244.153,
+          245.605
+        ],
+        [
+          237.265,
+          246.858
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#659998",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 55.27
+    },
+    {
+      "id": "context_30",
+      "pixelFootprint": [
+        [
+          1025,
+          887
+        ],
+        [
+          1045,
+          889
+        ],
+        [
+          1045,
+          902
+        ],
+        [
+          1022,
+          898
+        ]
+      ],
+      "footprint": [
+        [
+          126.71304703,
+          34.99857682
+        ],
+        [
+          126.71318436,
+          34.99856557
+        ],
+        [
+          126.71318436,
+          34.99849245
+        ],
+        [
+          126.71302643,
+          34.99851495
+        ]
+      ],
+      "worldFootprint": [
+        [
+          232.256,
+          247.484
+        ],
+        [
+          244.779,
+          248.737
+        ],
+        [
+          244.779,
+          256.876
+        ],
+        [
+          230.378,
+          254.372
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#56635d",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 102.91
+    },
+    {
+      "id": "context_31",
+      "pixelFootprint": [
+        [
+          933,
+          850
+        ],
+        [
+          951,
+          847
+        ],
+        [
+          952,
+          859
+        ],
+        [
+          934,
+          861
+        ]
+      ],
+      "footprint": [
+        [
+          126.71241531,
+          34.99878494
+        ],
+        [
+          126.71253891,
+          34.99880181
+        ],
+        [
+          126.71254578,
+          34.99873432
+        ],
+        [
+          126.71242218,
+          34.99872307
+        ]
+      ],
+      "worldFootprint": [
+        [
+          174.652,
+          224.316
+        ],
+        [
+          185.922,
+          222.439
+        ],
+        [
+          186.549,
+          229.951
+        ],
+        [
+          175.278,
+          231.204
+        ]
+      ],
+      "height": 3,
+      "roofColor": "#bb8d7f",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 82.13
+    },
+    {
+      "id": "context_32",
+      "pixelFootprint": [
+        [
+          938,
+          888
+        ],
+        [
+          953,
+          884
+        ],
+        [
+          957,
+          896
+        ],
+        [
+          942,
+          900
+        ]
+      ],
+      "footprint": [
+        [
+          126.71244965,
+          34.9985712
+        ],
+        [
+          126.71255264,
+          34.9985937
+        ],
+        [
+          126.71258011,
+          34.9985262
+        ],
+        [
+          126.71247711,
+          34.9985037
+        ]
+      ],
+      "worldFootprint": [
+        [
+          177.783,
+          248.11
+        ],
+        [
+          187.174,
+          245.605
+        ],
+        [
+          189.679,
+          253.119
+        ],
+        [
+          180.287,
+          255.624
+        ]
+      ],
+      "height": 3,
+      "roofColor": "#bd9387",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 76.84
+    },
+    {
+      "id": "context_33",
+      "pixelFootprint": [
+        [
+          882,
+          854
+        ],
+        [
+          895,
+          849
+        ],
+        [
+          906,
+          864
+        ],
+        [
+          892,
+          872
+        ]
+      ],
+      "footprint": [
+        [
+          126.71206512,
+          34.99876244
+        ],
+        [
+          126.71215439,
+          34.99879056
+        ],
+        [
+          126.71222992,
+          34.99870619
+        ],
+        [
+          126.71213379,
+          34.99866119
+        ]
+      ],
+      "worldFootprint": [
+        [
+          142.719,
+          226.821
+        ],
+        [
+          150.859,
+          223.691
+        ],
+        [
+          157.746,
+          233.083
+        ],
+        [
+          148.981,
+          238.092
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#a06a5e",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 114.08
+    },
+    {
+      "id": "context_34",
+      "pixelFootprint": [
+        [
+          1087,
+          907
+        ],
+        [
+          1101,
+          907
+        ],
+        [
+          1106,
+          919
+        ],
+        [
+          1092,
+          921
+        ]
+      ],
+      "footprint": [
+        [
+          126.71347275,
+          34.99846433
+        ],
+        [
+          126.71356888,
+          34.99846433
+        ],
+        [
+          126.71360321,
+          34.99839683
+        ],
+        [
+          126.71350708,
+          34.99838558
+        ]
+      ],
+      "worldFootprint": [
+        [
+          271.076,
+          260.007
+        ],
+        [
+          279.842,
+          260.007
+        ],
+        [
+          282.973,
+          267.521
+        ],
+        [
+          274.207,
+          268.773
+        ]
+      ],
+      "height": 3.3,
+      "roofColor": "#7dafbe",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 73.32
+    },
+    {
+      "id": "context_36",
+      "pixelFootprint": [
+        [
+          687,
+          822
+        ],
+        [
+          709,
+          813
+        ],
+        [
+          716,
+          833
+        ],
+        [
+          694,
+          837
+        ]
+      ],
+      "footprint": [
+        [
+          126.71072617,
+          34.99894243
+        ],
+        [
+          126.71087723,
+          34.99899305
+        ],
+        [
+          126.71092529,
+          34.99888056
+        ],
+        [
+          126.71077423,
+          34.99885806
+        ]
+      ],
+      "worldFootprint": [
+        [
+          20.624,
+          206.785
+        ],
+        [
+          34.399,
+          201.15
+        ],
+        [
+          38.781,
+          213.672
+        ],
+        [
+          25.006,
+          216.177
+        ]
+      ],
+      "height": 3.9,
+      "roofColor": "#a78176",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 168.77
+    },
+    {
+      "id": "context_37",
+      "pixelFootprint": [
+        [
+          728,
+          830
+        ],
+        [
+          741,
+          826
+        ],
+        [
+          746,
+          846
+        ],
+        [
+          733,
+          850
+        ]
+      ],
+      "footprint": [
+        [
+          126.71100769,
+          34.99889743
+        ],
+        [
+          126.71109695,
+          34.99891993
+        ],
+        [
+          126.71113129,
+          34.99880744
+        ],
+        [
+          126.71104202,
+          34.99878494
+        ]
+      ],
+      "worldFootprint": [
+        [
+          46.295,
+          211.794
+        ],
+        [
+          54.434,
+          209.289
+        ],
+        [
+          57.566,
+          221.812
+        ],
+        [
+          49.425,
+          224.316
+        ]
+      ],
+      "height": 3.4,
+      "roofColor": "#8e9692",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 109.77
+    },
+    {
+      "id": "context_38",
+      "pixelFootprint": [
+        [
+          580,
+          844
+        ],
+        [
+          596,
+          845
+        ],
+        [
+          599,
+          864
+        ],
+        [
+          583,
+          867
+        ]
+      ],
+      "footprint": [
+        [
+          126.70999146,
+          34.99881869
+        ],
+        [
+          126.71010132,
+          34.99881306
+        ],
+        [
+          126.71012192,
+          34.99870619
+        ],
+        [
+          126.71001205,
+          34.99868932
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -46.372,
+          220.559
+        ],
+        [
+          -36.354,
+          221.186
+        ],
+        [
+          -34.476,
+          233.083
+        ],
+        [
+          -44.495,
+          234.961
+        ]
+      ],
+      "height": 3.6,
+      "roofColor": "#c2cdc6",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [],
+      "areaSquareMetres": 132.91
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "context_parking_north",
+      "kind": "paving",
+      "pixelFootprint": [
+        [
+          828,
+          656
+        ],
+        [
+          867,
+          649
+        ],
+        [
+          874,
+          677
+        ],
+        [
+          889,
+          676
+        ],
+        [
+          890,
+          688
+        ],
+        [
+          831,
+          695
+        ]
+      ],
+      "footprint": [
+        [
+          126.71169434,
+          34.99987613
+        ],
+        [
+          126.71196213,
+          34.99991551
+        ],
+        [
+          126.71201019,
+          34.99975802
+        ],
+        [
+          126.71211319,
+          34.99976364
+        ],
+        [
+          126.71212006,
+          34.99969614
+        ],
+        [
+          126.71171494,
+          34.99965677
+        ]
+      ],
+      "worldFootprint": [
+        [
+          108.908,
+          102.845
+        ],
+        [
+          133.327,
+          98.461
+        ],
+        [
+          137.71,
+          115.993
+        ],
+        [
+          147.102,
+          115.368
+        ],
+        [
+          147.729,
+          122.882
+        ],
+        [
+          110.787,
+          127.264
+        ]
+      ],
+      "color": "#b5b2a4",
+      "observed": "Several clearly visible parked cars on a pale paved lot. Parking-space markings not resolved.",
+      "confidence": "medium: visible surface extent, no cadastral or material survey",
+      "referenceOnly": false
+    },
+    {
+      "id": "context_parking_drive",
+      "kind": "paving",
+      "pixelFootprint": [
+        [
+          891,
+          680
+        ],
+        [
+          908,
+          678
+        ],
+        [
+          918,
+          692
+        ],
+        [
+          916,
+          712
+        ],
+        [
+          907,
+          744
+        ],
+        [
+          909,
+          755
+        ],
+        [
+          942,
+          735
+        ],
+        [
+          956,
+          733
+        ],
+        [
+          959,
+          746
+        ],
+        [
+          930,
+          757
+        ],
+        [
+          906,
+          776
+        ],
+        [
+          884,
+          781
+        ],
+        [
+          862,
+          777
+        ],
+        [
+          862,
+          769
+        ],
+        [
+          885,
+          770
+        ],
+        [
+          888,
+          741
+        ],
+        [
+          889,
+          709
+        ]
+      ],
+      "footprint": [
+        [
+          126.71212692,
+          34.99974114
+        ],
+        [
+          126.71224365,
+          34.99975239
+        ],
+        [
+          126.71231232,
+          34.99967364
+        ],
+        [
+          126.71229858,
+          34.99956115
+        ],
+        [
+          126.71223679,
+          34.99938116
+        ],
+        [
+          126.71225052,
+          34.99931929
+        ],
+        [
+          126.71247711,
+          34.99943178
+        ],
+        [
+          126.71257324,
+          34.99944303
+        ],
+        [
+          126.71259384,
+          34.99936991
+        ],
+        [
+          126.71239471,
+          34.99930804
+        ],
+        [
+          126.71222992,
+          34.99920117
+        ],
+        [
+          126.71207886,
+          34.99917305
+        ],
+        [
+          126.7119278,
+          34.99919554
+        ],
+        [
+          126.7119278,
+          34.99924054
+        ],
+        [
+          126.71208572,
+          34.99923492
+        ],
+        [
+          126.71210632,
+          34.99939803
+        ],
+        [
+          126.71211319,
+          34.99957802
+        ]
+      ],
+      "worldFootprint": [
+        [
+          148.354,
+          117.872
+        ],
+        [
+          158.998,
+          116.62
+        ],
+        [
+          165.26,
+          125.386
+        ],
+        [
+          164.007,
+          137.909
+        ],
+        [
+          158.373,
+          157.945
+        ],
+        [
+          159.625,
+          164.833
+        ],
+        [
+          180.287,
+          152.31
+        ],
+        [
+          189.053,
+          151.058
+        ],
+        [
+          190.931,
+          159.198
+        ],
+        [
+          172.773,
+          166.085
+        ],
+        [
+          157.746,
+          177.982
+        ],
+        [
+          143.972,
+          181.112
+        ],
+        [
+          130.197,
+          178.608
+        ],
+        [
+          130.197,
+          173.599
+        ],
+        [
+          144.597,
+          174.225
+        ],
+        [
+          146.476,
+          156.067
+        ],
+        [
+          147.102,
+          136.031
+        ]
+      ],
+      "color": "#b9b6a9",
+      "observed": "Visible curving paved parking circulation west of museum lane, with trees and a long blue roof in its middle.",
+      "confidence": "medium: visible surface extent, no cadastral or material survey",
+      "referenceOnly": false
+    },
+    {
+      "id": "context_planted_plot_west",
+      "kind": "mixed_vegetation",
+      "pixelFootprint": [
+        [
+          893,
+          879
+        ],
+        [
+          927,
+          866
+        ],
+        [
+          932,
+          885
+        ],
+        [
+          935,
+          901
+        ],
+        [
+          909,
+          908
+        ]
+      ],
+      "footprint": [
+        [
+          126.71214066,
+          34.99862182
+        ],
+        [
+          126.71237411,
+          34.99869494
+        ],
+        [
+          126.71240845,
+          34.99858807
+        ],
+        [
+          126.71242905,
+          34.99849808
+        ],
+        [
+          126.71225052,
+          34.9984587
+        ]
+      ],
+      "worldFootprint": [
+        [
+          149.607,
+          242.475
+        ],
+        [
+          170.895,
+          234.335
+        ],
+        [
+          174.026,
+          246.232
+        ],
+        [
+          175.905,
+          256.25
+        ],
+        [
+          159.625,
+          260.634
+        ]
+      ],
+      "color": "#737a4a",
+      "observed": "Small tree-covered and brown planted ground south of east-west road; do not label as a public park or formal orchard.",
+      "confidence": "medium: visible surface extent, no cadastral or material survey",
+      "referenceOnly": false
+    },
+    {
+      "id": "context_planted_plot_east",
+      "kind": "mixed_vegetation",
+      "pixelFootprint": [
+        [
+          955,
+          865
+        ],
+        [
+          970,
+          860
+        ],
+        [
+          979,
+          894
+        ],
+        [
+          961,
+          900
+        ],
+        [
+          958,
+          883
+        ]
+      ],
+      "footprint": [
+        [
+          126.71256638,
+          34.99870057
+        ],
+        [
+          126.71266937,
+          34.99872869
+        ],
+        [
+          126.71273117,
+          34.99853745
+        ],
+        [
+          126.71260757,
+          34.9985037
+        ],
+        [
+          126.71258698,
+          34.99859932
+        ]
+      ],
+      "worldFootprint": [
+        [
+          188.427,
+          233.709
+        ],
+        [
+          197.819,
+          230.578
+        ],
+        [
+          203.454,
+          251.867
+        ],
+        [
+          192.183,
+          255.624
+        ],
+        [
+          190.306,
+          244.98
+        ]
+      ],
+      "color": "#77744d",
+      "observed": "Narrow green/brown plot partly under tree crowns; crop use and ownership unknown.",
+      "confidence": "medium: visible surface extent, no cadastral or material survey",
+      "referenceOnly": false
+    },
+    {
+      "id": "context_bare_plot_south",
+      "kind": "bare_soil",
+      "pixelFootprint": [
+        [
+          915,
+          911
+        ],
+        [
+          938,
+          906
+        ],
+        [
+          946,
+          934
+        ],
+        [
+          923,
+          940
+        ]
+      ],
+      "footprint": [
+        [
+          126.71229172,
+          34.99844183
+        ],
+        [
+          126.71244965,
+          34.99846995
+        ],
+        [
+          126.71250458,
+          34.99831246
+        ],
+        [
+          126.71234665,
+          34.99827871
+        ]
+      ],
+      "worldFootprint": [
+        [
+          163.382,
+          262.511
+        ],
+        [
+          177.783,
+          259.381
+        ],
+        [
+          182.792,
+          276.913
+        ],
+        [
+          168.391,
+          280.67
+        ]
+      ],
+      "color": "#8c8060",
+      "observed": "Brown sparsely vegetated plot visible between diagonal lane and green-roof dwelling.",
+      "confidence": "medium: visible surface extent, no cadastral or material survey",
+      "referenceOnly": false
+    },
+    {
+      "id": "museum_garden_reference",
+      "kind": "museum_garden",
+      "pixelFootprint": [
+        [
+          977,
+          695
+        ],
+        [
+          999,
+          695
+        ],
+        [
+          1012,
+          701
+        ],
+        [
+          1011,
+          723
+        ],
+        [
+          1017,
+          737
+        ],
+        [
+          976,
+          739
+        ]
+      ],
+      "footprint": [
+        [
+          126.71271744,
+          34.99965677
+        ],
+        [
+          126.7128685,
+          34.99965677
+        ],
+        [
+          126.71295776,
+          34.99962302
+        ],
+        [
+          126.7129509,
+          34.99949928
+        ],
+        [
+          126.7129921,
+          34.99942053
+        ],
+        [
+          126.71271057,
+          34.99940928
+        ]
+      ],
+      "worldFootprint": [
+        [
+          202.202,
+          127.264
+        ],
+        [
+          215.977,
+          127.264
+        ],
+        [
+          224.116,
+          131.021
+        ],
+        [
+          223.49,
+          144.796
+        ],
+        [
+          227.247,
+          153.563
+        ],
+        [
+          201.575,
+          154.815
+        ]
+      ],
+      "color": "#919176",
+      "observed": "Observed pale/green open garden south-west of museum roof. Use for alignment reference only; parent creates detailed garden from official ground photos.",
+      "confidence": "medium: visible surface extent, no cadastral or material survey",
+      "referenceOnly": true
+    }
+  ],
+  "routes": [
+    {
+      "id": "museum_west_lane",
+      "kind": "existing visible lane",
+      "pixelCoordinates": [
+        [
+          950,
+          645
+        ],
+        [
+          958,
+          680
+        ],
+        [
+          968,
+          726
+        ],
+        [
+          972,
+          740
+        ],
+        [
+          978,
+          783
+        ],
+        [
+          986,
+          829
+        ]
+      ],
+      "coordinates": [
+        [
+          126.71253204,
+          34.999938
+        ],
+        [
+          126.71258698,
+          34.99974114
+        ],
+        [
+          126.71265564,
+          34.9994824
+        ],
+        [
+          126.71268311,
+          34.99940366
+        ],
+        [
+          126.7127243,
+          34.9991618
+        ],
+        [
+          126.71277924,
+          34.99890306
+        ]
+      ],
+      "worldCoordinates": [
+        [
+          185.296,
+          95.958
+        ],
+        [
+          190.306,
+          117.872
+        ],
+        [
+          196.567,
+          146.675
+        ],
+        [
+          199.072,
+          155.441
+        ],
+        [
+          202.827,
+          182.364
+        ],
+        [
+          207.837,
+          211.167
+        ]
+      ],
+      "width": 3.4,
+      "widthBasis": "visual estimate, not measured",
+      "note": "Reference route only. Prefer existing OSM street axes where already modelled; join/snap the visible branch to them. museum_south_entry is approximate where foliage hides the path."
+    },
+    {
+      "id": "museum_south_entry",
+      "kind": "garden approach alignment reference",
+      "pixelCoordinates": [
+        [
+          972,
+          740
+        ],
+        [
+          991,
+          736
+        ],
+        [
+          1006,
+          717
+        ],
+        [
+          1006,
+          696
+        ]
+      ],
+      "coordinates": [
+        [
+          126.71268311,
+          34.99940366
+        ],
+        [
+          126.71281357,
+          34.99942616
+        ],
+        [
+          126.71291656,
+          34.99953303
+        ],
+        [
+          126.71291656,
+          34.99965115
+        ]
+      ],
+      "worldCoordinates": [
+        [
+          199.072,
+          155.441
+        ],
+        [
+          210.968,
+          152.936
+        ],
+        [
+          220.359,
+          141.039
+        ],
+        [
+          220.359,
+          127.89
+        ]
+      ],
+      "width": 2,
+      "widthBasis": "visual estimate, not measured",
+      "note": "Reference route only. Prefer existing OSM street axes where already modelled; join/snap the visible branch to them. museum_south_entry is approximate where foliage hides the path."
+    },
+    {
+      "id": "context_south_cross_street",
+      "kind": "existing visible street",
+      "pixelCoordinates": [
+        [
+          757,
+          860
+        ],
+        [
+          848,
+          845
+        ],
+        [
+          925,
+          835
+        ],
+        [
+          991,
+          824
+        ],
+        [
+          1085,
+          806
+        ]
+      ],
+      "coordinates": [
+        [
+          126.71120682,
+          34.99872869
+        ],
+        [
+          126.71183167,
+          34.99881306
+        ],
+        [
+          126.71236038,
+          34.99886931
+        ],
+        [
+          126.71281357,
+          34.99893118
+        ],
+        [
+          126.71345901,
+          34.99903243
+        ]
+      ],
+      "worldCoordinates": [
+        [
+          64.453,
+          230.578
+        ],
+        [
+          121.431,
+          221.186
+        ],
+        [
+          169.643,
+          214.924
+        ],
+        [
+          210.968,
+          208.037
+        ],
+        [
+          269.824,
+          196.766
+        ]
+      ],
+      "width": 5.4,
+      "widthBasis": "visual estimate, not measured",
+      "note": "Reference route only. Prefer existing OSM street axes where already modelled; join/snap the visible branch to them. museum_south_entry is approximate where foliage hides the path."
+    },
+    {
+      "id": "context_diagonal_lane",
+      "kind": "existing visible narrow lane",
+      "pixelCoordinates": [
+        [
+          846,
+          822
+        ],
+        [
+          868,
+          858
+        ],
+        [
+          890,
+          895
+        ],
+        [
+          915,
+          946
+        ]
+      ],
+      "coordinates": [
+        [
+          126.71181793,
+          34.99894243
+        ],
+        [
+          126.71196899,
+          34.99873994
+        ],
+        [
+          126.71212006,
+          34.99853182
+        ],
+        [
+          126.71229172,
+          34.99824496
+        ]
+      ],
+      "worldCoordinates": [
+        [
+          120.178,
+          206.785
+        ],
+        [
+          133.953,
+          229.326
+        ],
+        [
+          147.729,
+          252.494
+        ],
+        [
+          163.382,
+          284.427
+        ]
+      ],
+      "width": 2.8,
+      "widthBasis": "visual estimate, not measured",
+      "note": "Reference route only. Prefer existing OSM street axes where already modelled; join/snap the visible branch to them. museum_south_entry is approximate where foliage hides the path."
+    }
+  ],
+  "validation": {
+    "newRoofOverlaps": [],
+    "flaggedRoofs": [
+      {
+        "id": "context_01",
+        "flags": [
+          "near mapped road way/130634066; inspect before use"
+        ]
+      },
+      {
+        "id": "context_02",
+        "flags": [
+          "near mapped road way/130634066; inspect before use"
+        ]
+      },
+      {
+        "id": "context_08",
+        "flags": [
+          "near mapped road way/130634066; inspect before use"
+        ]
+      }
+    ],
+    "existingRoofsCompared": 66
+  },
+  "museumFootprintReference": {
+    "pixelFootprint": [
+      [
+        995,
+        666
+      ],
+      [
+        1030,
+        657
+      ],
+      [
+        1037,
+        681
+      ],
+      [
+        999,
+        690
+      ],
+      [
+        989,
+        693
+      ],
+      [
+        985,
+        669
+      ]
+    ],
+    "note": "Approximate single combined visible roof outline for exclusion/reference only. It is intentionally not included among context roofs."
+  },
+  "unflaggedRoofCount": 30,
+  "excludedForReview": [
+    {
+      "id": "context_09",
+      "pixelFootprint": [
+        [
+          775,
+          759
+        ],
+        [
+          790,
+          757
+        ],
+        [
+          798,
+          778
+        ],
+        [
+          782,
+          781
+        ]
+      ],
+      "footprint": [
+        [
+          126.71133041,
+          34.99929679
+        ],
+        [
+          126.71143341,
+          34.99930804
+        ],
+        [
+          126.71148834,
+          34.99918992
+        ],
+        [
+          126.71137848,
+          34.99917305
+        ]
+      ],
+      "worldFootprint": [
+        [
+          75.723,
+          167.337
+        ],
+        [
+          85.115,
+          166.085
+        ],
+        [
+          90.124,
+          179.234
+        ],
+        [
+          80.106,
+          181.112
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#837879",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [
+        "overlap existing trace street_central_11"
+      ],
+      "areaSquareMetres": 138
+    },
+    {
+      "id": "context_10",
+      "pixelFootprint": [
+        [
+          803,
+          772
+        ],
+        [
+          815,
+          767
+        ],
+        [
+          830,
+          790
+        ],
+        [
+          811,
+          797
+        ]
+      ],
+      "footprint": [
+        [
+          126.71152267,
+          34.99922367
+        ],
+        [
+          126.71160507,
+          34.99925179
+        ],
+        [
+          126.71170807,
+          34.99912242
+        ],
+        [
+          126.71157761,
+          34.99908305
+        ]
+      ],
+      "worldFootprint": [
+        [
+          93.254,
+          175.477
+        ],
+        [
+          100.768,
+          172.347
+        ],
+        [
+          110.16,
+          186.748
+        ],
+        [
+          98.264,
+          191.131
+        ]
+      ],
+      "height": 4.1,
+      "roofColor": "#3e504d",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [
+        "overlap existing trace street_central_11"
+      ],
+      "areaSquareMetres": 172.89
+    },
+    {
+      "id": "context_23",
+      "pixelFootprint": [
+        [
+          1039,
+          782
+        ],
+        [
+          1052,
+          779
+        ],
+        [
+          1055,
+          787
+        ],
+        [
+          1042,
+          791
+        ]
+      ],
+      "footprint": [
+        [
+          126.71314316,
+          34.99916742
+        ],
+        [
+          126.71323242,
+          34.99918429
+        ],
+        [
+          126.71325302,
+          34.9991393
+        ],
+        [
+          126.71316376,
+          34.9991168
+        ]
+      ],
+      "worldFootprint": [
+        [
+          241.022,
+          181.739
+        ],
+        [
+          249.161,
+          179.861
+        ],
+        [
+          251.04,
+          184.869
+        ],
+        [
+          242.901,
+          187.374
+        ]
+      ],
+      "height": 3,
+      "roofColor": "#8dc0d4",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [
+        "overlap existing trace east_south_03"
+      ],
+      "areaSquareMetres": 47.43
+    },
+    {
+      "id": "context_24",
+      "pixelFootprint": [
+        [
+          1042,
+          800
+        ],
+        [
+          1073,
+          793
+        ],
+        [
+          1076,
+          804
+        ],
+        [
+          1046,
+          811
+        ]
+      ],
+      "footprint": [
+        [
+          126.71316376,
+          34.99906618
+        ],
+        [
+          126.71337662,
+          34.99910555
+        ],
+        [
+          126.71339722,
+          34.99904368
+        ],
+        [
+          126.71319122,
+          34.9990043
+        ]
+      ],
+      "worldFootprint": [
+        [
+          242.901,
+          193.009
+        ],
+        [
+          262.311,
+          188.626
+        ],
+        [
+          264.189,
+          195.514
+        ],
+        [
+          245.405,
+          199.897
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#3e514d",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [
+        "overlap existing trace east_south_03"
+      ],
+      "areaSquareMetres": 141.14
+    },
+    {
+      "id": "context_35",
+      "pixelFootprint": [
+        [
+          669,
+          808
+        ],
+        [
+          690,
+          801
+        ],
+        [
+          695,
+          818
+        ],
+        [
+          674,
+          823
+        ]
+      ],
+      "footprint": [
+        [
+          126.71060257,
+          34.99902118
+        ],
+        [
+          126.71074677,
+          34.99906055
+        ],
+        [
+          126.7107811,
+          34.99896493
+        ],
+        [
+          126.7106369,
+          34.99893681
+        ]
+      ],
+      "worldFootprint": [
+        [
+          9.353,
+          198.018
+        ],
+        [
+          22.502,
+          193.636
+        ],
+        [
+          25.633,
+          204.28
+        ],
+        [
+          12.484,
+          207.41
+        ]
+      ],
+      "height": 3.7,
+      "roofColor": "#8ab4a0",
+      "wallColor": "#c4beb0",
+      "heightBasis": "All heights are inferred single/two-storey low-rise context, not measured. No specific storey count is asserted.",
+      "facadeBasis": "Plain context walls only; no doors, signs or facade details inferred from satellite.",
+      "confidence": "medium: manually traced visible roof plane, ground footprint and overhang unmeasured",
+      "reviewFlags": [
+        "overlap existing trace street_central_06"
+      ],
+      "areaSquareMetres": 143.49
+    }
+  ]
+}

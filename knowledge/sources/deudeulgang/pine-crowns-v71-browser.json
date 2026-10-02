@@ -1,0 +1,6 @@
+{
+  "url": "http://127.0.0.1:59377/?place=deudeulgang&at=pine-path&v=71",
+  "state": "{\"destination\":\"드들강 솔밭유원지\",\"mode\":\"walking\",\"position\":{\"x\":6.0631375002401455,\"z\":-5.3707184995557},\"source\":\"© OpenStreetMap contributors · ODbL 1.0; Esri World Imagery (acquired 2026-09-20, imagery date unknown); Ohmynews 2025-08; field blog 2025-06.\",\"renderDiagnostics\":{\"sampleFrames\":120,\"meanIntervalMs\":33.333333333333336,\"p95IntervalMs\":33.5,\"renderedFrames\":4757,\"drawCalls\":509,\"triangles\":1644600,\"pixelRatio\":1.25,\"quality\":\"detail\",\"contextLost\":false,\"landscapeBlocked\":false,\"scope\":\"Recent visible walking frame intervals in this browser; not a GPU-only measurement or hardware certification.\"}}",
+  "console": [],
+  "scope": "Desktop in-app browser, one static pine-path view; not Android hardware measurement."
+}

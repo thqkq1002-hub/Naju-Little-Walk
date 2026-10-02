@@ -1,0 +1,2555 @@
+{
+  "title": "영산포 남안 2차 추가 지붕 관찰",
+  "recorded": "2026-09-08",
+  "coordinateOrder": "WGS84 [longitude,latitude]; city world [X,Z] metres",
+  "worldOrigin": [
+    126.7105,
+    35.0008
+  ],
+  "image": "Temp/yeongsanpo-port-refs/esri-z19-reference.jpg",
+  "originalImageSize": [
+    3328,
+    2560
+  ],
+  "pixelReferenceImageSize": [
+    1300,
+    1000
+  ],
+  "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+  "sourceExtent": {
+    "zoom": 19,
+    "tileXMin": 446673,
+    "tileYMin": 207663,
+    "tileXMax": 446685,
+    "tileYMax": 207672,
+    "width": 3328,
+    "height": 2560,
+    "bounds": [
+      126.70600891113281,
+      34.99794122085655,
+      126.71493530273438,
+      35.00356583976917
+    ],
+    "crs": "EPSG:3857 tiles, bounds EPSG:4326 lon/lat",
+    "northUp": true,
+    "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+    "usage": "Local visual reference only; do not redistribute source imagery or tiles."
+  },
+  "captureDate": "unknown",
+  "imageryCaptureDate": "unknown; do not describe as a current survey",
+  "method": "Manually inspected original image and original-resolution crops. Visible roof corners were recorded against the 1300x1000 pixel convention and converted using the exact Web Mercator tile extent. Existing traced roofs and OSM buildings were compared; overlapping or road-close candidates were excluded.",
+  "usage": "Approximate numerical context massing only. These are visible roof planes, not surveyed ground footprints or cadastral boundaries. Source imagery and local verification overlays must not be redistributed. OSM road/building alignment and authored landmarks take precedence.",
+  "estimates": "Every height, roof colour, wall colour and inferred massing is approximate. A satellite roof alone does not identify facade openings, exact floor count, ownership or present-day condition.",
+  "candidateCount": 33,
+  "roofCount": 30,
+  "roofs": [
+    {
+      "id": "round2_west_lane_blue",
+      "pixelFootprint": [
+        [
+          368,
+          782
+        ],
+        [
+          382,
+          786
+        ],
+        [
+          377,
+          799
+        ],
+        [
+          364,
+          795
+        ]
+      ],
+      "footprint": [
+        [
+          126.70853577,
+          34.99916742
+        ],
+        [
+          126.7086319,
+          34.99914492
+        ],
+        [
+          126.70859756,
+          34.9990718
+        ],
+        [
+          126.7085083,
+          34.9990943
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -179.112,
+          181.739
+        ],
+        [
+          -170.347,
+          184.244
+        ],
+        [
+          -173.478,
+          192.383
+        ],
+        [
+          -181.617,
+          189.879
+        ]
+      ],
+      "height": 3.3,
+      "roofColor": "#5e939c",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Small blue roof beside the western north-south lane.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 75.85,
+      "minMappedRoadEdgeClearanceMetres": 25.55,
+      "nearestMappedRoad": "way/729505193",
+      "reviewFlags": [],
+      "candidateNumber": 1
+    },
+    {
+      "id": "round2_west_lane_green",
+      "pixelFootprint": [
+        [
+          386,
+          782
+        ],
+        [
+          411,
+          788
+        ],
+        [
+          409,
+          806
+        ],
+        [
+          380,
+          799
+        ]
+      ],
+      "footprint": [
+        [
+          126.70865936,
+          34.99916742
+        ],
+        [
+          126.70883102,
+          34.99913367
+        ],
+        [
+          126.70881729,
+          34.99903243
+        ],
+        [
+          126.70861816,
+          34.9990718
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -167.843,
+          181.739
+        ],
+        [
+          -152.189,
+          185.496
+        ],
+        [
+          -153.441,
+          196.766
+        ],
+        [
+          -171.6,
+          192.383
+        ]
+      ],
+      "height": 3.6,
+      "roofColor": "#92b5a1",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Distinct broad pale green roof south of the riverfront row.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 195.44,
+      "minMappedRoadEdgeClearanceMetres": 29.28,
+      "nearestMappedRoad": "way/729505193",
+      "reviewFlags": [],
+      "candidateNumber": 2
+    },
+    {
+      "id": "round2_west_cross_green",
+      "pixelFootprint": [
+        [
+          384,
+          843
+        ],
+        [
+          406,
+          839
+        ],
+        [
+          408,
+          848
+        ],
+        [
+          388,
+          852
+        ]
+      ],
+      "footprint": [
+        [
+          126.70864563,
+          34.99882431
+        ],
+        [
+          126.70879669,
+          34.99884681
+        ],
+        [
+          126.70881042,
+          34.99879619
+        ],
+        [
+          126.7086731,
+          34.99877369
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -169.095,
+          219.934
+        ],
+        [
+          -155.32,
+          217.429
+        ],
+        [
+          -154.068,
+          223.064
+        ],
+        [
+          -166.59,
+          225.569
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#5eaa87",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Narrow green roof north of the east-west lane.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 78.8,
+      "minMappedRoadEdgeClearanceMetres": 64.9,
+      "nearestMappedRoad": "way/729505193",
+      "reviewFlags": [],
+      "candidateNumber": 3
+    },
+    {
+      "id": "round2_west_cross_pale",
+      "pixelFootprint": [
+        [
+          410,
+          846
+        ],
+        [
+          421,
+          843
+        ],
+        [
+          423,
+          850
+        ],
+        [
+          412,
+          853
+        ]
+      ],
+      "footprint": [
+        [
+          126.70882416,
+          34.99880744
+        ],
+        [
+          126.70889969,
+          34.99882431
+        ],
+        [
+          126.70891342,
+          34.99878494
+        ],
+        [
+          126.70883789,
+          34.99876806
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -152.815,
+          221.812
+        ],
+        [
+          -145.928,
+          219.934
+        ],
+        [
+          -144.676,
+          224.316
+        ],
+        [
+          -151.563,
+          226.196
+        ]
+      ],
+      "height": 3.0,
+      "roofColor": "#98b8be",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Small pale blue roof adjacent to a green roof.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 32.54,
+      "minMappedRoadEdgeClearanceMetres": 72.07,
+      "nearestMappedRoad": "way/729505193",
+      "reviewFlags": [],
+      "candidateNumber": 4
+    },
+    {
+      "id": "round2_west_south_green",
+      "pixelFootprint": [
+        [
+          390,
+          878
+        ],
+        [
+          417,
+          871
+        ],
+        [
+          418,
+          884
+        ],
+        [
+          393,
+          891
+        ]
+      ],
+      "footprint": [
+        [
+          126.70868683,
+          34.99862745
+        ],
+        [
+          126.70887222,
+          34.99866682
+        ],
+        [
+          126.70887909,
+          34.9985937
+        ],
+        [
+          126.70870743,
+          34.99855432
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -165.338,
+          241.848
+        ],
+        [
+          -148.433,
+          237.466
+        ],
+        [
+          -147.806,
+          245.605
+        ],
+        [
+          -163.459,
+          249.989
+        ]
+      ],
+      "height": 3.4,
+      "roofColor": "#80b092",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Separate green low roof south of the lane.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 138.0,
+      "minMappedRoadEdgeClearanceMetres": 86.85,
+      "nearestMappedRoad": "way/729505193",
+      "reviewFlags": [],
+      "candidateNumber": 5
+    },
+    {
+      "id": "round2_west_long_red",
+      "pixelFootprint": [
+        [
+          541,
+          784
+        ],
+        [
+          569,
+          780
+        ],
+        [
+          572,
+          793
+        ],
+        [
+          543,
+          800
+        ]
+      ],
+      "footprint": [
+        [
+          126.70972366,
+          34.99915617
+        ],
+        [
+          126.70991592,
+          34.99917867
+        ],
+        [
+          126.70993652,
+          34.99910555
+        ],
+        [
+          126.7097374,
+          34.99906618
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -70.792,
+          182.991
+        ],
+        [
+          -53.261,
+          180.486
+        ],
+        [
+          -51.382,
+          188.626
+        ],
+        [
+          -69.539,
+          193.009
+        ]
+      ],
+      "height": 3.8,
+      "roofColor": "#92716c",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Long muted red roof between the large blue roof and cross street.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 167.4,
+      "minMappedRoadEdgeClearanceMetres": 48.65,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 6
+    },
+    {
+      "id": "round2_farwest_green",
+      "pixelFootprint": [
+        [
+          177,
+          863
+        ],
+        [
+          191,
+          862
+        ],
+        [
+          192,
+          882
+        ],
+        [
+          178,
+          884
+        ]
+      ],
+      "footprint": [
+        [
+          126.70722427,
+          34.99871182
+        ],
+        [
+          126.7073204,
+          34.99871744
+        ],
+        [
+          126.70732727,
+          34.99860495
+        ],
+        [
+          126.70723114,
+          34.9985937
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -298.704,
+          232.456
+        ],
+        [
+          -289.939,
+          231.831
+        ],
+        [
+          -289.312,
+          244.353
+        ],
+        [
+          -298.078,
+          245.605
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#509b7f",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Narrow green roof south of an already traced roof.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 113.1,
+      "minMappedRoadEdgeClearanceMetres": 40.1,
+      "nearestMappedRoad": "way/729505193",
+      "reviewFlags": [],
+      "candidateNumber": 7
+    },
+    {
+      "id": "round2_farwest_pale_blue",
+      "pixelFootprint": [
+        [
+          179,
+          887
+        ],
+        [
+          191,
+          886
+        ],
+        [
+          192,
+          895
+        ],
+        [
+          180,
+          897
+        ]
+      ],
+      "footprint": [
+        [
+          126.70723801,
+          34.99857682
+        ],
+        [
+          126.7073204,
+          34.99858245
+        ],
+        [
+          126.70732727,
+          34.99853182
+        ],
+        [
+          126.70724487,
+          34.99852057
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -297.451,
+          247.484
+        ],
+        [
+          -289.939,
+          246.858
+        ],
+        [
+          -289.312,
+          252.494
+        ],
+        [
+          -296.826,
+          253.746
+        ]
+      ],
+      "height": 3.0,
+      "roofColor": "#91c1cb",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Separate pale blue small roof south of the narrow green roof.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 45.28,
+      "minMappedRoadEdgeClearanceMetres": 54.86,
+      "nearestMappedRoad": "way/729505193",
+      "reviewFlags": [],
+      "candidateNumber": 8
+    },
+    {
+      "id": "round2_warehouse_north_small",
+      "pixelFootprint": [
+        [
+          260,
+          792
+        ],
+        [
+          268,
+          791
+        ],
+        [
+          270,
+          807
+        ],
+        [
+          262,
+          809
+        ]
+      ],
+      "footprint": [
+        [
+          126.70779419,
+          34.99911117
+        ],
+        [
+          126.70784912,
+          34.9991168
+        ],
+        [
+          126.70786285,
+          34.9990268
+        ],
+        [
+          126.70780792,
+          34.99901555
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -246.735,
+          188.001
+        ],
+        [
+          -241.726,
+          187.374
+        ],
+        [
+          -240.474,
+          197.393
+        ],
+        [
+          -245.483,
+          198.645
+        ]
+      ],
+      "height": 3.1,
+      "roofColor": "#86b1c0",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Small blue-grey roof beside the warehouse forecourt.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 52.93,
+      "minMappedRoadEdgeClearanceMetres": 11.45,
+      "nearestMappedRoad": "way/729505193",
+      "reviewFlags": [],
+      "candidateNumber": 9
+    },
+    {
+      "id": "round2_warehouse_west_annex",
+      "pixelFootprint": [
+        [
+          230,
+          911
+        ],
+        [
+          238,
+          909
+        ],
+        [
+          242,
+          929
+        ],
+        [
+          233,
+          932
+        ]
+      ],
+      "footprint": [
+        [
+          126.7075882,
+          34.99844183
+        ],
+        [
+          126.70764313,
+          34.99845308
+        ],
+        [
+          126.70767059,
+          34.99834058
+        ],
+        [
+          126.7076088,
+          34.99832371
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -265.519,
+          262.511
+        ],
+        [
+          -260.51,
+          261.259
+        ],
+        [
+          -258.006,
+          273.783
+        ],
+        [
+          -263.64,
+          275.661
+        ]
+      ],
+      "height": 3.1,
+      "roofColor": "#b0c6c6",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Thin pale roof west of the long warehouse, recorded inside visible edges.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 71.74,
+      "minMappedRoadEdgeClearanceMetres": 78.24,
+      "nearestMappedRoad": "way/729505193",
+      "reviewFlags": [],
+      "candidateNumber": 10
+    },
+    {
+      "id": "round2_hongeo_cyan_long",
+      "pixelFootprint": [
+        [
+          699,
+          703
+        ],
+        [
+          731,
+          696
+        ],
+        [
+          734,
+          707
+        ],
+        [
+          704,
+          715
+        ]
+      ],
+      "footprint": [
+        [
+          126.71080856,
+          34.99961177
+        ],
+        [
+          126.71102829,
+          34.99965115
+        ],
+        [
+          126.71104889,
+          34.99958927
+        ],
+        [
+          126.7108429,
+          34.99954428
+        ]
+      ],
+      "worldFootprint": [
+        [
+          28.137,
+          132.274
+        ],
+        [
+          48.173,
+          127.89
+        ],
+        [
+          50.052,
+          134.778
+        ],
+        [
+          31.268,
+          139.787
+        ]
+      ],
+      "height": 3.6,
+      "roofColor": "#80b8b2",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Long cyan roof south of the cross street.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 151.53,
+      "minMappedRoadEdgeClearanceMetres": 5.4,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 14
+    },
+    {
+      "id": "round2_hongeo_grey_narrow",
+      "pixelFootprint": [
+        [
+          688,
+          705
+        ],
+        [
+          698,
+          703
+        ],
+        [
+          705,
+          729
+        ],
+        [
+          694,
+          732
+        ]
+      ],
+      "footprint": [
+        [
+          126.71073303,
+          34.99960052
+        ],
+        [
+          126.7108017,
+          34.99961177
+        ],
+        [
+          126.71084976,
+          34.99946553
+        ],
+        [
+          126.71077423,
+          34.99944866
+        ]
+      ],
+      "worldFootprint": [
+        [
+          21.249,
+          133.526
+        ],
+        [
+          27.511,
+          132.274
+        ],
+        [
+          31.894,
+          148.553
+        ],
+        [
+          25.006,
+          150.431
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#afbdb9",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Narrow grey roof along the west edge of the central block.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 115.46,
+      "minMappedRoadEdgeClearanceMetres": 5.08,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 15
+    },
+    {
+      "id": "round2_hongeo_dark_north",
+      "pixelFootprint": [
+        [
+          725,
+          716
+        ],
+        [
+          737,
+          714
+        ],
+        [
+          742,
+          729
+        ],
+        [
+          729,
+          735
+        ]
+      ],
+      "footprint": [
+        [
+          126.71098709,
+          34.99953865
+        ],
+        [
+          126.71106949,
+          34.9995499
+        ],
+        [
+          126.71110382,
+          34.99946553
+        ],
+        [
+          126.71101456,
+          34.99943178
+        ]
+      ],
+      "worldFootprint": [
+        [
+          44.416,
+          140.413
+        ],
+        [
+          51.93,
+          139.161
+        ],
+        [
+          55.061,
+          148.553
+        ],
+        [
+          46.921,
+          152.31
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#707d76",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Small dark roof on the east side of the central block.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 90.37,
+      "minMappedRoadEdgeClearanceMetres": 16.97,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 16
+    },
+    {
+      "id": "round2_hongeo_dark_south",
+      "pixelFootprint": [
+        [
+          725,
+          789
+        ],
+        [
+          739,
+          785
+        ],
+        [
+          744,
+          802
+        ],
+        [
+          729,
+          807
+        ]
+      ],
+      "footprint": [
+        [
+          126.71098709,
+          34.99912805
+        ],
+        [
+          126.71108322,
+          34.99915055
+        ],
+        [
+          126.71111755,
+          34.99905493
+        ],
+        [
+          126.71101456,
+          34.9990268
+        ]
+      ],
+      "worldFootprint": [
+        [
+          44.416,
+          186.121
+        ],
+        [
+          53.182,
+          183.617
+        ],
+        [
+          56.313,
+          194.261
+        ],
+        [
+          46.921,
+          197.393
+        ]
+      ],
+      "height": 3.4,
+      "roofColor": "#465c50",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Dark green roof south of the existing blue roof.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 107.43,
+      "minMappedRoadEdgeClearanceMetres": 61.04,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 17
+    },
+    {
+      "id": "round2_gallerywest_narrow",
+      "pixelFootprint": [
+        [
+          779,
+          751
+        ],
+        [
+          790,
+          749
+        ],
+        [
+          798,
+          774
+        ],
+        [
+          786,
+          778
+        ]
+      ],
+      "footprint": [
+        [
+          126.71135788,
+          34.99934179
+        ],
+        [
+          126.71143341,
+          34.99935304
+        ],
+        [
+          126.71148834,
+          34.99921242
+        ],
+        [
+          126.71140594,
+          34.99918992
+        ]
+      ],
+      "worldFootprint": [
+        [
+          78.228,
+          162.328
+        ],
+        [
+          85.115,
+          161.076
+        ],
+        [
+          90.124,
+          176.729
+        ],
+        [
+          82.61,
+          179.234
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#8e8c84",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Long narrow muted roof east of the curving lane.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 126.04,
+      "minMappedRoadEdgeClearanceMetres": 45.41,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 18
+    },
+    {
+      "id": "round2_south_middle_green",
+      "pixelFootprint": [
+        [
+          676,
+          861
+        ],
+        [
+          704,
+          865
+        ],
+        [
+          701,
+          879
+        ],
+        [
+          676,
+          877
+        ]
+      ],
+      "footprint": [
+        [
+          126.71065063,
+          34.99872307
+        ],
+        [
+          126.7108429,
+          34.99870057
+        ],
+        [
+          126.7108223,
+          34.99862182
+        ],
+        [
+          126.71065063,
+          34.99863307
+        ]
+      ],
+      "worldFootprint": [
+        [
+          13.736,
+          231.204
+        ],
+        [
+          31.268,
+          233.709
+        ],
+        [
+          29.39,
+          242.475
+        ],
+        [
+          13.736,
+          241.223
+        ]
+      ],
+      "height": 3.7,
+      "roofColor": "#8fa47a",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Broad green roof on the south side of the cross street.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 157.61,
+      "minMappedRoadEdgeClearanceMetres": 98.61,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 19
+    },
+    {
+      "id": "round2_south_middle_red",
+      "pixelFootprint": [
+        [
+          707,
+          880
+        ],
+        [
+          719,
+          878
+        ],
+        [
+          718,
+          898
+        ],
+        [
+          706,
+          901
+        ]
+      ],
+      "footprint": [
+        [
+          126.71086349,
+          34.9986162
+        ],
+        [
+          126.71094589,
+          34.99862745
+        ],
+        [
+          126.71093903,
+          34.99851495
+        ],
+        [
+          126.71085663,
+          34.99849808
+        ]
+      ],
+      "worldFootprint": [
+        [
+          33.146,
+          243.101
+        ],
+        [
+          40.659,
+          241.848
+        ],
+        [
+          40.034,
+          254.372
+        ],
+        [
+          32.52,
+          256.25
+        ]
+      ],
+      "height": 3.4,
+      "roofColor": "#967665",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Narrow red-brown roof between the green roof and paved space.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 95.47,
+      "minMappedRoadEdgeClearanceMetres": 114.54,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 20
+    },
+    {
+      "id": "round2_south_blue",
+      "pixelFootprint": [
+        [
+          655,
+          890
+        ],
+        [
+          670,
+          893
+        ],
+        [
+          666,
+          909
+        ],
+        [
+          654,
+          907
+        ]
+      ],
+      "footprint": [
+        [
+          126.71050644,
+          34.99855995
+        ],
+        [
+          126.71060944,
+          34.99854307
+        ],
+        [
+          126.71058197,
+          34.99845308
+        ],
+        [
+          126.71049957,
+          34.99846433
+        ]
+      ],
+      "worldFootprint": [
+        [
+          0.587,
+          249.362
+        ],
+        [
+          9.98,
+          251.241
+        ],
+        [
+          7.475,
+          261.259
+        ],
+        [
+          -0.039,
+          260.007
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#72a5bd",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Separate blue roof south of the green roof group.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 89.79,
+      "minMappedRoadEdgeClearanceMetres": 113.37,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 21
+    },
+    {
+      "id": "round2_south_red_l",
+      "pixelFootprint": [
+        [
+          679,
+          901
+        ],
+        [
+          695,
+          905
+        ],
+        [
+          692,
+          915
+        ],
+        [
+          681,
+          913
+        ],
+        [
+          677,
+          926
+        ],
+        [
+          670,
+          923
+        ]
+      ],
+      "footprint": [
+        [
+          126.71067123,
+          34.99849808
+        ],
+        [
+          126.7107811,
+          34.99847558
+        ],
+        [
+          126.7107605,
+          34.99841933
+        ],
+        [
+          126.71068497,
+          34.99843058
+        ],
+        [
+          126.7106575,
+          34.99835746
+        ],
+        [
+          126.71060944,
+          34.99837433
+        ]
+      ],
+      "worldFootprint": [
+        [
+          15.614,
+          256.25
+        ],
+        [
+          25.633,
+          258.754
+        ],
+        [
+          23.754,
+          265.016
+        ],
+        [
+          16.867,
+          263.764
+        ],
+        [
+          14.362,
+          271.904
+        ],
+        [
+          9.98,
+          270.026
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#9b6e62",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Visible red-brown L-shaped roof with a southern wing.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 108.8,
+      "minMappedRoadEdgeClearanceMetres": 123.44,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 22
+    },
+    {
+      "id": "round2_southwest_blue_wide",
+      "pixelFootprint": [
+        [
+          611,
+          922
+        ],
+        [
+          636,
+          928
+        ],
+        [
+          634,
+          940
+        ],
+        [
+          608,
+          933
+        ]
+      ],
+      "footprint": [
+        [
+          126.71020432,
+          34.99837996
+        ],
+        [
+          126.71037598,
+          34.99834621
+        ],
+        [
+          126.71036224,
+          34.99827871
+        ],
+        [
+          126.71018372,
+          34.99831808
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -26.962,
+          269.399
+        ],
+        [
+          -11.309,
+          273.156
+        ],
+        [
+          -12.562,
+          280.67
+        ],
+        [
+          -28.841,
+          276.287
+        ]
+      ],
+      "height": 3.3,
+      "roofColor": "#79a8bd",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Broad blue roof south of the winding lane.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 121.34,
+      "minMappedRoadEdgeClearanceMetres": 130.21,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 23
+    },
+    {
+      "id": "round2_southwest_blue_small",
+      "pixelFootprint": [
+        [
+          646,
+          930
+        ],
+        [
+          657,
+          933
+        ],
+        [
+          654,
+          955
+        ],
+        [
+          643,
+          951
+        ]
+      ],
+      "footprint": [
+        [
+          126.71044464,
+          34.99833496
+        ],
+        [
+          126.71052017,
+          34.99831808
+        ],
+        [
+          126.71049957,
+          34.99819434
+        ],
+        [
+          126.71042404,
+          34.99821684
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -5.048,
+          274.408
+        ],
+        [
+          1.839,
+          276.287
+        ],
+        [
+          -0.039,
+          290.062
+        ],
+        [
+          -6.927,
+          287.557
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#4b79a6",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Narrow blue roof east of the broad blue roof.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 96.84,
+      "minMappedRoadEdgeClearanceMetres": 136.88,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 24
+    },
+    {
+      "id": "round2_south_grey_blue",
+      "pixelFootprint": [
+        [
+          769,
+          884
+        ],
+        [
+          781,
+          886
+        ],
+        [
+          782,
+          904
+        ],
+        [
+          769,
+          907
+        ]
+      ],
+      "footprint": [
+        [
+          126.71128922,
+          34.9985937
+        ],
+        [
+          126.71137161,
+          34.99858245
+        ],
+        [
+          126.71137848,
+          34.9984812
+        ],
+        [
+          126.71128922,
+          34.99846433
+        ]
+      ],
+      "worldFootprint": [
+        [
+          71.967,
+          245.605
+        ],
+        [
+          79.48,
+          246.858
+        ],
+        [
+          80.106,
+          258.129
+        ],
+        [
+          71.967,
+          260.007
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#95b5b9",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Pale blue roof east of the orange roof.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 100.56,
+      "minMappedRoadEdgeClearanceMetres": 125.66,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 25
+    },
+    {
+      "id": "round2_south_red_hipped",
+      "pixelFootprint": [
+        [
+          744,
+          933
+        ],
+        [
+          754,
+          928
+        ],
+        [
+          765,
+          940
+        ],
+        [
+          779,
+          941
+        ],
+        [
+          784,
+          953
+        ],
+        [
+          774,
+          960
+        ],
+        [
+          773,
+          967
+        ],
+        [
+          758,
+          964
+        ],
+        [
+          752,
+          956
+        ],
+        [
+          741,
+          960
+        ],
+        [
+          735,
+          947
+        ]
+      ],
+      "footprint": [
+        [
+          126.71111755,
+          34.99831808
+        ],
+        [
+          126.71118622,
+          34.99834621
+        ],
+        [
+          126.71126175,
+          34.99827871
+        ],
+        [
+          126.71135788,
+          34.99827308
+        ],
+        [
+          126.71139221,
+          34.99820559
+        ],
+        [
+          126.71132355,
+          34.99816621
+        ],
+        [
+          126.71131668,
+          34.99812684
+        ],
+        [
+          126.71121368,
+          34.99814371
+        ],
+        [
+          126.71117249,
+          34.99818871
+        ],
+        [
+          126.71109695,
+          34.99816621
+        ],
+        [
+          126.71105576,
+          34.99823934
+        ]
+      ],
+      "worldFootprint": [
+        [
+          56.313,
+          276.287
+        ],
+        [
+          62.574,
+          273.156
+        ],
+        [
+          69.462,
+          280.67
+        ],
+        [
+          78.228,
+          281.297
+        ],
+        [
+          81.358,
+          288.81
+        ],
+        [
+          75.097,
+          293.194
+        ],
+        [
+          74.471,
+          297.576
+        ],
+        [
+          65.078,
+          295.698
+        ],
+        [
+          61.322,
+          290.689
+        ],
+        [
+          54.434,
+          293.194
+        ],
+        [
+          50.678,
+          285.053
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#a46f67",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "One clearly connected complex red hipped roof; no facade layout inferred.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 426.96,
+      "minMappedRoadEdgeClearanceMetres": 150.42,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 26
+    },
+    {
+      "id": "round2_farwest_blue_south",
+      "pixelFootprint": [
+        [
+          87,
+          906
+        ],
+        [
+          103,
+          902
+        ],
+        [
+          106,
+          912
+        ],
+        [
+          93,
+          918
+        ]
+      ],
+      "footprint": [
+        [
+          126.70660629,
+          34.99846995
+        ],
+        [
+          126.70671616,
+          34.99849245
+        ],
+        [
+          126.70673676,
+          34.9984362
+        ],
+        [
+          126.70664749,
+          34.99840245
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -355.056,
+          259.381
+        ],
+        [
+          -345.037,
+          256.876
+        ],
+        [
+          -343.159,
+          263.138
+        ],
+        [
+          -351.299,
+          266.895
+        ]
+      ],
+      "height": 3.1,
+      "roofColor": "#4d79a7",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Small blue roof between previously traced western roofs.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 71.36,
+      "minMappedRoadEdgeClearanceMetres": 50.05,
+      "nearestMappedRoad": "way/729505193",
+      "reviewFlags": [],
+      "candidateNumber": 27
+    },
+    {
+      "id": "round2_farwest_red_south",
+      "pixelFootprint": [
+        [
+          43,
+          960
+        ],
+        [
+          59,
+          954
+        ],
+        [
+          66,
+          966
+        ],
+        [
+          51,
+          974
+        ]
+      ],
+      "footprint": [
+        [
+          126.70630417,
+          34.99816621
+        ],
+        [
+          126.70641403,
+          34.99819996
+        ],
+        [
+          126.7064621,
+          34.99813246
+        ],
+        [
+          126.7063591,
+          34.99808747
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -382.606,
+          293.194
+        ],
+        [
+          -372.588,
+          289.436
+        ],
+        [
+          -368.204,
+          296.951
+        ],
+        [
+          -377.597,
+          301.959
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#b66c66",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Distinct red roof at the southwest edge of the reference.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 99.59,
+      "minMappedRoadEdgeClearanceMetres": 74.38,
+      "nearestMappedRoad": "way/729505193",
+      "reviewFlags": [],
+      "candidateNumber": 28
+    },
+    {
+      "id": "round2_farwest_pale_strip",
+      "pixelFootprint": [
+        [
+          36,
+          876
+        ],
+        [
+          49,
+          873
+        ],
+        [
+          50,
+          881
+        ],
+        [
+          38,
+          884
+        ]
+      ],
+      "footprint": [
+        [
+          126.7062561,
+          34.99863869
+        ],
+        [
+          126.70634537,
+          34.99865557
+        ],
+        [
+          126.70635223,
+          34.99861057
+        ],
+        [
+          126.70626984,
+          34.9985937
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -386.989,
+          240.597
+        ],
+        [
+          -378.849,
+          238.718
+        ],
+        [
+          -378.223,
+          243.727
+        ],
+        [
+          -385.736,
+          245.605
+        ]
+      ],
+      "height": 3.0,
+      "roofColor": "#adc4c4",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Small pale roof behind the riverside building.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 40.96,
+      "minMappedRoadEdgeClearanceMetres": 23.47,
+      "nearestMappedRoad": "way/729505193",
+      "reviewFlags": [],
+      "candidateNumber": 29
+    },
+    {
+      "id": "round2_farwest_blue_garage",
+      "pixelFootprint": [
+        [
+          73,
+          853
+        ],
+        [
+          79,
+          852
+        ],
+        [
+          81,
+          860
+        ],
+        [
+          73,
+          862
+        ]
+      ],
+      "footprint": [
+        [
+          126.70651016,
+          34.99876806
+        ],
+        [
+          126.70655136,
+          34.99877369
+        ],
+        [
+          126.70656509,
+          34.99872869
+        ],
+        [
+          126.70651016,
+          34.99871744
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -363.822,
+          226.196
+        ],
+        [
+          -360.065,
+          225.569
+        ],
+        [
+          -358.813,
+          230.578
+        ],
+        [
+          -363.822,
+          231.831
+        ]
+      ],
+      "height": 3.0,
+      "roofColor": "#7e9cb3",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Small blue rectangular roof beside an open forecourt.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 23.91,
+      "minMappedRoadEdgeClearanceMetres": 15.73,
+      "nearestMappedRoad": "way/729505193",
+      "reviewFlags": [],
+      "candidateNumber": 30
+    },
+    {
+      "id": "round2_crossroad_blue_small",
+      "pixelFootprint": [
+        [
+          527,
+          841
+        ],
+        [
+          537,
+          839
+        ],
+        [
+          540,
+          850
+        ],
+        [
+          530,
+          853
+        ]
+      ],
+      "footprint": [
+        [
+          126.70962753,
+          34.99883556
+        ],
+        [
+          126.7096962,
+          34.99884681
+        ],
+        [
+          126.7097168,
+          34.99878494
+        ],
+        [
+          126.70964813,
+          34.99876806
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -79.558,
+          218.681
+        ],
+        [
+          -73.296,
+          217.429
+        ],
+        [
+          -71.418,
+          224.316
+        ],
+        [
+          -77.68,
+          226.196
+        ]
+      ],
+      "height": 3.1,
+      "roofColor": "#618fad",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Small blue roof west of the large green roof.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 48.03,
+      "minMappedRoadEdgeClearanceMetres": 90.65,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 31
+    },
+    {
+      "id": "round2_crossroad_dark_small",
+      "pixelFootprint": [
+        [
+          604,
+          818
+        ],
+        [
+          616,
+          816
+        ],
+        [
+          618,
+          828
+        ],
+        [
+          605,
+          830
+        ]
+      ],
+      "footprint": [
+        [
+          126.71015625,
+          34.99896493
+        ],
+        [
+          126.71023865,
+          34.99897618
+        ],
+        [
+          126.71025238,
+          34.99890868
+        ],
+        [
+          126.71016312,
+          34.99889743
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -31.346,
+          204.28
+        ],
+        [
+          -23.832,
+          203.028
+        ],
+        [
+          -22.58,
+          210.542
+        ],
+        [
+          -30.719,
+          211.794
+        ]
+      ],
+      "height": 3.0,
+      "roofColor": "#7f7770",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Small muted roof immediately north of the pale roof and parking area.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 59.98,
+      "minMappedRoadEdgeClearanceMetres": 63.9,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 32
+    },
+    {
+      "id": "round2_crossroad_pale_north",
+      "pixelFootprint": [
+        [
+          573,
+          781
+        ],
+        [
+          581,
+          779
+        ],
+        [
+          585,
+          791
+        ],
+        [
+          576,
+          794
+        ]
+      ],
+      "footprint": [
+        [
+          126.70994339,
+          34.99917305
+        ],
+        [
+          126.70999832,
+          34.99918429
+        ],
+        [
+          126.71002579,
+          34.9991168
+        ],
+        [
+          126.70996399,
+          34.99909992
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -50.756,
+          181.112
+        ],
+        [
+          -45.747,
+          179.861
+        ],
+        [
+          -43.242,
+          187.374
+        ],
+        [
+          -48.877,
+          189.253
+        ]
+      ],
+      "height": 3.2,
+      "roofColor": "#a7c4cb",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Small pale blue roof east of the long muted red roof.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 45.09,
+      "minMappedRoadEdgeClearanceMetres": 44.66,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [],
+      "candidateNumber": 33
+    }
+  ],
+  "excludedForReview": [
+    {
+      "id": "round2_hongeo_north_grey",
+      "pixelFootprint": [
+        [
+          648,
+          649
+        ],
+        [
+          659,
+          645
+        ],
+        [
+          673,
+          665
+        ],
+        [
+          660,
+          674
+        ]
+      ],
+      "footprint": [
+        [
+          126.71045837,
+          34.99991551
+        ],
+        [
+          126.71053391,
+          34.999938
+        ],
+        [
+          126.71063004,
+          34.99982551
+        ],
+        [
+          126.71054077,
+          34.99977489
+        ]
+      ],
+      "worldFootprint": [
+        [
+          -3.796,
+          98.461
+        ],
+        [
+          3.092,
+          95.958
+        ],
+        [
+          11.858,
+          108.48
+        ],
+        [
+          3.718,
+          114.115
+        ]
+      ],
+      "height": 4.0,
+      "roofColor": "#a5b1b0",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Grey sloping roof south of the riverside road, beside the mapped roof row.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 138.98,
+      "minMappedRoadEdgeClearanceMetres": -1.49,
+      "nearestMappedRoad": "way/130634137",
+      "reviewFlags": [
+        "insufficient mapped-road clearance way/130634137"
+      ],
+      "candidateNumber": 11
+    },
+    {
+      "id": "round2_hongeo_blue_strip",
+      "pixelFootprint": [
+        [
+          671,
+          682
+        ],
+        [
+          687,
+          678
+        ],
+        [
+          689,
+          690
+        ],
+        [
+          674,
+          694
+        ]
+      ],
+      "footprint": [
+        [
+          126.7106163,
+          34.99972989
+        ],
+        [
+          126.71072617,
+          34.99975239
+        ],
+        [
+          126.7107399,
+          34.99968489
+        ],
+        [
+          126.7106369,
+          34.9996624
+        ]
+      ],
+      "worldFootprint": [
+        [
+          10.605,
+          119.125
+        ],
+        [
+          20.624,
+          116.62
+        ],
+        [
+          21.876,
+          124.134
+        ],
+        [
+          12.484,
+          126.638
+        ]
+      ],
+      "height": 3.3,
+      "roofColor": "#4d7db3",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Blue narrow roof just north of the mapped cross street.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 76.84,
+      "minMappedRoadEdgeClearanceMetres": -3.41,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [
+        "insufficient mapped-road clearance way/130634066"
+      ],
+      "candidateNumber": 12
+    },
+    {
+      "id": "round2_hongeo_green_strip",
+      "pixelFootprint": [
+        [
+          691,
+          680
+        ],
+        [
+          705,
+          677
+        ],
+        [
+          707,
+          687
+        ],
+        [
+          693,
+          691
+        ]
+      ],
+      "footprint": [
+        [
+          126.71075363,
+          34.99974114
+        ],
+        [
+          126.71084976,
+          34.99975802
+        ],
+        [
+          126.71086349,
+          34.99970177
+        ],
+        [
+          126.71076736,
+          34.99967927
+        ]
+      ],
+      "worldFootprint": [
+        [
+          23.128,
+          117.872
+        ],
+        [
+          31.894,
+          115.993
+        ],
+        [
+          33.146,
+          122.255
+        ],
+        [
+          24.38,
+          124.76
+        ]
+      ],
+      "height": 3.1,
+      "roofColor": "#97bcab",
+      "wallColor": "#c5beb0",
+      "heightBasis": "Estimated low-rise context wall height in metres, not surveyed; specific storey count is unknown.",
+      "facadeBasis": "No doors, signs, fenestration or facade materials inferred from satellite.",
+      "confidence": "medium: visible manually observed roof plane, approximate eaves; ground wall alignment unknown",
+      "observed": "Pale green narrow roof adjoining the blue strip.",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "imageryCaptureDate": "unknown; not a current survey",
+      "areaSquareMetres": 60.38,
+      "minMappedRoadEdgeClearanceMetres": -3.5,
+      "nearestMappedRoad": "way/130634066",
+      "reviewFlags": [
+        "insufficient mapped-road clearance way/130634066"
+      ],
+      "candidateNumber": 13
+    }
+  ],
+  "validation": {
+    "existingTracedRoofsCompared": 66,
+    "literatureAppliedCompared": 30,
+    "literatureUnappliedGuardCompared": 3,
+    "closeNeighboursCompared": 5,
+    "osmBuildingsCompared": 52,
+    "mappedRoadsCompared": 9,
+    "newRoofOverlapCount": 0,
+    "acceptedExistingOverlapCount": 0,
+    "acceptedRoadClearanceViolations": 0,
+    "roadEdgeGuardMetres": 0.5,
+    "selfIntersectingRoofs": [],
+    "minAcceptedRoadEdgeClearanceMetres": 5.08,
+    "minRoofAreaSquareMetres": 23.91,
+    "maxRoofAreaSquareMetres": 426.96
+  }
+}

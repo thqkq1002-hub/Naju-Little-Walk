@@ -1,0 +1,1120 @@
+{
+  "title": "복암리 3호분 발굴도 41기 매장시설 수작업 중심점 추적",
+  "source": {
+    "title": "나주 복암리3호분 [본문] (2001)",
+    "institution": "국립문화재연구소·전라남도",
+    "pagePrinted": 29,
+    "pagePdfOneBased": 30,
+    "figure": 6,
+    "url": "https://portal.nrich.go.kr/file_link/newFolder/565/Report/20190530092533939.pdf",
+    "localRender": "C:\\Users\\닭사랑농장\\AppData\\Local\\Temp\\bogam-dimensions\\report-030.png",
+    "renderSize": [
+      1600,
+      1313
+    ]
+  },
+  "coordinateSystem": {
+    "x": "east / image right",
+    "z": "south / image down",
+    "originPx": [
+      690,
+      620
+    ],
+    "metresPerPixel": 0.044642857142857144,
+    "scaleBarPx": [
+      771,
+      995
+    ],
+    "scaleBarMetres": 10,
+    "y": "unknown: not encoded"
+  },
+  "limitations": [
+    "This is the original excavation plan, NOT an as-built survey of the museum replica.",
+    "Hand-picked positions are approximate, typically about 0.3-0.7 m; broad asymmetric stone chambers may have greater centroid ambiguity.",
+    "Visible envelopes include stone walls, passages or excavation pits; they are NOT chamber internal dimensions and should not be used as exact model sizes.",
+    "Do not force the irregular contour to fit a perfect 38 x 42 m rectangle. The 10 m graphic scale is the calibration.",
+    "No heights or chronological overlaps are encoded. Do not place all 41 chambers at the same height.",
+    "Facility labels S1..S17 and S96 comprise 18 stone-type facilities; actual burial typology must be read separately."
+  ],
+  "burials": [
+    {
+      "id": "S1",
+      "reportLabel": "석1",
+      "category": "stone_burial",
+      "center_px": [
+        654.5,
+        386.0
+      ],
+      "xz_m": [
+        -1.585,
+        -10.446
+      ],
+      "visibleEnvelope_px": [
+        603,
+        341,
+        706,
+        431
+      ],
+      "visibleEnvelope_m": [
+        4.598,
+        4.018
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "S2",
+      "reportLabel": "석2",
+      "category": "stone_burial",
+      "center_px": [
+        823.0,
+        376.0
+      ],
+      "xz_m": [
+        5.938,
+        -10.893
+      ],
+      "visibleEnvelope_px": [
+        780,
+        340,
+        866,
+        412
+      ],
+      "visibleEnvelope_m": [
+        3.839,
+        3.214
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "S3",
+      "reportLabel": "석3",
+      "category": "stone_burial",
+      "center_px": [
+        951.5,
+        377.0
+      ],
+      "xz_m": [
+        11.674,
+        -10.848
+      ],
+      "visibleEnvelope_px": [
+        937,
+        345,
+        966,
+        409
+      ],
+      "visibleEnvelope_m": [
+        1.295,
+        2.857
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "S4",
+      "reportLabel": "석4",
+      "category": "stone_burial",
+      "center_px": [
+        757.0,
+        579.0
+      ],
+      "xz_m": [
+        2.991,
+        -1.83
+      ],
+      "visibleEnvelope_px": [
+        721,
+        550,
+        793,
+        608
+      ],
+      "visibleEnvelope_m": [
+        3.214,
+        2.589
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "S5",
+      "reportLabel": "석5",
+      "category": "stone_burial",
+      "center_px": [
+        920.5,
+        477.0
+      ],
+      "xz_m": [
+        10.29,
+        -6.384
+      ],
+      "visibleEnvelope_px": [
+        870,
+        393,
+        971,
+        561
+      ],
+      "visibleEnvelope_m": [
+        4.509,
+        7.5
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "mainChamberAnchor_px": [
+        915,
+        449
+      ],
+      "mainChamberAnchor_xz_m": [
+        10.045,
+        -7.634
+      ],
+      "mainChamberAnchor_note": "Additional approximate anchor for the main burial room, excluding the access corridor; not a measured centroid."
+    },
+    {
+      "id": "S6",
+      "reportLabel": "석6",
+      "category": "stone_burial",
+      "center_px": [
+        550.5,
+        888.0
+      ],
+      "xz_m": [
+        -6.228,
+        11.964
+      ],
+      "visibleEnvelope_px": [
+        509,
+        778,
+        592,
+        998
+      ],
+      "visibleEnvelope_m": [
+        3.705,
+        9.821
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "mainChamberAnchor_px": [
+        547,
+        820
+      ],
+      "mainChamberAnchor_xz_m": [
+        -6.384,
+        8.929
+      ],
+      "mainChamberAnchor_note": "Additional approximate anchor for the main burial room, excluding the access corridor; not a measured centroid."
+    },
+    {
+      "id": "S7",
+      "reportLabel": "석7",
+      "category": "stone_burial",
+      "center_px": [
+        469.5,
+        930.5
+      ],
+      "xz_m": [
+        -9.844,
+        13.862
+      ],
+      "visibleEnvelope_px": [
+        427,
+        787,
+        512,
+        1074
+      ],
+      "visibleEnvelope_m": [
+        3.795,
+        12.812
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "mainChamberAnchor_px": [
+        474,
+        839
+      ],
+      "mainChamberAnchor_xz_m": [
+        -9.643,
+        9.777
+      ],
+      "mainChamberAnchor_note": "Additional approximate anchor for the main burial room, excluding the access corridor; not a measured centroid."
+    },
+    {
+      "id": "S8",
+      "reportLabel": "석8",
+      "category": "stone_burial",
+      "center_px": [
+        349.0,
+        952.0
+      ],
+      "xz_m": [
+        -15.223,
+        14.821
+      ],
+      "visibleEnvelope_px": [
+        336,
+        936,
+        362,
+        968
+      ],
+      "visibleEnvelope_m": [
+        1.161,
+        1.429
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "S9",
+      "reportLabel": "석9",
+      "category": "stone_burial",
+      "center_px": [
+        422.0,
+        488.0
+      ],
+      "xz_m": [
+        -11.964,
+        -5.893
+      ],
+      "visibleEnvelope_px": [
+        347,
+        442,
+        497,
+        534
+      ],
+      "visibleEnvelope_m": [
+        6.696,
+        4.107
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "S10",
+      "reportLabel": "석10",
+      "category": "stone_burial",
+      "center_px": [
+        391.5,
+        777.0
+      ],
+      "xz_m": [
+        -13.326,
+        7.009
+      ],
+      "visibleEnvelope_px": [
+        332,
+        740,
+        451,
+        814
+      ],
+      "visibleEnvelope_m": [
+        5.312,
+        3.304
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "S11",
+      "reportLabel": "석11",
+      "category": "stone_burial",
+      "center_px": [
+        1008.0,
+        794.5
+      ],
+      "xz_m": [
+        14.196,
+        7.79
+      ],
+      "visibleEnvelope_px": [
+        985,
+        752,
+        1031,
+        837
+      ],
+      "visibleEnvelope_m": [
+        2.054,
+        3.795
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "S12",
+      "reportLabel": "석12",
+      "category": "stone_burial",
+      "center_px": [
+        931.5,
+        852.0
+      ],
+      "xz_m": [
+        10.781,
+        10.357
+      ],
+      "visibleEnvelope_px": [
+        895,
+        779,
+        968,
+        925
+      ],
+      "visibleEnvelope_m": [
+        3.259,
+        6.518
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "mainChamberAnchor_px": [
+        930,
+        817
+      ],
+      "mainChamberAnchor_xz_m": [
+        10.714,
+        8.795
+      ],
+      "mainChamberAnchor_note": "Additional approximate anchor for the main burial room, excluding the access corridor; not a measured centroid."
+    },
+    {
+      "id": "S13",
+      "reportLabel": "석13",
+      "category": "stone_burial",
+      "center_px": [
+        368.0,
+        851.5
+      ],
+      "xz_m": [
+        -14.375,
+        10.335
+      ],
+      "visibleEnvelope_px": [
+        299,
+        803,
+        437,
+        900
+      ],
+      "visibleEnvelope_m": [
+        6.161,
+        4.33
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "S14",
+      "reportLabel": "석14",
+      "category": "stone_burial",
+      "center_px": [
+        475.5,
+        637.0
+      ],
+      "xz_m": [
+        -9.576,
+        0.759
+      ],
+      "visibleEnvelope_px": [
+        383,
+        578,
+        568,
+        696
+      ],
+      "visibleEnvelope_m": [
+        8.259,
+        5.268
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "mainChamberAnchor_px": [
+        503,
+        634
+      ],
+      "mainChamberAnchor_xz_m": [
+        -8.348,
+        0.625
+      ],
+      "mainChamberAnchor_note": "Additional approximate anchor for the main burial room, excluding the access corridor; not a measured centroid."
+    },
+    {
+      "id": "S15",
+      "reportLabel": "석15",
+      "category": "stone_burial",
+      "center_px": [
+        833.5,
+        575.5
+      ],
+      "xz_m": [
+        6.406,
+        -1.987
+      ],
+      "visibleEnvelope_px": [
+        809,
+        551,
+        858,
+        600
+      ],
+      "visibleEnvelope_m": [
+        2.188,
+        2.188
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "S16",
+      "reportLabel": "석16",
+      "category": "stone_burial",
+      "center_px": [
+        450.0,
+        423.0
+      ],
+      "xz_m": [
+        -10.714,
+        -8.795
+      ],
+      "visibleEnvelope_px": [
+        359,
+        385,
+        541,
+        461
+      ],
+      "visibleEnvelope_m": [
+        8.125,
+        3.393
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "S17",
+      "reportLabel": "석17",
+      "category": "stone_burial",
+      "center_px": [
+        457.5,
+        363.5
+      ],
+      "xz_m": [
+        -10.379,
+        -11.451
+      ],
+      "visibleEnvelope_px": [
+        367,
+        329,
+        548,
+        398
+      ],
+      "visibleEnvelope_m": [
+        8.08,
+        3.08
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "S96",
+      "reportLabel": "96석실",
+      "category": "stone_burial",
+      "center_px": [
+        745.0,
+        809.5
+      ],
+      "xz_m": [
+        2.455,
+        8.46
+      ],
+      "visibleEnvelope_px": [
+        648,
+        672,
+        842,
+        947
+      ],
+      "visibleEnvelope_m": [
+        8.661,
+        12.277
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "mainChamberAnchor_px": [
+        741,
+        776
+      ],
+      "mainChamberAnchor_xz_m": [
+        2.277,
+        6.964
+      ],
+      "mainChamberAnchor_note": "Additional approximate anchor for the main burial room, excluding the access corridor; not a measured centroid."
+    },
+    {
+      "id": "J1",
+      "reportLabel": "옹1",
+      "category": "jar_coffin",
+      "center_px": [
+        736,
+        430
+      ],
+      "xz_m": [
+        2.054,
+        -8.482
+      ],
+      "visibleEnvelope_px": [
+        730,
+        414,
+        746,
+        449
+      ],
+      "visibleEnvelope_m": [
+        0.714,
+        1.562
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J2",
+      "reportLabel": "옹2",
+      "category": "jar_coffin",
+      "center_px": [
+        1009,
+        547
+      ],
+      "xz_m": [
+        14.241,
+        -3.259
+      ],
+      "visibleEnvelope_px": [
+        994,
+        517,
+        1027,
+        578
+      ],
+      "visibleEnvelope_m": [
+        1.473,
+        2.723
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J3",
+      "reportLabel": "옹3",
+      "category": "jar_coffin",
+      "center_px": [
+        274,
+        1026
+      ],
+      "xz_m": [
+        -18.571,
+        18.125
+      ],
+      "visibleEnvelope_px": [
+        256,
+        1013,
+        307,
+        1041
+      ],
+      "visibleEnvelope_m": [
+        2.277,
+        1.25
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J4",
+      "reportLabel": "옹4",
+      "category": "jar_coffin",
+      "center_px": [
+        1033,
+        441
+      ],
+      "xz_m": [
+        15.313,
+        -7.991
+      ],
+      "visibleEnvelope_px": [
+        1018,
+        414,
+        1049,
+        469
+      ],
+      "visibleEnvelope_m": [
+        1.384,
+        2.455
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J5",
+      "reportLabel": "옹5",
+      "category": "jar_coffin",
+      "center_px": [
+        1016,
+        723
+      ],
+      "xz_m": [
+        14.554,
+        4.598
+      ],
+      "visibleEnvelope_px": [
+        1007,
+        701,
+        1024,
+        743
+      ],
+      "visibleEnvelope_m": [
+        0.759,
+        1.875
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J6",
+      "reportLabel": "옹6",
+      "category": "jar_coffin",
+      "center_px": [
+        342,
+        1075
+      ],
+      "xz_m": [
+        -15.536,
+        20.312
+      ],
+      "visibleEnvelope_px": [
+        311,
+        1052,
+        379,
+        1095
+      ],
+      "visibleEnvelope_m": [
+        3.036,
+        1.92
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J7",
+      "reportLabel": "옹7",
+      "category": "jar_coffin",
+      "center_px": [
+        993,
+        373
+      ],
+      "xz_m": [
+        13.527,
+        -11.027
+      ],
+      "visibleEnvelope_px": [
+        978,
+        343,
+        1010,
+        405
+      ],
+      "visibleEnvelope_m": [
+        1.429,
+        2.768
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J8",
+      "reportLabel": "옹8",
+      "category": "jar_coffin",
+      "center_px": [
+        789,
+        267
+      ],
+      "xz_m": [
+        4.42,
+        -15.759
+      ],
+      "visibleEnvelope_px": [
+        770,
+        256,
+        809,
+        277
+      ],
+      "visibleEnvelope_m": [
+        1.741,
+        0.938
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J9",
+      "reportLabel": "옹9",
+      "category": "jar_coffin",
+      "center_px": [
+        902,
+        383
+      ],
+      "xz_m": [
+        9.464,
+        -10.58
+      ],
+      "visibleEnvelope_px": [
+        891,
+        367,
+        915,
+        400
+      ],
+      "visibleEnvelope_m": [
+        1.071,
+        1.473
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J10",
+      "reportLabel": "옹10",
+      "category": "jar_coffin",
+      "center_px": [
+        383,
+        260
+      ],
+      "xz_m": [
+        -13.705,
+        -16.071
+      ],
+      "visibleEnvelope_px": [
+        363,
+        218,
+        405,
+        305
+      ],
+      "visibleEnvelope_m": [
+        1.875,
+        3.884
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J11",
+      "reportLabel": "옹11",
+      "category": "jar_coffin",
+      "center_px": [
+        338,
+        1012
+      ],
+      "xz_m": [
+        -15.714,
+        17.5
+      ],
+      "visibleEnvelope_px": [
+        301,
+        992,
+        378,
+        1030
+      ],
+      "visibleEnvelope_m": [
+        3.438,
+        1.696
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J12",
+      "reportLabel": "옹12",
+      "category": "jar_coffin",
+      "center_px": [
+        802,
+        583
+      ],
+      "xz_m": [
+        5.0,
+        -1.652
+      ],
+      "visibleEnvelope_px": [
+        783,
+        562,
+        822,
+        610
+      ],
+      "visibleEnvelope_m": [
+        1.741,
+        2.143
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J13",
+      "reportLabel": "옹13",
+      "category": "jar_coffin",
+      "center_px": [
+        344,
+        356
+      ],
+      "xz_m": [
+        -15.446,
+        -11.786
+      ],
+      "visibleEnvelope_px": [
+        331,
+        335,
+        361,
+        377
+      ],
+      "visibleEnvelope_m": [
+        1.339,
+        1.875
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J14",
+      "reportLabel": "옹14",
+      "category": "jar_coffin",
+      "center_px": [
+        1045,
+        255
+      ],
+      "xz_m": [
+        15.848,
+        -16.295
+      ],
+      "visibleEnvelope_px": [
+        1030,
+        240,
+        1060,
+        270
+      ],
+      "visibleEnvelope_m": [
+        1.339,
+        1.339
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J15",
+      "reportLabel": "옹15",
+      "category": "jar_coffin",
+      "center_px": [
+        412,
+        312
+      ],
+      "xz_m": [
+        -12.411,
+        -13.75
+      ],
+      "visibleEnvelope_px": [
+        379,
+        296,
+        447,
+        329
+      ],
+      "visibleEnvelope_m": [
+        3.036,
+        1.473
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J16",
+      "reportLabel": "옹16",
+      "category": "jar_coffin",
+      "center_px": [
+        447,
+        286
+      ],
+      "xz_m": [
+        -10.848,
+        -14.911
+      ],
+      "visibleEnvelope_px": [
+        414,
+        269,
+        479,
+        308
+      ],
+      "visibleEnvelope_m": [
+        2.902,
+        1.741
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J17",
+      "reportLabel": "옹17",
+      "category": "jar_coffin",
+      "center_px": [
+        734,
+        262
+      ],
+      "xz_m": [
+        1.964,
+        -15.982
+      ],
+      "visibleEnvelope_px": [
+        707,
+        249,
+        754,
+        279
+      ],
+      "visibleEnvelope_m": [
+        2.098,
+        1.339
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J18",
+      "reportLabel": "옹18",
+      "category": "jar_coffin",
+      "center_px": [
+        895,
+        524
+      ],
+      "xz_m": [
+        9.152,
+        -4.286
+      ],
+      "visibleEnvelope_px": [
+        880,
+        508,
+        911,
+        540
+      ],
+      "visibleEnvelope_m": [
+        1.384,
+        1.429
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J19",
+      "reportLabel": "옹19",
+      "category": "jar_coffin",
+      "center_px": [
+        842,
+        542
+      ],
+      "xz_m": [
+        6.786,
+        -3.482
+      ],
+      "visibleEnvelope_px": [
+        829,
+        534,
+        855,
+        550
+      ],
+      "visibleEnvelope_m": [
+        1.161,
+        0.714
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J20",
+      "reportLabel": "옹20",
+      "category": "jar_coffin",
+      "center_px": [
+        735,
+        680
+      ],
+      "xz_m": [
+        2.009,
+        2.679
+      ],
+      "visibleEnvelope_px": [
+        721,
+        674,
+        753,
+        690
+      ],
+      "visibleEnvelope_m": [
+        1.429,
+        0.714
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J21",
+      "reportLabel": "옹21",
+      "category": "jar_coffin",
+      "center_px": [
+        445,
+        706
+      ],
+      "xz_m": [
+        -10.938,
+        3.839
+      ],
+      "visibleEnvelope_px": [
+        426,
+        693,
+        466,
+        724
+      ],
+      "visibleEnvelope_m": [
+        1.786,
+        1.384
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "J22",
+      "reportLabel": "옹22",
+      "category": "jar_coffin",
+      "center_px": [
+        766,
+        952
+      ],
+      "xz_m": [
+        3.393,
+        14.821
+      ],
+      "visibleEnvelope_px": [
+        756,
+        945,
+        777,
+        960
+      ],
+      "visibleEnvelope_m": [
+        0.938,
+        0.67
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    },
+    {
+      "id": "W1",
+      "reportLabel": "목관",
+      "category": "wood_coffin",
+      "center_px": [
+        524,
+        298
+      ],
+      "xz_m": [
+        -7.411,
+        -14.375
+      ],
+      "visibleEnvelope_px": [
+        503,
+        289,
+        544,
+        307
+      ],
+      "visibleEnvelope_m": [
+        1.83,
+        0.804
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate"
+    }
+  ]
+}

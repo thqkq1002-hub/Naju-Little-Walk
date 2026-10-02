@@ -1,0 +1,13 @@
+{
+  "source": "outputs/bitgaram/bitgaram-color-detail-v9.blend",
+  "revision": "outputs\\quality-v60\\bitgaram-apartment-facades-v60.blend",
+  "protected_meshes": 23547,
+  "protected_curves": 0,
+  "retained_faces_in_trimmed_meshes": 52060,
+  "outward_window_faces": 39289,
+  "frame_faces": 157156,
+  "protected_geometry_matches_source": true,
+  "retained_geometry_is_exact_source_subset": true,
+  "all_windows_outward": true,
+  "collision_geometry_changed": false
+}

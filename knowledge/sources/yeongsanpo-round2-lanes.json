@@ -1,0 +1,755 @@
+{
+  "title": "영산포 서쪽·중앙 연결 골목 추가 관찰",
+  "recorded": "2026-09-08",
+  "image": "Temp/yeongsanpo-port-refs/esri-z19-reference.jpg",
+  "originalImageSize": [
+    3328,
+    2560
+  ],
+  "pixelReferenceImageSize": [
+    1300,
+    1000
+  ],
+  "worldOrigin": [
+    126.7105,
+    35.0008
+  ],
+  "coordinateOrder": "WGS84 [longitude,latitude]; city world [X,Z] metres",
+  "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+  "captureDate": "unknown",
+  "method": "Manually traced visible paved connections on original-resolution imagery; checked every polyline segment and its conservative width against all prior traced roofs, OSM building polygons and the 30 new roof polygons. Endpoints on supplied OSM/reference lines were snapped to those exact lines.",
+  "usage": "Numerical route reference for approximate context modelling. Not a current road survey or evidence of public access. Road names, access restrictions, exact widths and current obstacles are not asserted. Source imagery/overlays remain local only.",
+  "candidateCount": 4,
+  "laneCount": 4,
+  "lanes": [
+    {
+      "id": "round2_deungdae_west_connector",
+      "pixelCoordinates": [
+        [
+          350.0478613475011,
+          739.1363169690305
+        ],
+        [
+          350,
+          756
+        ],
+        [
+          352,
+          776
+        ],
+        [
+          357,
+          802
+        ],
+        [
+          367,
+          826
+        ],
+        [
+          376,
+          847
+        ],
+        [
+          381,
+          863
+        ]
+      ],
+      "width": 2.8,
+      "start": {
+        "type": "mapped-road",
+        "id": "way/729505193",
+        "name": "Deungdae-gil"
+      },
+      "end": {
+        "type": "new-lane",
+        "id": "round2_west_cross_connector"
+      },
+      "observed": "Continuous paved north-south connection east of the warehouse block, joining the riverside road and southern cross lane.",
+      "coordinates": [
+        [
+          126.7084125,
+          34.99940852
+        ],
+        [
+          126.70841217,
+          34.99931366
+        ],
+        [
+          126.7084259,
+          34.99920117
+        ],
+        [
+          126.70846024,
+          34.99905493
+        ],
+        [
+          126.7085289,
+          34.99891993
+        ],
+        [
+          126.7085907,
+          34.99880181
+        ],
+        [
+          126.70862503,
+          34.99871182
+        ]
+      ],
+      "worldCoordinates": [
+        [
+          -190.353,
+          154.9
+        ],
+        [
+          -190.383,
+          165.459
+        ],
+        [
+          -189.131,
+          177.982
+        ],
+        [
+          -186.0,
+          194.261
+        ],
+        [
+          -179.739,
+          209.289
+        ],
+        [
+          -174.104,
+          222.439
+        ],
+        [
+          -170.973,
+          232.456
+        ]
+      ],
+      "centerline": [
+        [
+          126.7084125,
+          34.99940852
+        ],
+        [
+          126.70841217,
+          34.99931366
+        ],
+        [
+          126.7084259,
+          34.99920117
+        ],
+        [
+          126.70846024,
+          34.99905493
+        ],
+        [
+          126.7085289,
+          34.99891993
+        ],
+        [
+          126.7085907,
+          34.99880181
+        ],
+        [
+          126.70862503,
+          34.99871182
+        ]
+      ],
+      "worldCenterline": [
+        [
+          -190.353,
+          154.9
+        ],
+        [
+          -190.383,
+          165.459
+        ],
+        [
+          -189.131,
+          177.982
+        ],
+        [
+          -186.0,
+          194.261
+        ],
+        [
+          -179.739,
+          209.289
+        ],
+        [
+          -174.104,
+          222.439
+        ],
+        [
+          -170.973,
+          232.456
+        ]
+      ],
+      "lengthMetres": 80.8,
+      "widthBasis": "Conservative model walking-corridor width in metres within the visibly paved connection, not a measured full carriageway width. The full visible street can be wider.",
+      "surface": "paved appearance; exact material and current condition unknown",
+      "confidence": "medium-high for visible connection; medium for approximate centreline; low for actual street width",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "minRoofCenterlineClearanceMetres": 3.193,
+      "nearestRoofId": "warehouse_08",
+      "minCorridorEdgeToRoofMetres": 1.793,
+      "reviewFlags": []
+    },
+    {
+      "id": "round2_west_cross_connector",
+      "pixelCoordinates": [
+        [
+          381,
+          863
+        ],
+        [
+          414,
+          858
+        ],
+        [
+          455,
+          846
+        ],
+        [
+          496,
+          835
+        ],
+        [
+          550,
+          822
+        ],
+        [
+          598,
+          810
+        ],
+        [
+          640,
+          798
+        ]
+      ],
+      "width": 3.0,
+      "start": {
+        "type": "new-lane",
+        "id": "round2_deungdae_west_connector"
+      },
+      "end": {
+        "type": "visible-street-junction",
+        "pixelCoordinates": [
+          640,
+          798
+        ],
+        "note": "Continuous paved junction with the wider north-south street visible in imagery; that street is not among the supplied nine mapped centre lines."
+      },
+      "observed": "Continuous east-west paved street between the warehouse/riverfront roof row and the buildings to the south. Only a conservative central walking corridor is recorded.",
+      "coordinates": [
+        [
+          126.70862503,
+          34.99871182
+        ],
+        [
+          126.70885162,
+          34.99873994
+        ],
+        [
+          126.70913315,
+          34.99880744
+        ],
+        [
+          126.70941467,
+          34.99886931
+        ],
+        [
+          126.70978546,
+          34.99894243
+        ],
+        [
+          126.71011505,
+          34.99900993
+        ],
+        [
+          126.71040344,
+          34.99907743
+        ]
+      ],
+      "worldCoordinates": [
+        [
+          -170.973,
+          232.456
+        ],
+        [
+          -150.311,
+          229.326
+        ],
+        [
+          -124.639,
+          221.812
+        ],
+        [
+          -98.968,
+          214.924
+        ],
+        [
+          -65.157,
+          206.785
+        ],
+        [
+          -35.102,
+          199.271
+        ],
+        [
+          -8.805,
+          191.756
+        ]
+      ],
+      "centerline": [
+        [
+          126.70862503,
+          34.99871182
+        ],
+        [
+          126.70885162,
+          34.99873994
+        ],
+        [
+          126.70913315,
+          34.99880744
+        ],
+        [
+          126.70941467,
+          34.99886931
+        ],
+        [
+          126.70978546,
+          34.99894243
+        ],
+        [
+          126.71011505,
+          34.99900993
+        ],
+        [
+          126.71040344,
+          34.99907743
+        ]
+      ],
+      "worldCenterline": [
+        [
+          -170.973,
+          232.456
+        ],
+        [
+          -150.311,
+          229.326
+        ],
+        [
+          -124.639,
+          221.812
+        ],
+        [
+          -98.968,
+          214.924
+        ],
+        [
+          -65.157,
+          206.785
+        ],
+        [
+          -35.102,
+          199.271
+        ],
+        [
+          -8.805,
+          191.756
+        ]
+      ],
+      "lengthMetres": 167.33,
+      "widthBasis": "Conservative model walking-corridor width in metres within the visibly paved connection, not a measured full carriageway width. The full visible street can be wider.",
+      "surface": "paved appearance; exact material and current condition unknown",
+      "confidence": "medium-high for visible connection; medium for approximate centreline; low for actual street width",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "minRoofCenterlineClearanceMetres": 3.225,
+      "nearestRoofId": "round2_west_cross_pale",
+      "minCorridorEdgeToRoofMetres": 1.725,
+      "reviewFlags": []
+    },
+    {
+      "id": "round2_central_south_connector",
+      "pixelCoordinates": [
+        [
+          748.0012352727709,
+          677.5062266245712
+        ],
+        [
+          750,
+          693
+        ],
+        [
+          755,
+          721
+        ],
+        [
+          766,
+          754
+        ],
+        [
+          772,
+          783
+        ],
+        [
+          773,
+          820
+        ],
+        [
+          765,
+          845
+        ],
+        [
+          757,
+          860
+        ]
+      ],
+      "width": 2.8,
+      "start": {
+        "type": "mapped-road",
+        "id": "way/130634066",
+        "name": "Yeongsan 2-gil"
+      },
+      "end": {
+        "type": "existing-reference-route",
+        "id": "context_south_cross_street",
+        "vertexIndex": 0
+      },
+      "observed": "Clearly visible curving north-south paved lane west of the gallery-side parking block, linking the middle mapped road to the existing southern cross-street reference.",
+      "coordinates": [
+        [
+          126.71114503,
+          34.99975517
+        ],
+        [
+          126.71115875,
+          34.99966802
+        ],
+        [
+          126.71119308,
+          34.99951053
+        ],
+        [
+          126.71126862,
+          34.99932491
+        ],
+        [
+          126.71130981,
+          34.9991618
+        ],
+        [
+          126.71131668,
+          34.99895368
+        ],
+        [
+          126.71126175,
+          34.99881306
+        ],
+        [
+          126.71120682,
+          34.99872869
+        ]
+      ],
+      "worldCoordinates": [
+        [
+          58.818,
+          116.31
+        ],
+        [
+          60.07,
+          126.012
+        ],
+        [
+          63.2,
+          143.544
+        ],
+        [
+          70.088,
+          164.207
+        ],
+        [
+          73.844,
+          182.364
+        ],
+        [
+          74.471,
+          205.532
+        ],
+        [
+          69.462,
+          221.186
+        ],
+        [
+          64.453,
+          230.578
+        ]
+      ],
+      "centerline": [
+        [
+          126.71114503,
+          34.99975517
+        ],
+        [
+          126.71115875,
+          34.99966802
+        ],
+        [
+          126.71119308,
+          34.99951053
+        ],
+        [
+          126.71126862,
+          34.99932491
+        ],
+        [
+          126.71130981,
+          34.9991618
+        ],
+        [
+          126.71131668,
+          34.99895368
+        ],
+        [
+          126.71126175,
+          34.99881306
+        ],
+        [
+          126.71120682,
+          34.99872869
+        ]
+      ],
+      "worldCenterline": [
+        [
+          58.818,
+          116.31
+        ],
+        [
+          60.07,
+          126.012
+        ],
+        [
+          63.2,
+          143.544
+        ],
+        [
+          70.088,
+          164.207
+        ],
+        [
+          73.844,
+          182.364
+        ],
+        [
+          74.471,
+          205.532
+        ],
+        [
+          69.462,
+          221.186
+        ],
+        [
+          64.453,
+          230.578
+        ]
+      ],
+      "lengthMetres": 118.17,
+      "widthBasis": "Conservative model walking-corridor width in metres within the visibly paved connection, not a measured full carriageway width. The full visible street can be wider.",
+      "surface": "paved appearance; exact material and current condition unknown",
+      "confidence": "medium-high for visible connection; medium for approximate centreline; low for actual street width",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "minRoofCenterlineClearanceMetres": 3.016,
+      "nearestRoofId": "street_central_10",
+      "minCorridorEdgeToRoofMetres": 1.616,
+      "reviewFlags": []
+    },
+    {
+      "id": "round2_west_south_branch",
+      "pixelCoordinates": [
+        [
+          466.0122086570477,
+          843.0455049944507
+        ],
+        [
+          470,
+          851
+        ],
+        [
+          473,
+          876
+        ],
+        [
+          478,
+          903
+        ],
+        [
+          482,
+          930
+        ],
+        [
+          493,
+          955
+        ],
+        [
+          505,
+          969
+        ]
+      ],
+      "width": 2.6,
+      "start": {
+        "type": "new-lane",
+        "id": "round2_west_cross_connector"
+      },
+      "end": {
+        "type": "visible-street-junction",
+        "pixelCoordinates": [
+          505,
+          969
+        ],
+        "note": "Visible T junction with a wider paved street south of the long narrow green roof; this southern street is not among the supplied nine mapped centre lines."
+      },
+      "observed": "Narrow north-south paved connection beside the long green roof and the mapped elongated building, opening onto the southern street.",
+      "coordinates": [
+        [
+          126.70920876,
+          34.99882406
+        ],
+        [
+          126.70923615,
+          34.99877931
+        ],
+        [
+          126.70925674,
+          34.99863869
+        ],
+        [
+          126.70929108,
+          34.99848683
+        ],
+        [
+          126.70931854,
+          34.99833496
+        ],
+        [
+          126.70939407,
+          34.99819434
+        ],
+        [
+          126.70947647,
+          34.99811559
+        ]
+      ],
+      "worldCoordinates": [
+        [
+          -117.744,
+          219.962
+        ],
+        [
+          -115.247,
+          224.943
+        ],
+        [
+          -113.369,
+          240.597
+        ],
+        [
+          -110.238,
+          257.502
+        ],
+        [
+          -107.734,
+          274.408
+        ],
+        [
+          -100.847,
+          290.062
+        ],
+        [
+          -93.333,
+          298.829
+        ]
+      ],
+      "centerline": [
+        [
+          126.70920876,
+          34.99882406
+        ],
+        [
+          126.70923615,
+          34.99877931
+        ],
+        [
+          126.70925674,
+          34.99863869
+        ],
+        [
+          126.70929108,
+          34.99848683
+        ],
+        [
+          126.70931854,
+          34.99833496
+        ],
+        [
+          126.70939407,
+          34.99819434
+        ],
+        [
+          126.70947647,
+          34.99811559
+        ]
+      ],
+      "worldCenterline": [
+        [
+          -117.744,
+          219.962
+        ],
+        [
+          -115.247,
+          224.943
+        ],
+        [
+          -113.369,
+          240.597
+        ],
+        [
+          -110.238,
+          257.502
+        ],
+        [
+          -107.734,
+          274.408
+        ],
+        [
+          -100.847,
+          290.062
+        ],
+        [
+          -93.333,
+          298.829
+        ]
+      ],
+      "lengthMetres": 84.27,
+      "widthBasis": "Conservative model walking-corridor width in metres within the visibly paved connection, not a measured full carriageway width. The full visible street can be wider.",
+      "surface": "paved appearance; exact material and current condition unknown",
+      "confidence": "medium-high for visible connection; medium for approximate centreline; low for actual street width",
+      "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "captureDate": "unknown",
+      "minRoofCenterlineClearanceMetres": 2.751,
+      "nearestRoofId": "way/1120464646",
+      "minCorridorEdgeToRoofMetres": 1.451,
+      "reviewFlags": []
+    }
+  ],
+  "excludedForReview": [],
+  "validation": {
+    "existingAndNewRoofPolygonsCompared": 186,
+    "minEdgeGuardMetres": 0.2,
+    "acceptedCorridorRoofIntrusions": 0
+  }
+}

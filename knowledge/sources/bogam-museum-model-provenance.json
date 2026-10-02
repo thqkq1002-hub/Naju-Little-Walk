@@ -1,0 +1,1599 @@
+{
+  "source": "© OpenStreetMap contributors, ODbL 1.0",
+  "source_url": "https://www.openstreetmap.org/way/471352007",
+  "origin": {
+    "lat": 34.996091,
+    "lon": 126.657059219,
+    "source": "https://www.data.go.kr/tcs/dss/selectStdDataDetailView.do?publicDataPk=15017323",
+    "recordDate": "2024-08-08",
+    "record": "전국박물관미술관정보표준데이터: 나주복암리고분전시관, 백호로287, 복암리71",
+    "note": "공공데이터의시설대표점이며 건물 중심점이라는 보장은 없음."
+  },
+  "buildings": [
+    {
+      "osm_id": "471352007",
+      "footprint": [
+        [
+          -19.48,
+          -35.522
+        ],
+        [
+          30.794,
+          -34.253
+        ],
+        [
+          29.9,
+          13.013
+        ],
+        [
+          13.686,
+          43.626
+        ],
+        [
+          -35.585,
+          45.686
+        ],
+        [
+          -36.424,
+          32.817
+        ],
+        [
+          -21.076,
+          31.292
+        ]
+      ],
+      "height": 10.5,
+      "height_source": "Photo-informed envelope heights, not measured"
+    }
+  ],
+  "burials": [
+    {
+      "id": "S1",
+      "reportLabel": "석1",
+      "category": "stone_burial",
+      "center_px": [
+        654.5,
+        386.0
+      ],
+      "xz_m": [
+        -1.585,
+        -10.446
+      ],
+      "visibleEnvelope_px": [
+        603,
+        341,
+        706,
+        431
+      ],
+      "visibleEnvelope_m": [
+        4.598,
+        4.018
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -1.585,
+        -10.446
+      ],
+      "replica_floor": 2.6847591183035187,
+      "modelOpening": [
+        3.1726199999999998,
+        2.45098
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S2",
+      "reportLabel": "석2",
+      "category": "stone_burial",
+      "center_px": [
+        823.0,
+        376.0
+      ],
+      "xz_m": [
+        5.938,
+        -10.893
+      ],
+      "visibleEnvelope_px": [
+        780,
+        340,
+        866,
+        412
+      ],
+      "visibleEnvelope_m": [
+        3.839,
+        3.214
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        5.938,
+        -10.893
+      ],
+      "replica_floor": 2.6087016727777144,
+      "modelOpening": [
+        2.64891,
+        1.96054
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S3",
+      "reportLabel": "석3",
+      "category": "stone_burial",
+      "center_px": [
+        951.5,
+        377.0
+      ],
+      "xz_m": [
+        11.674,
+        -10.848
+      ],
+      "visibleEnvelope_px": [
+        937,
+        345,
+        966,
+        409
+      ],
+      "visibleEnvelope_m": [
+        1.295,
+        2.857
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        11.674,
+        -10.848
+      ],
+      "replica_floor": 2.4037455715830194,
+      "modelOpening": [
+        1.0,
+        1.7427700000000002
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S4",
+      "reportLabel": "석4",
+      "category": "stone_burial",
+      "center_px": [
+        757.0,
+        579.0
+      ],
+      "xz_m": [
+        2.991,
+        -1.83
+      ],
+      "visibleEnvelope_px": [
+        721,
+        550,
+        793,
+        608
+      ],
+      "visibleEnvelope_m": [
+        3.214,
+        2.589
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        2.991,
+        -1.83
+      ],
+      "replica_floor": 3.079934108524699,
+      "modelOpening": [
+        2.21766,
+        1.5792899999999999
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S5",
+      "reportLabel": "석5",
+      "category": "stone_burial",
+      "center_px": [
+        920.5,
+        477.0
+      ],
+      "xz_m": [
+        10.29,
+        -6.384
+      ],
+      "visibleEnvelope_px": [
+        870,
+        393,
+        971,
+        561
+      ],
+      "visibleEnvelope_m": [
+        4.509,
+        7.5
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "mainChamberAnchor_px": [
+        915,
+        449
+      ],
+      "mainChamberAnchor_xz_m": [
+        10.045,
+        -7.634
+      ],
+      "mainChamberAnchor_note": "Additional approximate anchor for the main burial room, excluding the access corridor; not a measured centroid.",
+      "model_center": [
+        10.045,
+        -7.634
+      ],
+      "replica_floor": 2.57019344519127,
+      "modelOpening": [
+        3.11121,
+        4.575
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S6",
+      "reportLabel": "석6",
+      "category": "stone_burial",
+      "center_px": [
+        550.5,
+        888.0
+      ],
+      "xz_m": [
+        -6.228,
+        11.964
+      ],
+      "visibleEnvelope_px": [
+        509,
+        778,
+        592,
+        998
+      ],
+      "visibleEnvelope_m": [
+        3.705,
+        9.821
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "mainChamberAnchor_px": [
+        547,
+        820
+      ],
+      "mainChamberAnchor_xz_m": [
+        -6.384,
+        8.929
+      ],
+      "mainChamberAnchor_note": "Additional approximate anchor for the main burial room, excluding the access corridor; not a measured centroid.",
+      "model_center": [
+        -6.384,
+        8.929
+      ],
+      "replica_floor": 2.936752392221487,
+      "modelOpening": [
+        2.55645,
+        5.4
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S7",
+      "reportLabel": "석7",
+      "category": "stone_burial",
+      "center_px": [
+        469.5,
+        930.5
+      ],
+      "xz_m": [
+        -9.844,
+        13.862
+      ],
+      "visibleEnvelope_px": [
+        427,
+        787,
+        512,
+        1074
+      ],
+      "visibleEnvelope_m": [
+        3.795,
+        12.812
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "mainChamberAnchor_px": [
+        474,
+        839
+      ],
+      "mainChamberAnchor_xz_m": [
+        -9.643,
+        9.777
+      ],
+      "mainChamberAnchor_note": "Additional approximate anchor for the main burial room, excluding the access corridor; not a measured centroid.",
+      "model_center": [
+        -9.643,
+        9.777
+      ],
+      "replica_floor": 2.245806840477822,
+      "modelOpening": [
+        2.61855,
+        5.4
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S8",
+      "reportLabel": "석8",
+      "category": "stone_burial",
+      "center_px": [
+        349.0,
+        952.0
+      ],
+      "xz_m": [
+        -15.223,
+        14.821
+      ],
+      "visibleEnvelope_px": [
+        336,
+        936,
+        362,
+        968
+      ],
+      "visibleEnvelope_m": [
+        1.161,
+        1.429
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -15.223,
+        14.821
+      ],
+      "replica_floor": 1.5259085469371894,
+      "modelOpening": [
+        1.0,
+        1.2
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S9",
+      "reportLabel": "석9",
+      "category": "stone_burial",
+      "center_px": [
+        422.0,
+        488.0
+      ],
+      "xz_m": [
+        -11.964,
+        -5.893
+      ],
+      "visibleEnvelope_px": [
+        347,
+        442,
+        497,
+        534
+      ],
+      "visibleEnvelope_m": [
+        6.696,
+        4.107
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -11.964,
+        -5.893
+      ],
+      "replica_floor": 2.72575710030842,
+      "modelOpening": [
+        4.620239999999999,
+        2.50527
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S10",
+      "reportLabel": "석10",
+      "category": "stone_burial",
+      "center_px": [
+        391.5,
+        777.0
+      ],
+      "xz_m": [
+        -13.326,
+        7.009
+      ],
+      "visibleEnvelope_px": [
+        332,
+        740,
+        451,
+        814
+      ],
+      "visibleEnvelope_m": [
+        5.312,
+        3.304
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -13.326,
+        7.009
+      ],
+      "replica_floor": 2.1539857430202756,
+      "modelOpening": [
+        3.66528,
+        2.01544
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S11",
+      "reportLabel": "석11",
+      "category": "stone_burial",
+      "center_px": [
+        1008.0,
+        794.5
+      ],
+      "xz_m": [
+        14.196,
+        7.79
+      ],
+      "visibleEnvelope_px": [
+        985,
+        752,
+        1031,
+        837
+      ],
+      "visibleEnvelope_m": [
+        2.054,
+        3.795
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        14.196,
+        7.79
+      ],
+      "replica_floor": 2.233486633967165,
+      "modelOpening": [
+        1.4172599999999997,
+        2.31495
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S12",
+      "reportLabel": "석12",
+      "category": "stone_burial",
+      "center_px": [
+        931.5,
+        852.0
+      ],
+      "xz_m": [
+        10.781,
+        10.357
+      ],
+      "visibleEnvelope_px": [
+        895,
+        779,
+        968,
+        925
+      ],
+      "visibleEnvelope_m": [
+        3.259,
+        6.518
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "mainChamberAnchor_px": [
+        930,
+        817
+      ],
+      "mainChamberAnchor_xz_m": [
+        10.714,
+        8.795
+      ],
+      "mainChamberAnchor_note": "Additional approximate anchor for the main burial room, excluding the access corridor; not a measured centroid.",
+      "model_center": [
+        10.714,
+        8.795
+      ],
+      "replica_floor": 2.6401796031904428,
+      "modelOpening": [
+        2.2487099999999995,
+        3.97598
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S13",
+      "reportLabel": "석13",
+      "category": "stone_burial",
+      "center_px": [
+        368.0,
+        851.5
+      ],
+      "xz_m": [
+        -14.375,
+        10.335
+      ],
+      "visibleEnvelope_px": [
+        299,
+        803,
+        437,
+        900
+      ],
+      "visibleEnvelope_m": [
+        6.161,
+        4.33
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -14.375,
+        10.335
+      ],
+      "replica_floor": 1.8296848229009481,
+      "modelOpening": [
+        4.25109,
+        2.6413
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S14",
+      "reportLabel": "석14",
+      "category": "stone_burial",
+      "center_px": [
+        475.5,
+        637.0
+      ],
+      "xz_m": [
+        -9.576,
+        0.759
+      ],
+      "visibleEnvelope_px": [
+        383,
+        578,
+        568,
+        696
+      ],
+      "visibleEnvelope_m": [
+        8.259,
+        5.268
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "mainChamberAnchor_px": [
+        503,
+        634
+      ],
+      "mainChamberAnchor_xz_m": [
+        -8.348,
+        0.625
+      ],
+      "mainChamberAnchor_note": "Additional approximate anchor for the main burial room, excluding the access corridor; not a measured centroid.",
+      "model_center": [
+        -8.348,
+        0.625
+      ],
+      "replica_floor": 2.9648325616424094,
+      "modelOpening": [
+        4.8,
+        3.2134799999999997
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S15",
+      "reportLabel": "석15",
+      "category": "stone_burial",
+      "center_px": [
+        833.5,
+        575.5
+      ],
+      "xz_m": [
+        6.406,
+        -1.987
+      ],
+      "visibleEnvelope_px": [
+        809,
+        551,
+        858,
+        600
+      ],
+      "visibleEnvelope_m": [
+        2.188,
+        2.188
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        6.406,
+        -1.987
+      ],
+      "replica_floor": 3.2751834912923843,
+      "modelOpening": [
+        1.50972,
+        1.33468
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S16",
+      "reportLabel": "석16",
+      "category": "stone_burial",
+      "center_px": [
+        450.0,
+        423.0
+      ],
+      "xz_m": [
+        -10.714,
+        -8.795
+      ],
+      "visibleEnvelope_px": [
+        359,
+        385,
+        541,
+        461
+      ],
+      "visibleEnvelope_m": [
+        8.125,
+        3.393
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -10.714,
+        -8.795
+      ],
+      "replica_floor": 2.240179603190443,
+      "modelOpening": [
+        4.8,
+        2.06973
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S17",
+      "reportLabel": "석17",
+      "category": "stone_burial",
+      "center_px": [
+        457.5,
+        363.5
+      ],
+      "xz_m": [
+        -10.379,
+        -11.451
+      ],
+      "visibleEnvelope_px": [
+        367,
+        329,
+        548,
+        398
+      ],
+      "visibleEnvelope_m": [
+        8.08,
+        3.08
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -10.379,
+        -11.451
+      ],
+      "replica_floor": 2.249969441782309,
+      "modelOpening": [
+        4.8,
+        1.8788
+      ],
+      "opening_depth": 0.8,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "S96",
+      "reportLabel": "96석실",
+      "category": "stone_burial",
+      "center_px": [
+        745.0,
+        809.5
+      ],
+      "xz_m": [
+        2.455,
+        8.46
+      ],
+      "visibleEnvelope_px": [
+        648,
+        672,
+        842,
+        947
+      ],
+      "visibleEnvelope_m": [
+        8.661,
+        12.277
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "mainChamberAnchor_px": [
+        741,
+        776
+      ],
+      "mainChamberAnchor_xz_m": [
+        2.277,
+        6.964
+      ],
+      "mainChamberAnchor_note": "Additional approximate anchor for the main burial room, excluding the access corridor; not a measured centroid.",
+      "model_center": [
+        2.277,
+        6.964
+      ],
+      "replica_floor": 1.65,
+      "modelOpening": [
+        3.3,
+        4.6
+      ],
+      "opening_depth": 1.25,
+      "vertical_source": "Estimated display level from photographs, not measured",
+      "recorded_chamber_internal": {
+        "length": 3.8,
+        "southWidth": 2.4,
+        "northWidth": 2.6,
+        "preservedHeight": 2.6,
+        "source": "2001 report printed p138"
+      }
+    },
+    {
+      "id": "J1",
+      "reportLabel": "옹1",
+      "category": "jar_coffin",
+      "center_px": [
+        736,
+        430
+      ],
+      "xz_m": [
+        2.054,
+        -8.482
+      ],
+      "visibleEnvelope_px": [
+        730,
+        414,
+        746,
+        449
+      ],
+      "visibleEnvelope_m": [
+        0.714,
+        1.562
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        2.054,
+        -8.482
+      ],
+      "replica_floor": 2.8148954696461317,
+      "modelOpening": [
+        0.8,
+        1.562
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J2",
+      "reportLabel": "옹2",
+      "category": "jar_coffin",
+      "center_px": [
+        1009,
+        547
+      ],
+      "xz_m": [
+        14.241,
+        -3.259
+      ],
+      "visibleEnvelope_px": [
+        994,
+        517,
+        1027,
+        578
+      ],
+      "visibleEnvelope_m": [
+        1.473,
+        2.723
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        14.241,
+        -3.259
+      ],
+      "replica_floor": 1.2,
+      "modelOpening": [
+        1.473,
+        2.723
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J3",
+      "reportLabel": "옹3",
+      "category": "jar_coffin",
+      "center_px": [
+        274,
+        1026
+      ],
+      "xz_m": [
+        -18.571,
+        18.125
+      ],
+      "visibleEnvelope_px": [
+        256,
+        1013,
+        307,
+        1041
+      ],
+      "visibleEnvelope_m": [
+        2.277,
+        1.25
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -18.571,
+        18.125
+      ],
+      "replica_floor": 1.0388978232753103,
+      "modelOpening": [
+        2.277,
+        1.25
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J4",
+      "reportLabel": "옹4",
+      "category": "jar_coffin",
+      "center_px": [
+        1033,
+        441
+      ],
+      "xz_m": [
+        15.313,
+        -7.991
+      ],
+      "visibleEnvelope_px": [
+        1018,
+        414,
+        1049,
+        469
+      ],
+      "visibleEnvelope_m": [
+        1.384,
+        2.455
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        15.313,
+        -7.991
+      ],
+      "replica_floor": 1.9268235410932069,
+      "modelOpening": [
+        1.384,
+        2.455
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J5",
+      "reportLabel": "옹5",
+      "category": "jar_coffin",
+      "center_px": [
+        1016,
+        723
+      ],
+      "xz_m": [
+        14.554,
+        4.598
+      ],
+      "visibleEnvelope_px": [
+        1007,
+        701,
+        1024,
+        743
+      ],
+      "visibleEnvelope_m": [
+        0.759,
+        1.875
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        14.554,
+        4.598
+      ],
+      "replica_floor": 2.3784216018634474,
+      "modelOpening": [
+        0.8,
+        1.875
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J6",
+      "reportLabel": "옹6",
+      "category": "jar_coffin",
+      "center_px": [
+        342,
+        1075
+      ],
+      "xz_m": [
+        -15.536,
+        20.312
+      ],
+      "visibleEnvelope_px": [
+        311,
+        1052,
+        379,
+        1095
+      ],
+      "visibleEnvelope_m": [
+        3.036,
+        1.92
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -15.536,
+        20.312
+      ],
+      "replica_floor": 1.0071152788786955,
+      "modelOpening": [
+        2.9,
+        1.92
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J7",
+      "reportLabel": "옹7",
+      "category": "jar_coffin",
+      "center_px": [
+        993,
+        373
+      ],
+      "xz_m": [
+        13.527,
+        -11.027
+      ],
+      "visibleEnvelope_px": [
+        978,
+        343,
+        1010,
+        405
+      ],
+      "visibleEnvelope_m": [
+        1.429,
+        2.768
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        13.527,
+        -11.027
+      ],
+      "replica_floor": 1.8406959537742082,
+      "modelOpening": [
+        1.429,
+        2.768
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J8",
+      "reportLabel": "옹8",
+      "category": "jar_coffin",
+      "center_px": [
+        789,
+        267
+      ],
+      "xz_m": [
+        4.42,
+        -15.759
+      ],
+      "visibleEnvelope_px": [
+        770,
+        256,
+        809,
+        277
+      ],
+      "visibleEnvelope_m": [
+        1.741,
+        0.938
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        4.42,
+        -15.759
+      ],
+      "replica_floor": 2.209508642084075,
+      "modelOpening": [
+        1.741,
+        0.938
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J9",
+      "reportLabel": "옹9",
+      "category": "jar_coffin",
+      "center_px": [
+        902,
+        383
+      ],
+      "xz_m": [
+        9.464,
+        -10.58
+      ],
+      "visibleEnvelope_px": [
+        891,
+        367,
+        915,
+        400
+      ],
+      "visibleEnvelope_m": [
+        1.071,
+        1.473
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        9.464,
+        -10.58
+      ],
+      "replica_floor": 2.593461163508116,
+      "modelOpening": [
+        1.071,
+        1.473
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J10",
+      "reportLabel": "옹10",
+      "category": "jar_coffin",
+      "center_px": [
+        383,
+        260
+      ],
+      "xz_m": [
+        -13.705,
+        -16.071
+      ],
+      "visibleEnvelope_px": [
+        363,
+        218,
+        405,
+        305
+      ],
+      "visibleEnvelope_m": [
+        1.875,
+        3.884
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -13.705,
+        -16.071
+      ],
+      "replica_floor": 1.3096587126209513,
+      "modelOpening": [
+        1.875,
+        3.1
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J11",
+      "reportLabel": "옹11",
+      "category": "jar_coffin",
+      "center_px": [
+        338,
+        1012
+      ],
+      "xz_m": [
+        -15.714,
+        17.5
+      ],
+      "visibleEnvelope_px": [
+        301,
+        992,
+        378,
+        1030
+      ],
+      "visibleEnvelope_m": [
+        3.438,
+        1.696
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -15.714,
+        17.5
+      ],
+      "replica_floor": 1.168193528183695,
+      "modelOpening": [
+        2.9,
+        1.696
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J12",
+      "reportLabel": "옹12",
+      "category": "jar_coffin",
+      "center_px": [
+        802,
+        583
+      ],
+      "xz_m": [
+        5.0,
+        -1.652
+      ],
+      "visibleEnvelope_px": [
+        783,
+        562,
+        822,
+        610
+      ],
+      "visibleEnvelope_m": [
+        1.741,
+        2.143
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        5.0,
+        -1.652
+      ],
+      "replica_floor": 3.370325531974871,
+      "modelOpening": [
+        1.741,
+        2.143
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J13",
+      "reportLabel": "옹13",
+      "category": "jar_coffin",
+      "center_px": [
+        344,
+        356
+      ],
+      "xz_m": [
+        -15.446,
+        -11.786
+      ],
+      "visibleEnvelope_px": [
+        331,
+        335,
+        361,
+        377
+      ],
+      "visibleEnvelope_m": [
+        1.339,
+        1.875
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -15.446,
+        -11.786
+      ],
+      "replica_floor": 1.6135246853725786,
+      "modelOpening": [
+        1.339,
+        1.875
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J14",
+      "reportLabel": "옹14",
+      "category": "jar_coffin",
+      "center_px": [
+        1045,
+        255
+      ],
+      "xz_m": [
+        15.848,
+        -16.295
+      ],
+      "visibleEnvelope_px": [
+        1030,
+        240,
+        1060,
+        270
+      ],
+      "visibleEnvelope_m": [
+        1.339,
+        1.339
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        15.848,
+        -16.295
+      ],
+      "replica_floor": 1.304147397782082,
+      "modelOpening": [
+        1.339,
+        1.339
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J15",
+      "reportLabel": "옹15",
+      "category": "jar_coffin",
+      "center_px": [
+        412,
+        312
+      ],
+      "xz_m": [
+        -12.411,
+        -13.75
+      ],
+      "visibleEnvelope_px": [
+        379,
+        296,
+        447,
+        329
+      ],
+      "visibleEnvelope_m": [
+        3.036,
+        1.473
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -12.411,
+        -13.75
+      ],
+      "replica_floor": 2.0706424101636562,
+      "modelOpening": [
+        2.9,
+        1.473
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J16",
+      "reportLabel": "옹16",
+      "category": "jar_coffin",
+      "center_px": [
+        447,
+        286
+      ],
+      "xz_m": [
+        -10.848,
+        -14.911
+      ],
+      "visibleEnvelope_px": [
+        414,
+        269,
+        479,
+        308
+      ],
+      "visibleEnvelope_m": [
+        2.902,
+        1.741
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -10.848,
+        -14.911
+      ],
+      "replica_floor": 1.6677236264095239,
+      "modelOpening": [
+        2.9,
+        1.741
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J17",
+      "reportLabel": "옹17",
+      "category": "jar_coffin",
+      "center_px": [
+        734,
+        262
+      ],
+      "xz_m": [
+        1.964,
+        -15.982
+      ],
+      "visibleEnvelope_px": [
+        707,
+        249,
+        754,
+        279
+      ],
+      "visibleEnvelope_m": [
+        2.098,
+        1.339
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        1.964,
+        -15.982
+      ],
+      "replica_floor": 2.312470578494491,
+      "modelOpening": [
+        2.098,
+        1.339
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J18",
+      "reportLabel": "옹18",
+      "category": "jar_coffin",
+      "center_px": [
+        895,
+        524
+      ],
+      "xz_m": [
+        9.152,
+        -4.286
+      ],
+      "visibleEnvelope_px": [
+        880,
+        508,
+        911,
+        540
+      ],
+      "visibleEnvelope_m": [
+        1.384,
+        1.429
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        9.152,
+        -4.286
+      ],
+      "replica_floor": 1.2,
+      "modelOpening": [
+        1.384,
+        1.429
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J19",
+      "reportLabel": "옹19",
+      "category": "jar_coffin",
+      "center_px": [
+        842,
+        542
+      ],
+      "xz_m": [
+        6.786,
+        -3.482
+      ],
+      "visibleEnvelope_px": [
+        829,
+        534,
+        855,
+        550
+      ],
+      "visibleEnvelope_m": [
+        1.161,
+        0.714
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        6.786,
+        -3.482
+      ],
+      "replica_floor": 1.2,
+      "modelOpening": [
+        1.161,
+        0.85
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J20",
+      "reportLabel": "옹20",
+      "category": "jar_coffin",
+      "center_px": [
+        735,
+        680
+      ],
+      "xz_m": [
+        2.009,
+        2.679
+      ],
+      "visibleEnvelope_px": [
+        721,
+        674,
+        753,
+        690
+      ],
+      "visibleEnvelope_m": [
+        1.429,
+        0.714
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        2.009,
+        2.679
+      ],
+      "replica_floor": 3.3073161982279964,
+      "modelOpening": [
+        1.429,
+        0.85
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J21",
+      "reportLabel": "옹21",
+      "category": "jar_coffin",
+      "center_px": [
+        445,
+        706
+      ],
+      "xz_m": [
+        -10.938,
+        3.839
+      ],
+      "visibleEnvelope_px": [
+        426,
+        693,
+        466,
+        724
+      ],
+      "visibleEnvelope_m": [
+        1.786,
+        1.384
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -10.938,
+        3.839
+      ],
+      "replica_floor": 2.897860564942679,
+      "modelOpening": [
+        1.786,
+        1.384
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "J22",
+      "reportLabel": "옹22",
+      "category": "jar_coffin",
+      "center_px": [
+        766,
+        952
+      ],
+      "xz_m": [
+        3.393,
+        14.821
+      ],
+      "visibleEnvelope_px": [
+        756,
+        945,
+        777,
+        960
+      ],
+      "visibleEnvelope_m": [
+        0.938,
+        0.67
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        3.393,
+        14.821
+      ],
+      "replica_floor": 2.1729551519233303,
+      "modelOpening": [
+        0.938,
+        0.85
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    },
+    {
+      "id": "W1",
+      "reportLabel": "목관",
+      "category": "wood_coffin",
+      "center_px": [
+        524,
+        298
+      ],
+      "xz_m": [
+        -7.411,
+        -14.375
+      ],
+      "visibleEnvelope_px": [
+        503,
+        289,
+        544,
+        307
+      ],
+      "visibleEnvelope_m": [
+        1.83,
+        0.804
+      ],
+      "elevation_m": null,
+      "confidence": "manual trace: approximate",
+      "model_center": [
+        -7.411,
+        -14.375
+      ],
+      "replica_floor": 1.2,
+      "modelOpening": [
+        1.83,
+        0.85
+      ],
+      "opening_depth": 0.42,
+      "vertical_source": "Estimated display level from photographs, not measured"
+    }
+  ],
+  "bridgeHeight": 3.52,
+  "limitations": [
+    "Exterior footprint is OSM way471352007. Official floor icons establish relative room arrangement, not measured room walls.",
+    "Official photos and post-renovation visitor photos dated 2024-08-17 inform ochre replica, pale blue-grey floor, black trusses, glass/metal/wood rails, stairs and dark pottery case.",
+    "41 burial centres are manually traced from the 2001 excavation report, not a measured survey of the museum replica. Exposed sizes, elevations and museum alignment are inferred.",
+    "Bridge height 3.52m includes 0.12m floor and 20 estimated 0.17m risers. Exact bridge path, exhibition partitions, room dimensions, lighting and furniture placement are estimates. Continuous corner landings, rail joints and terminal guard are model finishing details, not newly verified real-site measurements.",
+    "The central replica uses an estimated stepped height surface. Ancient remains were not modelled as present-day human remains; the 2024 exhibition changed after the displayed skeleton was moved for study.",
+    "Theatre has 38 seats per official description; screen content is original placeholder typography. Digital room retains three screens without redistributing the actual film.",
+    "The 2F cafe is walkable. Unverified staff/service interiors, toilet interiors and 3F observatory interiors are not reproduced.",
+    "This is a detailed reference model, not an exact current interior scan or as-built digital twin. Original photos, video and satellite imagery are not redistributed."
+  ]
+}

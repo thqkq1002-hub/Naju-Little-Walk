@@ -1,0 +1,13 @@
+{
+  "source": "outputs\\arboretum\\naju-arboretum-reference-v15.blend",
+  "revision": "outputs\\quality-v61\\naju-arboretum-garden-v61-soft.blend",
+  "protected_meshes": 8358,
+  "protected_geometry_matches_source": true,
+  "changed_objects": 7360,
+  "corrected_root_instances": 5370,
+  "paired_vegetation_instances": 6866,
+  "lod_transform_and_distance_match": true,
+  "canopies_within_retained_envelope": 2,
+  "world_sha256": "5901103c5bd7d52f13bca288f713c8811c4c4e70b82206272738df8f18f78218",
+  "collision_layout_unchanged": true
+}

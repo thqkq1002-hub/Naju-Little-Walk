@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-02",
+  "scope": "Desktop in-app browser viewport simulation, not Android hardware",
+  "viewport1024": {
+    "width": 1024,
+    "height": 768,
+    "state": "{\"destination\":\"나주수목원 · 산림연구원\",\"mode\":\"walking\",\"position\":{\"x\":-463.24,\"z\":-47.6},\"source\":\"OpenStreetMap contributors, ODbL, 2026-09-16\",\"renderDiagnostics\":{\"sampleFrames\":120,\"meanIntervalMs\":23.333333333333332,\"p95IntervalMs\":33.40000000002328,\"renderedFrames\":2597,\"drawCalls\":1830,\"triangles\":5391900,\"pixelRatio\":1.25,\"quality\":\"detail\",\"contextLost\":false,\"landscapeBlocked\":false,\"scope\":\"Recent visible walking frame intervals in this browser; not a GPU-only measurement or hardware certification.\"}}"
+  },
+  "viewport844": {
+    "height": 390,
+    "width": 844,
+    "state": "{\"destination\":\"나주수목원 · 산림연구원\",\"mode\":\"walking\",\"position\":{\"x\":-463.24,\"z\":-47.6},\"source\":\"OpenStreetMap contributors, ODbL, 2026-09-16\",\"renderDiagnostics\":{\"sampleFrames\":120,\"meanIntervalMs\":24.583333333333332,\"p95IntervalMs\":33.40000000002328,\"renderedFrames\":3192,\"drawCalls\":2095,\"triangles\":5857448,\"pixelRatio\":1.25,\"quality\":\"detail\",\"contextLost\":false,\"landscapeBlocked\":false,\"scope\":\"Recent visible walking frame intervals in this browser; not a GPU-only measurement or hardware certification.\"}}"
+  },
+  "console": [],
+  "screenshots": [
+    "outputs/quality-v74/trees-1024x768.png",
+    "outputs/quality-v74/trees-844x390.png"
+  ],
+  "observations": [
+    "Avenue trunks and leaf sprays visible with clear walking corridor",
+    "Controls and location card remain within both landscape viewports"
+  ],
+  "android_hardware_verified": false
+}

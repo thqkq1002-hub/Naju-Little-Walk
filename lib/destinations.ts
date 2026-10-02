@@ -1,0 +1,121 @@
+export const destinations = {
+  deudeulgang: {
+    coordinates:{lat:35.0185,lon:126.85475},
+    name:'드들강 솔밭유원지',area:'드들강 노송과 강변 산책',worldUrl:'/deudeulgang-world.json?v=grove-detail-54',modelUrl:'/models/deudeulgang.glb.gz?v=surfaces-v72-20261001',
+    heading:['솔향기 따라서,','드들강 한 걸음.'],introduction:['소나무 숲길과 노래비, 강변을 걸어보세요.','위성사진과 현장 사진을 참고해 만들었습니다.'],
+    sourceUrl:'https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003156492',sourceLabel:'현장 사진 · Esri 위성사진 · OSM 참고',
+    limitation:'실제 보행로·노래비 위치 참고 · 수형·높이·시설 세부 추정',overview:{center:[-35,40],radius:380,elevation:.83,angle:-.65},
+  },
+  'naju-arboretum': {
+    coordinates:{lat:35.00648,lon:126.8256689},
+    name:'나주수목원 · 산림연구원',area:'나주수목원 산책',worldUrl:'/naju-arboretum-world.json?v=juniper-v66-20261001',modelUrl:'/models/naju-arboretum.glb.gz?v=tree-crowns-v74-20261002',
+    heading:['나무가 만든 길,','나주수목원.'],introduction:['메타세쿼이아길과 정원을 걸어보세요.','공식 안내도와 항공사진을 참고한 기초 재현입니다.'],
+    sourceUrl:'https://jnforest.jeonnam.go.kr/content/view.do?menuCd=FOREST007006',sourceLabel:'공식 안내 · 현장 사진 · Esri 위성영상 참고',
+    limitation:'위성 윤곽 참고 · 촬영일 미확인 · 높이·개별 식재 추정',overview:{center:[-230,-40],radius:550,elevation:.9,angle:-.65},
+  },
+  'bitgaram-kepco': {
+    coordinates:{lat:35.026466,lon:126.784493},parent:'bitgaram',
+      name:'한국전력 본사 · 1층',area:'한국전력 본사와 앞마당',worldUrl:'/bitgaram-kepco-world.json?v=palette-20260920',modelUrl:'/models/bitgaram-kepco.glb.gz?v=palette-20260920',
+    heading:['에너지의 도시,','한국전력 앞에서.'],introduction:['입구 주변과 1층 로비를 걸어보세요.','전체 안내 푯말로 다른 장소를 선택할 수 있어요.'],
+    sourceUrl:'https://www.korea.kr/briefing/policyBriefingView.do?newsId=148817032',sourceLabel:'본사 로비 공개 사진 참고',
+      limitation:'실제 부지·건물 윤곽 · 조경·세부 추정',overview:{center:[0,0],radius:420,elevation:.8,angle:.3},
+  },
+  'bitgaram-kentech': {
+    coordinates:{lat:35.010582,lon:126.803269},parent:'bitgaram',
+    name:'KENTECH · 캠퍼스와 1층',area:'KENTECH 캠퍼스',worldUrl:'/bitgaram-kentech-world.json?v=campus-detail-53',modelUrl:'/models/bitgaram-kentech.glb.gz?v=campus-detail-53',
+    heading:['미래를 연구하는 곳,','KENTECH.'],introduction:['강의동 앞마당과 운동장, 생활관 주변을 걸어보세요.','정문으로 들어가면 1층 로비를 둘러볼 수 있습니다.'],
+    sourceUrl:'https://home.kentech.ac.kr/campusMap.do',sourceLabel:'공식 캠퍼스 지도 · 항공·현장 사진 참고',
+    limitation:'지도 윤곽 기반 · 높이·도서관 마감·1층 배치 추정',overview:{center:[30,20],radius:530,elevation:.72,angle:-.6},
+  },
+  bitgaram: {
+    coordinates:{lat:35.016925,lon:126.790447},
+    name:'빛가람 · 장소 선택',area:'빛가람 안내 지도',worldUrl:'/bitgaram-park-world.json?v=access-v69-20261001',modelUrl:'/models/bitgaram-park.glb.gz?v=shore-v75-20261002',
+    heading:['빛가람에서,','머물고 싶은 곳.'],introduction:['푯말을 눌러 장소별 산책으로 들어가세요.','전망대 주변과 두 기관의 1층을 따로 둘러봅니다.'],
+    sourceUrl:'https://www.openstreetmap.org/way/656235304',sourceLabel:'OpenStreetMap · 현장 사진 참고',
+    limitation:'실제 지도 윤곽 · 높이와 실내 치수 추정',overview:{center:[0,0],radius:380,elevation:.9,angle:.25},
+  },
+  'bitgaram-park': {
+    coordinates:{lat:35.016925,lon:126.790447},parent:'bitgaram',
+    name:'빛가람 전망대 주변',area:'전망대 앞 쉼터와 산책로',worldUrl:'/bitgaram-park-world.json?v=access-v69-20261001',modelUrl:'/models/bitgaram-park.glb.gz?v=shore-v75-20261002',
+    heading:['나무 사이로,','빛가람 한 걸음.'],introduction:['전망대 주변의 쉼터와 접근 산책로를 걸어보세요.','전망실 푯말을 누르면 내부로 들어갑니다.'],
+    sourceUrl:'https://www.youtube.com/watch?v=tQJsYaXqsIg',sourceLabel:'현장 탐방 영상 참고',
+    limitation:'OSM·위성사진 참고 · 지형 높이·세부 추정',overview:{center:[0,35],radius:360,elevation:.8,angle:.4},
+  },
+  'bitgaram-observatory': {
+    coordinates:{lat:35.016925,lon:126.790447},parent:'bitgaram',
+    name:'빛가람 전망실',area:'빛가람 전망대 내부',worldUrl:'/bitgaram-observatory-world.json?v=palette-20260920',modelUrl:'/models/bitgaram-observatory.glb.gz?v=palette-20260920',
+    heading:['유리창 너머,','빛가람을 바라보다.'],introduction:['곡면 창을 따라 전망실을 둘러보세요.','밖으로 나가기 푯말로 산책로에 돌아갑니다.'],
+    sourceUrl:'https://www.youtube.com/watch?v=tQJsYaXqsIg',sourceLabel:'현장 사진·탐방 영상 참고',
+    limitation:'창밖: 영상 참고 AI 합성 파노라마 · 실제 360도 촬영 아님',overview:{center:[0,0],radius:32,elevation:.9,angle:.4},
+  },
+  yeongsanpo: {
+    coordinates:{lat:35.00025,lon:126.71075},
+    name:'영산포 · 홍어거리',area:'영산포 강변과 홍어거리',worldUrl:'/yeongsanpo-world.json?v=palette-20260920',modelUrl:'/models/yeongsanpo.glb.gz?v=palette-20260920',
+    heading:['강을 따라서,','영산포 한 바퀴.'],
+    introduction:['두 황포돛배에 올라 강 위를 직접 운전해 보세요.','홍어거리의 역사갤러리와 문학관은 입구로 들어갈 수 있어요.'],
+    sourceUrl:'https://www.naju.go.kr/tour',sourceLabel:'나주시 관광 사진',
+    limitation:'지도·공식 사진 참고 · 높이·세부 추정',
+    overview:{center:[40,45],radius:620,elevation:.86,angle:-.45},
+  },
+  'yeongsanpo-history': {
+    coordinates:{lat:35.000721,lon:126.711504},parent:'yeongsanpo',
+    name:'영산포 역사갤러리',area:'영산포 역사갤러리 실내',worldUrl:'/yeongsanpo-history-world.json?v=palette-20260920',modelUrl:'/models/yeongsanpo-history.glb.gz?v=palette-20260920',
+    heading:['옛 포구 안으로,','영산포의 기억.'],
+    introduction:['배 모형과 홍어, 포구의 생활 전시를 둘러보세요.','들어온 문을 지나면 홍어거리로 돌아갑니다.'],
+    sourceUrl:'https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=b6fd947a-7ff4-461c-bffd-8952bcc6b105',sourceLabel:'한국관광공사 사진 참고',
+    limitation:'공개 실내 사진 참고 · 치수·패널 콘텐츠 재구성',
+    overview:{center:[0,0],radius:28,elevation:1.05,angle:.4},
+  },
+  'yeongsanpo-literature': {
+    coordinates:{lat:34.9998292,lon:126.712917},parent:'yeongsanpo',
+    name:'타오르는 강 문학관',area:'타오르는 강 문학관 실내',worldUrl:'/yeongsanpo-literature-world.json?v=palette-20260920',modelUrl:'/models/yeongsanpo-literature.glb.gz?v=palette-20260920',
+    heading:['목조 복도를 따라,','이야기가 흐르는 집.'],
+    introduction:['다다미 전시방과 서재, 좌식 독서실을 둘러보세요.','현관의 출구로 나가면 영산포 거리로 돌아갑니다.'],
+    sourceUrl:'https://www.jnfilm.or.kr/web_jnfilm/jn_ldbview.php?clmsuid=5079',sourceLabel:'전남영상위원회 사진 참고',
+    limitation:'2025년 실내 사진 참고 · 방 치수·배치 일부 추정',
+    overview:{center:[0,0],radius:36,elevation:1.05,angle:.35},
+  },
+  geumseonggwan: {
+    coordinates: { lat: 35.0327357, lon: 126.7167886 },
+    name: '금성관', area: '금성관 주변', worldUrl: '/city-world.json?v=palette-20260920', modelUrl: '/models/geumseonggwan.glb.gz?v=palette-20260920',
+    heading: ['골목 안으로,', '나주 한 걸음.'],
+    introduction: ['망화루 앞 거리와 담장, 골목까지 걸어보세요.', '박석길을 따라 정청의 마루와 단청 천장으로 이어집니다.'],
+    sourceUrl: 'https://encykorea.aks.ac.kr/Article/E0011462', sourceLabel: '금성관 사진 참고',
+    limitation: '수리 전 사진·위성영상 참고 · 높이·세부 추정',
+    overview: { center: [0, -12], radius: 165, elevation: .62, angle: .25 },
+  },
+  dasi: {
+    coordinates: { lat: 35.017517, lon: 126.6400205 },
+    name: '다시초등학교', area: '다시초 주변', worldUrl: '/dasi-neighborhood-world.json?v=palette-20260920', modelUrl: '/models/dasi-neighborhood.glb.gz?v=palette-20260920',
+    heading: ['학교 앞에서,', '다시 한 걸음.'],
+    introduction: ['운동장과 교실, 학교 앞 골목을 걸어보세요.', '다시역과 철길, 동쪽 들판까지 이어집니다.'],
+    sourceUrl: 'https://najudasi.es.jne.kr/', sourceLabel: '다시초등학교',
+    limitation: '2022년 항공영상 기준 · 높이·세부·실내 추정',
+    overview: { center: [0, -25], radius: 410, elevation: .82, angle: -.15 },
+  },
+  bogam: {
+    coordinates: { lat: 34.9955088790031, lon: 126.650613161695 },
+    name: '복암리 고분군', area: '복암리 고분군', worldUrl: '/bogam-world.json?v=palette-20260920', modelUrl: '/models/bogam-tumuli.glb.gz?v=palette-20260920',
+    heading: ['봉분 사이로,', '마한의 시간.'],
+    introduction: ['네 개의 고분과 들판을 둘러보세요.', '지도에서 길을 누르면 그곳으로 이동해요.'],
+    sourceUrl: 'https://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1333604040000&pageNo=1_1_1_1', sourceLabel: '국가유산포털',
+    limitation: '사진·영상·조사자료 참고 · 현재 치수·세부 추정',
+    overview: { center: [0, 0], radius: 245, elevation: .76, angle: -.30 },
+  },
+  'bogam-museum': {
+    coordinates: {lat:34.996091,lon:126.657059219},
+    name:'복암리고분전시관',area:'복암리고분전시관 내부',worldUrl:'/bogam-museum-world.json?v=palette-20260920',modelUrl:'/models/bogam-museum.glb.gz?v=palette-20260920',
+    heading:['고분 속으로,','시간을 따라.'],
+    introduction:['석실과 옹관, 관람교량을 가까이 둘러보세요.','계단을 올라 3호분 재현 공간을 내려다볼 수 있어요.'],
+    sourceUrl:'http://www.njbogam.or.kr/page/s21',sourceLabel:'전시관 공식 사진',
+    limitation:'공식·2024년 사진 참고 · 세부 치수·동선 추정',
+    overview:{center:[0,8],radius:100,elevation:.88,angle:.27},
+  },
+} as const;
+
+export type DestinationId = keyof typeof destinations;
+
+export function destinationFromSearch(search: string): DestinationId {
+  const place = new URLSearchParams(search).get('place');
+  return place && Object.hasOwn(destinations,place) ? place as DestinationId : 'geumseonggwan';
+}

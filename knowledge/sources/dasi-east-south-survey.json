@@ -1,0 +1,1365 @@
+{
+  "schemaVersion": 1,
+  "survey": "dasi-east-south-visible-roofs-and-surfaces",
+  "origin": {
+    "lat": 35.017517,
+    "lon": 126.6400205
+  },
+  "axes": {
+    "x": "east metres",
+    "z": "south metres"
+  },
+  "projection": "X=(lon-lon0)*111320*cos(lat0), Z=-(lat-lat0)*111320; tile pixels converted locally with Mercator ground scale 0.489064 m/px (difference from 111320 convention negligible for tracing accuracy).",
+  "assignmentBounds": {
+    "x": [
+      0,
+      270
+    ],
+    "z": [
+      -210,
+      180
+    ]
+  },
+  "excludedSchoolInterior": {
+    "x": [
+      -88,
+      87
+    ],
+    "z": [
+      -77,
+      53
+    ]
+  },
+  "provenance": {
+    "provider": "Esri World Imagery",
+    "urlTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/18/{y}/{x}",
+    "zoom": 18,
+    "imageryCaptureDate": "2022-10-14",
+    "dateEvidence": "Parent agent previously verified source metadata; not independently queried in this subtask.",
+    "sourceAccuracyMetres": 5,
+    "inspection": "Each original 256×256 JPEG inspected individually with view_image; no image editing, stitching, or generated image used.",
+    "surveyDate": "2026-09-08",
+    "limits": [
+      "Roofs are observed approximate polygons; footprint is projected roof perimeter, not surveyed wall/foundation geometry.",
+      "Height, storeys and roof construction are unverified illustrative estimates.",
+      "Small low-contrast appendages, occluded structures, and items inside excluded school envelope omitted.",
+      "Polygons crossing X=0 have centroid on east side; parent should deduplicate against western survey.",
+      "Do not represent crop-cover surfaces as solid buildings.",
+      "Source imagery is dated; current existence is not verified."
+    ]
+  },
+  "features": [
+    {
+      "id": "east-north-house-01",
+      "kind": "building",
+      "footprint": [
+        [
+          -3.4,
+          -157.8
+        ],
+        [
+          9.4,
+          -156.9
+        ],
+        [
+          8.4,
+          -146.1
+        ],
+        [
+          -4.3,
+          -147.1
+        ]
+      ],
+      "roofColor": "#b38a79",
+      "roofType": "gable",
+      "height": 4,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103817-223288.jpg",
+      "confidence": "medium-low",
+      "notes": "북동 마을 남단 적갈색 지붕. X=0 경계에 걸치며 중심이 동쪽."
+    },
+    {
+      "id": "east-north-house-02",
+      "kind": "building",
+      "footprint": [
+        [
+          45.5,
+          -175
+        ],
+        [
+          55.3,
+          -173
+        ],
+        [
+          50.9,
+          -148.5
+        ],
+        [
+          41.1,
+          -151
+        ]
+      ],
+      "roofColor": "#d4d8d5",
+      "roofType": "gable",
+      "height": 4.2,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103817-223288.jpg",
+      "confidence": "medium-low",
+      "notes": "길을 따라 비스듬하게 놓인 길고 밝은 지붕."
+    },
+    {
+      "id": "east-north-house-03",
+      "kind": "building",
+      "footprint": [
+        [
+          17.7,
+          -130.5
+        ],
+        [
+          34.3,
+          -125.1
+        ],
+        [
+          29.4,
+          -115.8
+        ],
+        [
+          14.2,
+          -120.7
+        ]
+      ],
+      "roofColor": "#c9474d",
+      "roofType": "gable",
+      "height": 4.2,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103818-223288.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "east-north-house-04",
+      "kind": "building",
+      "footprint": [
+        [
+          4.5,
+          -119.7
+        ],
+        [
+          20.6,
+          -113.3
+        ],
+        [
+          16.2,
+          -103.1
+        ],
+        [
+          -0.4,
+          -110.4
+        ]
+      ],
+      "roofColor": "#686f79",
+      "roofType": "gable",
+      "height": 4,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103818-223288.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "east-north-house-05",
+      "kind": "building",
+      "footprint": [
+        [
+          35.3,
+          -112.4
+        ],
+        [
+          50.9,
+          -109.4
+        ],
+        [
+          49.5,
+          -98.2
+        ],
+        [
+          32.3,
+          -102.1
+        ]
+      ],
+      "roofColor": "#8d9eaa",
+      "roofType": "gable",
+      "height": 4.5,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103818-223288.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "east-north-house-06",
+      "kind": "building",
+      "footprint": [
+        [
+          -1.9,
+          -101.6
+        ],
+        [
+          11.8,
+          -99.2
+        ],
+        [
+          19.1,
+          -90.4
+        ],
+        [
+          9.4,
+          -83
+        ],
+        [
+          0.1,
+          -89.4
+        ]
+      ],
+      "roofColor": "#7b6167",
+      "roofType": "hipped",
+      "height": 4,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103818-223288.jpg",
+      "confidence": "medium-low",
+      "notes": "일부 청색 지붕 가장자리와 붙어 보이는 복합 지붕; 정밀 건물 경계 미확인."
+    },
+    {
+      "id": "east-field-building-01",
+      "kind": "building",
+      "footprint": [
+        [
+          101.8,
+          -133.4
+        ],
+        [
+          120.9,
+          -124.6
+        ],
+        [
+          116,
+          -113.8
+        ],
+        [
+          107.2,
+          -117.7
+        ],
+        [
+          103.3,
+          -101.6
+        ],
+        [
+          109.6,
+          -98.2
+        ],
+        [
+          104.7,
+          -87.9
+        ],
+        [
+          94.5,
+          -92.3
+        ],
+        [
+          93.5,
+          -104.5
+        ]
+      ],
+      "roofColor": "#4674a4",
+      "roofType": "gable",
+      "height": 4.8,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103818-223289.jpg",
+      "confidence": "medium-low",
+      "notes": "농지 서쪽 통행로 옆 청색 지붕의 꺾인 건물. 외곽은 근사치."
+    },
+    {
+      "id": "east-field-building-02",
+      "kind": "building",
+      "footprint": [
+        [
+          250,
+          -129.5
+        ],
+        [
+          267.1,
+          -120.7
+        ],
+        [
+          262.7,
+          -113.3
+        ],
+        [
+          246.1,
+          -122.1
+        ]
+      ],
+      "roofColor": "#54897a",
+      "roofType": "gable",
+      "height": 3.8,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103818-223290.jpg",
+      "confidence": "medium-low",
+      "notes": "북동 도로 남쪽 작은 청록색 지붕."
+    },
+    {
+      "id": "south-street-building-01",
+      "kind": "building",
+      "footprint": [
+        [
+          2,
+          63.7
+        ],
+        [
+          13.3,
+          64.7
+        ],
+        [
+          9.8,
+          82.8
+        ],
+        [
+          -0.9,
+          81.8
+        ]
+      ],
+      "roofColor": "#888785",
+      "roofType": "gable",
+      "height": 4.2,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223288.jpg",
+      "confidence": "medium-low",
+      "notes": "남쪽 도로 남측의 좁고 긴 회색 지붕."
+    },
+    {
+      "id": "south-street-building-02",
+      "kind": "building",
+      "footprint": [
+        [
+          16.7,
+          66.6
+        ],
+        [
+          25,
+          67.1
+        ],
+        [
+          24,
+          78.4
+        ],
+        [
+          15.2,
+          77.4
+        ]
+      ],
+      "roofColor": "#6b9b82",
+      "roofType": "gable",
+      "height": 4,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223288.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "south-street-building-03",
+      "kind": "building",
+      "footprint": [
+        [
+          26.5,
+          68.1
+        ],
+        [
+          34.8,
+          69.1
+        ],
+        [
+          32.8,
+          83.3
+        ],
+        [
+          25,
+          82.3
+        ]
+      ],
+      "roofColor": "#66907f",
+      "roofType": "gable",
+      "height": 4,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223288.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "southeast-street-building-01",
+      "kind": "building",
+      "footprint": [
+        [
+          90.5,
+          33.4
+        ],
+        [
+          98.4,
+          33.9
+        ],
+        [
+          97.9,
+          46.6
+        ],
+        [
+          89.6,
+          45.6
+        ]
+      ],
+      "roofColor": "#5b92b5",
+      "roofType": "gable",
+      "height": 4.2,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223289.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "southeast-street-building-02",
+      "kind": "building",
+      "footprint": [
+        [
+          97.4,
+          39.3
+        ],
+        [
+          104.2,
+          38.8
+        ],
+        [
+          105.7,
+          52.5
+        ],
+        [
+          98.9,
+          53.4
+        ]
+      ],
+      "roofColor": "#a1b3b7",
+      "roofType": "gable",
+      "height": 4.2,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223289.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "southeast-street-building-03",
+      "kind": "building",
+      "footprint": [
+        [
+          83.7,
+          58.8
+        ],
+        [
+          92,
+          59.3
+        ],
+        [
+          92,
+          65.7
+        ],
+        [
+          84.2,
+          66.2
+        ]
+      ],
+      "roofColor": "#739784",
+      "roofType": "gable",
+      "height": 3.2,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223289.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "southeast-street-building-04",
+      "kind": "building",
+      "footprint": [
+        [
+          96.9,
+          56.9
+        ],
+        [
+          108.1,
+          58.8
+        ],
+        [
+          106.7,
+          70.1
+        ],
+        [
+          96.9,
+          69.1
+        ]
+      ],
+      "roofColor": "#b96064",
+      "roofType": "gable",
+      "height": 4.2,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223289.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "southeast-street-building-05",
+      "kind": "building",
+      "footprint": [
+        [
+          106.7,
+          44.1
+        ],
+        [
+          117.4,
+          42.2
+        ],
+        [
+          120.4,
+          56.4
+        ],
+        [
+          109.1,
+          58.8
+        ]
+      ],
+      "roofColor": "#767b79",
+      "roofType": "gable",
+      "height": 4.5,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223289.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "southeast-street-building-06",
+      "kind": "building",
+      "footprint": [
+        [
+          119.4,
+          42.2
+        ],
+        [
+          128.2,
+          40.2
+        ],
+        [
+          130.6,
+          50
+        ],
+        [
+          121.8,
+          52.9
+        ]
+      ],
+      "roofColor": "#7c7a73",
+      "roofType": "gable",
+      "height": 3.5,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223289.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "southeast-street-building-07",
+      "kind": "building",
+      "footprint": [
+        [
+          122.8,
+          53.4
+        ],
+        [
+          129.2,
+          52
+        ],
+        [
+          130.6,
+          61.7
+        ],
+        [
+          123.8,
+          62.7
+        ]
+      ],
+      "roofColor": "#afc3cd",
+      "roofType": "gable",
+      "height": 3.5,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223289.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "southeast-street-building-08",
+      "kind": "building",
+      "footprint": [
+        [
+          126.7,
+          62.7
+        ],
+        [
+          139.4,
+          63.2
+        ],
+        [
+          139.4,
+          71.5
+        ],
+        [
+          126.2,
+          71
+        ]
+      ],
+      "roofColor": "#417ca7",
+      "roofType": "gable",
+      "height": 4.2,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223289.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "southeast-street-building-09",
+      "kind": "building",
+      "footprint": [
+        [
+          147.3,
+          55.9
+        ],
+        [
+          160,
+          56.4
+        ],
+        [
+          161.9,
+          63.7
+        ],
+        [
+          149.7,
+          66.6
+        ],
+        [
+          145.3,
+          62.7
+        ]
+      ],
+      "roofColor": "#639c83",
+      "roofType": "hipped",
+      "height": 4.3,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223289.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "southeast-street-building-10",
+      "kind": "building",
+      "footprint": [
+        [
+          85.7,
+          87.7
+        ],
+        [
+          105.2,
+          89.1
+        ],
+        [
+          106.7,
+          93.5
+        ],
+        [
+          117.9,
+          97
+        ],
+        [
+          116.5,
+          108.2
+        ],
+        [
+          83.7,
+          105.3
+        ]
+      ],
+      "roofColor": "#615d62",
+      "roofType": "hipped",
+      "height": 5.5,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223289.jpg",
+      "confidence": "medium-low",
+      "notes": "도로 남쪽 큰 어두운 지붕; 붙은 동을 하나의 근사 외곽으로 처리."
+    },
+    {
+      "id": "east-greenhouse-01",
+      "kind": "greenhouse",
+      "footprint": [
+        [
+          204.5,
+          2.1
+        ],
+        [
+          216.2,
+          7
+        ],
+        [
+          190.8,
+          61.7
+        ],
+        [
+          179.1,
+          55.9
+        ]
+      ],
+      "roofColor": "#797a83",
+      "roofType": "arched",
+      "height": 3.2,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223290.jpg",
+      "confidence": "medium",
+      "notes": "길고 좁은 재배 시설. 비닐하우스/차광하우스 여부와 높이는 추정."
+    },
+    {
+      "id": "east-greenhouse-02",
+      "kind": "greenhouse",
+      "footprint": [
+        [
+          218.2,
+          8.4
+        ],
+        [
+          230.4,
+          13.8
+        ],
+        [
+          206,
+          69.1
+        ],
+        [
+          194.2,
+          63.2
+        ]
+      ],
+      "roofColor": "#6c6878",
+      "roofType": "arched",
+      "height": 3.2,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223290.jpg",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": "east-greenhouse-03",
+      "kind": "greenhouse",
+      "footprint": [
+        [
+          232.9,
+          16.3
+        ],
+        [
+          242.2,
+          20.2
+        ],
+        [
+          217.7,
+          76.4
+        ],
+        [
+          208.4,
+          71.5
+        ]
+      ],
+      "roofColor": "#7e7c7b",
+      "roofType": "arched",
+      "height": 3.2,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223290.jpg",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": "east-greenhouse-04",
+      "kind": "greenhouse",
+      "footprint": [
+        [
+          248.5,
+          26.5
+        ],
+        [
+          263.2,
+          33.4
+        ],
+        [
+          237.7,
+          89.1
+        ],
+        [
+          223.6,
+          81.8
+        ]
+      ],
+      "roofColor": "#3f3e46",
+      "roofType": "arched",
+      "height": 3.5,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223290.jpg",
+      "confidence": "medium",
+      "notes": "동쪽의 가장 어두운 재배 시설; 윤곽은 그림자와 혼재될 수 있음."
+    },
+    {
+      "id": "east-greenhouse-shed-01",
+      "kind": "building",
+      "footprint": [
+        [
+          247,
+          74.5
+        ],
+        [
+          256.8,
+          77.9
+        ],
+        [
+          252.4,
+          90.6
+        ],
+        [
+          243.6,
+          86.7
+        ]
+      ],
+      "roofColor": "#507fad",
+      "roofType": "gable",
+      "height": 3.5,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103819-223290.jpg",
+      "confidence": "medium-low",
+      "notes": ""
+    },
+    {
+      "id": "east-northeast-warehouse-01",
+      "kind": "building",
+      "footprint": [
+        [
+          108.1,
+          -201.9
+        ],
+        [
+          137.5,
+          -190.1
+        ],
+        [
+          131.6,
+          -176.9
+        ],
+        [
+          102.8,
+          -189.6
+        ]
+      ],
+      "roofColor": "#68b4a7",
+      "roofType": "gable",
+      "height": 5,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103817-223289.jpg",
+      "confidence": "medium",
+      "notes": "북동쪽 큰 도로 아래 넓은 작업장에 놓인 긴 청록색 지붕."
+    },
+    {
+      "id": "east-northeast-shed-01",
+      "kind": "building",
+      "footprint": [
+        [
+          78.8,
+          -198.4
+        ],
+        [
+          88.1,
+          -195.5
+        ],
+        [
+          86.1,
+          -189.6
+        ],
+        [
+          76.8,
+          -192.6
+        ]
+      ],
+      "roofColor": "#a1acac",
+      "roofType": "gable",
+      "height": 3.2,
+      "heightSource": "위성영상의 지붕·그림자를 근거로 한 시각화용 임시 추정; 실제 층수·높이 미확인",
+      "sourceTile": "esri-tile18-103817-223289.jpg",
+      "confidence": "low",
+      "notes": "담당 북쪽 경계 가까이의 작은 밝은 부속 지붕. 북서쪽에 더 큰 청록 지붕은 중심이 Z=-210 밖이라 생략."
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "east-field-central",
+      "kind": "farmland",
+      "footprint": [
+        [
+          131.6,
+          -132.9
+        ],
+        [
+          194.2,
+          -110.9
+        ],
+        [
+          193.7,
+          -12.6
+        ],
+        [
+          98.4,
+          -15
+        ],
+        [
+          93,
+          -49.3
+        ],
+        [
+          111.1,
+          -88.4
+        ]
+      ],
+      "color": "#89934d",
+      "sourceTile": "esri-tile18-103818-223289.jpg",
+      "confidence": "medium",
+      "notes": "영상에서 보이는 넓은 녹색 농지. 벼 등 작물 종류는 미확인. 타일 경계에서 잘린 관찰 구역이며 실제 필지 경계로 해석하지 말 것."
+    },
+    {
+      "id": "east-field-northeast",
+      "kind": "farmland",
+      "footprint": [
+        [
+          239.7,
+          -109.9
+        ],
+        [
+          269.5,
+          -95.7
+        ],
+        [
+          269.5,
+          -13.6
+        ],
+        [
+          194.7,
+          -34.1
+        ]
+      ],
+      "color": "#909a59",
+      "sourceTile": "esri-tile18-103818-223290.jpg",
+      "confidence": "medium",
+      "notes": "동쪽 농지의 관찰 범위. X=270 부근에서 잘린 경계."
+    },
+    {
+      "id": "east-field-north-bare",
+      "kind": "farmland",
+      "footprint": [
+        [
+          160,
+          -162.2
+        ],
+        [
+          194.2,
+          -145.6
+        ],
+        [
+          194.2,
+          -137.3
+        ],
+        [
+          146.3,
+          -137.3
+        ]
+      ],
+      "color": "#ae9b73",
+      "sourceTile": "esri-tile18-103817-223289.jpg",
+      "confidence": "medium",
+      "notes": "북동 녹색 필지 아래 보이는 갈색 재배지. 타일 단위 부분 관찰."
+    },
+    {
+      "id": "east-field-covered-rows",
+      "kind": "covered-crop-rows",
+      "footprint": [
+        [
+          96.4,
+          -12.1
+        ],
+        [
+          176.1,
+          25.1
+        ],
+        [
+          154.1,
+          51.5
+        ],
+        [
+          105.2,
+          37.3
+        ],
+        [
+          91,
+          28.5
+        ]
+      ],
+      "color": "#8d9293",
+      "sourceTile": "esri-tile18-103819-223289.jpg",
+      "confidence": "medium",
+      "notes": "넓은 회색 재배면에 일정한 밝은 줄무늬가 보임. 비닐멀칭·차광 여부 미확정, 건물로 취급하지 않는 지표면."
+    },
+    {
+      "id": "east-farm-hardstand",
+      "kind": "farm-hardstand",
+      "footprint": [
+        [
+          194.2,
+          -12.1
+        ],
+        [
+          291.5,
+          -12.1
+        ],
+        [
+          284.2,
+          18.2
+        ],
+        [
+          263.7,
+          33.9
+        ],
+        [
+          194.2,
+          2.6
+        ]
+      ],
+      "color": "#8d8e87",
+      "sourceTile": "esri-tile18-103819-223290.jpg",
+      "confidence": "medium",
+      "notes": "길고 좁은 시설 북쪽의 회색 농작업면. 재질과 용도 미확인."
+    },
+    {
+      "id": "east-farm-access",
+      "kind": "farm-access",
+      "footprint": [
+        [
+          286.2,
+          -12.1
+        ],
+        [
+          293,
+          -12.1
+        ],
+        [
+          255.4,
+          90.6
+        ],
+        [
+          250.5,
+          90.1
+        ]
+      ],
+      "color": "#b5aa91",
+      "sourceTile": "esri-tile18-103819-223290.jpg",
+      "confidence": "medium",
+      "notes": "동쪽 재배시설 옆 북북동-남남서 통행로. 폭은 위성 픽셀에서 근사."
+    },
+    {
+      "id": "south-field-01",
+      "kind": "farmland",
+      "footprint": [
+        [
+          8.4,
+          148.3
+        ],
+        [
+          57.3,
+          158.1
+        ],
+        [
+          46,
+          179.6
+        ],
+        [
+          -1.9,
+          179.6
+        ]
+      ],
+      "color": "#acb66e",
+      "sourceTile": "esri-tile18-103820-223288.jpg",
+      "confidence": "medium",
+      "notes": "철도 남쪽 농로 아래 황록색 필지 중 동쪽 담당 영역."
+    },
+    {
+      "id": "south-field-02",
+      "kind": "farmland",
+      "footprint": [
+        [
+          69,
+          167.4
+        ],
+        [
+          161.9,
+          175.7
+        ],
+        [
+          157.1,
+          179.6
+        ],
+        [
+          69,
+          179.6
+        ]
+      ],
+      "color": "#9fac61",
+      "sourceTile": "esri-tile18-103820-223289.jpg",
+      "confidence": "medium",
+      "notes": "담당 남쪽 경계 Z=180에 걸리는 큰 논의 북단."
+    },
+    {
+      "id": "south-local-road",
+      "kind": "road",
+      "footprint": [
+        [
+          0,
+          54
+        ],
+        [
+          69,
+          65
+        ],
+        [
+          195,
+          81
+        ],
+        [
+          270,
+          91
+        ],
+        [
+          270,
+          99
+        ],
+        [
+          195,
+          89
+        ],
+        [
+          69,
+          73
+        ],
+        [
+          0,
+          62
+        ]
+      ],
+      "color": "#696b68",
+      "sourceTile": [
+        "esri-tile18-103819-223288.jpg",
+        "esri-tile18-103819-223289.jpg",
+        "esri-tile18-103819-223290.jpg"
+      ],
+      "confidence": "medium",
+      "notes": "학교 남쪽 도로. 영상에서 동쪽으로 가며 남쪽으로 완만하게 기울어짐. 차량/차선/건물그림자는 외곽에서 제외."
+    },
+    {
+      "id": "south-rail-corridor",
+      "kind": "railway-corridor",
+      "footprint": [
+        [
+          0,
+          98
+        ],
+        [
+          70,
+          109
+        ],
+        [
+          195,
+          126
+        ],
+        [
+          270,
+          137
+        ],
+        [
+          270,
+          150
+        ],
+        [
+          195,
+          139
+        ],
+        [
+          70,
+          123
+        ],
+        [
+          0,
+          111
+        ]
+      ],
+      "color": "#827c73",
+      "sourceTile": [
+        "esri-tile18-103819-223288.jpg",
+        "esri-tile18-103820-223288.jpg",
+        "esri-tile18-103820-223289.jpg",
+        "esri-tile18-103820-223290.jpg"
+      ],
+      "confidence": "medium",
+      "notes": "다시역 철도 구간의 선로·자갈 및 플랫폼을 포함한 폭. 실제 선로 개수·중심간격은 미확정. 남쪽에 녹지띠와 농로가 나란히 이어짐."
+    },
+    {
+      "id": "south-rail-green-strip",
+      "kind": "vegetated-strip",
+      "footprint": [
+        [
+          0,
+          113
+        ],
+        [
+          70,
+          124
+        ],
+        [
+          195,
+          140
+        ],
+        [
+          270,
+          150
+        ],
+        [
+          270,
+          164
+        ],
+        [
+          195,
+          154
+        ],
+        [
+          70,
+          143
+        ],
+        [
+          0,
+          132
+        ]
+      ],
+      "color": "#64784a",
+      "sourceTile": [
+        "esri-tile18-103820-223288.jpg",
+        "esri-tile18-103820-223289.jpg",
+        "esri-tile18-103820-223290.jpg"
+      ],
+      "confidence": "medium",
+      "notes": "철도 남쪽의 불규칙한 초지/수목 띠. 정밀 식생 분류는 하지 않음."
+    },
+    {
+      "id": "south-service-path",
+      "kind": "farm-access",
+      "footprint": [
+        [
+          0,
+          139
+        ],
+        [
+          69,
+          150
+        ],
+        [
+          195,
+          164
+        ],
+        [
+          270,
+          173
+        ],
+        [
+          270,
+          177
+        ],
+        [
+          195,
+          169
+        ],
+        [
+          69,
+          155
+        ],
+        [
+          0,
+          144
+        ]
+      ],
+      "color": "#bfb49b",
+      "sourceTile": [
+        "esri-tile18-103820-223288.jpg",
+        "esri-tile18-103820-223289.jpg",
+        "esri-tile18-103820-223290.jpg"
+      ],
+      "confidence": "medium",
+      "notes": "철도 남쪽에 나란한 좁은 농로의 근사 외곽."
+    },
+    {
+      "id": "northeast-warehouse-yard",
+      "kind": "paved-yard",
+      "footprint": [
+        [
+          70,
+          -208.7
+        ],
+        [
+          143.4,
+          -180.3
+        ],
+        [
+          136,
+          -148.1
+        ],
+        [
+          77.3,
+          -165.2
+        ]
+      ],
+      "color": "#b2aa97",
+      "sourceTile": "esri-tile18-103817-223289.jpg",
+      "confidence": "medium",
+      "notes": "청록색 지붕 주변 밝은 작업장·마당. 지붕이 이 지표면 위에 겹치도록 처리. 북쪽 일부는 Z=-210 경계에서 클리핑 권장."
+    }
+  ],
+  "railwayNotes": {
+    "observation": "학교 남쪽 도로의 남측에 철도·플랫폼이 평행하게 놓이고, 그 남쪽에 녹지띠-좁은농로-논이 연속함.",
+    "platformCanopyApprox": {
+      "footprint": [
+        [
+          69,
+          115
+        ],
+        [
+          134,
+          121
+        ],
+        [
+          134,
+          130
+        ],
+        [
+          69,
+          124
+        ]
+      ],
+      "roofColor": "#81b5a5",
+      "sourceTile": "esri-tile18-103820-223289.jpg",
+      "confidence": "medium-low",
+      "notes": "타일 상단의 긴 청록색 띠는 역사 플랫폼 지붕으로 보임. 단일 지붕 수와 분절은 확정하지 않았고 기존 철도 모델과 중복 확인 필요."
+    }
+  }
+}

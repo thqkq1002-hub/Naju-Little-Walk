@@ -1,0 +1,65 @@
+[
+  {
+    "place_id": 224126183,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 540205109,
+    "lat": "35.0327357",
+    "lon": "126.7167886",
+    "category": "historic",
+    "type": "archaeological_site",
+    "place_rank": 30,
+    "importance": 5.6298924238910775E-05,
+    "addresstype": "historic",
+    "name": "금성관",
+    "display_name": "금성관, 금성관길, 산정동, 금천면, 나주시, 전남광주통합특별시, 58257, 대한민국",
+    "boundingbox": [
+      "35.0322598",
+      "35.0337007",
+      "126.7160347",
+      "126.7173156"
+    ]
+  },
+  {
+    "place_id": 224124168,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 832423358,
+    "lat": "35.0333548",
+    "lon": "126.7165479",
+    "category": "building",
+    "type": "yes",
+    "place_rank": 30,
+    "importance": 5.6298924238910775E-05,
+    "addresstype": "building",
+    "name": "금성관",
+    "display_name": "금성관, 향청길, 과원동, 금천면, 나주시, 전남광주통합특별시, 58257, 대한민국",
+    "boundingbox": [
+      "35.0332161",
+      "35.0334916",
+      "126.7161847",
+      "126.7169111"
+    ]
+  },
+  {
+    "place_id": 224129560,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 130628257,
+    "lat": "35.0355482",
+    "lon": "126.7158519",
+    "category": "highway",
+    "type": "residential",
+    "place_rank": 26,
+    "importance": 0.053389632257572255,
+    "addresstype": "road",
+    "name": "금성관길",
+    "display_name": "금성관길, 산정동, 금천면, 나주시, 전남광주통합특별시, 58255, 대한민국",
+    "boundingbox": [
+      "35.0351901",
+      "35.0358985",
+      "126.7146186",
+      "126.7170856"
+    ]
+  }
+]

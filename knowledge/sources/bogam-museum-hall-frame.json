@@ -1,0 +1,80 @@
+{
+  "origin": {
+    "lat": 34.996091,
+    "lon": 126.657059219
+  },
+  "hallFrame": {
+    "width": 50.29001329289941,
+    "depth": 47.27350848276013,
+    "center": [
+      5.060558695488626,
+      -11.258272148932345
+    ],
+    "u": [
+      0.9996815810565381,
+      0.025233638189934064
+    ],
+    "v": [
+      -0.025233638189934064,
+      0.9996815810565381
+    ],
+    "worldXZangle": 0.025236316820578576,
+    "blenderZangle": -0.025236316820578576,
+    "localOrigin": [
+      0,
+      0
+    ],
+    "units": "metres",
+    "definition": "OSM way471352007 north edge and east main-hall edge projected into an approximately rectangular hall. Original mapped east corner residual about0.30m."
+  },
+  "localBounds": {
+    "minX": -25.145006646449705,
+    "maxX": 25.145006646449705,
+    "minZ": -23.636754241380064,
+    "maxZ": 23.636754241380064
+  },
+  "formula": "worldX=center[0]+u[0]*localX+v[0]*localZ; worldZ=center[1]+u[1]*localX+v[1]*localZ",
+  "reverseFormula": "delta=worldXZ-center; localX=dot(delta,u); localZ=dot(delta,v)",
+  "blenderFormula": "point=(worldX,-worldZ,height); local mesh rotate Z=blenderZangle then translate (center[0],-center[1],height)",
+  "height": null,
+  "confidence": "Mapped plan dimensions only; interior partition locations, walkway and ramp dimensions remain photo-based estimates.",
+  "completeBuildingFootprintInHallLocal": [
+    [
+      -25.145,
+      -23.637
+    ],
+    [
+      25.145,
+      -23.637
+    ],
+    [
+      25.444,
+      23.637
+    ],
+    [
+      10.008,
+      54.649
+    ],
+    [
+      -39.196,
+      57.952
+    ],
+    [
+      -40.359,
+      45.108
+    ],
+    [
+      -25.055,
+      43.196
+    ],
+    [
+      -25.145,
+      -23.637
+    ]
+  ],
+  "adjacentLobbyNotes": {
+    "southWing": "OSM shape extends to localZ~57m. Southern lobby/visitor wing connects to the main hall southern side. Relative room placements follow official floor scheme but metric walls are not surveyed.",
+    "foyerAndEntrance": "Estimated near the south-west extended wing, localX~-40 to+10,localZ~40 to57. Exterior photo required to choose the exact door gap.",
+    "museumSections": "Official 1F entrance/info/rest/lounge/experience/digital/video/exhibition; 2F front cafe+WC+lift; 3F front observatory+lift. No evidence for 3 full-volume floors above the large hall."
+  }
+}

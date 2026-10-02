@@ -1,0 +1,143 @@
+{
+  "source": "© OpenStreetMap contributors, ODbL 1.0",
+  "source_url": "https://api.openstreetmap.org/api/0.6/map?bbox=126.63865,35.0167,126.6415,35.0186",
+  "origin": {
+    "lat": 35.017517,
+    "lon": 126.6400205
+  },
+  "campus_osm_id": "963585633",
+  "buildings": [
+    {
+      "osm_id": "963585634",
+      "name": "교사동",
+      "footprint": [
+        [
+          -45.96714778307044,
+          -13.525379999863674
+        ],
+        [
+          -36.14830245147035,
+          -51.14040800044478
+        ],
+        [
+          -25.025747850818615,
+          -48.17929599985291
+        ],
+        [
+          -31.325489842024023,
+          -23.53304800054076
+        ],
+        [
+          -13.538519329768553,
+          -20.57193599994889
+        ],
+        [
+          -1.8598369997320214,
+          -22.976448000364087
+        ],
+        [
+          -5.196603379927542,
+          -26.87264800001884
+        ],
+        [
+          -6.126521878497971,
+          -33.17336000008879
+        ],
+        [
+          -2.972092459797195,
+          -38.36087200059637
+        ],
+        [
+          2.3977310315422025,
+          -40.398027999882515
+        ],
+        [
+          7.22054364098853,
+          -39.84142800049682
+        ],
+        [
+          12.225693211929602,
+          -57.44112000051473
+        ],
+        [
+          49.28568046569135,
+          -48.36854000048248
+        ],
+        [
+          46.32270485468146,
+          -35.388627999874416
+        ],
+        [
+          14.632541092259112,
+          -43.54838400031298
+        ],
+        [
+          11.851902442743969,
+          -35.76711600034258
+        ],
+        [
+          14.076413362874316,
+          -30.757716000334483
+        ],
+        [
+          13.337948671994775,
+          -25.481148000368137
+        ],
+        [
+          11.669565481249224,
+          -22.052491999849337
+        ],
+        [
+          42.06513682340724,
+          -15.195180000393691
+        ],
+        [
+          40.022962864771635,
+          -2.2152680005766
+        ],
+        [
+          7.22054364098853,
+          -10.564268000062782
+        ],
+        [
+          -13.90319325016688,
+          -8.148624000308473
+        ]
+      ],
+      "height": 8.3,
+      "height_source": "Photo-informed estimate, not measured"
+    },
+    {
+      "osm_id": "963585635",
+      "name": "서쪽 별동",
+      "footprint": [
+        [
+          -74.13820820509811,
+          -22.60909200002601
+        ],
+        [
+          -55.421319192976625,
+          -16.864980000132732
+        ],
+        [
+          -45.96714778307044,
+          -48.17929599985291
+        ],
+        [
+          -65.05782756437755,
+          -53.36680800036049
+        ]
+      ],
+      "height": 6.2,
+      "height_source": "Photo-informed estimate, not measured"
+    }
+  ],
+  "limitations": [
+    "School boundary and two building footprints use OpenStreetMap coordinates.",
+    "Two-story brick facades, light window frames, round emblem, ivy, stone gate and barrel roof are photo-informed.",
+    "Heights, window counts, emblem placement, paths, individual trees, gate location and details are approximate.",
+    "Lawn, parking, south grove and southeast structures are visually traced from Esri World Imagery dated 2022-10-14, with roughly 5m or greater placement uncertainty; 2025/2026 photos inform appearance. Southeast building ownership and current changes are unverified.",
+    "The court and blue-roof structure are photo-informed without surveyed footprints. Matching the barrel roof to the west OSM building is an inference.",
+    "Flat terrain. The first-floor corridor, classroom, reading room and furniture are illustrative, not the real school interior. Upper floors remain exterior-only."
+  ]
+}

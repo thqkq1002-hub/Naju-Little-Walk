@@ -1,0 +1,20 @@
+{
+  "before": {
+    "bytes": 20989336,
+    "gzip_bytes": 9357968,
+    "nodes": 15730,
+    "meshes": 2039,
+    "shared_mesh_triangles": 270716,
+    "embedded_images": 13
+  },
+  "after": {
+    "bytes": 24502500,
+    "gzip_bytes": 11624941,
+    "nodes": 15739,
+    "meshes": 2056,
+    "shared_mesh_triangles": 370574,
+    "embedded_images": 15
+  },
+  "sha256": "40b41ae1e96f6a9bc7e21385daf65728d0de64cc87f2edd06e73175c440cd976",
+  "transport": "Only normals use normalized int8; positions and UV stay exact"
+}

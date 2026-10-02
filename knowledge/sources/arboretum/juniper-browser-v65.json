@@ -1,0 +1,9 @@
+{
+  "observed": "2026-10-01",
+  "scope": "Desktop browser viewport simulation, not Android hardware",
+  "viewport": {
+    "width": 844,
+    "height": 390
+  },
+  "result": "{\"destination\":\"나주수목원 · 산림연구원\",\"mode\":\"walking\",\"position\":{\"x\":-320.3421799962313,\"z\":-207.5833180184665},\"source\":\"OpenStreetMap contributors, ODbL, 2026-09-16\",\"renderDiagnostics\":{\"sampleFrames\":120,\"meanIntervalMs\":73.19500000000019,\"p95IntervalMs\":100.09999999997672,\"renderedFrames\":6661,\"drawCalls\":1061,\"triangles\":6242528,\"pixelRatio\":1.0000000149011612,\"quality\":\"balanced\",\"contextLost\":false,\"landscapeBlocked\":false,\"scope\":\"Recent visible walking frame intervals in this browser; not a GPU-only measurement or hardware certification.\"}}"
+}

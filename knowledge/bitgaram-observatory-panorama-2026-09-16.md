@@ -1,0 +1,12 @@
+# 전망대 창밖 파노라마
+
+- 제작: 2026-09-16, 내장 ImageGen 사용.
+- 자료: 사용자가 제공한 전망대 실내 영상과 드론 영상의 프레임 `work/observatory-video/1-8.png`, `1-3.png`, `1-4.png`, `0-2.png`.
+- 결과: [파노라마](../public/panoramas/bitgaram-reference-composite.png), 1774×887 PNG.
+- 실제 360도 촬영 또는 측량 결과가 아니다. 모든 픽셀은 참고 영상으로 생성한 합성 이미지이며, 보이지 않는 방향과 배치는 추정이다. 건물 위치·방위 일치를 보장하지 않는다.
+- Blender 구면에 이미지를 넣고 GLB에 내장했다. 시가지가 창밖에 보이도록 세로 시야 비율을 조정했다. 원본 수정본을 보존하고 `outputs/bitgaram/bitgaram-observatory-panorama-v3.blend`로 저장했다.
+- 빈 실내와 창문·난간은 유지, 이전 외부 회색 블록과 사진용 가림벽은 제거. 영상 재생 버튼은 화면에서 제거하고 원본 영상 파일은 보존했다.
+
+## 생성 프롬프트
+
+Create a production environment panorama texture for a 3D virtual observation room in Naju Bitgaram Innovation City, South Korea, using these actual user-supplied video frames as landscape references. Output a single seamless 360-degree equirectangular panorama, exactly 2:1 aspect ratio, preferably 4096x2048 or highest available resolution. This is an acknowledged reference-based composite, not a claimed measured documentary panorama. Viewpoint: stationary on top of the low wooded hill at the observatory's viewing-floor eye height, about 50m above the surrounding city, not a high-altitude drone. Remove ALL foreground indoor window frames, railings, floor, ceiling, exhibits, dark borders, watermarks and text. Show only the OUTDOOR view. Faithfully retain recognizable landscape character: white tall Korean apartment clusters, blue-glass modern institutional buildings, lower commercial blocks, curving blue-green lake around wooded hill, footpaths, lawns, small roads, distant flat agricultural plain and hazy low Korean mountain ridges. Use the indoor reference images for eye-height skyline scale; the aerial image is only layout context. A realistic photographic summer daytime look, clear light blue sky with soft scattered white clouds, natural colors and consistent lighting. Horizon straight and level at vertical midpoint. Upper hemisphere all sky up to zenith; lower hemisphere foreground green tree canopy descending from hill, lake edges and urban ground, with coherent nadir tree canopy. Ensure left/right edges join seamlessly in both sky and ground. No observatory building visible, no indoor objects, no duplicate landmarks at seam, no city labels or UI, no fantasy skyscrapers, no fisheye circle, no split panels. Unobserved directions may be conservatively synthesized to complete the panoramic environment.

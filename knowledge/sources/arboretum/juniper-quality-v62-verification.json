@@ -1,0 +1,19 @@
+{
+  "source": "outputs\\quality-v61\\naju-arboretum-garden-v61-soft.blend",
+  "revision": "outputs\\quality-v62\\naju-arboretum-junipers-v62.blend",
+  "protected_meshes": 15226,
+  "protected_geometry_matches_source": true,
+  "changed_objects": 492,
+  "counts": {
+    "column_near": 133,
+    "oval_near": 113,
+    "column_far": 133,
+    "oval_far": 113
+  },
+  "retained_placements_and_heights": true,
+  "canopies_within_original_envelope": true,
+  "paired_vegetation_instances": 6866,
+  "lod_transform_distance_variant_match": true,
+  "collision_layout_unchanged": true,
+  "world_sha256": "5901103c5bd7d52f13bca288f713c8811c4c4e70b82206272738df8f18f78218"
+}

@@ -1,0 +1,14 @@
+{
+  "basis": "User drone frame and Esri imagery reviewed for relative color families; not measured paint specifications.",
+  "walls": ["#e5e4df", "#dad7ce", "#c9d4d6", "#d9c9b5", "#c7c9c5"],
+  "roofs": ["#778b90", "#8e9d96", "#827b72", "#658078", "#a49485"],
+  "apartment_roofs": ["#929d9c", "#a6adab", "#899699"],
+  "glass": ["#4f7486", "#71939e", "#92adb3"],
+  "water": "#3e808b",
+  "asphalt": "#646d72",
+  "pavement": "#cfc5b2",
+  "lawns": ["#91a76b", "#a4b780", "#b0bf8d"],
+  "woodland": ["#416344", "#547747", "#719354"],
+  "sports_green": "#51846f",
+  "sports_clay": "#b98268"
+}

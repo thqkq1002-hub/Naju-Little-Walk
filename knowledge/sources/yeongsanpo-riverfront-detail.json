@@ -1,0 +1,328 @@
+{
+  "title": "영산포 선착장 맞은편 강변 외관 보강",
+  "revision": "riverfront-1",
+  "recorded": "2026-09-08",
+  "coordinateBasis": "Existing satellite roof footprints and OSM road axes preserved",
+  "photos": [
+    "https://archive.much.go.kr/archiveImage/service.do?idnbr=2019015288",
+    "https://archive.much.go.kr/archiveImage/service.do?idnbr=2019015291",
+    "https://archive.much.go.kr/archiveImage/service.do?idnbr=2019015285"
+  ],
+  "imagery": {
+    "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+    "captureDate": "unknown"
+  },
+  "buildings": [
+    {
+      "id": "warehouse_01",
+      "roofType": "gable",
+      "height": 5.8,
+      "roofColor": "#4e8cad",
+      "wallColor": "#d0cab9",
+      "facade": "warehouse",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred"
+    },
+    {
+      "id": "warehouse_02",
+      "roofType": "gable",
+      "height": 6.2,
+      "roofColor": "#94bed0",
+      "wallColor": "#d0cab9",
+      "facade": "warehouse",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred"
+    },
+    {
+      "id": "warehouse_03",
+      "roofType": "gable",
+      "height": 5.8,
+      "roofColor": "#7caec2",
+      "wallColor": "#d0cab9",
+      "facade": "warehouse",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred"
+    },
+    {
+      "id": "warehouse_04",
+      "roofType": "gable",
+      "height": 6.5,
+      "roofColor": "#5589af",
+      "wallColor": "#d0cab9",
+      "facade": "warehouse",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred"
+    },
+    {
+      "id": "warehouse_05",
+      "roofType": "gable",
+      "height": 5.5,
+      "roofColor": "#98b4b3",
+      "wallColor": "#d0cab9",
+      "facade": "warehouse",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred"
+    },
+    {
+      "id": "warehouse_06",
+      "roofType": "gable",
+      "height": 5.2,
+      "roofColor": "#78a2a1",
+      "wallColor": "#d0cab9",
+      "facade": "warehouse",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred"
+    },
+    {
+      "id": "warehouse_07",
+      "roofType": "gable",
+      "height": 3.5,
+      "roofColor": "#929f9d",
+      "wallColor": "#d0cab9",
+      "facade": "warehouse",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred"
+    },
+    {
+      "id": "warehouse_08",
+      "roofType": "gable",
+      "height": 4.5,
+      "roofColor": "#799bb6",
+      "wallColor": "#d0cab9",
+      "facade": "warehouse",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred"
+    },
+    {
+      "id": "warehouse_09",
+      "roofType": "gable",
+      "height": 3.8,
+      "roofColor": "#447fa7",
+      "wallColor": "#d0cab9",
+      "facade": "warehouse",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred"
+    },
+    {
+      "id": "street_west_01",
+      "roofType": "flat",
+      "height": 3.1,
+      "roofColor": "#9faf9e",
+      "wallColor": "#ddd7c8",
+      "facade": "residence",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred",
+      "label": "영산포 상회"
+    },
+    {
+      "id": "street_west_02",
+      "roofType": "hip",
+      "height": 3.1,
+      "roofColor": "#4388b9",
+      "wallColor": "#ddd7c8",
+      "facade": "shop",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred",
+      "label": "홍어 · 삼합",
+      "canopyColor": "#628a96",
+      "signColor": "#c086a5",
+      "ink": "#fff1de"
+    },
+    {
+      "id": "street_west_03",
+      "roofType": "gable",
+      "height": 3.25,
+      "roofColor": "#9dbdcb",
+      "wallColor": "#d7d7cc",
+      "facade": "shop",
+      "source": "MUCH 2019015288/2019015291 + address point 205-41 inside this roof",
+      "label": "홍어세상",
+      "highSign": true,
+      "rise": 1.2
+    },
+    {
+      "id": "street_west_04",
+      "roofType": "flat",
+      "height": 6,
+      "roofColor": "#c6cabc",
+      "wallColor": "#ddd7c8",
+      "facade": "house",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred",
+      "storeys": 2
+    },
+    {
+      "id": "street_west_05",
+      "roofType": "gable",
+      "height": 6.1,
+      "roofColor": "#6f5a51",
+      "wallColor": "#b58157",
+      "facade": "shop",
+      "source": "MUCH 2019015288 + 205-13 address and map point inside this roof; 2018 name",
+      "rise": 1.7,
+      "label": "금성수산",
+      "storeys": 2,
+      "signColor": "#9a3f59",
+      "ink": "#fff1dc"
+    },
+    {
+      "id": "street_west_06",
+      "roofType": "gable",
+      "height": 5.7,
+      "roofColor": "#9bbac7",
+      "wallColor": "#d0cab9",
+      "facade": "shop",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred",
+      "rise": 1.1,
+      "label": "홍어 · 삼합",
+      "storeys": 2
+    },
+    {
+      "id": "street_west_07",
+      "roofType": "gable",
+      "height": 8.8,
+      "roofColor": "#4c86b1",
+      "wallColor": "#d7d7cc",
+      "facade": "large_hall",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred",
+      "rise": 1.6,
+      "label": "영산포 상가",
+      "storeys": 3
+    },
+    {
+      "id": "street_west_08",
+      "roofType": "flat",
+      "height": 5.9,
+      "roofColor": "#77a58b",
+      "wallColor": "#c4bea9",
+      "facade": "shop",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred",
+      "label": "홍어 · 삼합",
+      "storeys": 2
+    },
+    {
+      "id": "street_west_09",
+      "roofType": "flat",
+      "height": 4.5,
+      "roofColor": "#9baa9b",
+      "wallColor": "#d0cab9",
+      "facade": "shop",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred",
+      "label": "영산포 홍어"
+    },
+    {
+      "id": "street_west_10",
+      "roofType": "gable",
+      "height": 3.5,
+      "roofColor": "#c9cebf",
+      "wallColor": "#c4bea9",
+      "facade": "shop",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred",
+      "label": "영산포 상회"
+    },
+    {
+      "id": "street_west_11",
+      "roofType": "hip",
+      "height": 3.6,
+      "roofColor": "#d4d0bd",
+      "wallColor": "#d0cab9",
+      "facade": "shop",
+      "source": "Esri World Imagery and MUCH 2019015285; dimensions inferred",
+      "label": "남도 음식"
+    }
+  ],
+  "observations": [
+    {
+      "id": "warehouse_08",
+      "observed": "긴 청색 경사지붕. 여러 밝기 띠와 가운데 이음/용마루처럼 보이는 선이 있다. 도로에서 조금 뒤로 물러나 있다.",
+      "roofForm": "pitched elongated roof; ridge details approximate",
+      "roofFormConfidence": "중간",
+      "riverFacingEdgeIndex": 0
+    },
+    {
+      "id": "street_west_01",
+      "observed": "회백색·옅은 청록색 낮은 지붕 면과 북쪽의 어두운 작은 사각 부분, 서쪽 녹색 가장자리가 함께 보인다.",
+      "roofForm": "mixed pale flat/low roof with dark upper patch; slope unresolved",
+      "roofFormConfidence": "낮음",
+      "riverFacingEdgeIndex": 0
+    },
+    {
+      "id": "street_west_02",
+      "observed": "청색 지붕이 여러 삼각/비스듬한 면의 밝기로 나뉜다. 서쪽은 더 옅고 가운데·동쪽은 진한 청색이다.",
+      "roofForm": "blue pitched roof with visible plane changes; exact hip/gable topology uncertain",
+      "roofFormConfidence": "중간",
+      "riverFacingEdgeIndex": 0
+    },
+    {
+      "id": "street_west_03",
+      "observed": "남북으로 가늘고 긴 은회색·흰 지붕. 길이 방향의 이음/선이 보인다.",
+      "roofForm": "elongated pale metal-like roof; very low gable or shallow roof, pitch unmeasured",
+      "roofFormConfidence": "중간",
+      "riverFacingEdgeIndex": 0
+    },
+    {
+      "id": "street_west_04",
+      "observed": "옅은 회백색의 넓은 사각 지붕 면과 어두운 둘레가 보인다. 강변 쪽으로 더 낮은 앞부분/빈 공간 같은 부분이 있다.",
+      "roofForm": "pale rectangular flat/very shallow roof; front area partly ambiguous",
+      "roofFormConfidence": "낮음",
+      "riverFacingEdgeIndex": 0
+    },
+    {
+      "id": "street_west_05",
+      "observed": "현재 추적 다각형 안에서도 북쪽 적갈색 지붕 부분과 남쪽 회청색 지붕 부분이 분명히 나뉜다.",
+      "roofForm": "two colour/roof sections: reddish northern section and pale blue-grey southern section",
+      "roofFormConfidence": "중간",
+      "riverFacingEdgeIndex": 0
+    },
+    {
+      "id": "street_west_06",
+      "observed": "_05 바로 남쪽의 비교적 넓은 옅은 청록/회백색 면. 낮은 사각 옥상처럼 보이며 작은 색 차이가 있다.",
+      "roofForm": "pale cyan flat/very shallow roof behind the front strip",
+      "roofFormConfidence": "낮음",
+      "riverFacingEdgeIndex": 0
+    },
+    {
+      "id": "street_west_07",
+      "observed": "눈에 띄는 큰 청색 지붕. 긴 방향의 경사 면과 밝은 가장자리/하단 띠가 보인다.",
+      "roofForm": "large blue elongated pitched roof; dominant long-axis form visible",
+      "roofFormConfidence": "중간",
+      "riverFacingEdgeIndex": 0
+    },
+    {
+      "id": "street_west_08",
+      "observed": "큰 청색 지붕 동쪽의 녹색 지붕. 밝고 어두운 녹색 면과 작은 흰 반점들이 보인다.",
+      "roofForm": "green low roof; exact slope and rooftop details unresolved",
+      "roofFormConfidence": "낮음",
+      "riverFacingEdgeIndex": 0
+    },
+    {
+      "id": "street_west_09",
+      "observed": "북쪽의 밝은 회백색 좁은 지붕. 기존 OSM way/1120464648과 윤곽이 겹친다.",
+      "roofForm": "pale elongated low roof; existing trace/OSM overlap needs review",
+      "roofFormConfidence": "낮음",
+      "riverFacingEdgeIndex": 0
+    },
+    {
+      "id": "street_west_10",
+      "observed": "녹색 지붕 뒤쪽에 붙은 작은 옅은 회백색 사각 면.",
+      "roofForm": "small pale flat/very shallow roof",
+      "roofFormConfidence": "낮음",
+      "riverFacingEdgeIndex": 0
+    },
+    {
+      "id": "street_west_11",
+      "observed": "도로 모퉁이 안쪽으로 이어지는 옅은 회색/크림색 긴 지붕. 작은 어두운 옥상 부분과 남쪽 밝은 가장자리가 보인다.",
+      "roofForm": "elongated pale flat/very shallow roof",
+      "roofFormConfidence": "낮음",
+      "riverFacingEdgeIndex": 0
+    },
+    {
+      "id": "way/1120464648",
+      "observed": "_09와 겹치는 밝은 흰/회색 작은 지붕 윤곽.",
+      "roofForm": "pale small irregular roof; overlaps street_west_09 trace",
+      "roofFormConfidence": "낮음",
+      "riverFacingEdgeIndex": 0
+    },
+    {
+      "id": "way/1120464647",
+      "observed": "북쪽 흰 지붕 바로 남쪽의 좁은 녹색 지붕 부분. 남북 도로에 붙어 있다.",
+      "roofForm": "narrow green low roof",
+      "roofFormConfidence": "낮음",
+      "riverFacingEdgeIndex": 0
+    }
+  ],
+  "limitations": [
+    "Archive exterior photographs depict 2018; this is not a 2026 survey.",
+    "All heights, window counts, fine materials and unverified shop labels are modelling estimates.",
+    "Hong-eo Sesang and Geumseong Susan photo identities have address-point matches; other business labels are generic.",
+    "Original photographs and satellite tiles are reference only, not redistributed."
+  ]
+}

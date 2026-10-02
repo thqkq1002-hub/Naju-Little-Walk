@@ -1,0 +1,1142 @@
+{
+  "source": "© OpenStreetMap contributors, ODbL 1.0 · 주변 지붕 참고: Esri, Vantor, Earthstar Geographics, GIS User Community",
+  "source_url": "https://api.openstreetmap.org/api/0.6/map?bbox=126.7152,35.0318,126.7183,35.0341",
+  "origin": {
+    "lat": 35.0327357,
+    "lon": 126.7167886
+  },
+  "buildings": [
+    {
+      "osm_id": "610255925",
+      "name": "나주시목문화관",
+      "footprint": [
+        [
+          -117.4031448293755,
+          37.091824000003726
+        ],
+        [
+          -114.33133894343024,
+          56.18320400005217
+        ],
+        [
+          -82.33715894775219,
+          51.05135200019504
+        ],
+        [
+          -85.3998496819472,
+          31.959972000146593
+        ]
+      ],
+      "height_source": "MVP estimate"
+    },
+    {
+      "osm_id": "832423355",
+      "name": "나주곰탕 하얀집",
+      "footprint": [
+        [
+          4.9495269910545225,
+          54.84736400026094
+        ],
+        [
+          6.052460260864788,
+          58.14243600000964
+        ],
+        [
+          16.070011205364274,
+          54.60246000056287
+        ],
+        [
+          32.94215569998293,
+          53.37794000049058
+        ],
+        [
+          32.08533150540845,
+          46.28685600067598
+        ],
+        [
+          14.97619308600891,
+          47.144020000410194
+        ],
+        [
+          15.09469004969469,
+          50.08286800074188
+        ],
+        [
+          8.85992676807378,
+          51.17380400004407
+        ],
+        [
+          9.470641884821804,
+          53.86774800067769
+        ]
+      ],
+      "height_source": "MVP estimate"
+    },
+    {
+      "osm_id": "832423356",
+      "name": "외삼문",
+      "footprint": [
+        [
+          -13.800338608673401,
+          31.626012000198784
+        ],
+        [
+          -11.211635725335482,
+          43.14763200037561
+        ],
+        [
+          2.625163486452871,
+          40.052936000595594
+        ],
+        [
+          0.036460604410292384,
+          28.52018400028868
+        ]
+      ],
+      "height_source": "MVP estimate"
+    },
+    {
+      "osm_id": "832423357",
+      "name": "중삼문",
+      "footprint": [
+        [
+          -17.437283855206147,
+          5.5103400003253
+        ],
+        [
+          -16.088241507569418,
+          10.441816000213748
+        ],
+        [
+          -6.070690563069935,
+          7.703344000641721
+        ],
+        [
+          -7.419732910706663,
+          2.7718680007532726
+        ]
+      ],
+      "height_source": "MVP estimate"
+    },
+    {
+      "osm_id": "832423358",
+      "name": "금성관",
+      "footprint": [
+        [
+          -55.04639686530219,
+          -67.78274799955767
+        ],
+        [
+          -51.24537890021847,
+          -53.47812799928846
+        ],
+        [
+          11.166059970470286,
+          -70.05367599999374
+        ],
+        [
+          7.428848061161565,
+          -84.1467879993732
+        ],
+        [
+          -18.157380783889707,
+          -77.34513599977703
+        ],
+        [
+          -19.92572007706343,
+          -84.02433599952417
+        ],
+        [
+          -43.36077328781427,
+          -77.79041599944378
+        ],
+        [
+          -41.647124901255985,
+          -71.34498799926462
+        ]
+      ],
+      "height_source": "MVP estimate"
+    }
+  ],
+  "architecture": {
+    "center": 25.984280181308065,
+    "front": 2.5,
+    "back": 18.95,
+    "lo": 16.234280181308065,
+    "hi": 35.734280181308065,
+    "columnGrid": [
+      19.5,
+      16.45
+    ],
+    "roofOutline": [
+      24.242870595339838,
+      21.48
+    ],
+    "columns": [
+      16.234280181308065,
+      19.256780181308066,
+      23.741780181308066,
+      28.226780181308065,
+      32.711780181308065,
+      35.734280181308065
+    ]
+  },
+  "surroundings": {
+    "precinctBoundary": [
+      [
+        -68.71912335983491,
+        -89.36769599948008
+      ],
+      [
+        -46.16823979502326,
+        -100.96723999977655
+      ],
+      [
+        25.13047129639932,
+        -107.42379999929483
+      ],
+      [
+        48.036845749677624,
+        -42.902727999886565
+      ],
+      [
+        44.16290657577332,
+        -27.740943999883143
+      ],
+      [
+        45.457258016794604,
+        27.752076000013233
+      ],
+      [
+        -29.6515861901666,
+        52.97718800055321
+      ],
+      [
+        -33.37968294772508,
+        42.702352000708856
+      ]
+    ],
+    "parkingOutline": [
+      [
+        -98.73531558892307,
+        -81.61982399989995
+      ],
+      [
+        -68.71912335983491,
+        -89.36769599948008
+      ],
+      [
+        -32.77808298143196,
+        56.339052000291474
+      ],
+      [
+        -49.896336552581744,
+        59.03299600013412
+      ],
+      [
+        -55.87587560592129,
+        52.120024000028025
+      ],
+      [
+        -80.41386208777773,
+        -12.946515999426822
+      ]
+    ],
+    "parkingOsmId": "478611741",
+    "roofObservations": [
+      {
+        "id": "north-01",
+        "footprint": [
+          [
+            4.899698467620848,
+            -163.4991787799379
+          ],
+          [
+            16.390606349268882,
+            -166.1884914711183
+          ],
+          [
+            19.32445517011519,
+            -153.71985320672962
+          ],
+          [
+            7.34457248499277,
+            -150.7860534844778
+          ]
+        ],
+        "height": 3.5,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "north-02",
+        "footprint": [
+          [
+            21.28035438401273,
+            -166.4329744025602
+          ],
+          [
+            35.94959848824426,
+            -169.366769079966
+          ],
+          [
+            38.14998510387899,
+            -157.63158469746173
+          ],
+          [
+            23.480740999647455,
+            -154.6977862368169
+          ]
+        ],
+        "height": 3.7,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "north-03",
+        "footprint": [
+          [
+            7.1000850832555775,
+            -150.7860534844778
+          ],
+          [
+            22.50279139269869,
+            -154.6977862368169
+          ],
+          [
+            25.92561501701938,
+            -146.14086865605287
+          ],
+          [
+            10.033933904101884,
+            -142.22913222330163
+          ]
+        ],
+        "height": 3.1,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "north-04",
+        "footprint": [
+          [
+            10.767396109313461,
+            -141.74016505214325
+          ],
+          [
+            26.17010241875657,
+            -145.1629347060603
+          ],
+          [
+            28.614976436128494,
+            -136.60600815641743
+          ],
+          [
+            12.967782724948192,
+            -133.9166867217864
+          ]
+        ],
+        "height": 3.1,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "north-05",
+        "footprint": [
+          [
+            13.212270126685384,
+            -132.93875145719142
+          ],
+          [
+            29.10395123960288,
+            -136.1170406815242
+          ],
+          [
+            31.30433785523761,
+            -124.87078151442915
+          ],
+          [
+            15.901631545794498,
+            -121.69248836210869
+          ]
+        ],
+        "height": 3.1,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "north-06",
+        "footprint": [
+          [
+            27.392539427442532,
+            -152.7419200714425
+          ],
+          [
+            38.638959907353374,
+            -156.409168787346
+          ],
+          [
+            41.57280872819968,
+            -147.36328594642202
+          ],
+          [
+            30.081900846551648,
+            -144.42948417395996
+          ]
+        ],
+        "height": 3.5,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "north-07",
+        "footprint": [
+          [
+            30.570875650026032,
+            -141.74016505214325
+          ],
+          [
+            39.616909514302144,
+            -142.96258293258063
+          ],
+          [
+            42.06178353167407,
+            -130.49391283614682
+          ],
+          [
+            33.260237069135144,
+            -128.5380414661492
+          ]
+        ],
+        "height": 3.4,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "north-08",
+        "footprint": [
+          [
+            42.306270933411255,
+            -141.00671424399223
+          ],
+          [
+            56.48654023416841,
+            -143.45155003966994
+          ],
+          [
+            58.44243944806595,
+            -136.85049188358136
+          ],
+          [
+            43.77319534383441,
+            -134.16117052092915
+          ]
+        ],
+        "height": 3.2,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "north-09",
+        "footprint": [
+          [
+            44.995632352520374,
+            -130.49391283614682
+          ],
+          [
+            56.97551503764279,
+            -134.16117052092915
+          ],
+          [
+            59.664876456751905,
+            -125.84871764593402
+          ],
+          [
+            46.95153156641791,
+            -122.42594072610984
+          ]
+        ],
+        "height": 3.3,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "north-10",
+        "footprint": [
+          [
+            58.44243944806595,
+            -134.89462188118154
+          ],
+          [
+            66.99949850886767,
+            -137.33945931971675
+          ],
+          [
+            71.88924654361152,
+            -127.07113766437999
+          ],
+          [
+            61.86526307238664,
+            -123.64836120253102
+          ]
+        ],
+        "height": 3.4,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "north-11",
+        "footprint": [
+          [
+            61.620775670649444,
+            -160.80986529540837
+          ],
+          [
+            70.17783473145117,
+            -162.27676365921639
+          ],
+          [
+            72.86719615056029,
+            -154.45330298898455
+          ],
+          [
+            64.06564968802137,
+            -151.7639868293736
+          ]
+        ],
+        "height": 3.5,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "north-12",
+        "footprint": [
+          [
+            47.92948117336668,
+            -151.2750201699768
+          ],
+          [
+            57.70897724285437,
+            -152.7419200714425
+          ],
+          [
+            60.88731346543787,
+            -143.69603358253642
+          ],
+          [
+            49.396405583789836,
+            -141.00671424399223
+          ]
+        ],
+        "height": 3.4,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "east-01",
+        "footprint": [
+          [
+            73.84514575750906,
+            -119.98109928048933
+          ],
+          [
+            83.38015442525955,
+            -121.93697248950656
+          ],
+          [
+            85.82502844263148,
+            -110.44621136324679
+          ],
+          [
+            76.29001977488097,
+            -108.49033568322
+          ]
+        ],
+        "height": 3.0,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "east-02",
+        "footprint": [
+          [
+            77.02348198009255,
+            -106.04549049311828
+          ],
+          [
+            87.78092765652902,
+            -108.24585119434602
+          ],
+          [
+            91.6927260843241,
+            -88.44258572189858
+          ],
+          [
+            79.22386859572728,
+            -85.7532500504874
+          ]
+        ],
+        "height": 3.1,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "east-03",
+        "footprint": [
+          [
+            77.26796938182974,
+            -80.37457631970796
+          ],
+          [
+            91.2037512808497,
+            -84.04185420839468
+          ],
+          [
+            94.3820875034332,
+            -73.28450154458551
+          ],
+          [
+            80.93528040788763,
+            -69.61721932055838
+          ]
+        ],
+        "height": 3.1,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "east-04",
+        "footprint": [
+          [
+            83.13566702352236,
+            -68.88376269715053
+          ],
+          [
+            94.87106230690759,
+            -71.57310335724844
+          ],
+          [
+            97.3159363242795,
+            -61.793678967386825
+          ],
+          [
+            85.82502844263148,
+            -58.61536377767919
+          ]
+        ],
+        "height": 3.2,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "east-05",
+        "footprint": [
+          [
+            84.11361663047113,
+            -51.769758058694606
+          ],
+          [
+            97.8049111277539,
+            -54.21461783518794
+          ],
+          [
+            100.494272546863,
+            -44.9241471880822
+          ],
+          [
+            86.06951584436867,
+            -41.7458261048111
+          ]
+        ],
+        "height": 3.1,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "east-06",
+        "footprint": [
+          [
+            71.40027174013713,
+            -43.21274366481987
+          ],
+          [
+            81.9132300148364,
+            -45.4131195638638
+          ],
+          [
+            83.62464182699675,
+            -35.14469415222749
+          ],
+          [
+            69.1998851245024,
+            -33.18880228329135
+          ]
+        ],
+        "height": 3.2,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "east-07",
+        "footprint": [
+          [
+            84.60259143394552,
+            -36.61161277768116
+          ],
+          [
+            100.494272546863,
+            -40.03442198436176
+          ],
+          [
+            103.9170961711837,
+            -24.631770414380014
+          ],
+          [
+            87.78092765652902,
+            -20.231008033821922
+          ]
+        ],
+        "height": 3.3,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "east-08",
+        "footprint": [
+          [
+            81.42425521136201,
+            -17.052678324164674
+          ],
+          [
+            97.56042372601671,
+            -20.71998173686154
+          ],
+          [
+            100.24978514512581,
+            -12.407425211557666
+          ],
+          [
+            84.60259143394552,
+            -7.273195328505437
+          ]
+        ],
+        "height": 3.3,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "east-09",
+        "footprint": [
+          [
+            68.22193551755363,
+            -1.4055004851564945
+          ],
+          [
+            77.51245678356693,
+            -3.361399187335792
+          ],
+          [
+            81.17976780962482,
+            9.35194988873036
+          ],
+          [
+            65.04359929497014,
+            13.752728708146265
+          ]
+        ],
+        "height": 3.3,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "east-10",
+        "footprint": [
+          [
+            82.89117962178517,
+            -4.339348380230206
+          ],
+          [
+            97.07144892254232,
+            -8.251144101391503
+          ],
+          [
+            101.96119695728616,
+            6.418098526017104
+          ],
+          [
+            86.55849064784306,
+            10.5743882364672
+          ]
+        ],
+        "height": 3.4,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "south-01",
+        "footprint": [
+          [
+            68.95539772276521,
+            20.353900928535893
+          ],
+          [
+            77.75694418530414,
+            17.175558151161283
+          ],
+          [
+            81.66874261309921,
+            27.19956606723258
+          ],
+          [
+            72.13373394534871,
+            30.86688879635858
+          ]
+        ],
+        "height": 3.6,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "south-02",
+        "footprint": [
+          [
+            62.59872527759821,
+            34.778701337628206
+          ],
+          [
+            70.66680953492556,
+            32.57830657538449
+          ],
+          [
+            76.77899457835537,
+            51.40392339899023
+          ],
+          [
+            66.99949850886767,
+            55.07125588401635
+          ]
+        ],
+        "height": 3.5,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "south-03",
+        "footprint": [
+          [
+            83.38015442525955,
+            43.09130857004163
+          ],
+          [
+            90.71477647737532,
+            40.40193481075477
+          ],
+          [
+            96.33798671733074,
+            59.9610348306129
+          ],
+          [
+            87.78092765652902,
+            63.139392556646214
+          ]
+        ],
+        "height": 3.4,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "south-04",
+        "footprint": [
+          [
+            79.22386859572728,
+            52.38187858352916
+          ],
+          [
+            86.06951584436867,
+            49.93699081755295
+          ],
+          [
+            92.18170088779847,
+            66.07326221068348
+          ],
+          [
+            83.62464182699675,
+            69.25162207077051
+          ]
+        ],
+        "height": 3.2,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "south-05",
+        "footprint": [
+          [
+            34.48267407782111,
+            47.4921037104599
+          ],
+          [
+            42.306270933411255,
+            49.20352461621462
+          ],
+          [
+            43.77319534383441,
+            62.65041437272657
+          ],
+          [
+            37.17203549693022,
+            64.85081640641425
+          ],
+          [
+            32.77126226566076,
+            59.71654582131009
+          ]
+        ],
+        "height": 3.3,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "south-06",
+        "footprint": [
+          [
+            11.989833117999423,
+            58.98307883057754
+          ],
+          [
+            26.659077222230955,
+            55.315744769135904
+          ],
+          [
+            30.32638824828884,
+            66.80672977250083
+          ],
+          [
+            17.12406855448046,
+            71.20753638286459
+          ]
+        ],
+        "height": 3.4,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "south-07",
+        "footprint": [
+          [
+            21.52484178574992,
+            74.63038744009452
+          ],
+          [
+            38.14998510387899,
+            69.00713281072825
+          ],
+          [
+            40.83934652298811,
+            77.07528184156985
+          ],
+          [
+            24.458690606596225,
+            82.69854145724992
+          ]
+        ],
+        "height": 3.4,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "south-08",
+        "footprint": [
+          [
+            10.767396109313461,
+            87.34384550081273
+          ],
+          [
+            22.50279139269869,
+            85.38792772028813
+          ],
+          [
+            25.436640213544994,
+            93.70058119316866
+          ],
+          [
+            13.945732331896961,
+            97.12344071384365
+          ]
+        ],
+        "height": 3.2,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "south-09",
+        "footprint": [
+          [
+            56.48654023416841,
+            63.139392556646214
+          ],
+          [
+            65.77706150018172,
+            58.98307883057754
+          ],
+          [
+            72.3782213470859,
+            71.69651502713236
+          ],
+          [
+            62.10975047412383,
+            76.58630290859577
+          ]
+        ],
+        "height": 3.3,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "west-01",
+        "footprint": [
+          [
+            -146.19351580596395,
+            -60.8157359496434
+          ],
+          [
+            -128.34593547914892,
+            -64.23853604981531
+          ],
+          [
+            -126.63452366698857,
+            -57.39293456334423
+          ],
+          [
+            -143.50415438685482,
+            -52.74770204854775
+          ]
+        ],
+        "height": 3.1,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "west-02",
+        "footprint": [
+          [
+            -144.7265913955408,
+            -43.946202357421384
+          ],
+          [
+            -128.8349102826233,
+            -48.10246716161373
+          ],
+          [
+            -125.6565740600398,
+            -40.03442198436176
+          ],
+          [
+            -141.7927425746945,
+            -35.63366705400824
+          ]
+        ],
+        "height": 3.3,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "west-03",
+        "footprint": [
+          [
+            -123.94516224787945,
+            -18.764086767298807
+          ],
+          [
+            -112.45425436623142,
+            -22.675876286415928
+          ],
+          [
+            -109.27591814364793,
+            -12.162938139355504
+          ],
+          [
+            -120.27785122182158,
+            -8.740118448285727
+          ]
+        ],
+        "height": 3.0,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "west-04",
+        "footprint": [
+          [
+            -118.56643940966123,
+            -3.6058864952488534
+          ],
+          [
+            -108.29796853669916,
+            -6.539733680025961
+          ],
+          [
+            -105.11963231411565,
+            4.217710623118762
+          ],
+          [
+            -114.89912838360334,
+            7.885024088331818
+          ]
+        ],
+        "height": 3.4,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "west-05",
+        "footprint": [
+          [
+            -86.53858978208905,
+            -101.40028282051048
+          ],
+          [
+            -80.42640473865924,
+            -102.86719076224898
+          ],
+          [
+            -77.00358111433854,
+            -94.55470929425616
+          ],
+          [
+            -83.36025355950555,
+            -91.86537542864357
+          ]
+        ],
+        "height": 3.2,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      },
+      {
+        "id": "west-06",
+        "footprint": [
+          [
+            -100.474371681109,
+            -103.60064464492439
+          ],
+          [
+            -89.22795120119815,
+            -105.80100593701133
+          ],
+          [
+            -86.53858978208905,
+            -96.75507277576514
+          ],
+          [
+            -97.78501026199989,
+            -93.82125468230072
+          ]
+        ],
+        "height": 3.0,
+        "sourceClass": "Imagery-interpreted roof coverage; facade, height and roof pitch estimated"
+      }
+    ],
+    "entranceRoute": [
+      [
+        -40.98038370328844,
+        51.4009922945384
+      ],
+      [
+        -38.92689100956433,
+        59.13294985758941
+      ],
+      [
+        -2.2634802327112737,
+        48.36102754967541
+      ],
+      [
+        -5.600405860012952,
+        35.79659650971752
+      ],
+      [
+        -9.749443989913118,
+        14.135849001918189
+      ],
+      [
+        -11.751599366294123,
+        6.597190377943463
+      ],
+      [
+        -19.18597897898382,
+        -34.05662247859466
+      ]
+    ],
+    "sourceClass": "OSM boundary, roads and parking; photo-estimated surface finishes, furniture and vehicle positions"
+  },
+  "limitations": [
+    "Five building outlines, roads, the precinct and parking boundary are from OSM; additional roof outlines are manually interpreted from Esri World Imagery, whose capture date is unknown.",
+    "The 2009 AKS photos, 2020-02-18 official interior photos and public 2015 survey-plan thumbnails inform a pre-repair reference model; this is not a current-site scan.",
+    "OSM outlines are interpreted as roof coverage. Column grid, eave heights, joinery, painted motifs and landscape coordinates are photo-proportioned estimates, not measured dimensions. Published area figures differ.",
+    "The center door is opened for exploration. Gate upper-floor access and concealed room construction are not reconstructed.",
+    "Terrain is flat. Road centerlines are sourced; road widths, surface finishes, furniture, parked cars and surrounding building heights/windows are estimates."
+  ]
+}

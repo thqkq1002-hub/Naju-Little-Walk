@@ -1,0 +1,3496 @@
+{
+  "title": "영산포 남안 주변의 사진 관찰 지붕 윤곽",
+  "recorded": "2026-09-08",
+  "coordinateOrder": "WGS84 [longitude, latitude]",
+  "image": "work/yeongsanpo-satellite-preview.jpg",
+  "imageSize": [
+    1300,
+    1000
+  ],
+  "imageryProvider": "Esri World Imagery",
+  "source": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+  "sourceBounds": [
+    126.70600891113281,
+    34.99794122085655,
+    126.71493530273438,
+    35.00356583976917
+  ],
+  "imageryCaptureDate": "unknown; do not describe as a current survey",
+  "method": "Manually noted visible roof corners in the north-up preview, transformed by the original Web Mercator tile extent. These are roof planes, not cadastral ground footprints; overhang and image parallax may differ from walls.",
+  "usage": "Numerical study data for approximate context massing. Original satellite imagery and tiles are not included. Authored museum models and OSM road clearances take precedence.",
+  "heights": "All storey counts, wall heights and wall colours are estimates. Roof colours approximate appearance in this single image.",
+  "candidateCount": 74,
+  "roofCount": 66,
+  "roofs": [
+    {
+      "id": "west_01",
+      "footprint": [
+        [
+          126.7062355,
+          34.99879056
+        ],
+        [
+          126.70640717,
+          34.99881869
+        ],
+        [
+          126.70643463,
+          34.99868932
+        ],
+        [
+          126.70626297,
+          34.99866119
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          33,
+          849
+        ],
+        [
+          58,
+          844
+        ],
+        [
+          62,
+          867
+        ],
+        [
+          37,
+          872
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#c1c9c2",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "west_02",
+      "footprint": [
+        [
+          126.7063591,
+          34.99861057
+        ],
+        [
+          126.7065033,
+          34.99864432
+        ],
+        [
+          126.70655823,
+          34.99850932
+        ],
+        [
+          126.70640717,
+          34.99847558
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          51,
+          881
+        ],
+        [
+          72,
+          875
+        ],
+        [
+          80,
+          899
+        ],
+        [
+          58,
+          905
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#606b65",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "west_03",
+      "footprint": [
+        [
+          126.70653076,
+          34.9986162
+        ],
+        [
+          126.70670242,
+          34.99864994
+        ],
+        [
+          126.70675735,
+          34.99852057
+        ],
+        [
+          126.70658569,
+          34.99848683
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          76,
+          880
+        ],
+        [
+          101,
+          874
+        ],
+        [
+          109,
+          897
+        ],
+        [
+          84,
+          903
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#83a9bd",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "west_04",
+      "footprint": [
+        [
+          126.70675735,
+          34.99874557
+        ],
+        [
+          126.70690842,
+          34.99878494
+        ],
+        [
+          126.70694962,
+          34.99866682
+        ],
+        [
+          126.70679855,
+          34.99862745
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          109,
+          857
+        ],
+        [
+          131,
+          850
+        ],
+        [
+          137,
+          871
+        ],
+        [
+          115,
+          878
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#abcbc8",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "west_05",
+      "footprint": [
+        [
+          126.70709381,
+          34.99885244
+        ],
+        [
+          126.70724487,
+          34.99890306
+        ],
+        [
+          126.70730667,
+          34.99878494
+        ],
+        [
+          126.70716248,
+          34.99872307
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          158,
+          838
+        ],
+        [
+          180,
+          829
+        ],
+        [
+          189,
+          850
+        ],
+        [
+          168,
+          861
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#629f85",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "west_06",
+      "footprint": [
+        [
+          126.7062149,
+          34.99842495
+        ],
+        [
+          126.7064415,
+          34.99847558
+        ],
+        [
+          126.70648956,
+          34.99832933
+        ],
+        [
+          126.7062561,
+          34.99827871
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          30,
+          914
+        ],
+        [
+          63,
+          905
+        ],
+        [
+          70,
+          931
+        ],
+        [
+          36,
+          940
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#4c6b82",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "west_07",
+      "footprint": [
+        [
+          126.70655823,
+          34.99837433
+        ],
+        [
+          126.70672989,
+          34.99841933
+        ],
+        [
+          126.70679169,
+          34.99826746
+        ],
+        [
+          126.70659943,
+          34.99822246
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          80,
+          923
+        ],
+        [
+          105,
+          915
+        ],
+        [
+          114,
+          942
+        ],
+        [
+          86,
+          950
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#788671",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "warehouse_01",
+      "footprint": [
+        [
+          126.70747833,
+          34.99889181
+        ],
+        [
+          126.70775299,
+          34.99895931
+        ],
+        [
+          126.70780792,
+          34.99880744
+        ],
+        [
+          126.70754013,
+          34.99873994
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          214,
+          831
+        ],
+        [
+          254,
+          819
+        ],
+        [
+          262,
+          846
+        ],
+        [
+          223,
+          858
+        ]
+      ],
+      "height": 5.8,
+      "roofColor": "#4e8cad",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "warehouse_02",
+      "footprint": [
+        [
+          126.70756073,
+          34.99873994
+        ],
+        [
+          126.70770493,
+          34.99877369
+        ],
+        [
+          126.70787659,
+          34.99819996
+        ],
+        [
+          126.70774612,
+          34.99816059
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          226,
+          858
+        ],
+        [
+          247,
+          852
+        ],
+        [
+          272,
+          954
+        ],
+        [
+          253,
+          961
+        ]
+      ],
+      "height": 6.2,
+      "roofColor": "#94bed0",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "warehouse_03",
+      "footprint": [
+        [
+          126.70771866,
+          34.99844745
+        ],
+        [
+          126.70791779,
+          34.9985037
+        ],
+        [
+          126.70804138,
+          34.99813809
+        ],
+        [
+          126.70784912,
+          34.99809309
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          249,
+          910
+        ],
+        [
+          278,
+          900
+        ],
+        [
+          296,
+          965
+        ],
+        [
+          268,
+          973
+        ]
+      ],
+      "height": 5.8,
+      "roofColor": "#7caec2",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "warehouse_04",
+      "footprint": [
+        [
+          126.70824738,
+          34.99881869
+        ],
+        [
+          126.7085083,
+          34.99888056
+        ],
+        [
+          126.70862503,
+          34.99846995
+        ],
+        [
+          126.70835724,
+          34.99840808
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          326,
+          844
+        ],
+        [
+          364,
+          833
+        ],
+        [
+          381,
+          906
+        ],
+        [
+          342,
+          917
+        ]
+      ],
+      "height": 6.5,
+      "roofColor": "#5589af",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "warehouse_05",
+      "footprint": [
+        [
+          126.70802765,
+          34.99840808
+        ],
+        [
+          126.70833664,
+          34.99847558
+        ],
+        [
+          126.70836411,
+          34.99836308
+        ],
+        [
+          126.70806198,
+          34.99828433
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          294,
+          917
+        ],
+        [
+          339,
+          905
+        ],
+        [
+          343,
+          925
+        ],
+        [
+          299,
+          939
+        ]
+      ],
+      "height": 5.5,
+      "roofColor": "#98b4b3",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "warehouse_06",
+      "footprint": [
+        [
+          126.70793839,
+          34.99877931
+        ],
+        [
+          126.70806885,
+          34.99880744
+        ],
+        [
+          126.70817184,
+          34.9984587
+        ],
+        [
+          126.70803452,
+          34.99842495
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          281,
+          851
+        ],
+        [
+          300,
+          846
+        ],
+        [
+          315,
+          908
+        ],
+        [
+          295,
+          914
+        ]
+      ],
+      "height": 5.2,
+      "roofColor": "#78a2a1",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "warehouse_07",
+      "footprint": [
+        [
+          126.70755386,
+          34.99902118
+        ],
+        [
+          126.70774612,
+          34.9990718
+        ],
+        [
+          126.70776672,
+          34.9989818
+        ],
+        [
+          126.7075882,
+          34.99894243
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          225,
+          808
+        ],
+        [
+          253,
+          799
+        ],
+        [
+          256,
+          815
+        ],
+        [
+          230,
+          822
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#929f9d",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "warehouse_08",
+      "footprint": [
+        [
+          126.70811691,
+          34.99912242
+        ],
+        [
+          126.70835724,
+          34.99917867
+        ],
+        [
+          126.7084259,
+          34.9990493
+        ],
+        [
+          126.70819244,
+          34.99898743
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          307,
+          790
+        ],
+        [
+          342,
+          780
+        ],
+        [
+          352,
+          803
+        ],
+        [
+          318,
+          814
+        ]
+      ],
+      "height": 4.5,
+      "roofColor": "#799bb6",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "warehouse_09",
+      "footprint": [
+        [
+          126.70795212,
+          34.99899868
+        ],
+        [
+          126.70809631,
+          34.99903805
+        ],
+        [
+          126.70813065,
+          34.99895368
+        ],
+        [
+          126.70801392,
+          34.99890306
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          283,
+          812
+        ],
+        [
+          304,
+          805
+        ],
+        [
+          309,
+          820
+        ],
+        [
+          292,
+          829
+        ]
+      ],
+      "height": 3.8,
+      "roofColor": "#447fa7",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_01",
+      "footprint": [
+        [
+          126.70853577,
+          34.99931929
+        ],
+        [
+          126.70870056,
+          34.99935866
+        ],
+        [
+          126.70874176,
+          34.99924054
+        ],
+        [
+          126.70858383,
+          34.99920117
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          368,
+          755
+        ],
+        [
+          392,
+          748
+        ],
+        [
+          398,
+          769
+        ],
+        [
+          375,
+          776
+        ]
+      ],
+      "height": 3.6,
+      "roofColor": "#9faf9e",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_02",
+      "footprint": [
+        [
+          126.70872803,
+          34.99932491
+        ],
+        [
+          126.70885849,
+          34.99935304
+        ],
+        [
+          126.70890656,
+          34.99924054
+        ],
+        [
+          126.70876923,
+          34.99919554
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          396,
+          754
+        ],
+        [
+          415,
+          749
+        ],
+        [
+          422,
+          769
+        ],
+        [
+          402,
+          777
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#639bb8",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_03",
+      "footprint": [
+        [
+          126.70890656,
+          34.99939803
+        ],
+        [
+          126.70900955,
+          34.99942616
+        ],
+        [
+          126.70905762,
+          34.99922367
+        ],
+        [
+          126.70896149,
+          34.99919554
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          422,
+          741
+        ],
+        [
+          437,
+          736
+        ],
+        [
+          444,
+          772
+        ],
+        [
+          430,
+          777
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#c4c9c3",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_04",
+      "footprint": [
+        [
+          126.70907822,
+          34.99934179
+        ],
+        [
+          126.70924301,
+          34.99938116
+        ],
+        [
+          126.70929108,
+          34.99927992
+        ],
+        [
+          126.70913315,
+          34.99923492
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          447,
+          751
+        ],
+        [
+          471,
+          744
+        ],
+        [
+          478,
+          762
+        ],
+        [
+          455,
+          770
+        ]
+      ],
+      "height": 3.8,
+      "roofColor": "#c6cabc",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_05",
+      "footprint": [
+        [
+          126.70936661,
+          34.99944303
+        ],
+        [
+          126.70947647,
+          34.99946553
+        ],
+        [
+          126.7095108,
+          34.99933616
+        ],
+        [
+          126.70940094,
+          34.99930804
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          489,
+          733
+        ],
+        [
+          505,
+          729
+        ],
+        [
+          510,
+          752
+        ],
+        [
+          494,
+          757
+        ]
+      ],
+      "height": 4.5,
+      "roofColor": "#c8d1cb",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_06",
+      "footprint": [
+        [
+          126.70938721,
+          34.99930241
+        ],
+        [
+          126.7095726,
+          34.99934179
+        ],
+        [
+          126.7096138,
+          34.99922367
+        ],
+        [
+          126.70942841,
+          34.99918429
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          492,
+          758
+        ],
+        [
+          519,
+          751
+        ],
+        [
+          525,
+          772
+        ],
+        [
+          498,
+          779
+        ]
+      ],
+      "height": 4.5,
+      "roofColor": "#aac9d0",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_07",
+      "footprint": [
+        [
+          126.7096344,
+          34.99953303
+        ],
+        [
+          126.70984039,
+          34.9995724
+        ],
+        [
+          126.70996399,
+          34.99924617
+        ],
+        [
+          126.70974426,
+          34.99919554
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          528,
+          717
+        ],
+        [
+          558,
+          710
+        ],
+        [
+          576,
+          768
+        ],
+        [
+          544,
+          777
+        ]
+      ],
+      "height": 7.2,
+      "roofColor": "#6e93b5",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_08",
+      "footprint": [
+        [
+          126.70984726,
+          34.99956115
+        ],
+        [
+          126.70997772,
+          34.99958927
+        ],
+        [
+          126.71003952,
+          34.99943741
+        ],
+        [
+          126.70990906,
+          34.99939803
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          559,
+          712
+        ],
+        [
+          578,
+          707
+        ],
+        [
+          587,
+          734
+        ],
+        [
+          568,
+          741
+        ]
+      ],
+      "height": 4.7,
+      "roofColor": "#78ac91",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_09",
+      "footprint": [
+        [
+          126.70996399,
+          34.99962302
+        ],
+        [
+          126.71005325,
+          34.99962865
+        ],
+        [
+          126.71010132,
+          34.9995274
+        ],
+        [
+          126.71000519,
+          34.99949928
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          576,
+          701
+        ],
+        [
+          589,
+          700
+        ],
+        [
+          596,
+          718
+        ],
+        [
+          582,
+          723
+        ]
+      ],
+      "height": 4.5,
+      "roofColor": "#9baa9b",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_10",
+      "footprint": [
+        [
+          126.71001892,
+          34.99939241
+        ],
+        [
+          126.71012878,
+          34.99942053
+        ],
+        [
+          126.71015625,
+          34.99932491
+        ],
+        [
+          126.71005325,
+          34.99929679
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          584,
+          742
+        ],
+        [
+          600,
+          737
+        ],
+        [
+          604,
+          754
+        ],
+        [
+          589,
+          759
+        ]
+      ],
+      "height": 3.6,
+      "roofColor": "#c9cebf",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_11",
+      "footprint": [
+        [
+          126.71003952,
+          34.99930804
+        ],
+        [
+          126.71017685,
+          34.99934179
+        ],
+        [
+          126.71023865,
+          34.99919554
+        ],
+        [
+          126.71008072,
+          34.9991618
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          587,
+          757
+        ],
+        [
+          607,
+          751
+        ],
+        [
+          616,
+          777
+        ],
+        [
+          593,
+          783
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#d4d0bd",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_12",
+      "footprint": [
+        [
+          126.70866623,
+          34.99897618
+        ],
+        [
+          126.70886536,
+          34.99903243
+        ],
+        [
+          126.70892029,
+          34.99890306
+        ],
+        [
+          126.70871429,
+          34.99885244
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          387,
+          816
+        ],
+        [
+          416,
+          806
+        ],
+        [
+          424,
+          829
+        ],
+        [
+          394,
+          838
+        ]
+      ],
+      "height": 3.4,
+      "roofColor": "#90b9a5",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_13",
+      "footprint": [
+        [
+          126.70886536,
+          34.99895368
+        ],
+        [
+          126.70911255,
+          34.99896493
+        ],
+        [
+          126.70913315,
+          34.99885244
+        ],
+        [
+          126.70892029,
+          34.99882431
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          416,
+          820
+        ],
+        [
+          452,
+          818
+        ],
+        [
+          455,
+          838
+        ],
+        [
+          424,
+          843
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#bec5ba",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_14",
+      "footprint": [
+        [
+          126.70919495,
+          34.99900993
+        ],
+        [
+          126.70931854,
+          34.99903805
+        ],
+        [
+          126.70935974,
+          34.99891993
+        ],
+        [
+          126.70923615,
+          34.99889743
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          464,
+          810
+        ],
+        [
+          482,
+          805
+        ],
+        [
+          488,
+          826
+        ],
+        [
+          470,
+          830
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#886f6c",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_15",
+      "footprint": [
+        [
+          126.70935974,
+          34.9990943
+        ],
+        [
+          126.7095726,
+          34.99914492
+        ],
+        [
+          126.7096138,
+          34.9990268
+        ],
+        [
+          126.70941467,
+          34.9989818
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          488,
+          795
+        ],
+        [
+          519,
+          786
+        ],
+        [
+          525,
+          807
+        ],
+        [
+          496,
+          815
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#b27059",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_16",
+      "footprint": [
+        [
+          126.70904388,
+          34.99875119
+        ],
+        [
+          126.70916061,
+          34.99877369
+        ],
+        [
+          126.70923615,
+          34.99837433
+        ],
+        [
+          126.70912628,
+          34.99834621
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          442,
+          856
+        ],
+        [
+          459,
+          852
+        ],
+        [
+          470,
+          923
+        ],
+        [
+          454,
+          928
+        ]
+      ],
+      "height": 4.5,
+      "roofColor": "#7da29b",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_17",
+      "footprint": [
+        [
+          126.70930481,
+          34.99875681
+        ],
+        [
+          126.70947647,
+          34.99879619
+        ],
+        [
+          126.7095314,
+          34.99866119
+        ],
+        [
+          126.70935974,
+          34.99862182
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          480,
+          855
+        ],
+        [
+          505,
+          848
+        ],
+        [
+          513,
+          872
+        ],
+        [
+          488,
+          879
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#79a285",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_18",
+      "footprint": [
+        [
+          126.7097168,
+          34.99882431
+        ],
+        [
+          126.70989532,
+          34.99890306
+        ],
+        [
+          126.70999832,
+          34.99874557
+        ],
+        [
+          126.70981293,
+          34.99867244
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          540,
+          843
+        ],
+        [
+          566,
+          829
+        ],
+        [
+          581,
+          857
+        ],
+        [
+          554,
+          870
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#63a394",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_west_19",
+      "footprint": [
+        [
+          126.70868683,
+          34.99827308
+        ],
+        [
+          126.70880356,
+          34.99833496
+        ],
+        [
+          126.70888596,
+          34.99824496
+        ],
+        [
+          126.70876923,
+          34.99817746
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          390,
+          941
+        ],
+        [
+          407,
+          930
+        ],
+        [
+          419,
+          946
+        ],
+        [
+          402,
+          958
+        ]
+      ],
+      "height": 3.8,
+      "roofColor": "#8598a4",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_central_03",
+      "footprint": [
+        [
+          126.71054077,
+          34.99951053
+        ],
+        [
+          126.71066437,
+          34.99953865
+        ],
+        [
+          126.7106987,
+          34.99945428
+        ],
+        [
+          126.7105751,
+          34.99942053
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          660,
+          721
+        ],
+        [
+          678,
+          716
+        ],
+        [
+          683,
+          731
+        ],
+        [
+          665,
+          737
+        ]
+      ],
+      "height": 3.6,
+      "roofColor": "#96b2a4",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_central_04",
+      "footprint": [
+        [
+          126.71056137,
+          34.99940366
+        ],
+        [
+          126.71075363,
+          34.99945428
+        ],
+        [
+          126.7108017,
+          34.99933616
+        ],
+        [
+          126.71060944,
+          34.99928554
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          663,
+          740
+        ],
+        [
+          691,
+          731
+        ],
+        [
+          698,
+          752
+        ],
+        [
+          670,
+          761
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#b1bdb8",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_central_05",
+      "footprint": [
+        [
+          126.71085663,
+          34.99931929
+        ],
+        [
+          126.71102829,
+          34.99936991
+        ],
+        [
+          126.71109695,
+          34.99922367
+        ],
+        [
+          126.71090469,
+          34.99915617
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          706,
+          755
+        ],
+        [
+          731,
+          746
+        ],
+        [
+          741,
+          772
+        ],
+        [
+          713,
+          784
+        ]
+      ],
+      "height": 4.7,
+      "roofColor": "#538aba",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_central_06",
+      "footprint": [
+        [
+          126.71050644,
+          34.99898743
+        ],
+        [
+          126.71068497,
+          34.99898743
+        ],
+        [
+          126.71069183,
+          34.99881869
+        ],
+        [
+          126.71049271,
+          34.99882431
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          655,
+          814
+        ],
+        [
+          681,
+          814
+        ],
+        [
+          682,
+          844
+        ],
+        [
+          653,
+          843
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#9bbdce",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_central_07",
+      "footprint": [
+        [
+          126.71036911,
+          34.99872869
+        ],
+        [
+          126.71056137,
+          34.99871182
+        ],
+        [
+          126.71054077,
+          34.9985937
+        ],
+        [
+          126.71034851,
+          34.99862182
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          635,
+          860
+        ],
+        [
+          663,
+          863
+        ],
+        [
+          660,
+          884
+        ],
+        [
+          632,
+          879
+        ]
+      ],
+      "height": 3.6,
+      "roofColor": "#68826c",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_central_08",
+      "footprint": [
+        [
+          126.71031418,
+          34.99855432
+        ],
+        [
+          126.71049271,
+          34.9985262
+        ],
+        [
+          126.71046524,
+          34.99840808
+        ],
+        [
+          126.71027298,
+          34.99844745
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          627,
+          891
+        ],
+        [
+          653,
+          896
+        ],
+        [
+          649,
+          917
+        ],
+        [
+          621,
+          910
+        ]
+      ],
+      "height": 3.6,
+      "roofColor": "#61716b",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_central_09",
+      "footprint": [
+        [
+          126.71092529,
+          34.99864432
+        ],
+        [
+          126.71106949,
+          34.99872307
+        ],
+        [
+          126.71127548,
+          34.9986162
+        ],
+        [
+          126.71119995,
+          34.99850932
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          716,
+          875
+        ],
+        [
+          737,
+          861
+        ],
+        [
+          767,
+          880
+        ],
+        [
+          756,
+          899
+        ]
+      ],
+      "height": 3.8,
+      "roofColor": "#b07961",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_central_10",
+      "footprint": [
+        [
+          126.71122055,
+          34.99953865
+        ],
+        [
+          126.71134415,
+          34.99957802
+        ],
+        [
+          126.71139221,
+          34.99946553
+        ],
+        [
+          126.71126862,
+          34.99942053
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          759,
+          716
+        ],
+        [
+          777,
+          709
+        ],
+        [
+          784,
+          729
+        ],
+        [
+          766,
+          737
+        ]
+      ],
+      "height": 4.0,
+      "roofColor": "#71a9ac",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_central_11",
+      "footprint": [
+        [
+          126.71141968,
+          34.99916742
+        ],
+        [
+          126.71155014,
+          34.99921242
+        ],
+        [
+          126.7116188,
+          34.99908305
+        ],
+        [
+          126.71148148,
+          34.99903805
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          788,
+          782
+        ],
+        [
+          807,
+          774
+        ],
+        [
+          817,
+          797
+        ],
+        [
+          797,
+          805
+        ]
+      ],
+      "height": 3.6,
+      "roofColor": "#8daba9",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_central_12",
+      "footprint": [
+        [
+          126.71157074,
+          34.99862182
+        ],
+        [
+          126.71183853,
+          34.99863869
+        ],
+        [
+          126.71189346,
+          34.99846995
+        ],
+        [
+          126.71189346,
+          34.99830683
+        ],
+        [
+          126.71169434,
+          34.99828996
+        ],
+        [
+          126.71158447,
+          34.99840808
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          810,
+          879
+        ],
+        [
+          849,
+          876
+        ],
+        [
+          857,
+          906
+        ],
+        [
+          857,
+          935
+        ],
+        [
+          828,
+          938
+        ],
+        [
+          812,
+          917
+        ]
+      ],
+      "height": 5.8,
+      "roofColor": "#adafa1",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "street_central_13",
+      "footprint": [
+        [
+          126.71144714,
+          34.99850932
+        ],
+        [
+          126.7116188,
+          34.99848683
+        ],
+        [
+          126.71159821,
+          34.99830683
+        ],
+        [
+          126.71149521,
+          34.99821684
+        ],
+        [
+          126.71140594,
+          34.99825058
+        ],
+        [
+          126.71148148,
+          34.99834058
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          792,
+          899
+        ],
+        [
+          817,
+          903
+        ],
+        [
+          814,
+          935
+        ],
+        [
+          799,
+          951
+        ],
+        [
+          786,
+          945
+        ],
+        [
+          797,
+          929
+        ]
+      ],
+      "height": 4.0,
+      "roofColor": "#b4b7ac",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "riverfront_04",
+      "footprint": [
+        [
+          126.71093903,
+          35.00014049
+        ],
+        [
+          126.71104889,
+          35.00021361
+        ],
+        [
+          126.71113129,
+          35.00011237
+        ],
+        [
+          126.71102829,
+          35.00004487
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          718,
+          609
+        ],
+        [
+          734,
+          596
+        ],
+        [
+          746,
+          614
+        ],
+        [
+          731,
+          626
+        ]
+      ],
+      "height": 4.5,
+      "roofColor": "#a56856",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "riverfront_05",
+      "footprint": [
+        [
+          126.71086349,
+          34.99997738
+        ],
+        [
+          126.71097336,
+          35.00003362
+        ],
+        [
+          126.71104889,
+          34.99993238
+        ],
+        [
+          126.71093903,
+          34.99987613
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          707,
+          638
+        ],
+        [
+          723,
+          628
+        ],
+        [
+          734,
+          646
+        ],
+        [
+          718,
+          656
+        ]
+      ],
+      "height": 4.3,
+      "roofColor": "#86b2bd",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "riverfront_07",
+      "footprint": [
+        [
+          126.71126862,
+          35.00021361
+        ],
+        [
+          126.71141968,
+          35.00019674
+        ],
+        [
+          126.71143341,
+          35.00008425
+        ],
+        [
+          126.71130295,
+          35.00004487
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          766,
+          596
+        ],
+        [
+          788,
+          599
+        ],
+        [
+          790,
+          619
+        ],
+        [
+          771,
+          626
+        ]
+      ],
+      "height": 3.8,
+      "roofColor": "#83b2c4",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "riverfront_08",
+      "footprint": [
+        [
+          126.71133728,
+          35.00004487
+        ],
+        [
+          126.71145401,
+          35.00006737
+        ],
+        [
+          126.71146088,
+          34.99996613
+        ],
+        [
+          126.71135101,
+          34.99994925
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          776,
+          626
+        ],
+        [
+          793,
+          622
+        ],
+        [
+          794,
+          640
+        ],
+        [
+          778,
+          643
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#73a290",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_river_01",
+      "footprint": [
+        [
+          126.7116806,
+          35.00095606
+        ],
+        [
+          126.71179047,
+          35.00096169
+        ],
+        [
+          126.71179047,
+          35.00104606
+        ],
+        [
+          126.71187973,
+          35.00106293
+        ],
+        [
+          126.7119278,
+          35.00089419
+        ],
+        [
+          126.7117218,
+          35.00085482
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          826,
+          464
+        ],
+        [
+          842,
+          463
+        ],
+        [
+          842,
+          448
+        ],
+        [
+          855,
+          445
+        ],
+        [
+          862,
+          475
+        ],
+        [
+          832,
+          482
+        ]
+      ],
+      "height": 5.0,
+      "roofColor": "#d0d3c7",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_river_02",
+      "footprint": [
+        [
+          126.71190033,
+          35.00079295
+        ],
+        [
+          126.71203766,
+          35.00080982
+        ],
+        [
+          126.71208572,
+          35.00061859
+        ],
+        [
+          126.71194153,
+          35.00060734
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          858,
+          493
+        ],
+        [
+          878,
+          490
+        ],
+        [
+          885,
+          524
+        ],
+        [
+          864,
+          526
+        ]
+      ],
+      "height": 4.5,
+      "roofColor": "#6a8cb0",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_river_03",
+      "footprint": [
+        [
+          126.71223679,
+          35.00104043
+        ],
+        [
+          126.71243591,
+          35.00109106
+        ],
+        [
+          126.71248398,
+          35.00098419
+        ],
+        [
+          126.71228485,
+          35.00093357
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          907,
+          449
+        ],
+        [
+          936,
+          440
+        ],
+        [
+          943,
+          459
+        ],
+        [
+          914,
+          468
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#6e7064",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_river_04",
+      "footprint": [
+        [
+          126.71260757,
+          35.00118105
+        ],
+        [
+          126.71271744,
+          35.00122042
+        ],
+        [
+          126.71277237,
+          35.00111355
+        ],
+        [
+          126.71265564,
+          35.00106856
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          961,
+          424
+        ],
+        [
+          977,
+          417
+        ],
+        [
+          985,
+          436
+        ],
+        [
+          968,
+          444
+        ]
+      ],
+      "height": 4.0,
+      "roofColor": "#636f61",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_river_05",
+      "footprint": [
+        [
+          126.7127243,
+          35.00120355
+        ],
+        [
+          126.71284103,
+          35.00122605
+        ],
+        [
+          126.71288223,
+          35.00113043
+        ],
+        [
+          126.7127655,
+          35.00109668
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          978,
+          420
+        ],
+        [
+          995,
+          416
+        ],
+        [
+          1001,
+          433
+        ],
+        [
+          984,
+          439
+        ]
+      ],
+      "height": 3.8,
+      "roofColor": "#84a698",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_river_06",
+      "footprint": [
+        [
+          126.71349335,
+          35.00137791
+        ],
+        [
+          126.71368561,
+          35.00141728
+        ],
+        [
+          126.71374054,
+          35.00130479
+        ],
+        [
+          126.71354141,
+          35.00125979
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          1090,
+          389
+        ],
+        [
+          1118,
+          382
+        ],
+        [
+          1126,
+          402
+        ],
+        [
+          1097,
+          410
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#6c94b0",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_central_01",
+      "footprint": [
+        [
+          126.71249771,
+          35.00052297
+        ],
+        [
+          126.71261444,
+          35.00055109
+        ],
+        [
+          126.71263504,
+          35.00045547
+        ],
+        [
+          126.71252518,
+          35.00043297
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          945,
+          541
+        ],
+        [
+          962,
+          536
+        ],
+        [
+          965,
+          553
+        ],
+        [
+          949,
+          557
+        ]
+      ],
+      "height": 3.7,
+      "roofColor": "#7aa4b6",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_central_02",
+      "footprint": [
+        [
+          126.7129921,
+          35.00057359
+        ],
+        [
+          126.71310196,
+          35.00060171
+        ],
+        [
+          126.71313629,
+          35.0004836
+        ],
+        [
+          126.71301956,
+          35.0004611
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          1017,
+          532
+        ],
+        [
+          1033,
+          527
+        ],
+        [
+          1038,
+          548
+        ],
+        [
+          1021,
+          552
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#9dbabc",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_central_03",
+      "footprint": [
+        [
+          126.7130127,
+          35.00030361
+        ],
+        [
+          126.71315689,
+          35.00033173
+        ],
+        [
+          126.71319122,
+          35.00022486
+        ],
+        [
+          126.71304703,
+          35.00019674
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          1020,
+          580
+        ],
+        [
+          1041,
+          575
+        ],
+        [
+          1046,
+          594
+        ],
+        [
+          1025,
+          599
+        ]
+      ],
+      "height": 3.5,
+      "roofColor": "#9fb8bd",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_central_04",
+      "footprint": [
+        [
+          126.71336975,
+          35.00063546
+        ],
+        [
+          126.71354828,
+          35.00067483
+        ],
+        [
+          126.71358261,
+          35.0005061
+        ],
+        [
+          126.71341095,
+          35.00046672
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          1072,
+          521
+        ],
+        [
+          1098,
+          514
+        ],
+        [
+          1103,
+          544
+        ],
+        [
+          1078,
+          551
+        ]
+      ],
+      "height": 5.0,
+      "roofColor": "#658db4",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_central_05",
+      "footprint": [
+        [
+          126.71343842,
+          35.00040485
+        ],
+        [
+          126.71354141,
+          35.00042735
+        ],
+        [
+          126.71356888,
+          35.00033736
+        ],
+        [
+          126.71346588,
+          35.00030923
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          1082,
+          562
+        ],
+        [
+          1097,
+          558
+        ],
+        [
+          1101,
+          574
+        ],
+        [
+          1086,
+          579
+        ]
+      ],
+      "height": 3.7,
+      "roofColor": "#b77466",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_central_08",
+      "footprint": [
+        [
+          126.71419373,
+          35.00072546
+        ],
+        [
+          126.71434479,
+          35.00075358
+        ],
+        [
+          126.71437225,
+          35.00064109
+        ],
+        [
+          126.71423492,
+          35.00060171
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          1192,
+          505
+        ],
+        [
+          1214,
+          500
+        ],
+        [
+          1218,
+          520
+        ],
+        [
+          1198,
+          527
+        ]
+      ],
+      "height": 3.7,
+      "roofColor": "#86b6a0",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_south_01",
+      "footprint": [
+        [
+          126.71369247,
+          34.99946553
+        ],
+        [
+          126.71384354,
+          34.9995049
+        ],
+        [
+          126.7138916,
+          34.99938678
+        ],
+        [
+          126.71374054,
+          34.99935304
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          1119,
+          729
+        ],
+        [
+          1141,
+          722
+        ],
+        [
+          1148,
+          743
+        ],
+        [
+          1126,
+          749
+        ]
+      ],
+      "height": 4.3,
+      "roofColor": "#84aab7",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_south_02",
+      "footprint": [
+        [
+          126.7138916,
+          34.99920117
+        ],
+        [
+          126.71406326,
+          34.99924617
+        ],
+        [
+          126.71412506,
+          34.9991168
+        ],
+        [
+          126.7139534,
+          34.9990718
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          1148,
+          776
+        ],
+        [
+          1173,
+          768
+        ],
+        [
+          1182,
+          791
+        ],
+        [
+          1157,
+          799
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#a7b7ad",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_south_03",
+      "footprint": [
+        [
+          126.7130127,
+          34.99911117
+        ],
+        [
+          126.71317749,
+          34.99913367
+        ],
+        [
+          126.71321869,
+          34.99903243
+        ],
+        [
+          126.71304703,
+          34.99899868
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          1020,
+          792
+        ],
+        [
+          1044,
+          788
+        ],
+        [
+          1050,
+          806
+        ],
+        [
+          1025,
+          812
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#7c969f",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    },
+    {
+      "id": "east_south_04",
+      "footprint": [
+        [
+          126.71277237,
+          34.9984362
+        ],
+        [
+          126.71287537,
+          34.99846995
+        ],
+        [
+          126.7129509,
+          34.99828433
+        ],
+        [
+          126.71284103,
+          34.99825621
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          985,
+          912
+        ],
+        [
+          1000,
+          906
+        ],
+        [
+          1011,
+          939
+        ],
+        [
+          995,
+          944
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#7b9a87",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": []
+    }
+  ],
+  "excludedForReview": [
+    {
+      "id": "street_central_01",
+      "footprint": [
+        [
+          126.71032104,
+          34.99983114
+        ],
+        [
+          126.71041031,
+          34.99985363
+        ],
+        [
+          126.71047211,
+          34.99972989
+        ],
+        [
+          126.71036224,
+          34.99970177
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          628,
+          664
+        ],
+        [
+          641,
+          660
+        ],
+        [
+          650,
+          682
+        ],
+        [
+          634,
+          687
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#6d9b83",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": [
+        "roof eave close to mapped road way/130634137"
+      ]
+    },
+    {
+      "id": "street_central_02",
+      "footprint": [
+        [
+          126.71034164,
+          34.99958365
+        ],
+        [
+          126.71047897,
+          34.9996174
+        ],
+        [
+          126.71052017,
+          34.99951053
+        ],
+        [
+          126.71038284,
+          34.99947116
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          631,
+          708
+        ],
+        [
+          651,
+          702
+        ],
+        [
+          657,
+          721
+        ],
+        [
+          637,
+          728
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#c1c8c3",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": [
+        "roof eave close to mapped road way/130634066"
+      ]
+    },
+    {
+      "id": "riverfront_01",
+      "footprint": [
+        [
+          126.71047211,
+          34.99992676
+        ],
+        [
+          126.71060257,
+          34.999983
+        ],
+        [
+          126.7106781,
+          34.99989301
+        ],
+        [
+          126.71054764,
+          34.99982551
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          650,
+          647
+        ],
+        [
+          669,
+          637
+        ],
+        [
+          680,
+          653
+        ],
+        [
+          661,
+          665
+        ]
+      ],
+      "height": 4.3,
+      "roofColor": "#c0bdb0",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": [
+        "roof eave close to mapped road way/130634137"
+      ]
+    },
+    {
+      "id": "riverfront_02",
+      "footprint": [
+        [
+          126.71060944,
+          35.00001113
+        ],
+        [
+          126.71075363,
+          35.00008425
+        ],
+        [
+          126.71081543,
+          34.999983
+        ],
+        [
+          126.7106781,
+          34.99991551
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          670,
+          632
+        ],
+        [
+          691,
+          619
+        ],
+        [
+          700,
+          637
+        ],
+        [
+          680,
+          649
+        ]
+      ],
+      "height": 4.3,
+      "roofColor": "#b9b8b0",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": [
+        "roof eave close to mapped road way/130634137"
+      ]
+    },
+    {
+      "id": "riverfront_03",
+      "footprint": [
+        [
+          126.7107605,
+          35.00010112
+        ],
+        [
+          126.71085663,
+          35.00015737
+        ],
+        [
+          126.71094589,
+          35.0000505
+        ],
+        [
+          126.71084976,
+          34.99999425
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          692,
+          616
+        ],
+        [
+          706,
+          606
+        ],
+        [
+          719,
+          625
+        ],
+        [
+          705,
+          635
+        ]
+      ],
+      "height": 4.0,
+      "roofColor": "#bfbcae",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": [
+        "roof eave close to mapped road way/130634137"
+      ]
+    },
+    {
+      "id": "riverfront_06",
+      "footprint": [
+        [
+          126.71085663,
+          34.99978614
+        ],
+        [
+          126.71100082,
+          34.99980301
+        ],
+        [
+          126.71100769,
+          34.99971302
+        ],
+        [
+          126.71087036,
+          34.99970739
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          706,
+          672
+        ],
+        [
+          727,
+          669
+        ],
+        [
+          728,
+          685
+        ],
+        [
+          708,
+          686
+        ]
+      ],
+      "height": 3.8,
+      "roofColor": "#427fab",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": [
+        "roof eave close to mapped road way/130634066"
+      ]
+    },
+    {
+      "id": "east_central_06",
+      "footprint": [
+        [
+          126.71389847,
+          35.00116417
+        ],
+        [
+          126.71406326,
+          35.00119792
+        ],
+        [
+          126.7140976,
+          35.00108543
+        ],
+        [
+          126.7139328,
+          35.00105168
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          1149,
+          427
+        ],
+        [
+          1173,
+          421
+        ],
+        [
+          1178,
+          441
+        ],
+        [
+          1154,
+          447
+        ]
+      ],
+      "height": 4.2,
+      "roofColor": "#788d8f",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": [
+        "roof eave close to mapped road way/130634137"
+      ]
+    },
+    {
+      "id": "east_central_07",
+      "footprint": [
+        [
+          126.71415939,
+          35.0011923
+        ],
+        [
+          126.71433105,
+          35.00123167
+        ],
+        [
+          126.71437912,
+          35.00108543
+        ],
+        [
+          126.71420059,
+          35.00104606
+        ]
+      ],
+      "pixelFootprint": [
+        [
+          1187,
+          422
+        ],
+        [
+          1212,
+          415
+        ],
+        [
+          1219,
+          441
+        ],
+        [
+          1193,
+          448
+        ]
+      ],
+      "height": 4.5,
+      "roofColor": "#87acbd",
+      "wallColor": "#c5bfae",
+      "heightBasis": "Estimated low-rise massing, not surveyed",
+      "facadeBasis": "No facade detail inferred from satellite roof",
+      "confidence": "approximate visually traced roof plane",
+      "reviewFlags": [
+        "roof eave close to mapped road way/130634137"
+      ]
+    }
+  ]
+}

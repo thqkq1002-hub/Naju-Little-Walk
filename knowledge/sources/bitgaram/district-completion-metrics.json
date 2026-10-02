@@ -1,0 +1,1759 @@
+{
+  "counts": {
+    "mapped_buildings": 81,
+    "estimated_roofs": 207,
+    "landuse_areas": 104,
+    "parking_areas": 42,
+    "sports_areas": 45,
+    "road_segments": 1808,
+    "trees": 4650,
+    "field_parcels": 470
+  },
+  "buildings": [
+    {
+      "id": "549647589",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "public"
+    },
+    {
+      "id": "659348986",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "public"
+    },
+    {
+      "id": "659348987",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "public"
+    },
+    {
+      "id": "887519766",
+      "height": 52.7,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "887519767",
+      "height": 52.7,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "887519770",
+      "height": 55.800000000000004,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "887519771",
+      "height": 62,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "887519775",
+      "height": 71.3,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "887519776",
+      "height": 71.3,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "887519777",
+      "height": 71.3,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "887532649",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "yes"
+    },
+    {
+      "id": "887532656",
+      "height": 3.1,
+      "estimated_footprint": false,
+      "kind": "kindergarten"
+    },
+    {
+      "id": "887875406",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "school"
+    },
+    {
+      "id": "889260212",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "yes"
+    },
+    {
+      "id": "889260230",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "yes"
+    },
+    {
+      "id": "889264232",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "yes"
+    },
+    {
+      "id": "889264233",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "889572194",
+      "height": 71.3,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "889572195",
+      "height": 71.3,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "889572198",
+      "height": 55.800000000000004,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "889572199",
+      "height": 55.800000000000004,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "889572200",
+      "height": 55.800000000000004,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "889572201",
+      "height": 55.800000000000004,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "889572202",
+      "height": 55.800000000000004,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "889572203",
+      "height": 55.800000000000004,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "889572204",
+      "height": 55.800000000000004,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "889572205",
+      "height": 55.800000000000004,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "889572208",
+      "height": 55.800000000000004,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "889572210",
+      "height": 55.800000000000004,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "889572212",
+      "height": 62,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "889572213",
+      "height": 62,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "889572214",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "yes"
+    },
+    {
+      "id": "889572215",
+      "height": 3.1,
+      "estimated_footprint": false,
+      "kind": "kindergarten"
+    },
+    {
+      "id": "889572216",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "891014005",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "kindergarten"
+    },
+    {
+      "id": "907022712",
+      "height": 71.3,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "910029088",
+      "height": 52.7,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "910029089",
+      "height": 52.7,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "910029090",
+      "height": 49.6,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "910029091",
+      "height": 46.5,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "910029092",
+      "height": 62,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "910029093",
+      "height": 62,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "910029094",
+      "height": 46.5,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "910029095",
+      "height": 62,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "910029096",
+      "height": 3.1,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1081106489",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1092517599",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "yes"
+    },
+    {
+      "id": "1092517600",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "university"
+    },
+    {
+      "id": "1092517612",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "yes"
+    },
+    {
+      "id": "1225469520",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1225469521",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "yes"
+    },
+    {
+      "id": "1225469522",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "kindergarten"
+    },
+    {
+      "id": "1225469537",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "public"
+    },
+    {
+      "id": "1225469538",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "public"
+    },
+    {
+      "id": "1225469547",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "hospital"
+    },
+    {
+      "id": "1225475042",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1225475043",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1225475045",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1225475050",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1225475052",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1225475053",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1225475055",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1225475056",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1225475057",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1225475058",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1225475059",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1225475060",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1225890654",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "school"
+    },
+    {
+      "id": "1225890655",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "kindergarten"
+    },
+    {
+      "id": "1225890680",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "public"
+    },
+    {
+      "id": "1225953482",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "yes"
+    },
+    {
+      "id": "1225953483",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "roof"
+    },
+    {
+      "id": "1226411015",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1226411016",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1226411019",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1226411040",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1479141433",
+      "height": 7.5,
+      "estimated_footprint": false,
+      "kind": "yes"
+    },
+    {
+      "id": "1479141436",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "commercial"
+    },
+    {
+      "id": "1489819704",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "school"
+    },
+    {
+      "id": "1489819705",
+      "height": 12,
+      "estimated_footprint": false,
+      "kind": "public"
+    },
+    {
+      "id": "1539075670",
+      "height": 48,
+      "estimated_footprint": false,
+      "kind": "apartments"
+    },
+    {
+      "id": "900001",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900003",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900004",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900005",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900006",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900007",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900008",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900013",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900018",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900026",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900028",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900030",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900031",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900032",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900033",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900034",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900035",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900036",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900039",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900043",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900047",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900048",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900049",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900050",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900051",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900052",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900054",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900055",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900056",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900057",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900059",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900061",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900062",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900063",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900064",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900065",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900066",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900067",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900068",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900073",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900074",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900075",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900077",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900078",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900080",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900084",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900085",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900087",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900088",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900089",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900090",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900092",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900094",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900095",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900099",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900100",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900102",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900103",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900104",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900105",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900107",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900110",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900111",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900113",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900115",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900116",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900118",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900119",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900120",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900121",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900123",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900125",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900126",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900128",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900129",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900131",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900132",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900133",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900135",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900138",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900139",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900140",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900141",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900142",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900143",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900144",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900148",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900149",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900150",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900151",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900152",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900153",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900154",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900158",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900159",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900165",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900167",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900168",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900170",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900171",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900172",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900173",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900174",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900175",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900177",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900178",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900181",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900183",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900184",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900185",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900187",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900188",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900189",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900190",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900192",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900193",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900194",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900196",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900201",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900202",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900203",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900204",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900205",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900207",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900208",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900209",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900210",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900212",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900213",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900214",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900215",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900217",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900218",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900219",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900221",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900222",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900224",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900225",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900227",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900228",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900229",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900230",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900231",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900232",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900235",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900236",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900237",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900240",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900242",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900243",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900244",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900245",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900247",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900249",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900250",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900251",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900252",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900253",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900254",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900256",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900261",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900266",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900267",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900271",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900273",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900275",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900277",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900279",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900280",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900281",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900286",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900288",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900290",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900292",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900293",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900295",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900296",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900297",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900298",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900300",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900301",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900302",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900304",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900305",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900306",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900307",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900308",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900309",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900310",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900315",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900317",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900320",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900321",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900322",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900323",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900325",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900326",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900327",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900328",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900330",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900333",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900334",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900335",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900336",
+      "height": 6.8,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900337",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900340",
+      "height": 9.5,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    },
+    {
+      "id": "900341",
+      "height": 12,
+      "estimated_footprint": true,
+      "kind": "satellite_lowrise"
+    }
+  ],
+  "glb_bytes": 49714588,
+  "gzip_bytes": 15778624,
+  "authored_glb_bytes": 101935952,
+  "transport": "Existing overview-only normal and position packing; editable Blender remains full precision",
+  "triangles": 1691742,
+  "transport_parts": [
+    {
+      "name": "bitgaram-overview",
+      "bytes": 24857852,
+      "gzip_bytes": 8095784
+    },
+    {
+      "name": "bitgaram-overview-part2",
+      "bytes": 24856736,
+      "gzip_bytes": 7682840
+    }
+  ]
+}
