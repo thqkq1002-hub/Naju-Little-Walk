@@ -1,0 +1,18 @@
+{
+  "protected_meshes": 10903,
+  "unchanged_geometry_and_transforms": true,
+  "protected_water_meshes": [
+    "lake_osm_334275809",
+    "lake_osm_534052766",
+    "lake_osm_1080671721",
+    "lake_osm_1080671722"
+  ],
+  "hill_and_active_routes_unchanged": true,
+  "world_unchanged": true,
+  "geometry_source_unchanged": true,
+  "saved_surface_matches_prepared_geometry": true,
+  "old_surface_triangles": 148654,
+  "new_surface_triangles": 1205,
+  "estimated_bank_height_and_width": true,
+  "visual_context_only": true
+}

@@ -1,6 +1,6 @@
 // Split an untextured static GLB into two concurrent transport parts without moving geometry.
 import fs from 'node:fs';import {gzipSync} from 'node:zlib';
-const path='public/models/bitgaram-overview.glb',raw=fs.readFileSync(path),n=raw.readUInt32LE(12),original=JSON.parse(raw.subarray(20,20+n)),bin=raw.subarray(28+n);
+const path=process.argv[2]??'public/models/bitgaram-overview.glb',raw=fs.readFileSync(path),n=raw.readUInt32LE(12),original=JSON.parse(raw.subarray(20,20+n)),bin=raw.subarray(28+n);
 if(original.images?.length||original.skins?.length||original.animations?.length)throw Error('Static overview only');
 const sets=[new Set(),new Set()],sizes=[0,0];
 original.meshes.map((m,i)=>({i,size:m.primitives.reduce((sum,p)=>sum+Object.values(p.attributes).reduce((s,id)=>s+original.bufferViews[original.accessors[id].bufferView].byteLength,0)+original.bufferViews[original.accessors[p.indices].bufferView].byteLength,0)})).sort((a,b)=>b.size-a.size).forEach(({i,size})=>{const part=sizes[0]<=sizes[1]?0:1;sets[part].add(i);sizes[part]+=size;});

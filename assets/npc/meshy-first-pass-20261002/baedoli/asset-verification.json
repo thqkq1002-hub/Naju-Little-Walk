@@ -1,0 +1,17 @@
+{
+  "character": "baedoli",
+  "glb_sha256": "6c727ee5cbd1cd553750c0a0b1abd9de52ccf87efaec06a06b79e64a363113a2",
+  "glb_bytes": 2531924,
+  "blend_bytes": 4617653,
+  "vertices": 8515,
+  "triangles": 11130,
+  "height_m": 1.2000000476837158,
+  "depth_m": 1.2202622890472412,
+  "materials": 1,
+  "embedded_atlas": [
+    2048,
+    2048
+  ],
+  "rigged": false,
+  "checks_passed": true
+}

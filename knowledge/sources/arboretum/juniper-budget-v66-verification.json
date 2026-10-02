@@ -1,0 +1,19 @@
+{
+  "source": "outputs\\quality-v65\\naju-arboretum-juniper-road-v65.blend",
+  "revision": "outputs\\quality-v66\\naju-arboretum-juniper-budget-v66.blend",
+  "protected_meshes": 15235,
+  "protected_geometry_matches_source": true,
+  "changed_objects": 492,
+  "counts": {
+    "column_near": 133,
+    "oval_near": 113,
+    "column_far": 133,
+    "oval_far": 113
+  },
+  "retained_placements_and_heights": true,
+  "canopies_within_original_envelope": true,
+  "paired_vegetation_instances": 6866,
+  "lod_transform_distance_variant_match": true,
+  "collision_layout_unchanged": true,
+  "world_sha256": "1a91517141fbaab8530fd9b0f0bbfe6e8d4b93a8b0a00adc862d0b89a27a2c39"
+}

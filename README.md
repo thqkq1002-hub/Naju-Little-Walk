@@ -1,12 +1,26 @@
-# 나주 산책 MVP
+# 나주 산책
 
 금성관 주변의 실제 OpenStreetMap 건물 윤곽과 도로 좌표를 **Blender 4.5 LTS**에서 입체로 제작하고, Blender에서 내보낸 GLB를 **Three.js**로 불러와 탐험합니다.
 
+## 태블릿으로 이용하기
+
+[나주 산책 운영 사이트](https://naju-little-walk.reinhardt5559.chatgpt.site/?place=bitgaram)에서 장소를 골라 시작합니다. 터치 기기는 가로 화면으로 이용하며 세로에서는 회전 안내가 표시됩니다. 전체 화면 버튼은 가능한 브라우저에서 가로 잠금도 요청합니다. iPad 등 미지원 환경에서는 기기를 직접 돌려 주세요.
+
+왼손 이동 버튼과 오른손 시선 버튼, 드래그로 산책합니다. 전체 보기에서는 두 손가락 또는 확대·축소 버튼을 이용합니다. ‘산책 안내와 화면 설정’에서 이동 버튼 표시와 화질을 조절할 수 있습니다. 태블릿 기본값은 ‘편하게 걷기’입니다.
+
+[UI 수정·검증과 다음 제작 계획](knowledge/tablet-ui-completion-2026-10-01.md)에 완료 항목과 후속 작업을 구분했습니다. 전체 검사: `node --experimental-strip-types --test tests/*.mjs`.
+
+[앱 마감 검토](knowledge/app-finish-review-2026-10-01.md): 가로 화면 준비 후 3D 코드 불러오기, 멈춘 장면의 렌더 중지, 모델 실패 재시도와 GPU 복구 안내를 보완했습니다. 안드로이드 태블릿을 주 대상으로 하며 실제 OS 회전·두 손 조작 검증은 별도로 남아 있습니다.
+
+[퀄리티 업그레이드 실행 계획](knowledge/QUALITY_UPGRADE_PLAN.md)에서 장소별 부족한 부분과 검증 기준을 관리합니다. 전망대 공원의 잎·가지와 거리별 수형을 새 Blender 수정본에 제작했고, 모델 정리 중 메뉴에 시간을 주는 로딩 분할과 식생 판정 캐시를 적용했습니다. 원본 지형·건축·산책 좌표는 유지했습니다. 큰 모델 검사 시 `node --experimental-strip-types --test --test-concurrency=1 tests/*.test.mjs`로 메모리 사용을 제한할 수 있습니다.
+
 ## Vercel 배포
+
+[빛가람 아파트 입면 제작 기록](knowledge/bitgaram-facades-quality-2026-10-01.md): 새 Blender 편집본에서 114동의 겹친 유리 띠를 개별 창 배열로 보완했다. 원본 건물·길·시설 형상은 보존했고, 창 치수·색과 위성 윤곽 추정은 구분해 기록했다.
 
 [Vercel 운영 주소](https://naju-little-walk.vercel.app/) · [드들강 산책](https://naju-little-walk.vercel.app/?place=deudeulgang)
 
-2026-09-21 첫 Vercel 배포는 검증한 `dist/client`의 정적 파일 45개를 직접 업로드했습니다. GitHub 자동 배포 연결은 설정하지 않았습니다.
+2026-09-21 첫 Vercel 배포는 검증한 정적 파일을 직접 업로드했습니다. 2026-10-02 기존 Vercel 프로젝트를 `reinhardt7177-lab/naju-little-walk` 저장소에 연결하고 운영 브랜치를 `codex/bitgaram-place-walks`로 설정했습니다. 이 브랜치에 push하면 Vercel이 자동으로 빌드하고 운영 주소에 반영합니다. [자동 배포 연결 기록](knowledge/vercel-auto-deployment-2026-10-02.md)을 참고하세요.
 
 `vercel.json`은 정적 웹 빌드(`npm run build`)와 배포 폴더(`dist/client`)를 지정합니다. GitHub `codex/bitgaram-place-walks` 브랜치의 최신 작업 또는 동일한 정적 빌드 결과를 배포합니다. GitHub 기본 `main` 브랜치는 변경하지 않습니다. 프레임워크 자동 감지 대신 일반 정적 프로젝트 설정을 사용합니다.
 
@@ -216,6 +230,20 @@ npm run build
 스크립트는 기존 결과가 있으면 중단합니다. 직접 수정한 `.blend`는 별도 이름으로 저장한 뒤, 생성본을 명시적으로 갱신할 때만 명령 끝에 `-- --replace --render`를 붙이세요. 블렌더에서 벽을 수정하면 웹 충돌 데이터도 같이 갱신해야 합니다.
 
 ## 출처
+
+드들강 수피·낮은 풀·숲 바닥 질감과 모든 탐험 장소의 제목 대비 보완은 [마감 기록](knowledge/deudeulgang-surfaces-quality-2026-10-01.md)에 있습니다. 현재 편집본은 `outputs/quality-v72/deudeulgang-surfaces-v72.blend`이며 이전 수정본을 보존했습니다.
+
+수목원 메타세쿼이아·활엽수의 사진 대조, 수형·수피 보완과 보호 검사는 [수형 제작 기록](knowledge/naju-arboretum-tree-quality-2026-10-02.md)에 정리합니다. 새 편집본은 `outputs/quality-v74/naju-arboretum-tree-crowns-v74.blend`이며, 첫 v73 후보는 잎 밀도 문제로 게시하지 않았습니다.
+
+빛가람 호수공원의 사각 셀 잔디를 지도 윤곽과 연결되는 면으로 교체한 내용은 [물가 경계 기록](knowledge/bitgaram-shore-quality-2026-10-02.md)에 있습니다. 새 편집본은 `outputs/quality-v75/bitgaram-shore-v75.blend`이며 기존 물·지형·산책로는 보존했습니다.
+
+나주 안내 캐릭터 4종의 Meshy 생성·Blender 채색 초안은 [NPC 제작 파일](assets/npc/meshy-first-pass-20261002/README.md)에 보관합니다. 앱 배치와 애니메이션은 아직 연결하지 않았으며, 조형 보정과 리깅이 남아 있습니다. [제작·비용·검증 기록](knowledge/naju-npc-meshy-production-2026-10-02.md)을 함께 확인하세요.
+
+드들강의 현장 사진 대조, 소나무 수관·강 건너 숲 보완, 기존 뿌리·보행 정보 보존은 [제작 기록](knowledge/deudeulgang-pine-quality-2026-10-01.md)에 정리했습니다. 새 Blender 수정본은 `outputs/quality-v71/deudeulgang-pine-crowns-v71.blend`입니다.
+
+빛가람 전망대의 실제 모노레일 평면선·돌미끄럼틀 사진과 보행 연결을 대조한 내용은 [접근로 정정 기록](knowledge/bitgaram-access-correction-2026-10-01.md)에 있습니다. 경사와 세부 치수의 추정 여부도 함께 기록했습니다.
+
+수목원 꽃밭·목재 놀이시설의 최근 보완, 새 Blender 수정본과 검증 범위는 [제작 기록](knowledge/naju-arboretum-garden-quality-2026-10-01.md)에 정리했습니다. [향나무길 제작 기록](knowledge/naju-arboretum-juniper-quality-2026-10-01.md)에는 수형 보강과 지도 도로 정렬, 교차로·보행 바닥 갱신을 기록했습니다. 안드로이드 태블릿의 실제 조작·성능 검증은 화면 크기 검사와 구분합니다.
 
 © [OpenStreetMap 기여자](https://www.openstreetmap.org/copyright), ODbL 1.0. 지도 원본과 변경한 좌표 데이터는 `knowledge/sources` 및 `public/city-world.json`에 보관합니다. 공개 배포 시 같은 출처 표기를 유지하세요.
 

@@ -1,0 +1,17 @@
+{
+  "character": "beodeuri",
+  "glb_sha256": "b87a1448a9d894cf569ef1398d4d23911691d7732e83d0b1b1178662c153bedd",
+  "glb_bytes": 2149224,
+  "blend_bytes": 4943771,
+  "vertices": 11931,
+  "triangles": 15405,
+  "height_m": 1.649999976158142,
+  "depth_m": 0.6139718294143677,
+  "materials": 1,
+  "embedded_atlas": [
+    2048,
+    2048
+  ],
+  "rigged": false,
+  "checks_passed": true
+}

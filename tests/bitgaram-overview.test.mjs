@@ -35,6 +35,23 @@ test('Blender roof and wall palette survives both GLB transport parts',()=>{
  assert.ok(palette.walls.filter(has).length>=4);assert.ok(palette.roofs.filter(has).length>=4);assert.ok(has(palette.water));
  const m=JSON.parse(read('knowledge/sources/bitgaram/district-color-metrics.json'));assert.ok(m.counts.building_shells>400&&m.counts.roof_faces>400);assert.ok(m.counts.sports_courts>10);
 });
+test('apartment window finishes retain outward faces and compact normals in transport',()=>{
+ const seen=new Set();let panes=0,frames=0;
+ for(const name of ['bitgaram-overview','bitgaram-overview-part2']){
+  const raw=read(`public/models/${name}.glb`),g=JSON.parse(raw.subarray(20,20+raw.readUInt32LE(12)));
+  for(const mesh of g.meshes)for(const p of mesh.primitives){
+   const material=g.materials[p.material];
+   if(!material.name.startsWith('Apartment_'))continue;
+   seen.add(material.name);assert.equal(material.doubleSided??false,false);
+   const normals=g.accessors[p.attributes.NORMAL];assert.equal(normals.componentType,5120);assert.equal(normals.normalized,true);
+   const triangles=g.accessors[p.indices].count/3;
+   if(material.name.startsWith('Apartment_glass_stack_'))panes+=triangles;else frames+=triangles;
+  }
+ }
+ const verification=JSON.parse(read('knowledge/sources/bitgaram/district-facade-v60-verification.json'));
+ assert.equal(seen.size,4);assert.equal(panes,verification.outward_window_faces*2);assert.equal(frames,verification.frame_faces*2);
+ assert.equal(verification.all_windows_outward,true);assert.equal(verification.protected_geometry_matches_source,true);
+});
 test('parked cars stay within mapped parking polygons',()=>{
  const m=JSON.parse(read('knowledge/sources/bitgaram/district-street-detail-metrics.json'));
  const sources=new Map(JSON.parse(read('knowledge/sources/bitgaram/district-2026-09-20.json')).ways.map(w=>[w.id,w]));

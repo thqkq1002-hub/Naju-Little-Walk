@@ -1,0 +1,11 @@
+{
+  "protected_meshes": 13345,
+  "tree_objects": 2382,
+  "tree_pairs": 1191,
+  "shared_prototypes": 18,
+  "wood_preserved": true,
+  "transforms_preserved": true,
+  "foliage_envelope_preserved": true,
+  "world_unchanged": true,
+  "all_prototypes_lower_triangle_count": true
+}

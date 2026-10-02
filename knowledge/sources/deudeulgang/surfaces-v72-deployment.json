@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-01",
+  "phase": "deudeulgang-surfaces-v72",
+  "version_number": 63,
+  "version_id": "appgprj_6a9ec6467ab88191b8aa7ee65f066fd1~appgver_3023062a926c819184968d81bebd095e",
+  "implementation_commit": "e7b870b",
+  "source_commit": "0b4e309e68480fd7dc41e643903ab10fb38581fb",
+  "deployment": {
+    "id": "appgdep_6abe73fdc8608191af4e13b48d35eda8",
+    "project_id": "appgprj_6a9ec6467ab88191b8aa7ee65f066fd1",
+    "title": "나주 산책",
+    "version_id": "appgprj_6a9ec6467ab88191b8aa7ee65f066fd1~appgver_3023062a926c819184968d81bebd095e",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://naju-little-walk.reinhardt5559.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6a9ec6467ab88191b8aa7ee65f066fd1",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-01T14:54:21.363122+00:00"
+  },
+  "checks": {
+    "world_tests_passed": 77,
+    "typescript": "passed",
+    "build": "passed",
+    "production_scene": "loaded; pine path screenshot visually reviewed",
+    "console_errors_and_warnings": [],
+    "desktop_viewports": [
+      [
+        1024,
+        768
+      ],
+      [
+        844,
+        390
+      ]
+    ],
+    "actual_android_device_verified": false
+  },
+  "screenshot": "outputs/quality-v72/surfaces-live-v63.png",
+  "full_quality_plan_complete": false
+}

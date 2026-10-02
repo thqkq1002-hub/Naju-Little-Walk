@@ -1,0 +1,14 @@
+{
+  "before": {
+    "glb_bytes": 17281100,
+    "gzip_bytes": 9605054
+  },
+  "after": {
+    "glb_bytes": 15049316,
+    "gzip_bytes": 9476315,
+    "shared_geometry_triangles": 302862,
+    "mesh_count": 565,
+    "image_count": 5
+  },
+  "world_unchanged": true
+}

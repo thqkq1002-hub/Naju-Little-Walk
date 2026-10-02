@@ -2,7 +2,7 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/postcss';
 import { defineConfig } from 'vite';
 import { fileURLToPath } from 'node:url';
-import { readFileSync, readdirSync, unlinkSync } from 'node:fs';
+import { readFileSync, readdirSync, unlinkSync, existsSync } from 'node:fs';
 import { gunzipSync } from 'node:zlib';
 
 // A shared React page with a plain static production entry avoids the Windows
@@ -15,9 +15,11 @@ export default defineConfig({
       for(const name of readdirSync(new URL('./dist/client/models/',import.meta.url)).filter(n=>n.endsWith('.glb.gz'))){
       const raw=new URL('./dist/client/models/'+name.slice(0,-3),import.meta.url);
       const compressed=new URL('./dist/client/models/'+name,import.meta.url);
-      if(!gunzipSync(readFileSync(compressed)).equals(readFileSync(raw)))throw new Error('Compressed Blender model is stale; regenerate it before publishing.');
+      const decoded=gunzipSync(readFileSync(compressed));
+      if(decoded.length<12 || decoded.readUInt32LE(0)!==0x46546c67 || decoded.readUInt32LE(4)!==2 || decoded.readUInt32LE(8)!==decoded.length)throw new Error('Invalid compressed Blender GLB.');
+      if(existsSync(raw)&&!decoded.equals(readFileSync(raw)))throw new Error('Compressed Blender model is stale; regenerate it before publishing.');
       // Only omit the redundant build copy. The original GLB stays in public/.
-      unlinkSync(raw);
+      if(existsSync(raw))unlinkSync(raw);
       }
     },
   }],
@@ -26,5 +28,5 @@ export default defineConfig({
   // this site's entry, not unrelated HTML under work/, for dev dependencies.
   optimizeDeps: { entries: ['index.html'] },
   css: { postcss: { plugins: [tailwindcss()] } },
-  build: { outDir: 'dist/client', emptyOutDir: true, minify: false },
+  build: { outDir: 'dist/client', emptyOutDir: true, minify: true },
 });

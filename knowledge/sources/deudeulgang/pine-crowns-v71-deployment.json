@@ -1,0 +1,50 @@
+{
+  "deployment": {
+    "id": "appgdep_6abe6ade88bc8191bc801cd8ca156d97",
+    "project_id": "appgprj_6a9ec6467ab88191b8aa7ee65f066fd1",
+    "title": "나주 산책",
+    "version_id": "appgprj_6a9ec6467ab88191b8aa7ee65f066fd1~appgver_325b122f4c248191ba88c9fe8e6293a3",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://naju-little-walk.reinhardt5559.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6a9ec6467ab88191b8aa7ee65f066fd1",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-01T14:15:25.155222+00:00"
+  },
+  "saved": {
+    "id": "appgprj_6a9ec6467ab88191b8aa7ee65f066fd1~appgver_325b122f4c248191ba88c9fe8e6293a3",
+    "project_id": "appgprj_6a9ec6467ab88191b8aa7ee65f066fd1",
+    "version_number": 62,
+    "source": {
+      "commit_sha": "fc549d47ff66717feaefcb47df105d840de885f5"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000aea881f89a933975ced943d8",
+      "content_hash": "sha256:2c69c958f20b201e2c758ace5752e794dbfcf5d9a4cb0b2c0ed7ceeb63a79bba",
+      "size_bytes": 123381760,
+      "file_count": 49
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "implementation_commit": "f83ee8b",
+  "protected_models": 1135,
+  "walk_tests": {
+    "passed": 77,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "build": "passed",
+  "full_quality_plan_complete": false,
+  "operating_screen_check": {
+    "url": "https://naju-little-walk.reinhardt5559.chatgpt.site/?place=deudeulgang&at=pine-path&v=62",
+    "scene_loaded": true,
+    "console_warnings_or_errors": 0,
+    "screenshot": "outputs/quality-v71/pine-live-v62.png",
+    "scope": "One in-app browser walking view, not actual Android hardware testing"
+  }
+}

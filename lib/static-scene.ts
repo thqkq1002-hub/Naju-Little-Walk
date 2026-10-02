@@ -1,12 +1,16 @@
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 
+const vegetationBatches=new WeakMap<THREE.Object3D,THREE.InstancedMesh[]>();
+
 /** Keep Blender's repeated plant geometry shared, with local bounds for culling. */
 export function instanceAuthoredVegetation(root: THREE.Object3D): number {
   root.updateMatrixWorld(true);
   const inverseRoot=new THREE.Matrix4().copy(root.matrixWorld).invert();
   const groups=new Map<string,{mesh:THREE.Mesh;matrix:THREE.Matrix4;lod:string;cell:number;radius:number}[]>();
+  const existingDetail:THREE.InstancedMesh[]=[];
   root.traverse(object=>{
+    if(object instanceof THREE.InstancedMesh&&object.userData.vegetation_lod){existingDetail.push(object);return;}
     if (!(object instanceof THREE.Mesh) || object instanceof THREE.InstancedMesh || object instanceof THREE.SkinnedMesh || Array.isArray(object.material) || object.material.transparent || object.morphTargetInfluences?.length) return;
     let tagged=false,lod='',radius=80;
     for(let p:THREE.Object3D|null=object;p;p=p.parent){
@@ -24,6 +28,7 @@ export function instanceAuthoredVegetation(root: THREE.Object3D): number {
     const group=groups.get(key)??[];group.push({mesh:object,matrix,lod,cell,radius});groups.set(key,group);
   });
   let removed=0;
+  const detailBatches:THREE.InstancedMesh[]=existingDetail;
   for(const group of groups.values()){
     if(group.length<2&&!group[0].lod)continue;
     const first=group[0].mesh;
@@ -34,28 +39,32 @@ export function instanceAuthoredVegetation(root: THREE.Object3D): number {
       batch.userData.vegetation_lod=lod;batch.userData.vegetation_distance=radius;
       batch.userData.vegetation_center=new THREE.Vector3((Math.floor(p.x/cell)+.5)*cell,0,(Math.floor(p.z/cell)+.5)*cell);
       batch.visible=lod==='far';
+      detailBatches.push(batch);
     }
     group.forEach(({mesh,matrix},index)=>{batch.setMatrixAt(index,matrix);mesh.removeFromParent();});
     batch.instanceMatrix.needsUpdate=true;batch.computeBoundingBox();batch.computeBoundingSphere();
     root.add(batch);removed+=group.length-1;
   }
+  vegetationBatches.set(root,detailBatches);
   return removed;
 }
 
 /** Matching near/far cells switch together, including while changing to the aerial view. */
 export function updateVegetationDetail(root:THREE.Object3D,cameraWorld:THREE.Vector3):boolean {
+  let batches=vegetationBatches.get(root);
+  if(!batches){batches=[];root.traverse(o=>{if(o instanceof THREE.InstancedMesh&&o.userData.vegetation_lod)batches!.push(o);});vegetationBatches.set(root,batches);}
+  if(!batches.length)return false;
   const local=root.worldToLocal(cameraWorld.clone());let changed=false;
-  root.traverse(o=>{
-    if(!(o instanceof THREE.InstancedMesh)||!o.userData.vegetation_lod)return;
+  for(const o of batches){
     const near=local.distanceTo(o.userData.vegetation_center)<o.userData.vegetation_distance;
     const visible=o.userData.vegetation_lod==='near'?near:!near;
     if(o.visible!==visible){o.visible=visible;changed=true;}
-  });
+  }
   return changed;
 }
 
 /** Batch static opaque details for rendering; the editable Blender file stays separate. */
-export function batchStaticScene(root: THREE.Object3D): { before: number; after: number } {
+function* sceneBatches(root: THREE.Object3D): Generator<{completed:number;total:number},{before:number;after:number}> {
   const instancedRemoved=instanceAuthoredVegetation(root);
   root.updateMatrixWorld(true);
   const inverseRoot=new THREE.Matrix4().copy(root.matrixWorld).invert();
@@ -75,11 +84,17 @@ export function batchStaticScene(root: THREE.Object3D): { before: number; after:
     group.push(object); groups.set(key,group);
   });
   const retired=new Set<THREE.BufferGeometry>();
+  const pending:THREE.BufferGeometry[]=[];
+  const total=Array.from(groups.values()).reduce((sum,meshes)=>sum+(meshes.length>=12?meshes.length:0),0);
+  let completed=0;
   let after=before;
+  try {
+  yield {completed,total};
   for (const meshes of groups.values()) {
     if (meshes.length<12) continue;
-    const transformed=meshes.map(mesh=>{
+    for(const mesh of meshes){
       const geometry=mesh.geometry.clone();
+      pending.push(geometry);
       // GLB quantization stores local coordinates in integer attributes. Applying
       // world transforms to those arrays wraps negative positions and truncates
       // fractional values; decode before baking the transform into a merged mesh.
@@ -89,10 +104,11 @@ export function batchStaticScene(root: THREE.Object3D): { before: number; after:
         for(let i=0;i<attribute.count;i++)for(let c=0;c<attribute.itemSize;c++)values[i*attribute.itemSize+c]=attribute.getComponent(i,c);
         geometry.setAttribute(name,new THREE.BufferAttribute(values,attribute.itemSize));
       }
-      return geometry.applyMatrix4(new THREE.Matrix4().multiplyMatrices(inverseRoot,mesh.matrixWorld));
-    });
-    const merged=mergeGeometries(transformed,false);
-    transformed.forEach(geometry=>geometry.dispose());
+      geometry.applyMatrix4(new THREE.Matrix4().multiplyMatrices(inverseRoot,mesh.matrixWorld));
+      yield {completed:++completed,total};
+    }
+    const merged=mergeGeometries(pending,false);
+    pending.forEach(geometry=>geometry.dispose());pending.length=0;
     if (!merged) continue;
     merged.computeBoundingSphere();
     const batch=new THREE.Mesh(merged,meshes[0].material);
@@ -102,7 +118,38 @@ export function batchStaticScene(root: THREE.Object3D): { before: number; after:
     for(const mesh of meshes) { mesh.removeFromParent(); retired.add(mesh.geometry); }
     root.add(batch); after-=meshes.length-1;
   }
+  return {before:before+instancedRemoved,after};
+  } finally {
+  pending.forEach(geometry=>geometry.dispose());
   root.traverse(object=>{ if(object instanceof THREE.Mesh) retired.delete(object.geometry); });
   retired.forEach(geometry=>geometry.dispose());
-  return {before:before+instancedRemoved,after};
+  }
+}
+
+export function batchStaticScene(root: THREE.Object3D): {before:number;after:number} {
+  const work=sceneBatches(root);let step=work.next();
+  while(!step.done)step=work.next();
+  return step.value;
+}
+
+/** Same authored transforms and materials, with event-loop time for menus and cancellation. */
+export async function batchStaticSceneInSlices(root:THREE.Object3D,options:{
+  signal?:AbortSignal;budgetMs?:number;onProgress?:(completed:number,total:number)=>void;
+  yieldControl?:()=>Promise<void>;
+}={}):Promise<{before:number;after:number}> {
+  const yieldControl=options.yieldControl??(()=>new Promise<void>(resolve=>setTimeout(resolve,0)));
+  const work=sceneBatches(root);let finished=false;
+  try {
+    options.signal?.throwIfAborted();await yieldControl();options.signal?.throwIfAborted();
+    let deadline=performance.now()+(options.budgetMs??6),step=work.next();
+    while(!step.done){
+      options.signal?.throwIfAborted();
+      if(performance.now()>=deadline){
+        options.onProgress?.(step.value.completed,step.value.total);
+        await yieldControl();options.signal?.throwIfAborted();deadline=performance.now()+(options.budgetMs??6);
+      }
+      step=work.next();
+    }
+    finished=true;options.onProgress?.(1,1);return step.value;
+  } finally {if(!finished)work.return({before:0,after:0});}
 }

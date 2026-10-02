@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-01",
+  "environment": "Codex in-app desktop browser; viewport 1024x768, display quality balanced; not an Android/iPad hardware result",
+  "state": "{\"destination\":\"빛가람 전망대 주변\",\"mode\":\"walking\",\"position\":{\"x\":0,\"z\":21},\"source\":\"© OpenStreetMap contributors, ODbL 1.0\",\"renderDiagnostics\":{\"sampleFrames\":120,\"meanIntervalMs\":26.667499999999805,\"p95IntervalMs\":83.29999999998836,\"drawCalls\":268,\"triangles\":871278,\"pixelRatio\":1.0000000149011612,\"quality\":\"balanced\",\"scope\":\"Recent visible walking frame intervals in this browser; not a GPU-only measurement or hardware certification.\"}}",
+  "checks": [
+    "1024x768 overview and walk UI",
+    "844x390 movement/look/scene links fit",
+    "Help and quality settings open and close",
+    "Near/far vegetation visible in overview and walk",
+    "No console errors observed"
+  ]
+}

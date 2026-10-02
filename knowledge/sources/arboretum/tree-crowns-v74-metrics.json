@@ -1,0 +1,25 @@
+{
+  "before": {
+    "glb_bytes": 21509692,
+    "gzip_bytes": 9725479,
+    "shared_geometry_triangles": 272942,
+    "trees_if_all_near_or_far": {
+      "near": 17012754,
+      "far": 5706522
+    }
+  },
+  "after": {
+    "glb_bytes": 24306332,
+    "gzip_bytes": 11472045,
+    "shared_geometry_triangles": 315860,
+    "mesh_count": 2068,
+    "image_count": 19,
+    "trees_if_all_near_or_far": {
+      "near": 8362602,
+      "far": 4000338
+    }
+  },
+  "tree_pairs": 1191,
+  "shared_tree_prototypes": 18,
+  "world_unchanged": true
+}

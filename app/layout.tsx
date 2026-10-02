@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './tablet-ui.css';
 
 export const metadata: Metadata = {
-  title: '나주 산책 — 금성관과 다시초등학교',
-  description: '실제 지도와 사진을 참고해 블렌더로 만든 금성관과 다시초등학교를 걸어보세요. 높이와 세부 치수는 추정한 체험 모형입니다.',
+  title: '나주 산책',
+  description: '나주의 골목과 강변, 빛가람 호수공원과 수목원을 3D로 산책합니다. 실제 지도와 사진을 참고한 체험 모형입니다.',
 };
 
 export default function RootLayout({

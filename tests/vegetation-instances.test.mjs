@@ -54,3 +54,19 @@ test('hidden, mirrored, and transparent plants keep their original rendering sem
  batchStaticScene(root);
  for(const [m,p] of parents)assert.equal(m.parent,p);
 });
+
+test('detail updates use cached plant batches and still work after repeated scene preparation',()=>{
+ const root=new THREE.Group(),geometry=new THREE.BoxGeometry(),material=new THREE.MeshStandardMaterial();
+ for(const lod of ['near','far'])for(const x of [5,10]){
+  const mesh=new THREE.Mesh(geometry,material);mesh.position.set(x,0,5);mesh.userData={authored_vegetation:true,vegetation_lod:lod,vegetation_distance:64};root.add(mesh);
+ }
+ batchStaticScene(root);batchStaticScene(root);
+ const traverse=root.traverse;root.traverse=()=>{throw Error('Walking frames must not traverse the full scene for plant LOD');};
+ try {
+  assert.equal(updateVegetationDetail(root,new THREE.Vector3(12,2,12)),true);
+  assert.ok(root.children.filter(o=>o.isInstancedMesh&&o.visible).every(o=>o.userData.vegetation_lod==='near'));
+  assert.equal(updateVegetationDetail(root,new THREE.Vector3(12,2,12)),false);
+  assert.equal(updateVegetationDetail(root,new THREE.Vector3(400,200,400)),true);
+  assert.ok(root.children.filter(o=>o.isInstancedMesh&&o.visible).every(o=>o.userData.vegetation_lod==='far'));
+ } finally {root.traverse=traverse;}
+});

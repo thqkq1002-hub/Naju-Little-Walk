@@ -59,17 +59,18 @@ test('park aerial roof has an open oculus and physical supports block walking',(
   assert.ok(shell&&shell.collision,'Exhibition shell retains a physical boundary');
 });
 
-test('Bitgaram timber guards are physical and the exhibition garden is open above',()=>{
+test('Bitgaram slide gallery and monorail boundaries are physical and the roof garden stays open',()=>{
   const w=JSON.parse(fs.readFileSync(new URL('../public/bitgaram-park-world.json',import.meta.url),'utf8'));
-  const guards=w.solids.filter(s=>s.name==='timber_walk_guard');
-  assert.ok(guards.length>200);
+  const names=['slide_gallery_outer_guard','stone_slide_safety_boundary','monorail_guideway_boundary'];
+  const guards=w.solids.filter(s=>names.includes(s.name));
+  assert.ok(guards.length>140);
   const obstacles=worldObstacles(w.solids);
   for(const guard of guards){
     const p=solidCollider(guard),x=p.reduce((s,a)=>s+a[0],0)/p.length,z=p.reduce((s,a)=>s+a[1],0)/p.length;
     assert.ok(blocksWalking(x,z,guard.position[1]+.05,obstacles));
   }
   const {scene}=readModel(new URL('../public/models/bitgaram-park.glb',import.meta.url));
-  assert.equal(scene.getObjectByName('timber_walk_guard'),undefined,'Collision proxies are not visible solid walls');
+  for(const name of names)assert.equal(scene.getObjectByName(name),undefined,'Collision proxies are not visible solid walls');
   const ray=new THREE.Raycaster(new THREE.Vector3(0,20,130),new THREE.Vector3(0,-1,0),0,15);
   assert.equal(ray.intersectObject(scene.getObjectByName('photo_exhibition_sloped_shell'),true).length,0,'Old closed roof removed');
   assert.ok(ray.intersectObject(scene.getObjectByName('context_roof_garden_paving'),true).length,'Roof terrace floor remains');
@@ -90,9 +91,10 @@ test('Bitgaram signs load valid scenes and preserve elevated park spawn',()=>{
     for(const link of w.sceneLinks) assert.ok(destinations[link.target],link.target);
     if(id==='bitgaram-park'){
       assert.equal(a.height,16);
-      const path=Array.from({length:121},(_,i)=>[12+6*Math.sin(i/35),16+i*.68]);
-      const end=walkRoute(w,[[a.x,a.z],...path],16);
-      assert.ok(end.height<5,'Path descends to the lower rest area');
+      const access=JSON.parse(fs.readFileSync(new URL('../knowledge/sources/bitgaram/access-v69.json',import.meta.url)));
+      const path=access.stairs_route.map(p=>[p[0],p[2]]);
+      const end=walkRoute(w,[[a.x,a.z],[0,12],[path[0][0],12],...path],16);
+      assert.ok(Math.abs(end.height-6.22)<.08,'Stairs reach the mapped lower exhibition terrace');
     } else if(id==='bitgaram-observatory'){
       // Empty room: former furniture and central core positions are now walkable.
       walkRoute(w,[[0,7],[6,7],[6,2],[10,0],[7,-8],[-5,-8],[-5,-4],[-10,0],[-6,0],[-6,7],[0,7]]);

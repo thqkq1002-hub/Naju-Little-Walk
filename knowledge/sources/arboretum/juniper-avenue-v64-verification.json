@@ -1,0 +1,12 @@
+{
+  "source": "outputs\\quality-v62\\naju-arboretum-junipers-v62.blend",
+  "revision": "outputs\\quality-v64\\naju-arboretum-juniper-avenue-v64.blend",
+  "preserved_mesh_geometry": 15718,
+  "retained_object_matrices": 15536,
+  "moved_avenue_trees": 91,
+  "updated_matching_colliders": 91,
+  "removed_verified_ghosts": 5,
+  "upward_road_markings": 9,
+  "paired_vegetation_instances": 6866,
+  "other_world_state_unchanged": true
+}

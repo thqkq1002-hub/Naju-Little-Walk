@@ -1,0 +1,25 @@
+// Install only the reviewed v70 model; keep its predecessor and the world intact.
+import fs from 'node:fs';
+import path from 'node:path';
+import zlib from 'node:zlib';
+const surfaces=process.argv.includes('--surfaces');
+const revision=surfaces?'v72':process.argv.includes('--fine')?'v71':'v70',label=surfaces?'surfaces':'pine-crowns';
+const root=path.resolve(import.meta.dirname,'..'),file=path.join(root,`outputs/quality-${revision}/deudeulgang-${revision}.glb`);
+const verify=JSON.parse(fs.readFileSync(path.join(root,`knowledge/sources/deudeulgang/${label}-${revision}-verification.json`)));
+if(!verify.world_unchanged||!verify.wood_and_roots_exact)throw Error('Model preservation gate failed');
+let raw=fs.readFileSync(file),n=raw.readUInt32LE(12),d=JSON.parse(raw.subarray(20,20+n)),tail=raw.subarray(20+n);
+const m=d.materials.find(m=>m.name==='Pine_needles_alpha_clip');
+m.alphaMode='MASK';m.alphaCutoff=.48;m.doubleSided=true;
+const text=Buffer.from(JSON.stringify(d)),json=Buffer.concat([text,Buffer.alloc((4-text.length%4)%4,32)]);
+raw=Buffer.alloc(20+json.length+tail.length);raw.writeUInt32LE(0x46546c67);raw.writeUInt32LE(2,4);raw.writeUInt32LE(raw.length,8);raw.writeUInt32LE(json.length,12);raw.writeUInt32LE(0x4e4f534a,16);json.copy(raw,20);tail.copy(raw,20+json.length);
+const packed=zlib.gzipSync(raw,{level:9}),publicFile=path.join(root,'public/models/deudeulgang.glb');
+const backup=path.join(root,`work/deudeulgang-before-${revision}`);
+if(fs.existsSync(backup))throw Error('Previous model backup exists; inspect before reinstalling');
+fs.mkdirSync(backup);
+for(const suffix of ['', '.gz'])fs.copyFileSync(publicFile+suffix,path.join(backup,'deudeulgang.glb'+suffix));
+const before={glb_bytes:fs.statSync(publicFile).size,gzip_bytes:fs.statSync(publicFile+'.gz').size};
+fs.writeFileSync(file,raw);fs.writeFileSync(publicFile,raw);fs.writeFileSync(publicFile+'.gz',packed);
+const triangles=d.meshes.reduce((sum,m)=>sum+m.primitives.reduce((s,p)=>s+(p.indices===undefined?d.accessors[p.attributes.POSITION].count:d.accessors[p.indices].count)/3,0),0);
+const metrics={before,after:{glb_bytes:raw.length,gzip_bytes:packed.length,shared_geometry_triangles:triangles,mesh_count:d.meshes.length,image_count:d.images.length},world_unchanged:true};
+fs.writeFileSync(path.join(root,`knowledge/sources/deudeulgang/${label}-${revision}-metrics.json`),JSON.stringify(metrics,null,2));
+console.log(JSON.stringify(metrics));

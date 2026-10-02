@@ -1,14 +1,14 @@
 export const destinations = {
   deudeulgang: {
     coordinates:{lat:35.0185,lon:126.85475},
-    name:'드들강 솔밭유원지',area:'드들강 노송과 강변 산책',worldUrl:'/deudeulgang-world.json?v=grove-detail-54',modelUrl:'/models/deudeulgang.glb.gz?v=wooded-background-55',
+    name:'드들강 솔밭유원지',area:'드들강 노송과 강변 산책',worldUrl:'/deudeulgang-world.json?v=grove-detail-54',modelUrl:'/models/deudeulgang.glb.gz?v=surfaces-v72-20261001',
     heading:['솔향기 따라서,','드들강 한 걸음.'],introduction:['소나무 숲길과 노래비, 강변을 걸어보세요.','위성사진과 현장 사진을 참고해 만들었습니다.'],
     sourceUrl:'https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003156492',sourceLabel:'현장 사진 · Esri 위성사진 · OSM 참고',
     limitation:'실제 보행로·노래비 위치 참고 · 수형·높이·시설 세부 추정',overview:{center:[-35,40],radius:380,elevation:.83,angle:-.65},
   },
   'naju-arboretum': {
     coordinates:{lat:35.00648,lon:126.8256689},
-    name:'나주수목원 · 산림연구원',area:'나주수목원 산책',worldUrl:'/naju-arboretum-world.json?v=palette-20260920',modelUrl:'/models/naju-arboretum.glb.gz?v=palette-20260920',
+    name:'나주수목원 · 산림연구원',area:'나주수목원 산책',worldUrl:'/naju-arboretum-world.json?v=juniper-v66-20261001',modelUrl:'/models/naju-arboretum.glb.gz?v=tree-crowns-v74-20261002',
     heading:['나무가 만든 길,','나주수목원.'],introduction:['메타세쿼이아길과 정원을 걸어보세요.','공식 안내도와 항공사진을 참고한 기초 재현입니다.'],
     sourceUrl:'https://jnforest.jeonnam.go.kr/content/view.do?menuCd=FOREST007006',sourceLabel:'공식 안내 · 현장 사진 · Esri 위성영상 참고',
     limitation:'위성 윤곽 참고 · 촬영일 미확인 · 높이·개별 식재 추정',overview:{center:[-230,-40],radius:550,elevation:.9,angle:-.65},
@@ -29,14 +29,14 @@ export const destinations = {
   },
   bitgaram: {
     coordinates:{lat:35.016925,lon:126.790447},
-    name:'빛가람 · 장소 선택',area:'빛가람 안내 지도',worldUrl:'/bitgaram-park-world.json?v=palette-20260920',modelUrl:'/models/bitgaram-park.glb.gz?v=palette-20260920',
+    name:'빛가람 · 장소 선택',area:'빛가람 안내 지도',worldUrl:'/bitgaram-park-world.json?v=access-v69-20261001',modelUrl:'/models/bitgaram-park.glb.gz?v=shore-v75-20261002',
     heading:['빛가람에서,','머물고 싶은 곳.'],introduction:['푯말을 눌러 장소별 산책으로 들어가세요.','전망대 주변과 두 기관의 1층을 따로 둘러봅니다.'],
     sourceUrl:'https://www.openstreetmap.org/way/656235304',sourceLabel:'OpenStreetMap · 현장 사진 참고',
     limitation:'실제 지도 윤곽 · 높이와 실내 치수 추정',overview:{center:[0,0],radius:380,elevation:.9,angle:.25},
   },
   'bitgaram-park': {
     coordinates:{lat:35.016925,lon:126.790447},parent:'bitgaram',
-    name:'빛가람 전망대 주변',area:'전망대 앞 쉼터와 산책로',worldUrl:'/bitgaram-park-world.json?v=palette-20260920',modelUrl:'/models/bitgaram-park.glb.gz?v=palette-20260920',
+    name:'빛가람 전망대 주변',area:'전망대 앞 쉼터와 산책로',worldUrl:'/bitgaram-park-world.json?v=access-v69-20261001',modelUrl:'/models/bitgaram-park.glb.gz?v=shore-v75-20261002',
     heading:['나무 사이로,','빛가람 한 걸음.'],introduction:['전망대 주변의 쉼터와 접근 산책로를 걸어보세요.','전망실 푯말을 누르면 내부로 들어갑니다.'],
     sourceUrl:'https://www.youtube.com/watch?v=tQJsYaXqsIg',sourceLabel:'현장 탐방 영상 참고',
     limitation:'OSM·위성사진 참고 · 지형 높이·세부 추정',overview:{center:[0,35],radius:360,elevation:.8,angle:.4},

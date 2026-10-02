@@ -1,0 +1,17 @@
+{
+  "character": "hongdoli",
+  "glb_sha256": "9da99d8671efbc4713183caf730a621feb1b2bf555ee43e3c76a4065d78910b0",
+  "glb_bytes": 1980076,
+  "blend_bytes": 4454635,
+  "vertices": 10025,
+  "triangles": 12764,
+  "height_m": 1.0499999523162842,
+  "depth_m": 0.3281898498535156,
+  "materials": 1,
+  "embedded_atlas": [
+    2048,
+    2048
+  ],
+  "rigged": false,
+  "checks_passed": true
+}

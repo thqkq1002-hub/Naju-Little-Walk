@@ -1,0 +1,17 @@
+{
+  "character": "teacher",
+  "glb_sha256": "02519d1d464ca42aa6f621d67af0a2ef1ab58daa5c417cb4fd53aee348dcc5ed",
+  "glb_bytes": 2144848,
+  "blend_bytes": 4994120,
+  "vertices": 12815,
+  "triangles": 14943,
+  "height_m": 1.7200000286102295,
+  "depth_m": 0.3296714872121811,
+  "materials": 1,
+  "embedded_atlas": [
+    2048,
+    2048
+  ],
+  "rigged": false,
+  "checks_passed": true
+}

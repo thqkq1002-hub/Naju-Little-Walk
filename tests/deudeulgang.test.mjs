@@ -45,6 +45,16 @@ test('pine canopy has paired authored LOD, alpha-tested needles and exact gzip t
  const material=d.materials.find(m=>m.name==='Pine_needles_alpha_clip');
  assert.equal(material.alphaMode,'MASK');assert.ok(material.pbrMetallicRoughness.baseColorTexture);
  for(const n of near){assert.equal(n.extras.authored_vegetation,true);assert.equal(n.extras.vegetation_lod,'near');}
+ // Distant alpha minification must not remove the whole needle-bearing crown.
+ const crownIndex=d.materials.findIndex(m=>m.name==='Pine_layered_crown_opaque_v70');
+ assert.ok(crownIndex>=0);assert.ok(!d.materials[crownIndex].alphaMode||d.materials[crownIndex].alphaMode==='OPAQUE');
+ const count=n=>d.meshes[n.mesh].primitives.reduce((sum,p)=>sum+d.accessors[p.indices].count/3,0);
+ for(let i=0;i<near.length;i++){
+  const a=near.find(n=>n.name==='old_pine_'+i),b=far.find(n=>n.name==='distant_pine_'+i);
+  for(const key of ['translation','rotation','scale'])assert.deepEqual(a[key],b[key],`Mismatched distance pair ${i}: ${key}`);
+  for(const n of [a,b])assert.ok(d.meshes[n.mesh].primitives.some(p=>p.material===crownIndex));
+  assert.ok(count(b)<count(a)*.7,'Distant trees must reduce geometry');
+ }
 });
 
 test('distant wooded background stays opaque and outside the walking shadow pass',()=>{
