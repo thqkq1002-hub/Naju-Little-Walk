@@ -52,7 +52,7 @@ export default function NpcConversation({name,destinationId,onGesture,onClose}:{
     <header><div><span>지역 안내</span><strong>{name}</strong></div><div><button onClick={()=>{stop();setSound(v=>!v);onGesture('Idle');}} aria-label={sound?'음성 끄기':'음성 켜기'} aria-pressed={sound}>{sound?<Volume2 size={19}/>:<VolumeX size={19}/>}</button><button onClick={close} aria-label="대화 닫기"><X size={19}/></button></div></header>
     <p className="npc-reply" aria-live="polite">{reply}</p>
     {(speaking||voiceNotice)&&<small role="status">{speaking?'이야기하고 있어요':voiceNotice}</small>}
-    <div className="npc-prompts">{['안녕!','이곳을 소개해 줘','고개를 끄덕여 줘'].map(text=><button key={text} onClick={()=>send(text)}>{text}</button>)}</div>
+    <div className="npc-prompts">{(name==='선생님'?['안녕하세요','이곳을 소개해 주세요']:['안녕!','이곳을 소개해 줘','고개를 끄덕여 줘']).map(text=><button key={text} onClick={()=>send(text)}>{text}</button>)}</div>
     <form onSubmit={e=>{e.preventDefault();send(input);}}><label className="sr-only" htmlFor="npc-message">지역 안내 또는 동작 요청</label><input ref={inputRef} id="npc-message" value={input} onChange={e=>setInput(e.target.value)} placeholder="인사해 줘, 설명해 줘…" maxLength={240}/><button type="submit" disabled={!input.trim()} aria-label="말 걸기"><Send size={18}/></button></form>
   </aside>;
 }
