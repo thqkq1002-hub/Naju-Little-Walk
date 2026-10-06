@@ -259,17 +259,15 @@
         "id": "yeongsanpo-pier",
         "character": "beodeuri",
         "position": [
-          -142.059694,
+          -142.3,
           -6.4,
-          119.074533
+          121.5
         ],
-        "yaw": -2.8877338854782333,
+        "yaw": -2.8399736073235524,
         "collisionRadius": 0.3,
         "height": 1.649999976158142,
-        "between": [
-          "황포돛배 선착장",
-          "영산포 등대"
-        ]
+        "arrival": "landing",
+        "distanceFromArrival": 4.712748667179273
       }
     ]
   }

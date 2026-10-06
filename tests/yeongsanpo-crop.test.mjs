@@ -28,10 +28,14 @@ test('river, bridge floors, roads and walking bounds stop at the same crop',()=>
  const a=bridge.at(-2),b=bridge.at(-1),t=.99;
  assert.ok(canTravelTo([a[0]+t*(b[0]-a[0]),a[1]+t*(b[1]-a[1])],w,0),'Retained bridge approach remains walkable');
 });
+// Deliberate edit after the crop (2026-10-06, by request): the pier arrival moved toward the lighthouse and faces it,
+// so the pier guide is met on arrival. Undo only that edit; every other crop-time value must still match the report.
+const afterCrop={landing:{arrival:[-143.57176289257703,113.24669921494059]}};
+const atCrop=(key,value)=>key!=='places'?value:value.map(p=>{if(!afterCrop[p.id])return p;const {arrivalYaw,...rest}=p;return {...rest,...afterCrop[p.id]};});
 test('crop preserves the exact riverfront arrivals, museum portals and authored boats',()=>{
  for(const [key,r] of Object.entries(report.preservedNavigation)){
   assert.equal(r.beforeSha256,r.afterSha256,key+' preservation');
-  assert.equal(hash(w[key]??null),r.beforeSha256,key+' current data');
+  assert.equal(hash(atCrop(key,w[key]??null)),r.beforeSha256,key+' current data');
  }
  assert.equal(w.boats.length,2);assert.equal(w.portals.length,2);
  assert.ok(report.uncroppedSolidCount>w.solids.length-10,'Only far-north collision footprints may change');

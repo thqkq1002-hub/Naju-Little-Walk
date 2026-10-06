@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import * as THREE from 'three';
 import {destinations} from '../lib/destinations.ts';
 import {guidePlacements,withNpcObstacle} from '../lib/npc-placement.ts';
-import {canTravelTo} from '../lib/map-navigation.ts';
+import {canTravelTo,mapArrival} from '../lib/map-navigation.ts';
 import {floorHeight,reachableFloor,worldFloors,movePlayer,solidCollider} from '../lib/world.ts';
 import {readModel} from './gltf-geometry.mjs';
 
@@ -47,27 +47,36 @@ for(const [id,character] of Object.entries(expected)){
     scene.traverse(o=>o.geometry?.dispose());
   });
 }
-test('Yeongsanpo keeps Hongdoli at the start and adds Beodeul-nangja between the pier and the lighthouse',()=>{
+test('Yeongsanpo keeps Hongdoli at the start and greets pier arrivals with Beodeul-nangja before the lighthouse',()=>{
   assert.deepEqual(guidePlacements(manifest,'yeongsanpo').map(g=>[g.character,g.script]),[['hongdoli','yeongsanpo'],['beodeuri','yeongsanpo-pier']]);
   assert.deepEqual(guidePlacements(manifest,'dasi').map(g=>g.script),['dasi']);
   assert.deepEqual(guidePlacements(manifest,'bitgaram-observatory'),[]);
   const original=JSON.parse(fs.readFileSync(new URL('../public/yeongsanpo-world.json',import.meta.url),'utf8'));
-  const [pier]=manifest.extraPlacements.yeongsanpo,[x,y,z]=pier.position;
-  const place=name=>original.places.find(p=>p.name===name).position;
-  const dock=place('황포돛배 선착장'),lighthouse=place('영산포 등대');
-  assert.ok(Math.hypot(x-(dock[0]+lighthouse[0])/2,z-(dock[1]+lighthouse[1])/2)<.01,'Midway between the dock and the lighthouse');
-  const floors=worldFloors(original.solids),floor=reachableFloor(x,z,y,floors,original.requireFloor);
-  assert.ok(Math.abs(floor-y)<.001,'Feet on the lower riverside deck');
   const world=guidePlacements(manifest,'yeongsanpo').reduce(withNpcObstacle,original);
+  const [pier]=manifest.extraPlacements.yeongsanpo,[x,y,z]=pier.position;
+  const landing=original.places.find(p=>p.id===pier.arrival),lighthouse=original.places.find(p=>p.name==='영산포 등대');
+  const tower=solidCollider(original.solids.find(s=>s.name==='lighthouse_collision'));
+  const towerCenter=[tower.reduce((t,p)=>t+p[0],0)/tower.length,tower.reduce((t,p)=>t+p[1],0)/tower.length];
+  // The map jump lands exactly on the authored arrival, so its yaw applies.
+  assert.deepEqual(mapArrival(landing,world),landing.arrival);
+  const [ax,az]=landing.arrival,forward=new THREE.Vector3(-Math.sin(landing.arrivalYaw),0,-Math.cos(landing.arrivalYaw));
+  assert.ok(Math.hypot(ax-towerCenter[0],az-towerCenter[1])<Math.hypot(landing.position[0]-towerCenter[0],landing.position[1]-towerCenter[1])-3,'Arrival moved toward the lighthouse');
+  assert.ok(forward.dot(new THREE.Vector3(towerCenter[0]-ax,0,towerCenter[1]-az).normalize())>Math.cos(Math.PI/18),'Arrival looks at the lighthouse');
+  const offset=new THREE.Vector3(x-ax,0,z-az);
+  assert.ok(offset.length()<6&&offset.dot(forward)>3,'Within talking range right after arrival');
+  assert.ok(offset.angleTo(forward)<Math.PI/6,'Guide is inside the arrival view');
+  assert.ok(new THREE.Vector3(Math.sin(pier.yaw),0,Math.cos(pier.yaw)).dot(offset.clone().normalize().negate())>.9999,'Faces the arriving visitor');
+  const floors=worldFloors(original.solids),floor=reachableFloor(x,z,y,floors,original.requireFloor);
+  assert.ok(Math.abs(floor-y)<.001&&Math.abs(landing.arrivalHeight-y)<.001,'Feet on the lower riverside deck');
   assert.ok(canTravelTo([x,z],original,floor)&&!canTravelTo([x,z],world,floor),'Stands on open deck and blocks walking through');
-  assert.ok(canTravelTo([dock[0],dock[1]],world,floor)&&canTravelTo([lighthouse[0],lighthouse[1]],world,floor),'Dock and lighthouse stay reachable');
-  const facing=new THREE.Vector3(Math.sin(pier.yaw),0,Math.cos(pier.yaw)),toDock=new THREE.Vector3(dock[0]-x,0,dock[1]-z).normalize();
-  assert.ok(facing.dot(toDock)>.9999,'Faces visitors arriving at the dock');
+  assert.ok(canTravelTo(landing.position,world,floor)&&canTravelTo(lighthouse.position,world,floor),'Dock and lighthouse stay reachable');
+  const started=movePlayer(ax,az,forward.x*2,forward.z*2,world.solids.filter(s=>s.collision).map(solidCollider),world.bounds);
+  assert.ok(Math.hypot(started.x-ax,started.z-az)>1.95,'Forward path is clear');
   const {scene}=readModel(new URL('../public/models/yeongsanpo.glb',import.meta.url));
   const surface=new THREE.Raycaster(new THREE.Vector3(x,y+1.5,z),new THREE.Vector3(0,-1,0),0,3).intersectObject(scene,true)[0];
   assert.ok(Math.abs(surface.point.y-y)<.001,'Guide feet sit on the visible deck');
-  const origin=new THREE.Vector3(dock[0],y+1.72,dock[1]),target=new THREE.Vector3(x,y+pier.height*.6,z),direction=target.clone().sub(origin);
-  assert.equal(new THREE.Raycaster(origin,direction.clone().normalize(),.05,direction.length()-.15).intersectObject(scene,true).length,0,'Visible from the dock');
+  const origin=new THREE.Vector3(ax,y+1.72,az),target=new THREE.Vector3(x,y+pier.height*.6,z),direction=target.clone().sub(origin);
+  assert.equal(new THREE.Raycaster(origin,direction.clone().normalize(),.05,direction.length()-.15).intersectObject(scene,true).length,0,'Nothing hides the guide at arrival');
   scene.traverse(o=>o.geometry?.dispose());
 });
 test('public guides match their rigged Blender exports and preserve embedded materials',()=>{
