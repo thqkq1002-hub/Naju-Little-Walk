@@ -2,15 +2,15 @@
 
 import {useEffect, useRef, useState} from 'react';
 import {X, Send, Volume2, VolumeX} from 'lucide-react';
-import {guideReply} from '@/lib/npc-dialogue';
+import {guideReply,nameIs,nameWith} from '@/lib/npc-dialogue';
 import {introScript,speechText} from '@/lib/npc-scripts';
 import type {GuideGesture} from '@/lib/npc-animation';
 import type {DestinationId} from '@/lib/destinations';
 import './npc-conversation.css';
 
-export default function NpcConversation({name,destinationId,onGesture,onClose}:{name:string;destinationId:DestinationId;onGesture:(gesture:GuideGesture)=>void;onClose:()=>void}) {
+export default function NpcConversation({name,destinationId,scriptId,onGesture,onClose}:{name:string;destinationId:DestinationId;scriptId:string;onGesture:(gesture:GuideGesture)=>void;onClose:()=>void}) {
   const [input,setInput]=useState('');
-  const [reply,setReply]=useState(`안녕하세요! 저는 ${name}예요. 인사하거나 이곳의 안내를 부탁해 보세요.`);
+  const [reply,setReply]=useState(`안녕하세요! 저는 ${nameIs(name)}. 인사하거나 이곳의 안내를 부탁해 보세요.`);
   const [sound,setSound]=useState(true);
   const [speaking,setSpeaking]=useState(false);
   const [script,setScript]=useState<{lines:string[];step:number}|null>(null);
@@ -51,7 +51,7 @@ export default function NpcConversation({name,destinationId,onGesture,onClose}:{
   const send=(text:string)=>{
     if(!text.trim())return;
     setInput('');
-    const lines=introScript(text,destinationId);
+    const lines=introScript(text,scriptId);
     if(lines){setScript({lines,step:0});say(lines[0],'Explain');return;}
     setScript(null);
     const answer=guideReply(text,destinationId,name);
@@ -64,7 +64,7 @@ export default function NpcConversation({name,destinationId,onGesture,onClose}:{
     setScript({...script,step:next});say(script.lines[next],'Explain');
   };
   const close=()=>{stop();onGesture('Idle');onClose();};
-  return <aside className="npc-conversation" role="dialog" aria-label={`${name}와 대화`} onKeyDown={e=>{if(e.key==='Escape'){e.stopPropagation();close();}}}>
+  return <aside className="npc-conversation" role="dialog" aria-label={`${nameWith(name)} 대화`} onKeyDown={e=>{if(e.key==='Escape'){e.stopPropagation();close();}}}>
     <header><div><span>지역 안내</span><strong>{name}</strong></div><div><button onClick={()=>{stop();setSound(v=>!v);onGesture('Idle');}} aria-label={sound?'음성 끄기':'음성 켜기'} aria-pressed={sound}>{sound?<Volume2 size={19}/>:<VolumeX size={19}/>}</button><button onClick={close} aria-label="대화 닫기"><X size={19}/></button></div></header>
     <p className="npc-reply" aria-live="polite">{reply}</p>
     {(speaking||voiceNotice)&&<small role="status">{speaking?'이야기하고 있어요':voiceNotice}</small>}

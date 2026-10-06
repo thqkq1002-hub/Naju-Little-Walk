@@ -1,7 +1,8 @@
-import type {DestinationId} from './destinations.ts';
-
-/** Scripted introductions, one paragraph per step, spoken when a guide is asked to introduce the place. */
-export const introScripts:Partial<Record<DestinationId,string[]>>={
+/**
+ * Scripted introductions, one paragraph per step, spoken when a guide is asked to introduce the place.
+ * Keyed by destination for the start guide, or by the extra guide's id in npc-placements.json.
+ */
+export const introScripts:Record<string,string[]>={
   // 금성관 앞마당 · 버들낭자
   "geumseonggwan":[
     "금성관은 조선 시대에 나주를 찾아온 아주 귀한 손님들이 머물던 객사라는 건물이에요.",
@@ -71,6 +72,39 @@ export const introScripts:Partial<Record<DestinationId,string[]>>={
     "우리가 살고 있는 나주의 영산포는 옛날 조상님들의 지혜와 역사가 숨 쉬는 멋진 곳이에요.",
     "오늘 저녁엔 가족들과 함께 영산포 홍어 이야기에 대해 대화를 나눠보는 건 어떨까요?",
   ],
+  // 영산포 황포돛배 선착장과 등대 사이 · 버들낭자 (영산포 맵의 두 번째 안내 캐릭터)
+  "yeongsanpo-pier":[
+    "친구들! 옛날에는 도로나 KTX가 없던 시절에 많은 물건들을 어떻게 날랐을까요?",
+    "바로 영산강 물길을 따라 배를 타고 옮겼답니다! 오늘은 영산강을 대표하는 두 가지 멋진 보물, 황포돛배와 영산포 등대를 만나볼게요! ⛵🏮",
+    "첫 번째, 노란 돛을 달고 강을 누비는 황포돛배 ⛵. 황포돛배는 이름 그대로 노란색 돛(황포)을 단 멋진 옛날 배예요!",
+    "바람의 마법 🌬️: 이 배는 엔진 소리 대신 쌩쌩 불어오는 바람을 돛에 받아서 유유히 강 위를 움직였어요.",
+    "영산강의 보물상자 쌀과 홍어 📦: 쌀, 소금, 그리고 우리가 아는 맛있는 영산포 홍어까지! 수많은 물건을 싣고 멀리 남해 바다에서부터 나주까지 들고 왔던 고마운 배랍니다.",
+    "지금은 생태 체험선 🌊: 지금은 나주 영산포에 가면 직접 황포돛배를 타고 영산강의 아름다운 풍경과 강변에 사는 새들을 구경할 수 있는 신나는 체험을 할 수 있어요!",
+    "두 번째, 우리나라에서 하나뿐인 내륙 강변 등대, 영산포 등대 🏮. 등대라고 하면 보통 시원한 바닷가 절벽에 서 있는 모습이 떠오르죠? 하지만 우리 나주에는 아주아주 특별한 등대가 있어요!",
+    "강에 서 있는 등대 🌊: 영산포 등대는 바다가 아닌 강변에 서 있는 우리나라 유일의 등대랍니다! 1915년에 만들어져 아주 긴 역사를 가지고 있어요!",
+    "밤길을 밝혀주는 길잡이 🔦: 옛날에는 밤이 되면 영산강이 깜깜해져서 배들이 길을 잃거나 바위에 부딪히기 쉬웠어요. 영산포 등대는 환한 불빛을 비춰서 배들이 안전하게 항구로 들어올 수 있게 도와주었답니다.",
+    "수위 측정 기능 📏: 등대 역할뿐만 아니라 영산강의 물이 얼마나 차올랐는지 수위를 재는 수위관측소 역할도 똑똑하게 해냈어요.",
+    "노란 돛을 휘날리던 황포돛배와 영산강을 지켜주던 영산포 등대 덕분에 옛날 나주는 아주 북적이고 활기찬 도시가 될 수 있었어요.",
+    "이번 주말에는 영산강 변을 걸으며 옛날 상인들과 선장님이 되어보는 멋진 상상을 해보는 건 어떨까요?",
+  ],
+  // 타오르는 강 문학관 · 버들낭자
+  "yeongsanpo-literature":[
+    "친구들! 혹시 책이나 소설을 읽으면서 옛날 사람들은 어떻게 살았을까 궁금했던 적 있나요?",
+    "우리 나주 영산포에는 문순태 작가님의 아주 유명한 소설 타오르는 강을 기념해서 만들어진 타오르는 강 문학관이 있어요! 📚🌊",
+    "영산강 사람들의 진짜 이야기 📖: 타오르는 강은 먼 옛날 영산강을 터전으로 힘들지만 씩씩하게 살아갔던 우리 할머니, 할아버지들의 삶과 역사 이야기를 재미있게 담아낸 멋진 소설이에요.",
+    "소설 속으로 들어가는 타임머신 🕰️: 문학관 안에 들어가면 작가님이 직접 글을 쓰시던 원고지나 책, 그리고 소설 속 영산포의 옛모습을 직접 느껴볼 수 있답니다!",
+    "영산강의 아름다운 풍경 🌅: 영산강 변 바로 앞에 위치해 있어서, 글을 읽고 밖으로 나오면 노을빛에 붉게 물드는 아름다운 영산강의 풍경도 볼 수 있어요.",
+    "글을 써보고 싶거나 이야기 만들기를 좋아하는 친구라면, 영산포의 생생한 역사와 숨결이 느껴지는 타오르는 강 문학관으로 문학 여행을 떠나보는 건 어떨까요?",
+  ],
+  // 드들강 솔밭유원지 · 배돌이
+  "deudeulgang":[
+    "친구들! 바람이 살랑살랑 불 때 소나무 그늘 아래서 돗자리를 펴고 푹 쉬어본 적 있나요?",
+    "우리 나주 남평읍에 있는 드들강 솔밭 유원지는 시원한 강물과 우뚝 솟은 소나무들이 모여 만든 멋진 자연 휴식처랍니다! 🌲🌊",
+    "솔향기 솔솔 나는 소나무 숲 🌲: 멋진 소나무들이 빼곡하게 서 있어서 시원한 그늘을 만들어줘요. 숲속을 걸으면 기분 좋은 솔향기가 가득하답니다!",
+    "슬픈 전설과 따뜻한 이름 💧: 드들강이라는 이름에는 옛날 강둑이 자꾸 무너지는 걸 막기 위해 드들이라는 동네 아이의 이름에서 따온 아련하고 따뜻한 전설이 담겨 있어요.",
+    "캠핑과 피크닉의 천국 ⛺: 주말이 되면 가족들과 텐트를 치고 맛있는 음식을 먹거나, 강변을 따라 신나게 달리며 산책하기에 최고예요!",
+    "이번 주말에는 푹신한 풀밭 위에 돗자리를 펴고 시원한 강바람을 맞으러 드들강 솔밭 유원지로 떠나볼까요? 🍃🧺",
+  ],
   // 나주수목원 · 산림연구원 · 배돌이
   "naju-arboretum":[
     "친구들! 길게 쭉 늘어선 멋진 메타세쿼이아 나무 아래서 인생샷을 찍어본 적 있나요?",
@@ -97,9 +131,9 @@ export const introScripts:Partial<Record<DestinationId,string[]>>={
 };
 
 /** The two quick replies, and the same request typed out, ask for the saved script. */
-export function introScript(input:string,destinationId:DestinationId):string[]|null {
+export function introScript(input:string,scriptId:string):string[]|null {
   if(!/^이곳을\s*소개/.test(input.trim()))return null;
-  return introScripts[destinationId]??null;
+  return introScripts[scriptId]??null;
 }
 
 const PICTOGRAPHS=/[\p{Extended_Pictographic}\p{Emoji_Modifier}\u{FE0F}\u{200D}]/gu;

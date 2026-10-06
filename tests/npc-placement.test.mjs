@@ -3,15 +3,15 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import * as THREE from 'three';
 import {destinations} from '../lib/destinations.ts';
-import {withNpcObstacle} from '../lib/npc-placement.ts';
+import {guidePlacements,withNpcObstacle} from '../lib/npc-placement.ts';
 import {canTravelTo} from '../lib/map-navigation.ts';
 import {floorHeight,reachableFloor,worldFloors,movePlayer,solidCollider} from '../lib/world.ts';
 import {readModel} from './gltf-geometry.mjs';
 
 const manifest=JSON.parse(fs.readFileSync(new URL('../public/npc-placements.json',import.meta.url),'utf8'));
-const expected={geumseonggwan:'beodeuri',bogam:'beodeuri','bitgaram-park':'baedoli','bitgaram-kepco':'baedoli','bitgaram-kentech':'baedoli',yeongsanpo:'hongdoli','naju-arboretum':'baedoli',dasi:'teacher'};
-// The arboretum avenue is drawn 10 cm above its flat collision ground; the guide stands on what visitors see.
-const visibleGround={'naju-arboretum':.1};
+const expected={geumseonggwan:'beodeuri',bogam:'beodeuri','bitgaram-park':'baedoli','bitgaram-kepco':'baedoli','bitgaram-kentech':'baedoli',yeongsanpo:'hongdoli','yeongsanpo-literature':'beodeuri',deudeulgang:'baedoli','naju-arboretum':'baedoli',dasi:'teacher'};
+// These floors are drawn slightly above their flat collision ground; the guide stands on what visitors see.
+const visibleGround={'naju-arboretum':.1,'yeongsanpo-literature':.0355};
 test('regional guides follow the user assignments; unassigned maps and empty panorama stay empty',()=>{
   assert.deepEqual(Object.fromEntries(Object.entries(manifest.placements).map(([id,p])=>[id,p.character])),expected);
   assert.equal(manifest.placements['bitgaram-observatory'],undefined);
@@ -39,7 +39,7 @@ for(const [id,character] of Object.entries(expected)){
     assert.ok(!original.portals?.some(p=>Math.hypot(x-p.position[0],z-p.position[1])<p.radius+placement.collisionRadius),'Doors are clear');
     const {scene}=readModel(new URL('../public'+destinations[id].modelUrl.split('?')[0].replace(/\.gz$/,''),import.meta.url));
     if(visibleGround[id]!==undefined){
-      const surface=new THREE.Raycaster(new THREE.Vector3(x,5,z),new THREE.Vector3(0,-1,0),0,10).intersectObject(scene,true)[0];
+      const surface=new THREE.Raycaster(new THREE.Vector3(x,y+1.5,z),new THREE.Vector3(0,-1,0),0,3).intersectObject(scene,true)[0];
       assert.ok(Math.abs(surface.point.y-y)<.001,'Guide feet sit on the visible GLB ground');
     }
     const origin=new THREE.Vector3(spawn.x,startHeight+1.72,spawn.z),target=new THREE.Vector3(x,y+placement.height*.6,z),direction=target.clone().sub(origin);
@@ -47,6 +47,29 @@ for(const [id,character] of Object.entries(expected)){
     scene.traverse(o=>o.geometry?.dispose());
   });
 }
+test('Yeongsanpo keeps Hongdoli at the start and adds Beodeul-nangja between the pier and the lighthouse',()=>{
+  assert.deepEqual(guidePlacements(manifest,'yeongsanpo').map(g=>[g.character,g.script]),[['hongdoli','yeongsanpo'],['beodeuri','yeongsanpo-pier']]);
+  assert.deepEqual(guidePlacements(manifest,'dasi').map(g=>g.script),['dasi']);
+  assert.deepEqual(guidePlacements(manifest,'bitgaram-observatory'),[]);
+  const original=JSON.parse(fs.readFileSync(new URL('../public/yeongsanpo-world.json',import.meta.url),'utf8'));
+  const [pier]=manifest.extraPlacements.yeongsanpo,[x,y,z]=pier.position;
+  const place=name=>original.places.find(p=>p.name===name).position;
+  const dock=place('황포돛배 선착장'),lighthouse=place('영산포 등대');
+  assert.ok(Math.hypot(x-(dock[0]+lighthouse[0])/2,z-(dock[1]+lighthouse[1])/2)<.01,'Midway between the dock and the lighthouse');
+  const floors=worldFloors(original.solids),floor=reachableFloor(x,z,y,floors,original.requireFloor);
+  assert.ok(Math.abs(floor-y)<.001,'Feet on the lower riverside deck');
+  const world=guidePlacements(manifest,'yeongsanpo').reduce(withNpcObstacle,original);
+  assert.ok(canTravelTo([x,z],original,floor)&&!canTravelTo([x,z],world,floor),'Stands on open deck and blocks walking through');
+  assert.ok(canTravelTo([dock[0],dock[1]],world,floor)&&canTravelTo([lighthouse[0],lighthouse[1]],world,floor),'Dock and lighthouse stay reachable');
+  const facing=new THREE.Vector3(Math.sin(pier.yaw),0,Math.cos(pier.yaw)),toDock=new THREE.Vector3(dock[0]-x,0,dock[1]-z).normalize();
+  assert.ok(facing.dot(toDock)>.9999,'Faces visitors arriving at the dock');
+  const {scene}=readModel(new URL('../public/models/yeongsanpo.glb',import.meta.url));
+  const surface=new THREE.Raycaster(new THREE.Vector3(x,y+1.5,z),new THREE.Vector3(0,-1,0),0,3).intersectObject(scene,true)[0];
+  assert.ok(Math.abs(surface.point.y-y)<.001,'Guide feet sit on the visible deck');
+  const origin=new THREE.Vector3(dock[0],y+1.72,dock[1]),target=new THREE.Vector3(x,y+pier.height*.6,z),direction=target.clone().sub(origin);
+  assert.equal(new THREE.Raycaster(origin,direction.clone().normalize(),.05,direction.length()-.15).intersectObject(scene,true).length,0,'Visible from the dock');
+  scene.traverse(o=>o.geometry?.dispose());
+});
 test('public guides match their rigged Blender exports and preserve embedded materials',()=>{
   for(const character of Object.keys(manifest.assets)){
     const raw=fs.readFileSync(new URL('../public'+manifest.assets[character].modelUrl,import.meta.url));

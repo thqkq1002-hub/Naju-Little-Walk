@@ -184,6 +184,40 @@
       },
       "distanceFromStart": 4.712748667179273
     },
+    "yeongsanpo-literature": {
+      "character": "beodeuri",
+      "position": [
+        1.4,
+        0.0355,
+        2.8
+      ],
+      "yaw": -0.3016190462662397,
+      "collisionRadius": 0.3,
+      "height": 1.649999976158142,
+      "spawn": {
+        "x": 0,
+        "z": 7.3,
+        "yaw": 0
+      },
+      "distanceFromStart": 4.712748667179271
+    },
+    "deudeulgang": {
+      "character": "baedoli",
+      "position": [
+        33.2465,
+        0.072,
+        -115.5906
+      ],
+      "yaw": 2.8399736073235538,
+      "collisionRadius": 0.3,
+      "height": 1.2000000476837158,
+      "spawn": {
+        "x": 34.646500000631875,
+        "z": -120.09059999940408,
+        "yaw": 3.141592653589793
+      },
+      "distanceFromStart": 4.712748667179271
+    },
     "naju-arboretum": {
       "character": "baedoli",
       "position": [
@@ -218,5 +252,25 @@
       },
       "distanceFromStart": 4.71274866717927
     }
+  },
+  "extraPlacements": {
+    "yeongsanpo": [
+      {
+        "id": "yeongsanpo-pier",
+        "character": "beodeuri",
+        "position": [
+          -142.059694,
+          -6.4,
+          119.074533
+        ],
+        "yaw": -2.8877338854782333,
+        "collisionRadius": 0.3,
+        "height": 1.649999976158142,
+        "between": [
+          "황포돛배 선착장",
+          "영산포 등대"
+        ]
+      }
+    ]
   }
 }

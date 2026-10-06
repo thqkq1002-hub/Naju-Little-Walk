@@ -2,11 +2,15 @@ import {destinations, type DestinationId} from './destinations.ts';
 import type {GuideGesture} from './npc-animation.ts';
 
 export type GuideReply = {text: string; gesture: GuideGesture};
+/** Korean particles follow the last syllable: 선생님과·선생님이에요, 배돌이와·배돌이예요. */
+const hasFinalConsonant = (word: string) => {const code = word.charCodeAt(word.length - 1) - 0xac00; return code >= 0 && code < 11172 && code % 28 > 0;};
+export const nameWith = (name: string) => name + (hasFinalConsonant(name) ? '과' : '와');
+export const nameIs = (name: string) => name + (hasFinalConsonant(name) ? '이에요' : '예요');
 /** Local scene guidance and gesture requests. No remote AI or microphone upload. */
 export function guideReply(input: string, destinationId: DestinationId, name: string): GuideReply {
   const text = input.trim().slice(0, 240);
   if (/끄덕|동의|맞지|맞아/.test(text)) return {text: '네, 고개를 끄덕여볼게요.', gesture: 'Nod'};
-  if (/안녕|인사|손.*흔|반가/.test(text)) return {text: `안녕하세요! 저는 ${name}예요. 함께 둘러볼까요?`, gesture: 'Greeting'};
+  if (/안녕|인사|손.*흔|반가/.test(text)) return {text: `안녕하세요! 저는 ${nameIs(name)}. 함께 둘러볼까요?`, gesture: 'Greeting'};
   if (/가만|멈춰|쉬어|기본.*자세/.test(text)) return {text: '편하게 서서 기다릴게요.', gesture: 'Idle'};
   if (/들어.*줘|들어봐|경청/.test(text)) return {text: '네, 듣고 있어요.', gesture: 'Listen'};
   if(destinationId==='geumseonggwan'){

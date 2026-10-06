@@ -2,12 +2,18 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {introScript,introScripts,speechText} from '../lib/npc-scripts.ts';
+import {guidePlacements} from '../lib/npc-placement.ts';
+import {nameIs,nameWith} from '../lib/npc-dialogue.ts';
 
 const manifest=JSON.parse(fs.readFileSync(new URL('../public/npc-placements.json',import.meta.url),'utf8'));
 const pictograph=/\p{Extended_Pictographic}/u;
 
 test('every placed guide has a saved intro script, reached by either intro quick reply',()=>{
-  for(const id of Object.keys(manifest.placements)){
+  const destinations=new Set([...Object.keys(manifest.placements),...Object.keys(manifest.extraPlacements??{})]);
+  const scripts=[...destinations].flatMap(destination=>guidePlacements(manifest,destination).map(g=>g.script));
+  assert.ok(scripts.includes('yeongsanpo-pier')&&scripts.includes('deudeulgang'));
+  assert.deepEqual(Object.keys(introScripts).sort(),[...scripts].sort(),'No script is left without a guide');
+  for(const id of scripts){
     const lines=introScripts[id];
     assert.ok(lines?.length>0,`${id} has no saved script`);
     assert.ok(lines.every(line=>line.trim().length>0),`${id} has an empty line`);
@@ -22,6 +28,14 @@ test('other messages and unscripted maps keep the ordinary guide reply',()=>{
   assert.equal(introScript('안녕하세요','dasi'),null);
   assert.equal(introScript('지붕을 소개해 줘','geumseonggwan'),null);
   assert.equal(introScript('이곳을 소개해 줘','bitgaram-observatory'),null);
+});
+
+test('guide names take the particle their last syllable needs',()=>{
+  assert.equal(nameWith('선생님'),'선생님과');
+  assert.equal(nameWith('배돌이'),'배돌이와');
+  assert.equal(nameWith('버들낭자'),'버들낭자와');
+  assert.equal(nameIs('선생님'),'선생님이에요');
+  assert.equal(nameIs('홍돌이'),'홍돌이예요');
 });
 
 test('spoken text drops pictographs and keeps punctuation tidy',()=>{
