@@ -9,6 +9,7 @@
     "dev": "vinext dev",
     "build": "tsc --noEmit && vite build --config vite.static.config.ts",
     "start": "vite preview --config vite.static.config.ts --host 127.0.0.1 --port 3000",
+    "package:usb": "npm run build && node scripts/package_usb.mjs",
     "test": "node --experimental-strip-types --test tests/world.test.mjs",
     "lint": "oxlint",
     "format": "oxfmt"
