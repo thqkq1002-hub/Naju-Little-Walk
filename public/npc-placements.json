@@ -184,6 +184,23 @@
       },
       "distanceFromStart": 4.712748667179273
     },
+    "naju-arboretum": {
+      "character": "baedoli",
+      "position": [
+        -459.11082575228255,
+        0.1,
+        -45.328454263725426
+      ],
+      "yaw": -2.073732481435774,
+      "collisionRadius": 0.3,
+      "height": 1.2000000476837158,
+      "spawn": {
+        "x": -463.24,
+        "z": -47.6,
+        "yaw": -1.7721134351695373
+      },
+      "distanceFromStart": 4.712748667179297
+    },
     "dasi": {
       "character": "teacher",
       "position": [

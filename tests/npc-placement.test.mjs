@@ -9,7 +9,9 @@ import {floorHeight,reachableFloor,worldFloors,movePlayer,solidCollider} from '.
 import {readModel} from './gltf-geometry.mjs';
 
 const manifest=JSON.parse(fs.readFileSync(new URL('../public/npc-placements.json',import.meta.url),'utf8'));
-const expected={geumseonggwan:'beodeuri',bogam:'beodeuri','bitgaram-park':'baedoli','bitgaram-kepco':'baedoli','bitgaram-kentech':'baedoli',yeongsanpo:'hongdoli',dasi:'teacher'};
+const expected={geumseonggwan:'beodeuri',bogam:'beodeuri','bitgaram-park':'baedoli','bitgaram-kepco':'baedoli','bitgaram-kentech':'baedoli',yeongsanpo:'hongdoli','naju-arboretum':'baedoli',dasi:'teacher'};
+// The arboretum avenue is drawn 10 cm above its flat collision ground; the guide stands on what visitors see.
+const visibleGround={'naju-arboretum':.1};
 test('regional guides follow the user assignments; unassigned maps and empty panorama stay empty',()=>{
   assert.deepEqual(Object.fromEntries(Object.entries(manifest.placements).map(([id,p])=>[id,p.character])),expected);
   assert.equal(manifest.placements['bitgaram-observatory'],undefined);
@@ -22,7 +24,7 @@ for(const [id,character] of Object.entries(expected)){
     const [x,y,z]=placement.position,floors=worldFloors(original.solids);
     const startHeight=original.verticalNavigation?(reachableFloor(spawn.x,spawn.z,spawn.height??0,floors)??0):floorHeight(spawn.x,spawn.z,floors);
     const floor=original.verticalNavigation?reachableFloor(x,z,startHeight,floors,original.requireFloor):floorHeight(x,z,floors);
-    assert.ok(Math.abs(y-floor)<.001,'Feet match the walking surface');
+    assert.ok(Math.abs(y-(visibleGround[id]??floor))<.001,'Feet match the walking surface');
     assert.ok(canTravelTo([x,z],original,floor),'Guide occupies an existing walkable location');
     assert.ok(!canTravelTo([x,z],world,floor),'Visitors cannot walk through the guide');
     assert.ok(canTravelTo([spawn.x,spawn.z],world,startHeight),'Spawn remains accessible');
@@ -36,6 +38,10 @@ for(const [id,character] of Object.entries(expected)){
     assert.ok(new THREE.Vector3(Math.sin(placement.yaw),0,Math.cos(placement.yaw)).dot(offset.clone().normalize().negate())>.9999,'Authored +Z front faces visitor');
     assert.ok(!original.portals?.some(p=>Math.hypot(x-p.position[0],z-p.position[1])<p.radius+placement.collisionRadius),'Doors are clear');
     const {scene}=readModel(new URL('../public'+destinations[id].modelUrl.split('?')[0].replace(/\.gz$/,''),import.meta.url));
+    if(visibleGround[id]!==undefined){
+      const surface=new THREE.Raycaster(new THREE.Vector3(x,5,z),new THREE.Vector3(0,-1,0),0,10).intersectObject(scene,true)[0];
+      assert.ok(Math.abs(surface.point.y-y)<.001,'Guide feet sit on the visible GLB ground');
+    }
     const origin=new THREE.Vector3(spawn.x,startHeight+1.72,spawn.z),target=new THREE.Vector3(x,y+placement.height*.6,z),direction=target.clone().sub(origin);
     assert.equal(new THREE.Raycaster(origin,direction.clone().normalize(),.05,direction.length()-.15).intersectObject(scene,true).length,0,'The city does not hide the guide at the start');
     scene.traverse(o=>o.geometry?.dispose());
