@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { X, Footprints, MousePointer2, Hand, Map, Image, Settings2 } from 'lucide-react';
 import { destinations, type DestinationId } from '@/lib/destinations';
+import { BGM_LICENSE_URL, BGM_SOURCE_URL, bgmCredit, bgmForDestination } from '@/lib/bgm';
 import { useScreenMode } from './screen-mode';
 
 export default function WalkGuide({ destinationId, onClose }: { destinationId: DestinationId; onClose: () => void }) {
@@ -27,7 +28,7 @@ export default function WalkGuide({ destinationId, onClose }: { destinationId: D
         <button aria-pressed={quality === 'balanced'} onClick={() => setQuality('balanced')}><strong>편하게 걷기</strong><span>태블릿 권장 · 화면 부담 줄이기</span></button>
         <button aria-pressed={quality === 'detail'} onClick={() => setQuality('detail')}><strong>선명하게 보기</strong><span>높은 해상도로 풍경 감상</span></button>
       </div></section>
-      <section className="reference-info"><h3><Image size={18}/>제작 자료</h3><p>{destination.limitation}</p><a href={destination.sourceUrl} target="_blank" rel="noreferrer">{destination.sourceLabel} ↗</a><a href="https://encykorea.aks.ac.kr/Article/E0011462" target="_blank" rel="noreferrer">한국학중앙연구원 · 금성관 정측면 사진 ↗</a><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap 기여자 · ODbL ↗</a>{(destinationId==='bitgaram-park'||destinationId==='bitgaram')&&<><a href="https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM" target="_blank" rel="noreferrer">Copernicus GLO-30 표고 자료 ↗</a><p>Contains modified Copernicus Service information 2021. © DLR e.V. 2010–2014 / Airbus Defence and Space GmbH 2014–2018, European Union / ESA.</p><p>약 30m 간격의 표면 자료에는 나무·건물 높이가 섞일 수 있습니다. 계단 한 칸이나 현재 승강장 높이를 실측한 자료는 아닙니다.</p></>}<p>실제 지도와 공개 사진을 바탕으로 제작한 산책 모형입니다. 현장의 현재 모습과 차이가 있을 수 있습니다.</p></section>
+      <section className="reference-info"><h3><Image size={18}/>제작 자료</h3><p>{destination.limitation}</p><a href={destination.sourceUrl} target="_blank" rel="noreferrer">{destination.sourceLabel} ↗</a><a href="https://encykorea.aks.ac.kr/Article/E0011462" target="_blank" rel="noreferrer">한국학중앙연구원 · 금성관 정측면 사진 ↗</a><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap 기여자 · ODbL ↗</a>{(destinationId==='bitgaram-park'||destinationId==='bitgaram')&&<><a href="https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM" target="_blank" rel="noreferrer">Copernicus GLO-30 표고 자료 ↗</a><p>Contains modified Copernicus Service information 2021. © DLR e.V. 2010–2014 / Airbus Defence and Space GmbH 2014–2018, European Union / ESA.</p><p>약 30m 간격의 표면 자료에는 나무·건물 높이가 섞일 수 있습니다. 계단 한 칸이나 현재 승강장 높이를 실측한 자료는 아닙니다.</p></>}<p>실제 지도와 공개 사진을 바탕으로 제작한 산책 모형입니다. 현장의 현재 모습과 차이가 있을 수 있습니다.</p><p>배경음악: {bgmCredit(bgmForDestination[destinationId])} · CC BY 4.0 · 웹용 96kbps로 변환</p><a href={BGM_SOURCE_URL} target="_blank" rel="noreferrer">incompetech.com 음원 ↗</a><a href={BGM_LICENSE_URL} target="_blank" rel="noreferrer">CC BY 4.0 이용 조건 ↗</a></section>
     </div>
   </dialog>;
 }

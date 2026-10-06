@@ -28,6 +28,7 @@ import { loadNpcGuide } from '@/lib/npc-scene';
 import type {NpcAnimation, GuideGesture} from '@/lib/npc-animation';
 import NpcConversation from './npc-conversation';
 import { nameWith } from '@/lib/npc-dialogue';
+import { BgmButton, useBgm } from './bgm';
 
 type ViewState = { x: number; z: number; yaw: number; place: string; detail: string; indoor: boolean };
 type Engine = { start: () => void; pause: () => void; reset: () => void; overview: () => void; inspect: (id: string) => void; zoom: (scale: number) => void; key: (key: string, down: boolean) => void; travel: (point: Point, height?:number) => boolean; boatAction: (action:string,id?:string)=>void; railAction:(action:string,id?:string)=>void; npcGesture:(gesture:GuideGesture)=>void };
@@ -58,6 +59,7 @@ export default function Explorer() {
   const [railHud,setRailHud] = useState<RailHud|null>(null);
   const [destinationId, setDestinationId] = useState<DestinationId>('geumseonggwan');
   const destination = destinations[destinationId];
+  useBgm(destinationId);
   const [view, setView] = useState<ViewState>({ x: 0, z: 0, yaw: 0, place: '금성관 주변', detail: '', indoor: false });
   const mapShapes=useMemo(()=>world?<PrecinctMapShapes world={world}/>:null,[world]);
 
@@ -522,7 +524,7 @@ export default function Explorer() {
       <div className="scene" ref={host} /><div className="vignette" />
       <header className="topbar">
         <div className="brand"><span className="brand-mark"><Compass size={25} strokeWidth={1.4} /></span><div><strong>나주 산책</strong><span>{destination.area}</span></div></div>
-        <div className="topbar-tools"><div className="view-actions" role="group" aria-label="보기 방식">{world?.viewMode!=='panorama'&&<button aria-pressed={overview} className={overview ? 'active' : ''} onClick={() => engine.current?.overview()} disabled={!ready || !!error}><MoveUpRight size={16} />전체 보기</button>}<button aria-pressed={!overview} className={!overview ? 'active' : ''} onClick={() => boatHud?.aboard?engine.current?.boatAction('deck'):engine.current?.start()} disabled={!ready || !!error}><Footprints size={16} />걷기</button></div><button className="screen-button" onClick={openGuide} aria-label="산책 안내와 화면 설정" title="산책 안내와 화면 설정"><CircleHelp size={19}/></button><FullscreenButton/></div>
+        <div className="topbar-tools"><div className="view-actions" role="group" aria-label="보기 방식">{world?.viewMode!=='panorama'&&<button aria-pressed={overview} className={overview ? 'active' : ''} onClick={() => engine.current?.overview()} disabled={!ready || !!error}><MoveUpRight size={16} />전체 보기</button>}<button aria-pressed={!overview} className={!overview ? 'active' : ''} onClick={() => boatHud?.aboard?engine.current?.boatAction('deck'):engine.current?.start()} disabled={!ready || !!error}><Footprints size={16} />걷기</button></div><BgmButton/><button className="screen-button" onClick={openGuide} aria-label="산책 안내와 화면 설정" title="산책 안내와 화면 설정"><CircleHelp size={19}/></button><FullscreenButton/></div>
       </header>
       <nav className="destination-nav" aria-label="나주 전체 지도와 장소 선택">
         <button onClick={openMap}><Map size={18}/><span>나주 전체 · 장소 선택</span></button>

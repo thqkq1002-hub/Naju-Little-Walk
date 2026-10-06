@@ -4,6 +4,7 @@ import {useEffect, useRef, useState} from 'react';
 import {X, Send, Volume2, VolumeX} from 'lucide-react';
 import {guideReply,nameIs,nameWith} from '@/lib/npc-dialogue';
 import {introScript,speechText} from '@/lib/npc-scripts';
+import {duckBgm} from '@/lib/bgm-player';
 import type {GuideGesture} from '@/lib/npc-animation';
 import type {DestinationId} from '@/lib/destinations';
 import './npc-conversation.css';
@@ -28,8 +29,10 @@ export default function NpcConversation({name,destinationId,scriptId,onGesture,o
   useEffect(()=>{
     // Focus without opening the Android soft keyboard over the scenery.
     if('speechSynthesis' in window)window.speechSynthesis.getVoices();
-    return ()=>{ticket.current++;if(timer.current)clearTimeout(timer.current);if('speechSynthesis' in window)window.speechSynthesis.cancel();};
+    return ()=>{ticket.current++;if(timer.current)clearTimeout(timer.current);if('speechSynthesis' in window)window.speechSynthesis.cancel();duckBgm(false);};
   },[]);
+  // Keep the guide's voice clear over the background music.
+  useEffect(()=>{duckBgm(speaking);},[speaking]);
   const say=(text:string,gesture:GuideGesture)=>{
     stop();setVoiceNotice('');
     setReply(text);onGesture(gesture);

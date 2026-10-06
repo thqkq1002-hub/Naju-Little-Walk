@@ -5,14 +5,16 @@ import BitgaramOrbit from './bitgaram-orbit';
 import { FullscreenButton, useScreenMode } from './screen-mode';
 import WalkGuide from './walk-guide';
 import MapTravel from './map-travel';
+import { BgmButton, useBgm } from './bgm';
 export default function BitgaramHub(){
   const [guideOpen,setGuideOpen]=useState(false),[mapOpen,setMapOpen]=useState(false);
   const { touch, portrait }=useScreenMode();
+  useBgm('bitgaram');
   useEffect(()=>{document.title='나주 산책 — 빛가람 장소 선택';},[]);
   useEffect(()=>{if(portrait){setGuideOpen(false);setMapOpen(false);}},[portrait]);
   const places=[{id:'bitgaram-park',title:'호수공원 · 전망대',detail:'숲길과 전망대 주변',n:'01'},{id:'bitgaram-kepco',title:'한국전력 본사',detail:'앞마당과 1층 로비',n:'02'},{id:'bitgaram-kentech',title:'KENTECH',detail:'캠퍼스와 강의동 1층',n:'03'}];
   return <main className="bitgaram-hub">
-    <header><a href="/?place=geumseonggwan"><Compass size={25} strokeWidth={1.5}/>나주 산책<span className="hub-header-place">빛가람동</span></a><div className="topbar-tools"><button className="hub-all-places" onClick={()=>setMapOpen(true)}><Map size={18}/>장소 선택</button><button className="screen-button" onClick={()=>setGuideOpen(true)} aria-label="산책 안내와 화면 설정"><CircleHelp size={19}/></button><FullscreenButton/></div></header>
+    <header><a href="/?place=geumseonggwan"><Compass size={25} strokeWidth={1.5}/>나주 산책<span className="hub-header-place">빛가람동</span></a><div className="topbar-tools"><button className="hub-all-places" onClick={()=>setMapOpen(true)}><Map size={18}/>장소 선택</button><BgmButton/><button className="screen-button" onClick={()=>setGuideOpen(true)} aria-label="산책 안내와 화면 설정"><CircleHelp size={19}/></button><FullscreenButton/></div></header>
     <div className="hub-layout"><section className="hub-map" aria-label="빛가람 조감 안내 지도">
       <BitgaramOrbit/>
       <p className="hub-map-caption">{touch?'드래그로 회전 · 두 손가락으로 확대':'드래그로 회전 · 휠로 확대'}<span>푯말을 누르면 산책이 시작됩니다</span></p>
