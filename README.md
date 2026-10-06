@@ -1,10 +1,30 @@
 # 나주 산책
 
-금성관 주변의 실제 OpenStreetMap 건물 윤곽과 도로 좌표를 **Blender 4.5 LTS**에서 입체로 제작하고, Blender에서 내보낸 GLB를 **Three.js**로 불러와 탐험합니다.
+[느러지 수국 보강 v95](knowledge/neureoji-hydrangea-v95-2026-10-04.md): 최근 현장 사진을 대조해 수국·산수국 749개체와 입체 꽃받침·넓은 잎·두 줄 군락을 제작했습니다. [수국길 걷기](https://naju-little-walk.vercel.app/?place=neureoji&at=hydrangea&v=neureoji-hydrangea-v95c). [전체 제작 자료 보관](knowledge/github-project-archive-2026-10-04.md).
+
+전체 제작 자료 **8,160개 파일·27.90GB**, Blender 원본·백업 **246개**를 [비공개 GitHub Release](https://github.com/reinhardt7177-lab/naju-little-walk-project-archive/releases/tag/naju-project-v95-20261004)에 보관했습니다. 13개 ZIP·8.62GB로 정리하고 모든 저장 객체와 GitHub 첨부 파일의 SHA-256을 검증했습니다. 원본은 보존했으며 인증 설정과 재설치 가능한 실행 환경은 제외했습니다.
+
+[느러지 수국길 보강 v94](knowledge/neureoji-hydrangea-v94-2026-10-04.md): 2026년 현장 사진과 지도 중심선을 참고해 전망대 주변 약 366m의 언덕길·그늘길, 수국 550개 군락과 경사 이동을 구현했습니다. [수국길 입장](https://naju-little-walk.vercel.app/?place=neureoji&at=hydrangea&v=neureoji-hydrangea-v94h) · [그늘 꽃길](https://naju-little-walk.vercel.app/?place=neureoji&at=forest&v=neureoji-hydrangea-v94h).
+
+[느러지 전망대 사진 대조 보강 v93](knowledge/neureoji-quality-v93-2026-10-04.md): 철골·계단·수국길과 정상의 강 굽이·들판·수림·먼 산을 보강했습니다. [정상 조망](https://naju-little-walk.vercel.app/?place=neureoji&at=top&v=neureoji-quality-v93d)에서 확인합니다. 실제 지도와 사진 참고 추정을 구분하고 기존 Blender 수정본을 보존했습니다.
+
+[파일 정리 v91](knowledge/workspace-cleanup-v91-2026-10-04.md): 제작 원본을 보존하며 중복 모델·옛 배포 압축 파일·캐시 약 4.82 GB를 삭제했습니다. 정리 후 타입 검사·빌드를 통과했습니다.
+
+금성관을 기본 출발 화면으로 두고 **나주 전체 지도·장소 선택**에서 영산포, 빛가람동, 나주수목원, 드들강, 다시초와 복암리로 이동합니다. 상세 모델은 Blender에서 제작·수정하고 GLB로 내보내며 Three.js가 산책 기능을 담당합니다. 지역 주소의 `place` 값과 전시관 출입 연결을 유지합니다. 지도 윤곽은 OSM, 높이·장식·조경 일부는 사진 참고 추정입니다.
+
+[느러지 전망대 제작 v92](knowledge/neureoji-v92-2026-10-04.md): 별도 장소에서 계단을 올라 원형 전망대와 실제 지도 기반 강 굽이를 볼 수 있습니다. [정상 전망](https://naju-little-walk.vercel.app/?place=neureoji&at=top) 바로가기를 제공합니다. 표고는 30m DSM에서 추정한 지면이며 계단 치수는 사진 비례입니다.
+
+[역사갤러리 1층 보강 v91](knowledge/history-gallery-v91-2026-10-04.md): 확인한 음식·공예 전시와 영산강 8경, 등대 모형을 추가하고 실내 눈높이·조명을 조정했습니다. 2층 현재 용도와 실측 평면도는 검증되지 않았습니다.
+
+[영산포 고도화 v79·지도 복원 기록](knowledge/yeongsanpo-quality-v79-2026-10-03.md): 사진을 비교해 강변·등대·상점·두 전시관·황포돛배 표면을 보강했습니다. [영산포 산책](https://naju-little-walk.vercel.app/?place=yeongsanpo&v=quality-v79-20261003)에서 선착장 전경·등대·홍어거리·문학관 마당을 가까이 볼 수 있습니다.
+
+[영산포 북측 배경 축소 v90](knowledge/yeongsanpo-map-crop-2026-10-04.md): 사용자가 표시한 강 건너편 배경과 불필요한 도로·교량 끝을 잘라 맵 범위를 줄였습니다. 선착장·홍어거리·두 전시관과 황포돛배를 유지하고 이동·수면 경계도 맞췄습니다. [축소된 영산포 맵](https://naju-little-walk.vercel.app/?place=yeongsanpo&v=north-crop-v90)에서 확인합니다.
 
 ## 태블릿으로 이용하기
 
-[나주 산책 운영 사이트](https://naju-little-walk.reinhardt5559.chatgpt.site/?place=bitgaram)에서 장소를 골라 시작합니다. 터치 기기는 가로 화면으로 이용하며 세로에서는 회전 안내가 표시됩니다. 전체 화면 버튼은 가능한 브라우저에서 가로 잠금도 요청합니다. iPad 등 미지원 환경에서는 기기를 직접 돌려 주세요.
+최신 [금성관 리서치·고도화 v78 기록](knowledge/geumseonggwan-research-v78-2026-10-03.md): 2015년 공식 기록 사진과 현장 사진을 비교해 잎형 공포, 서까래 채색, 연꽃 천장판, 문 하단을 보강했습니다. 전체 보기에서 **정청 정면 / 처마·공포 / 망화루 / 천장·단청**을 살펴볼 수 있습니다. 새 Blender 편집본은 `outputs/geumseonggwan-v78/geumseonggwan-v78.blend`입니다.
+
+[금성관 산책 운영 사이트](https://naju-little-walk.vercel.app/)에서 시작합니다. 나주 전체 지도에서 지역을 선택하고, ‘현재 장소 안에서’ 탭으로 해당 장소의 입구·길에 이동합니다. 터치 기기는 가로 화면으로 이용하며 세로에서는 회전 안내가 표시됩니다. 전체 화면 버튼은 가능한 브라우저에서 가로 잠금도 요청합니다. iPad 등 미지원 환경에서는 기기를 직접 돌려 주세요.
 
 왼손 이동 버튼과 오른손 시선 버튼, 드래그로 산책합니다. 전체 보기에서는 두 손가락 또는 확대·축소 버튼을 이용합니다. ‘산책 안내와 화면 설정’에서 이동 버튼 표시와 화질을 조절할 수 있습니다. 태블릿 기본값은 ‘편하게 걷기’입니다.
 
@@ -14,23 +34,33 @@
 
 [퀄리티 업그레이드 실행 계획](knowledge/QUALITY_UPGRADE_PLAN.md)에서 장소별 부족한 부분과 검증 기준을 관리합니다. 전망대 공원의 잎·가지와 거리별 수형을 새 Blender 수정본에 제작했고, 모델 정리 중 메뉴에 시간을 주는 로딩 분할과 식생 판정 캐시를 적용했습니다. 원본 지형·건축·산책 좌표는 유지했습니다. 큰 모델 검사 시 `node --experimental-strip-types --test --test-concurrency=1 tests/*.test.mjs`로 메모리 사용을 제한할 수 있습니다.
 
+## 지역 안내 캐릭터
+
+금성관 출발 지점 앞에서 버들낭자가 맞이합니다. v6 리깅 모델의 인사·안내·대기 애니메이션을 사용하며, 대화에서 금성관의 구조와 산책 방법을 안내합니다. 각 지역의 출발 지점에는 해당 지역 안내 캐릭터가 배치됩니다. [기존 7곳 배치 기록](knowledge/naju-npc-start-placement-2026-10-02.md)과 [배치 사진](outputs/npc-placement-four-views-20261002/naju-npc-placement-four-views.pdf)을 참고하세요.
+
 ## Vercel 배포
 
 [빛가람 아파트 입면 제작 기록](knowledge/bitgaram-facades-quality-2026-10-01.md): 새 Blender 편집본에서 114동의 겹친 유리 띠를 개별 창 배열로 보완했다. 원본 건물·길·시설 형상은 보존했고, 창 치수·색과 위성 윤곽 추정은 구분해 기록했다.
 
-[Vercel 운영 주소](https://naju-little-walk.vercel.app/) · [드들강 산책](https://naju-little-walk.vercel.app/?place=deudeulgang)
+[Vercel 운영 주소](https://naju-little-walk.vercel.app/)
 
 2026-09-21 첫 Vercel 배포는 검증한 정적 파일을 직접 업로드했습니다. 2026-10-02 기존 Vercel 프로젝트를 `reinhardt7177-lab/naju-little-walk` 저장소에 연결하고 운영 브랜치를 `codex/bitgaram-place-walks`로 설정했습니다. 이 브랜치에 push하면 Vercel이 자동으로 빌드하고 운영 주소에 반영합니다. [자동 배포 연결 기록](knowledge/vercel-auto-deployment-2026-10-02.md)을 참고하세요.
 
 `vercel.json`은 정적 웹 빌드(`npm run build`)와 배포 폴더(`dist/client`)를 지정합니다. GitHub `codex/bitgaram-place-walks` 브랜치의 최신 작업 또는 동일한 정적 빌드 결과를 배포합니다. GitHub 기본 `main` 브랜치는 변경하지 않습니다. 프레임워크 자동 감지 대신 일반 정적 프로젝트 설정을 사용합니다.
 
-`.vercelignore`는 Blender 원본·도구, 참고 자료와 임시 파일을 업로드에서 제외합니다. 완성된 빌드에는 무손실 압축한 `.glb.gz`만 들어가며, 중복된 `.glb`는 포함하지 않습니다. 모델 로더가 gzip 압축을 해제하므로 별도의 `Content-Encoding` 설정은 필요하지 않습니다. `/?place=deudeulgang` 등 기존 장소 주소를 그대로 사용할 수 있습니다.
+`.vercelignore`는 Blender 원본·도구, 참고 자료와 임시 파일을 업로드에서 제외합니다. 지도 모델은 gzip 압축한 `.glb.gz`로 배포하며 중복된 지도 `.glb`는 포함하지 않습니다. 지도 모델 로더가 gzip 압축을 해제하므로 별도의 `Content-Encoding` 설정은 필요하지 않습니다. `?place=` 주소는 지정한 나주 지역으로 연결하며, 운영 UI의 나주 전체 지도에서 지역을 선택할 수 있습니다.
 
 설정 근거: [Vercel 프로젝트 설정](https://vercel.com/docs/project-configuration).
 
-## 드들강 솔밭과 전체 맵 채색
+## 보관된 기존 지역 제작 기록
+
+아래에는 각 지역의 제작 과정과 보존한 이전 편집본을 기록합니다. 현재 운영 앱의 나주 전체 지도에서 각 지역으로 이동할 수 있습니다.
+
+### 드들강 솔밭과 전체 맵 채색
 
 `/?place=deudeulgang`에서 소나무 숲길, 노래비, 강변과 남쪽 쉼터를 산책할 수 있습니다. OSM 보행로·시설 위치와 Esri 위성영상, 2025년 현장 사진을 참고했습니다. 소나무 280그루의 위치·수형과 세부 시설 치수는 추정입니다. Blender 편집본은 `outputs/deudeulgang/deudeulgang-pine-grove-v3.blend`입니다.
+
+2026-10-03 v81에서는 **솔밭유원지와 바로 옆 강 구간만** 남겼습니다. 산 배경·농경지·외부 도로·교량을 제거하고 카메라·미니맵·이동 범위를 맞췄습니다. 현재 편집본은 `outputs/deudeulgang-v81/deudeulgang-grove-river-v81-finished.blend`이며 원본과 소나무·솔밭 안 숲길 위치는 보존했습니다. 압축 전송량은 약 46% 감소했습니다. 사용되지 않는 UI·과거 공개 자산 76개는 복구용 로컬 보관함으로 옮겨 배포에서 제외했습니다. [범위·정리 목록·검증 기록](knowledge/deudeulgang-crop-and-cleanup-v81-2026-10-03.md).
 
 기존 모든 맵과 두 황포돛배의 색감을 Blender에서 조정했습니다. `outputs/palette-v51`에 새 전체 장면 편집본을 보관하고, 기존 정점·이미지·애니메이션을 유지한 채 재질 값만 GLB에 반영합니다. [사진 근거, 제작 방법과 추정 범위](knowledge/deudeulgang-and-map-palette-2026-09-20.md)를 확인하세요.
 
@@ -135,6 +165,13 @@ node --experimental-strip-types --test tests/world.test.mjs
 
 ## 다시초등학교 추가
 
+2026-10-03 v80에서는 기존 학교 형태·배치·충돌·실내 동선을 그대로 유지한 채 벽돌·석재·보도·잔디·나무·담쟁이의 표현을 보강했습니다. 최근 학교 사진은 표면 관찰에 사용하고, 기존 가상 실내를 실제 교실로 설명하지 않습니다. 본관·정문·운동장·별동을 가까이 보는 버튼도 추가했습니다.
+
+- 고도화 편집본: `outputs/dasi-v80/dasi-neighborhood-detail-v80.blend` (기존 원본 보존)
+- 제작: `scripts/make_dasi_materials_v80.py` → `scripts/refine_dasi_v80.py` → `scripts/finalize_dasi_vegetation_v80.py`
+- 자료·실제와 추정 구분: [다시초 v80 작업 기록](knowledge/dasi-quality-v80-2026-10-03.md)
+- 데이터 보존 검증: `knowledge/sources/dasi-v80-verification.json`, `tests/dasi-quality.test.mjs`
+
 현재 학교 체험은 **다시초 주변 약 570×440m**까지 확장했습니다. 위성영상의 지붕·농지·주차 공간과 지도 건물·도로를 대조했고, 다시역 외관·호남선 두 선로·승강장을 추가했습니다. 아래 기존 학교 파일들은 보존했습니다.
 
 - 새 Blender: `outputs/dasi-neighborhood.blend`
@@ -231,9 +268,9 @@ npm run build
 
 ## 출처
 
-드들강 수피·낮은 풀·숲 바닥 질감과 모든 탐험 장소의 제목 대비 보완은 [마감 기록](knowledge/deudeulgang-surfaces-quality-2026-10-01.md)에 있습니다. 현재 편집본은 `outputs/quality-v72/deudeulgang-surfaces-v72.blend`이며 이전 수정본을 보존했습니다.
+드들강 수피·낮은 풀·숲 바닥 질감과 모든 탐험 장소의 제목 대비 보완은 [마감 기록](knowledge/deudeulgang-surfaces-quality-2026-10-01.md)에 있습니다. 기반 편집본 `outputs/quality-v72/deudeulgang-surfaces-v72.blend`를 보존하고 v81에서 표시 범위를 솔밭·강으로 축소했습니다. v82에서는 [강의 먼 쪽 물 면을 추가로 잘랐습니다](knowledge/deudeulgang-river-trim-v82-2026-10-03.md). 최신 편집본은 `outputs/deudeulgang-v82/deudeulgang-river-trim-v82.blend`입니다.
 
-수목원 메타세쿼이아·활엽수의 사진 대조, 수형·수피 보완과 보호 검사는 [수형 제작 기록](knowledge/naju-arboretum-tree-quality-2026-10-02.md)에 정리합니다. 새 편집본은 `outputs/quality-v74/naju-arboretum-tree-crowns-v74.blend`이며, 첫 v73 후보는 잎 밀도 문제로 게시하지 않았습니다.
+수목원 수관과 길 가장자리의 최신 보강은 [v88 중앙길 플라타너스 적용·리서치 계획](knowledge/naju-arboretum-canopy-plan-2026-10-03.md)에 정리합니다. 사용자가 지정한 가운데 긴 직선길 120그루를 넓은 플라타너스 수형으로 수정하고 옆 길·낮은 식재 보강을 유지했습니다. 최신 편집본은 `outputs/quality-v88/naju-arboretum-central-platanus-v88.blend`입니다. 이전 v87·v74와 사용자 수정본을 보존하며, 공식 자료의 메타세쿼이아길 명칭과 사용자 지정 수종 표현을 구분합니다. [이전 수형 제작 기록](knowledge/naju-arboretum-tree-quality-2026-10-02.md)도 유지합니다.
 
 빛가람 호수공원의 사각 셀 잔디를 지도 윤곽과 연결되는 면으로 교체한 내용은 [물가 경계 기록](knowledge/bitgaram-shore-quality-2026-10-02.md)에 있습니다. 새 편집본은 `outputs/quality-v75/bitgaram-shore-v75.blend`이며 기존 물·지형·산책로는 보존했습니다.
 
@@ -241,7 +278,9 @@ npm run build
 
 드들강의 현장 사진 대조, 소나무 수관·강 건너 숲 보완, 기존 뿌리·보행 정보 보존은 [제작 기록](knowledge/deudeulgang-pine-quality-2026-10-01.md)에 정리했습니다. 새 Blender 수정본은 `outputs/quality-v71/deudeulgang-pine-crowns-v71.blend`입니다.
 
-빛가람 전망대의 실제 모노레일 평면선·돌미끄럼틀 사진과 보행 연결을 대조한 내용은 [접근로 정정 기록](knowledge/bitgaram-access-correction-2026-10-01.md)에 있습니다. 경사와 세부 치수의 추정 여부도 함께 기록했습니다.
+빛가람 전망대의 실제 모노레일 평면선·돌미끄럼틀 사진과 보행 연결을 대조한 내용은 [접근로 정정 기록](knowledge/bitgaram-access-correction-2026-10-01.md)에 있습니다. 경사와 세부 치수의 추정 여부도 함께 기록했습니다. [v83 운행 보완](knowledge/bitgaram-monorail-v83-2026-10-03.md)에서 별도 차량 모델과 호출·탑승·왕복·하차를 연결했습니다. 전체 보기의 ‘모노레일 하부/상부’ 버튼으로 승강장에 이동한 뒤 탑승할 수 있습니다.
+
+[v89 접근 지형 보강](knowledge/bitgaram-park-terrain-plan-2026-10-03.md)은 공개 GLO-30 표면 표고를 이용해 기존 9.78m였던 상·하부 바닥 차이를 약 34.43m로 수정하고 지형·숲길·계단·모노레일·식재·NPC 높이를 함께 맞춥니다. 새 편집본은 `outputs/terrain-v89/bitgaram-park-glo30-terrain-v89d.blend`입니다. 30m DSM에는 식생·건물 영향이 있으며 현장 지면·승강장 실측값은 아닙니다. 원래 격자, 해석한 시설 경로와 검증 기록을 별도로 보존합니다.
 
 수목원 꽃밭·목재 놀이시설의 최근 보완, 새 Blender 수정본과 검증 범위는 [제작 기록](knowledge/naju-arboretum-garden-quality-2026-10-01.md)에 정리했습니다. [향나무길 제작 기록](knowledge/naju-arboretum-juniper-quality-2026-10-01.md)에는 수형 보강과 지도 도로 정렬, 교차로·보행 바닥 갱신을 기록했습니다. 안드로이드 태블릿의 실제 조작·성능 검증은 화면 크기 검사와 구분합니다.
 

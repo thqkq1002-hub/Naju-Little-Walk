@@ -1,0 +1,52 @@
+{
+  "sourceUnchanged": true,
+  "transportExact": true,
+  "distMatchesPublic": true,
+  "referenceImageryDeployed": false,
+  "authoringFilesDeployed": false,
+  "assets": {
+    "bitgaram-park": {
+      "gzipBytes": 6480762,
+      "gzipSha256": "e2ee913c480913f4b1025514a654f2382ebc771ab3850c430e60dce41d771497",
+      "rawSha256": "2002ec343e0a1dc187d4a989a5691d50d70eca639e1d388bf81d19d571b90ded"
+    },
+    "bitgaram-monorail": {
+      "gzipBytes": 27670,
+      "gzipSha256": "5bf700c65fc503a9c15390d69d0a0c97202de0828e6948abadb01593aca17fe4",
+      "rawSha256": "503ef1a1f7a272f87a5ee17a599bc021adc1ec4e7104ad09e042f8ab46626ba0"
+    },
+    "bitgaram-overview": {
+      "gzipBytes": 10458852,
+      "gzipSha256": "1bb02d671c71124a4106e35ba9d1cf294e9cfe8d2d40744a9111dc83bb9b1f1d",
+      "rawSha256": "b7f8b21335100f081bc0e314212a730b81221b100ae935e9406e9668a9f460ff"
+    },
+    "bitgaram-overview-part2": {
+      "gzipBytes": 9104833,
+      "gzipSha256": "886c9c060b65cdc62d5ab70a429b5c139fcbbb4845b83917032e6798c90b98f0",
+      "rawSha256": "11f06f426d4a2289f3206da46be311ddeee0fbba838c4cafaf7eae6fc7881aff"
+    },
+    "bitgaram-access-overview": {
+      "gzipBytes": 1911789,
+      "gzipSha256": "924675e40285c016f8cfedf0cb0110d8335012ed7501d5d2913bc2b26c5b07b7",
+      "rawSha256": "db17fd100aa5fcb9b5383382e32be83afa2f2a0e1e04db73a620c636e4274931"
+    }
+  },
+  "parkAuthoring": "outputs/bitgaram-v101/bitgaram-access-v101d.blend",
+  "cabinAuthoring": "outputs\\bitgaram-v101\\bitgaram-monorail-v101.blend",
+  "protectedMeshes": 11119,
+  "surveyed": false,
+  "overviewAuthoring": "outputs\\bitgaram-v101\\bitgaram-overview-v101b.blend",
+  "overviewOriginalStreamsExact": true,
+  "removedObsoleteOverviewTriangles": 26948,
+  "selectedTestsPassed": 101,
+  "overviewRetestPassed": 9,
+  "typescriptPassed": true,
+  "productionBuildPassed": true,
+  "browserMapLoaded": true,
+  "browserMonorailCalledAndBoarded": true,
+  "browserUphillDeparture": true,
+  "browserEvidence": [
+    "outputs/bitgaram-v101/browser-overview.png",
+    "outputs/bitgaram-v101/browser-cabin.png"
+  ]
+}

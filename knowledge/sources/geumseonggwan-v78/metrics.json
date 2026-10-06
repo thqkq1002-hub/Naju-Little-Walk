@@ -1,0 +1,86 @@
+{
+  "source": "outputs\\geumseonggwan-v77\\geumseonggwan-v77.blend",
+  "sourceSHA256": "8ed8b107c28819ff229ef23a07a4edb1512f2b1192faafd70c4fdbed7129a477",
+  "sourceUnchanged": true,
+  "editableBlend": "outputs\\geumseonggwan-v78\\geumseonggwan-v78.blend",
+  "removedSupersededGroups": [
+    "hall_name_readable",
+    "v76_original_dancheong_flower_bands",
+    "beam_original_ornament",
+    "beam_original_ornament_inset",
+    "hall_coffer_frame",
+    "ceiling_original_lotus",
+    "ceiling_lotus_center",
+    "v77_ikgong_curved_arms",
+    "v77_ikgong_painted_edges",
+    "v77_morodancheong_scrolls"
+  ],
+  "ikgongStations": 20,
+  "paintedCoffers": 96,
+  "paintedDoorGroups": 65,
+  "paintedRafterCount": 1524,
+  "rafterGroups": [
+    {
+      "name": "roof_832423356_lower_rafter",
+      "cylinders": 98
+    },
+    {
+      "name": "roof_832423356_upper_rafter",
+      "cylinders": 98
+    },
+    {
+      "name": "roof_832423357_lower_rafter",
+      "cylinders": 74
+    },
+    {
+      "name": "roof_832423357_upper_rafter",
+      "cylinders": 74
+    },
+    {
+      "name": "roof_832423358_lower_rafter",
+      "cylinders": 152
+    },
+    {
+      "name": "roof_832423358_upper_rafter",
+      "cylinders": 152
+    },
+    {
+      "name": "roof_west_wing_lower_rafter",
+      "cylinders": 88
+    },
+    {
+      "name": "roof_west_wing_upper_rafter",
+      "cylinders": 88
+    },
+    {
+      "name": "roof_east_wing_lower_rafter",
+      "cylinders": 166
+    },
+    {
+      "name": "roof_east_wing_upper_rafter",
+      "cylinders": 166
+    },
+    {
+      "name": "hall_exposed_ceiling_rafter",
+      "cylinders": 140
+    },
+    {
+      "name": "hall_front_back_ceiling_rafter",
+      "cylinders": 176
+    },
+    {
+      "name": "entrance_information_roof_lower_rafter",
+      "cylinders": 26
+    },
+    {
+      "name": "entrance_information_roof_upper_rafter",
+      "cylinders": 26
+    }
+  ],
+  "objects": 539,
+  "triangles": 849412,
+  "rawBytes": 43691348,
+  "gzipBytes": 23610003,
+  "textureImages": 34,
+  "collisionUnchanged": true
+}

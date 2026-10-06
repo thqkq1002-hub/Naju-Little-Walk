@@ -43,20 +43,51 @@ test('park aerial roof has an open oculus and physical supports block walking',(
   const roof=scene.getObjectByName('aerial_roof_open_oval');
   assert.ok(roof,'Detailed exterior roof is exported');
   assert.ok(!roof.userData.hide_in_overview,'Exterior roof stays visible in the aerial view');
-  const downward=(x,z)=>new THREE.Raycaster(new THREE.Vector3(x,40,z),new THREE.Vector3(0,-1,0),0,8).intersectObject(roof,true);
+  const w=JSON.parse(fs.readFileSync(new URL('../public/bitgaram-park-world.json',import.meta.url),'utf8'));
+  const upper=w.spawn.height;
+  const downward=(x,z)=>new THREE.Raycaster(new THREE.Vector3(x,upper+24,z),new THREE.Vector3(0,-1,0),0,8).intersectObject(roof,true);
   assert.equal(downward(-2,0).length,0,'Central oval opening remains open');
   assert.ok(downward(10,0).length,'Outer roof annulus covers the viewing room');
-  const w=JSON.parse(fs.readFileSync(new URL('../public/bitgaram-park-world.json',import.meta.url),'utf8'));
   const columns=w.solids.filter(s=>s.name==='aerial_column_body');
   assert.equal(columns.length,6);
   for(const c of columns){
     const pts=solidCollider(c),x=pts.reduce((s,p)=>s+p[0],0)/pts.length,z=pts.reduce((s,p)=>s+p[1],0)/pts.length;
-    assert.equal(canTravelTo([x,z],w,16),false,'Support must block visitors');
+    assert.equal(canTravelTo([x,z],w,upper),false,'Support must block visitors');
   }
-  assert.equal(canTravelTo([0,5.8],w,16),false,'The glazed entrance drum is not a pass-through prop');
-  walkRoute(w,[[0,21],[0,8]],16);
+  assert.equal(canTravelTo([0,5.8],w,upper),false,'The glazed entrance drum is not a pass-through prop');
+  walkRoute(w,[[0,21],[0,8]],upper);
   const shell=w.solids.find(s=>s.name==='photo_exhibition_shell');
   assert.ok(shell&&shell.collision,'Exhibition shell retains a physical boundary');
+});
+
+test('observatory central entrance automatically enters a safe panorama arrival without return loops',()=>{
+  const park=JSON.parse(fs.readFileSync(new URL('../public/bitgaram-park-world.json',import.meta.url),'utf8'));
+  const inside=JSON.parse(fs.readFileSync(new URL('../public/bitgaram-observatory-world.json',import.meta.url),'utf8'));
+  assert.equal(inside.viewMode,'panorama','Direct links and entry portals use an interior eye point');
+  assert.equal(park.viewMode,undefined,'Exterior park retains its aerial overview');
+  const front=sceneArrival(park,'?at=entrance-front');
+  const upper=park.spawn.height;
+  assert.equal(front.entered,true);
+  assert.equal(portalAt(park,front.x,front.z,front.height),undefined,'Entrance link stops just outside the door trigger');
+  const before=walkRoute(park,[[0,21],[0,8]],upper);
+  assert.equal(portalAt(park,before.x,before.z,before.height),undefined,'Approaching the door does not enter too early');
+  const atDoor=walkRoute(park,[[before.x,before.z],[0,7]],upper);
+  walkRoute(park,[[front.x,front.z],[atDoor.x,atDoor.z]],front.height);
+  const portal=portalAt(park,atDoor.x,atDoor.z,atDoor.height);
+  assert.equal(portal?.target,'bitgaram-observatory','Walking onto the tactile entrance strip enters the interior');
+  assert.equal(canTravelTo([0,5.8],park,upper),false,'Glass remains solid; transition occurs in front of it');
+  assert.equal(portalAt(park,0,7,0),undefined,'Ground-level visitors cannot trigger the elevated door');
+  for(const [x,z] of [[2,7],[-2,7],[0,-4.4]]){
+    assert.equal(portalAt(park,x,z,upper),undefined,'Side glazing is not an entrance');
+  }
+  const href=portalHref(portal);
+  const arrival=sceneArrival(inside,href.split('?')[1]);
+  assert.equal(arrival.entered,true,'Door arrival immediately continues in walking mode');
+  assert.ok(canTravelTo([arrival.x,arrival.z],inside,arrival.height),'Interior arrival is safely on the floor');
+  assert.equal(portalAt(inside,arrival.x,arrival.z,arrival.height),undefined,'Arrival cannot send the visitor back outside');
+  const back=sceneArrival(park,'');
+  assert.equal(portalAt(park,back.x,back.z,back.height),undefined,'Outside signpost returns beyond the door trigger');
+  assert.equal(portalAt(park,park.arrivals['monorail-upper'].x,park.arrivals['monorail-upper'].z,upper),undefined);
 });
 
 test('Bitgaram slide gallery and monorail boundaries are physical and the roof garden stays open',()=>{
@@ -71,7 +102,7 @@ test('Bitgaram slide gallery and monorail boundaries are physical and the roof g
   }
   const {scene}=readModel(new URL('../public/models/bitgaram-park.glb',import.meta.url));
   for(const name of names)assert.equal(scene.getObjectByName(name),undefined,'Collision proxies are not visible solid walls');
-  const ray=new THREE.Raycaster(new THREE.Vector3(0,20,130),new THREE.Vector3(0,-1,0),0,15);
+  const ray=new THREE.Raycaster(new THREE.Vector3(0,w.arrivals.lower.height+13.78,130),new THREE.Vector3(0,-1,0),0,15);
   assert.equal(ray.intersectObject(scene.getObjectByName('photo_exhibition_sloped_shell'),true).length,0,'Old closed roof removed');
   assert.ok(ray.intersectObject(scene.getObjectByName('context_roof_garden_paving'),true).length,'Roof terrace floor remains');
   const building=solidCollider(w.solids.find(s=>s.name==='photo_exhibition_shell'));
@@ -90,11 +121,12 @@ test('Bitgaram signs load valid scenes and preserve elevated park spawn',()=>{
     assert.ok(canTravelTo([a.x,a.z],w,a.height),id);
     for(const link of w.sceneLinks) assert.ok(destinations[link.target],link.target);
     if(id==='bitgaram-park'){
-      assert.equal(a.height,16);
-      const access=JSON.parse(fs.readFileSync(new URL('../knowledge/sources/bitgaram/access-v69.json',import.meta.url)));
+      assert.equal(a.height,w.arrivals['monorail-upper'].height);
+      const access=JSON.parse(fs.readFileSync(new URL('../'+w.accessReference.profiles,import.meta.url)));
       const path=access.stairs_route.map(p=>[p[0],p[2]]);
-      const end=walkRoute(w,[[a.x,a.z],[0,12],[path[0][0],12],...path],16);
-      assert.ok(Math.abs(end.height-6.22)<.08,'Stairs reach the mapped lower exhibition terrace');
+      const approach=access.connectors.upper_gallery.map(p=>[p[0],p[2]]);
+      const end=walkRoute(w,[[a.x,a.z],...approach,...path],a.height);
+      assert.ok(Math.abs(end.height-w.arrivals.lower.height)<.08,'Stairs reach the mapped lower exhibition terrace');
     } else if(id==='bitgaram-observatory'){
       // Empty room: former furniture and central core positions are now walkable.
       walkRoute(w,[[0,7],[6,7],[6,2],[10,0],[7,-8],[-5,-8],[-5,-4],[-10,0],[-6,0],[-6,7],[0,7]]);
@@ -771,8 +803,8 @@ test('neighborhood GLB contains the station and outward-facing roof surfaces',()
 const world = JSON.parse(fs.readFileSync(new URL('../public/city-world.json', import.meta.url), 'utf8'));
 const colliders = world.solids.filter(s => s.collision).map(solidCollider);
 
-test('mapped city has the five source buildings and an unblocked spawn', () => {
-  assert.equal(world.buildings.length, 5);
+test('dedicated precinct has the three historic source buildings and an unblocked spawn', () => {
+  assert.deepEqual(world.buildings.map(b=>b.osm_id).sort(), ['832423356','832423357','832423358']);
   assert.ok(world.buildings.some(b => b.osm_id === '832423358'));
   assert.equal(colliders.some(p => hitsPolygon(world.spawn.x, world.spawn.z, p)), false);
 });
@@ -807,31 +839,22 @@ test('both mapped historic gates retain a clear passage into the hall courtyard'
   }
 });
 
-test('the mapped western parking entrance connects to Manghwaru and the hall',()=>{
-  assert.equal(world.surroundings.parkingOsmId,'478611741');
-  for(const car of world.solids.filter(s=>s.name==='parked_vehicle_body')){
-    for(const [x,z] of solidCollider(car))assert.ok(hitsPolygon(x,z,world.surroundings.parkingOutline,0),'Parked car must remain inside the mapped car park');
-  }
-  const route=[...world.surroundings.entranceRoute,...world.walkRoute];
-  let p={x:route[0][0],z:route[0][1]};
-  for(const [x,z] of [...route.slice(1),...route.slice(0,-1).reverse()]){
-    p=movePlayer(p.x,p.z,x-p.x,z-p.z,colliders,world.bounds);
-    assert.ok(Math.hypot(p.x-x,p.z-z)<.045,`Entrance or parking route blocked at ${x},${z}: ${JSON.stringify(p)}`);
-  }
+test('dedicated precinct excludes the parking route and blocks relocation into perimeter walls',()=>{
+  assert.deepEqual(world.surroundings.entranceRoute,[]);
+  assert.equal(world.solids.some(s=>/^(parked_|parking_|vehicle_|street_|road_)/.test(s.name)),false);
   for(const s of world.solids.filter(s=>s.name.startsWith('hall-wall_boundary_'))){
     const fp=solidCollider(s),cx=fp.reduce((v,p)=>v+p[0],0)/fp.length,cz=fp.reduce((v,p)=>v+p[1],0)/fp.length;
     assert.equal(canTravelTo([cx,cz],world),false,'Map relocation cannot place a walker inside the new perimeter wall');
   }
 });
 
-test('imagery context buildings stay outside the historic precinct and remain collision solid',()=>{
-  const observations=world.surroundings.roofObservations;
-  assert.equal(observations.length,37);
-  assert.equal(mapSolids(world).filter(s=>/^context_.*_wall$/.test(s.name)).length,37,'Surrounding buildings must also appear on the travel map');
-  for(const b of observations){
-    const x=b.footprint.reduce((s,p)=>s+p[0],0)/b.footprint.length,z=b.footprint.reduce((s,p)=>s+p[1],0)/b.footprint.length;
-    assert.equal(hitsPolygon(x,z,world.surroundings.precinctBoundary,0),false,`${b.id} must remain outside the monument grounds`);
-    assert.equal(canTravelTo([x,z],world),false,`${b.id} must block map placement and walking`);
+test('the local map excludes exterior context and refuses courtyard bounding-box corners',()=>{
+  assert.deepEqual(world.surroundings.roofObservations,[]);
+  assert.equal(mapSolids(world).some(s=>s.name.startsWith('context_')),false);
+  assert.equal(world.requireFloor,true);
+  for(const [x,z] of [[world.bounds[0]+2,world.bounds[2]+2],[world.bounds[1]-2,world.bounds[3]-2]]){
+    assert.equal(hitsPolygon(x,z,world.surroundings.precinctBoundary,0),false);
+    assert.equal(canTravelTo([x,z],world),false,'Relocation must respect the irregular historic boundary');
   }
 });
 

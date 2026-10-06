@@ -212,6 +212,11 @@ for o in scene.objects:
     if o.name.startswith(('detail_forecourt','detail_granite','detail_drain','detail_walk','detail_campus_walk','detail_tree_pit','detail_entry_mat')):o['no_shadow']=True
 
 world['solids'].extend(g.solids)
+# The detailed pavers sit above the original campus plane. Keep walking and
+# guide placement on their top surface, including the small grout gaps.
+world['solids']=[s for s in world['solids'] if s['name']!='walk-floor_kentech_forecourt']
+world['solids'].append(dict(name='walk-floor_kentech_forecourt',kind='box',position=[43,.0765,23],size=[146,.153,20],color='#c8c4b8',collision=False))
+world['spawn']['height']=.153
 world['provenance']['detailRevision']='v53 photo-led glazing, brise-soleil, granite forecourt and RC reveals'
 world['provenance']['detailLimitations']='Facade/paving module sizes, foliage, door hardware and planters inferred from photos; existing map footprints retained.'
 worldpath.write_text(json.dumps(world,ensure_ascii=False,separators=(',',':')),encoding='utf8')

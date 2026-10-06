@@ -1,0 +1,17 @@
+{
+  "created": "2026-10-05",
+  "latestBlend": "outputs/neureoji-v100/neureoji-close-detail-v100.blend",
+  "files": [
+    {
+      "path": "outputs/neureoji-v100/neureoji-close-detail-v100.blend",
+      "bytes": 134300073,
+      "sha256": "822de6ef0745658f3b491701f8d6b92cffaeefaa12802b8e1e2481c896f6f56a"
+    }
+  ],
+  "preservedSource": "outputs/neureoji-v99/neureoji-reference-v99.blend",
+  "preservedSourceSha256": "83f492efe7eb9efd041ff58eb8a62a0840628ae9a656a87f00881b722f55b428",
+  "previousArchive": "https://github.com/reinhardt7177-lab/naju-little-walk/releases/tag/observatory-refinement-v99-20261005",
+  "deploymentIncludesBlender": false,
+  "archiveBytes": 47807214,
+  "archiveSha256": "a4bac7c8c82e704754e3b3269cdb090ee57f7db17872b1e6092a757eeffe3851"
+}

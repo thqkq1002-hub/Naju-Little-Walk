@@ -1,0 +1,35 @@
+{
+  "revision": "neureoji-quality-v93d",
+  "neureojiTests": 6,
+  "worldTests": 74,
+  "allTests": {
+    "total": 187,
+    "passed": 185,
+    "baselineFailures": 2
+  },
+  "baselineReproducedWithCommit": "d1611ad",
+  "typeCheck": true,
+  "staticBuild": true,
+  "originalBlenderPreserved": true,
+  "compressedBytesMatch": true,
+  "browser": {
+    "localPixelsVerified": true,
+    "viewport": [
+      1024,
+      768
+    ],
+    "consoleErrors": [],
+    "drawCalls": 56,
+    "triangles": 459736,
+    "meanFrameIntervalMs": 93.3358,
+    "p95FrameIntervalMs": 133.3,
+    "contextLost": false,
+    "notes": "Background desktop browser sample; not Android hardware or GPU certification."
+  },
+  "production": {
+    "filesMatchLocal": true,
+    "pixelsVerified": true,
+    "modelRevision": "neureoji-quality-v93d"
+  },
+  "androidHardware": "not tested"
+}

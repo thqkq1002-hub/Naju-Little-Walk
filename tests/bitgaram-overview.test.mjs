@@ -12,7 +12,10 @@ test('district overview transports exact geometry and retains destination pins',
  for(const mesh of g.meshes)for(const p of mesh.primitives){const a=g.accessors[p.indices];assert.equal(a.componentType,5123);assert.ok(a.max[0]<g.accessors[p.attributes.POSITION].count);triangles+=a.count/3;}
  for(const a of g.accessors)for(const values of [a.min,a.max])if(values)assert.ok(values.every(Number.isFinite));
  }
- assert.equal(triangles,JSON.parse(read('knowledge/sources/bitgaram/district-color-metrics.json')).triangles,'Both transport parts together keep every triangle');
+ const access=JSON.parse(read('knowledge/sources/bitgaram/access-v101/overview.json'));
+ const removed=access.parts.reduce((n,p)=>n+p.trianglesRemoved,0);
+ assert.equal(triangles+removed,JSON.parse(read('knowledge/sources/bitgaram/district-color-metrics.json')).triangles,'Only Blender-selected obsolete access and interfering inferred vegetation triangles are removed');
+ assert.ok(removed>0&&access.parts.every(p=>p.existingAttributeStreamsPreserved));
  const pins=JSON.parse(read('public/bitgaram-orbit.json')).pins;
  assert.deepEqual(pins.map(p=>p.id).sort(),['bitgaram-kentech','bitgaram-kepco','bitgaram-park']);
  for(const p of pins)assert.ok(p.position.every(Number.isFinite));

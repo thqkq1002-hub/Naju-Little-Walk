@@ -1,0 +1,114 @@
+{
+  "checked": "2026-10-05",
+  "originWGS84": {
+    "lat": 34.9159348,
+    "lon": 126.5419381
+  },
+  "terrarium": [
+    {
+      "x": 0,
+      "z": 0,
+      "lat": 34.9159348,
+      "lon": 126.5419381,
+      "heightMetres": 45.66811599934032,
+      "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+      "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+    },
+    {
+      "x": -30,
+      "z": 0,
+      "lat": 34.9159348,
+      "lon": 126.54160944665311,
+      "heightMetres": 40.91650168854262,
+      "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+      "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+    },
+    {
+      "x": 30,
+      "z": 0,
+      "lat": 34.9159348,
+      "lon": 126.54226675334688,
+      "heightMetres": 45.17415269477062,
+      "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+      "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+    },
+    {
+      "x": 0,
+      "z": -30,
+      "lat": 34.9162042933525,
+      "lon": 126.5419381,
+      "heightMetres": 44.37275012967895,
+      "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+      "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+    },
+    {
+      "x": 0,
+      "z": 30,
+      "lat": 34.915665306647504,
+      "lon": 126.5419381,
+      "heightMetres": 45.812938556098295,
+      "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+      "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+    },
+    {
+      "x": -60,
+      "z": 0,
+      "lat": 34.9159348,
+      "lon": 126.54128079330621,
+      "heightMetres": 35.30071319565516,
+      "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+      "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+    },
+    {
+      "x": 60,
+      "z": 0,
+      "lat": 34.9159348,
+      "lon": 126.54259540669378,
+      "heightMetres": 46.56417946638513,
+      "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+      "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+    },
+    {
+      "x": 0,
+      "z": -60,
+      "lat": 34.916473786705,
+      "lon": 126.5419381,
+      "heightMetres": 43.54135791994122,
+      "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+      "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+    },
+    {
+      "x": 0,
+      "z": 60,
+      "lat": 34.91539581329501,
+      "lon": 126.5419381,
+      "heightMetres": 44.38616291950144,
+      "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+      "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+    },
+    {
+      "x": 0,
+      "z": 100,
+      "lat": 34.91503648882501,
+      "lon": 126.5419381,
+      "heightMetres": 44.25807067718762,
+      "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+      "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+    }
+  ],
+  "model": {
+    "base": 45.76367950439453,
+    "deck": 57.76367950439453,
+    "towerHeight": 15.35
+  },
+  "sources": [
+    "https://registry.opendata.aws/terrain-tiles/",
+    "https://live112.tistory.com/5000",
+    "https://forme13.tistory.com/3621"
+  ],
+  "limitations": [
+    "DEM product agreement is not a survey or proof of bare-earth accuracy.",
+    "Total structure height and occupied deck height are different quantities.",
+    "Water is a modeled local plane, not an observed water-level datum."
+  ]
+}

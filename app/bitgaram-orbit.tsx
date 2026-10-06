@@ -47,8 +47,8 @@ export default function BitgaramOrbit(){
       zoom.current=(scale)=>{const offset=camera.position.clone().sub(controls!.target);offset.setLength(THREE.MathUtils.clamp(offset.length()*scale,controls!.minDistance,controls!.maxDistance));camera.position.copy(controls!.target).add(offset);controls!.update();demand.invalidate();};
       const resize=()=>{camera.aspect=mount.clientWidth/mount.clientHeight;camera.updateProjectionMatrix();renderer!.setSize(mount.clientWidth,mount.clientHeight);demand.invalidate();};resize();observer=new ResizeObserver(resize);observer.observe(mount);
       const loadModel=async()=>{
-        const results=await Promise.allSettled(['bitgaram-overview','bitgaram-overview-part2'].map(async name=>{
-          const response=await fetch(`/models/${name}.glb.gz?v=apartment-facades-v60-20261001`,{signal:abort.signal});
+        const results=await Promise.allSettled(['bitgaram-overview','bitgaram-overview-part2','bitgaram-access-overview'].map(async name=>{
+          const response=await fetch(`/models/${name}.glb.gz?v=bitgaram-access-v101`,{signal:abort.signal});
           if(!response.ok)throw new Error('3D 지도를 불러오지 못했습니다.');
           return new GLTFLoader().parseAsync(await unpackModel(await response.arrayBuffer()),'');
         }));
@@ -58,10 +58,10 @@ export default function BitgaramOrbit(){
           throw failure.reason;
         }
         const parts=results.map(result=>{if(result.status!=='fulfilled')throw new Error('Incomplete map');return result.value;});
-        parts[0].scene.add(parts[1].scene);
+        for(const part of parts.slice(1))parts[0].scene.add(part.scene);
         return parts[0];
       };
-      const [modelResult,responseResult]=await Promise.allSettled([loadModel(),fetch('/bitgaram-orbit.json',{signal:abort.signal})]);
+      const [modelResult,responseResult]=await Promise.allSettled([loadModel(),fetch('/bitgaram-orbit.json?v=bitgaram-access-v101',{signal:abort.signal})]);
       if(modelResult.status==='rejected')throw modelResult.reason;
       const model=modelResult.value;
       if(responseResult.status==='rejected'){dispose(model.scene);throw responseResult.reason;}

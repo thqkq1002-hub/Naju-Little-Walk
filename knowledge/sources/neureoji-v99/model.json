@@ -1,0 +1,69 @@
+{
+  "revision": "neureoji-reference-v99",
+  "blend": "outputs/neureoji-v99/neureoji-reference-v99.blend",
+  "preservedSource": "outputs/neureoji-polish-v98/neureoji-polish-v98.blend",
+  "preservedSourceSha256": "35ad4027d72e5eaee7a6b901d24a102749fb9b058b14bd73ce707ec102847bb3",
+  "navigationSolidsSha256": "457b5819494149244a2766487b8d05f11cf84ae5f2a8d0740c510fabb5ac4ad8",
+  "navigationChanged": false,
+  "lacecapCoresShaped": 1596,
+  "pathMaterials": [
+    "walk-floor_hydrangea_flower-road",
+    "walk-floor_hydrangea_woodland-hydrangea"
+  ],
+  "leafTints": [
+    [
+      0.54,
+      0.7,
+      0.43,
+      1
+    ],
+    [
+      0.66,
+      0.78,
+      0.5,
+      1
+    ],
+    [
+      0.44,
+      0.6,
+      0.33,
+      1
+    ]
+  ],
+  "farCrownTexturePixels": 256,
+  "restoredCutoutMaterials": [
+    "Neureoji93_near_leaves",
+    "Neureoji93_crown_2",
+    "Neureoji93_crown_0",
+    "Neureoji93_crown_1",
+    "Neureoji93_crown_3",
+    "Neureoji94_bloom_cutout_0",
+    "Neureoji94_bloom_cutout_1",
+    "Neureoji94_bloom_cutout_2",
+    "Neureoji95_leaf_0",
+    "Neureoji95_leaf_1",
+    "Neureoji95_leaf_2",
+    "Neureoji97_leaf_detail"
+  ],
+  "export": {
+    "merged": 2409,
+    "meshes": 96,
+    "materials": 80,
+    "images": 19,
+    "bytes": 50084164,
+    "gzipBytes": 16703143,
+    "sha256": "fb4938c93d106eb31453eadfd5be686c2bffc22c6a0b5b2929da1e90a2ec8063",
+    "gzipSha256": "15a27c5d37e1ff537110e1922c75b8839e23d77d76aa05d18fd3dd243ed1be58"
+  },
+  "normalStorage": {
+    "vertices": 2015738,
+    "maximumLightingNormalErrorDegrees": 0.3840910405490917,
+    "positionChanges": 0
+  },
+  "plantPositionStorage": {
+    "vertices": 1105150,
+    "maxDecorativePlantErrorMetres": 0.004657457994672191,
+    "walkingAndRiverPositionChanges": 0,
+    "uniformScale": true
+  }
+}

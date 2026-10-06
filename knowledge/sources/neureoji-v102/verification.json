@@ -1,0 +1,32 @@
+{
+  "revision": "neureoji-boardwalk-v102",
+  "preservedMeshes": 97,
+  "woodlandTrianglesExact": true,
+  "otherAttributesExact": true,
+  "navigationExact": true,
+  "sourcePreserved": true,
+  "transportExact": true,
+  "staticBuildExact": true,
+  "gzipBytes": 16750540,
+  "gzipSha256": "e2f9bf3168627bcf06442f659ef4e2610a755bc05c1f12dc53df395bc1e12791",
+  "tests": {
+    "commonBitgaramAndRelief": 101,
+    "neureojiFoliageAndBoardwalk": 15,
+    "total": 116,
+    "failed": 0
+  },
+  "browser": {
+    "bitgaram": [
+      "outdoor-stairs",
+      "slide"
+    ],
+    "neureoji": [
+      "forest",
+      "hydrangea",
+      "top",
+      "boardwalk"
+    ],
+    "restoredTimberVisible": true,
+    "pageErrors": 0
+  }
+}

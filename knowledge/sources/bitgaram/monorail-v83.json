@@ -1,0 +1,22 @@
+{
+  "source": "outputs\\quality-v75\\bitgaram-shore-v75.blend",
+  "sourceSha256": "984bc6ff5a468e47609a5f1a585b6ee474ca29b648b0da32696809a6c73a2c64",
+  "sourceUnchanged": true,
+  "protectedObjects": 10893,
+  "nonMonorailGeometryUnchanged": true,
+  "parkEditable": "outputs\\monorail-v83\\bitgaram-park-monorail-v83.blend",
+  "cabEditable": "outputs\\monorail-v83\\bitgaram-monorail-cab-v83.blend",
+  "removedStaticCabObjects": 9,
+  "routeLength": 91.79759001393684,
+  "parkBytes": 15735860,
+  "cabBytes": 232224,
+  "references": [
+    "https://monorail.co.kr/승객용-모노레일-설치사진/view/6000",
+    "https://nanika123.tistory.com/entry/아이와-함께-가볼만-한곳-빛가람-호수공원-전망대-모노레일-타기"
+  ],
+  "estimated": [
+    "height correction to match authored platforms",
+    "cabin dimensions and interior fittings",
+    "experience operating speed and acceleration"
+  ]
+}

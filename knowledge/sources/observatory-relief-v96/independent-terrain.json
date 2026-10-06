@@ -1,0 +1,158 @@
+{
+  "dataset": "Mapzen/AWS Terrarium terrain tiles, zoom 14",
+  "documentation": "https://registry.opendata.aws/terrain-tiles/",
+  "limitations": [
+    "Independent terrain comparison, mixed source DEM; pixel spacing is not source accuracy.",
+    "SRTM/DSM vegetation, vertical datum and epochs may differ; not a survey."
+  ],
+  "sites": {
+    "neureoji": [
+      {
+        "x": 0,
+        "z": 0,
+        "lat": 34.9159348,
+        "lon": 126.5419381,
+        "heightMetres": 45.66811599934032,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+        "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+      },
+      {
+        "x": 0,
+        "z": 30,
+        "lat": 34.915665306647504,
+        "lon": 126.5419381,
+        "heightMetres": 45.812938556098295,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+        "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+      },
+      {
+        "x": 0,
+        "z": 60,
+        "lat": 34.91539581329501,
+        "lon": 126.5419381,
+        "heightMetres": 44.38616291950144,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+        "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+      },
+      {
+        "x": 0,
+        "z": 100,
+        "lat": 34.91503648882501,
+        "lon": 126.5419381,
+        "heightMetres": 44.25807067718762,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+        "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+      },
+      {
+        "x": 0,
+        "z": 180,
+        "lat": 34.914317839885015,
+        "lon": 126.5419381,
+        "heightMetres": 61.3286213592728,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+        "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+      },
+      {
+        "x": -30,
+        "z": 0,
+        "lat": 34.9159348,
+        "lon": 126.54160944665311,
+        "heightMetres": 40.91650168854262,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+        "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+      },
+      {
+        "x": 30,
+        "z": 0,
+        "lat": 34.9159348,
+        "lon": 126.54226675334688,
+        "heightMetres": 45.17415269477062,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+        "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+      },
+      {
+        "x": -70,
+        "z": -40,
+        "lat": 34.91629412447,
+        "lon": 126.54117124219059,
+        "heightMetres": 24.287582867474864,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13951/6494.png",
+        "sha256": "6f98609d66e91496f2c3ab4a7305a6f812ff164a9f72edba07cae181b27a26e5"
+      }
+    ],
+    "bitgaram": [
+      {
+        "x": 0,
+        "z": 0,
+        "lat": 35.016925,
+        "lon": 126.790447,
+        "heightMetres": 72.77340777552996,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13962/6488.png",
+        "sha256": "e52cf58f5e23a4851e4d038c16939e83c2e08f67ef50d58335bea3343a233d1a"
+      },
+      {
+        "x": 0,
+        "z": 30,
+        "lat": 35.0166555066475,
+        "lon": 126.790447,
+        "heightMetres": 69.55745661327364,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13962/6488.png",
+        "sha256": "e52cf58f5e23a4851e4d038c16939e83c2e08f67ef50d58335bea3343a233d1a"
+      },
+      {
+        "x": 0,
+        "z": 60,
+        "lat": 35.016386013295005,
+        "lon": 126.790447,
+        "heightMetres": 61.90041005471721,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13962/6488.png",
+        "sha256": "e52cf58f5e23a4851e4d038c16939e83c2e08f67ef50d58335bea3343a233d1a"
+      },
+      {
+        "x": 0,
+        "z": 100,
+        "lat": 35.01602668882501,
+        "lon": 126.790447,
+        "heightMetres": 52.096737389307236,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13962/6488.png",
+        "sha256": "e52cf58f5e23a4851e4d038c16939e83c2e08f67ef50d58335bea3343a233d1a"
+      },
+      {
+        "x": 0,
+        "z": 180,
+        "lat": 35.015308039885014,
+        "lon": 126.790447,
+        "heightMetres": 36.28203707788798,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13962/6488.png",
+        "sha256": "e52cf58f5e23a4851e4d038c16939e83c2e08f67ef50d58335bea3343a233d1a"
+      },
+      {
+        "x": -30,
+        "z": 0,
+        "lat": 35.016925,
+        "lon": 126.79011794128684,
+        "heightMetres": 68.97620339505374,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13962/6488.png",
+        "sha256": "e52cf58f5e23a4851e4d038c16939e83c2e08f67ef50d58335bea3343a233d1a"
+      },
+      {
+        "x": 30,
+        "z": 0,
+        "lat": 35.016925,
+        "lon": 126.79077605871316,
+        "heightMetres": 69.65601051716405,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13962/6488.png",
+        "sha256": "e52cf58f5e23a4851e4d038c16939e83c2e08f67ef50d58335bea3343a233d1a"
+      },
+      {
+        "x": -70,
+        "z": -40,
+        "lat": 35.01728432447,
+        "lon": 126.78967919633595,
+        "heightMetres": 52.46593436663276,
+        "tile": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13962/6488.png",
+        "sha256": "e52cf58f5e23a4851e4d038c16939e83c2e08f67ef50d58335bea3343a233d1a"
+      }
+    ]
+  }
+}

@@ -13,6 +13,7 @@ export function readModel(path) {
     const method={5121:'readUInt8',5123:'readUInt16LE',5125:'readUInt32LE',5126:'readFloatLE'}[a.componentType];
     const out=[];
     for(let i=0;i<a.count;i++)for(let j=0;j<size;j++)out.push(binary[method]((v.byteOffset??0)+(a.byteOffset??0)+i*(v.byteStride??size*bytes)+j*bytes));
+    if(a.normalized){const scale={5121:255,5123:65535,5125:4294967295}[a.componentType];if(scale)for(let i=0;i<out.length;i++)out[i]/=scale;}
     return {array:out,size};
   };
   const material=new THREE.MeshBasicMaterial({side:THREE.FrontSide});

@@ -1,0 +1,34 @@
+{
+  "created": "2026-10-05",
+  "files": [
+    {
+      "path": "outputs/bitgaram-v101/bitgaram-access-v101d.blend",
+      "bytes": 84016906,
+      "sha256": "4f1f05750a1b179677ed56dac54e652fae15c4e70893b83792fa81ccd7381ae1"
+    },
+    {
+      "path": "outputs/bitgaram-v101/bitgaram-monorail-v101.blend",
+      "bytes": 7500995,
+      "sha256": "0cfc020b8b07bdbaed4ad9536effa4bb3a2e8620ebe13bd44f1efc358d5fe24a"
+    },
+    {
+      "path": "outputs/bitgaram-v101/bitgaram-overview-v101b.blend",
+      "bytes": 55913752,
+      "sha256": "3ae1028e874d73c1efe7309792850a6999cb39e4f4bc9eb519bd3b9f64e23830"
+    },
+    {
+      "path": "outputs/terrain-v89/bitgaram-park-glo30-terrain-v89d.blend",
+      "bytes": 79930792,
+      "sha256": "4b6a8a260c999f9cdb0061e221b1f866bbcbeea1c510e3a89ac17f601547d044"
+    },
+    {
+      "path": "outputs/bitgaram-v101/cabin-source-v83.glb",
+      "bytes": 232224,
+      "sha256": "d5b0ca683e7f6e6b7d0d028ec4032f6ba272b74490ff92b0ca9df3f987b511e0"
+    }
+  ],
+  "previousOverviewSourceArchive": "https://github.com/reinhardt7177-lab/naju-little-walk/releases/tag/observatory-refinement-v99-20261005",
+  "deploymentIncludesBlender": false,
+  "archiveBytes": 89482350,
+  "archiveSha256": "6abd0a6e86beb62031eac441f0af14b6136cbdebd1f8e5a1b38c6b95e30ab1c4"
+}

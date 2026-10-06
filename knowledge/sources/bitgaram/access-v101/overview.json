@@ -1,0 +1,97 @@
+{
+  "source": "outputs\\relief-v96\\bitgaram-overview-relief-v96b.blend",
+  "sourceSha256": "141d8c56d18d373bab022bd1466416603544b0f2f086a57aaecf2958be1fd6f7",
+  "output": "outputs\\bitgaram-v101\\bitgaram-overview-v101b.blend",
+  "parts": [
+    {
+      "key": "bitgaram-overview",
+      "sourceSha256": "f2aee0dffb376ab08d62d99a0ff320211d4e7242a48cbde0488562f122d194db",
+      "sha256": "b7f8b21335100f081bc0e314212a730b81221b100ae935e9406e9668a9f460ff",
+      "trianglesBefore": 1088106,
+      "trianglesRemoved": 15368,
+      "trianglesAfter": 1072738,
+      "changed": [
+        {
+          "node": "overview_batch_Museum_776653",
+          "trianglesRemoved": 150
+        },
+        {
+          "node": "overview_batch_Museum_84745e",
+          "trianglesRemoved": 127
+        },
+        {
+          "node": "overview_batch_Museum_685a48",
+          "trianglesRemoved": 179
+        },
+        {
+          "node": "overview_batch_Museum_4b6941",
+          "trianglesRemoved": 320
+        },
+        {
+          "node": "overview_batch_Museum_aa7d50",
+          "trianglesRemoved": 12720
+        },
+        {
+          "node": "overview_batch_Museum_9a714b",
+          "trianglesRemoved": 840
+        },
+        {
+          "node": "overview_batch_Museum_45524c",
+          "trianglesRemoved": 72
+        },
+        {
+          "node": "overview_batch_Museum_68874c",
+          "trianglesRemoved": 240
+        },
+        {
+          "node": "overview_batch_Museum_799258",
+          "trianglesRemoved": 720
+        }
+      ],
+      "existingAttributeStreamsPreserved": true
+    },
+    {
+      "key": "bitgaram-overview-part2",
+      "sourceSha256": "0f88f40f56477ea343aa9b169b88b2d2e3a16196a2c2b190d38e5af93e826001",
+      "sha256": "11f06f426d4a2289f3206da46be311ddeee0fbba838c4cafaf7eae6fc7881aff",
+      "trianglesBefore": 1088358,
+      "trianglesRemoved": 11580,
+      "trianglesAfter": 1076778,
+      "changed": [
+        {
+          "node": "overview_batch_Museum_a37a53",
+          "trianglesRemoved": 1692
+        },
+        {
+          "node": "overview_batch_Museum_8f6948",
+          "trianglesRemoved": 1272
+        },
+        {
+          "node": "overview_batch_Museum_52615b",
+          "trianglesRemoved": 840
+        },
+        {
+          "node": "overview_batch_Museum_735a40",
+          "trianglesRemoved": 2544
+        },
+        {
+          "node": "overview_batch_Museum_6b6556",
+          "trianglesRemoved": 840
+        },
+        {
+          "node": "overview_batch_Museum_f0e5be",
+          "trianglesRemoved": 72
+        },
+        {
+          "node": "overview_batch_Museum_75644d",
+          "trianglesRemoved": 4320
+        }
+      ],
+      "existingAttributeStreamsPreserved": true
+    }
+  ],
+  "facilityObjects": 455,
+  "facilityBytes": 8498848,
+  "facilityGzipBytes": 1911789,
+  "clearedInferredCanopyComponents": 16
+}

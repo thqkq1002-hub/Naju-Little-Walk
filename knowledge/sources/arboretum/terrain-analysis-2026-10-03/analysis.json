@@ -1,0 +1,421 @@
+{
+  "scope": "Preliminary map and DSM analysis, not verified ground geometry",
+  "worldSHA256": "1a91517141fbaab8530fd9b0f0bbfe6e8d4b93a8b0a00adc862d0b89a27a2c39",
+  "campusPolygon": [
+    [
+      -403.16495304164397,
+      241.25270400026352
+    ],
+    [
+      -335.1714426636775,
+      215.81608400041574
+    ],
+    [
+      -297.5137790115997,
+      190.86927200075507
+    ],
+    [
+      -291.6417365437961,
+      130.2110040006113
+    ],
+    [
+      -206.0412168415396,
+      129.7211960004242
+    ],
+    [
+      -177.67487504374643,
+      204.56163200019716
+    ],
+    [
+      -77.88662540368085,
+      185.0027080002218
+    ],
+    [
+      28.740183010642554,
+      153.6883920005016
+    ],
+    [
+      59.06691165741049,
+      95.00048800044539
+    ],
+    [
+      39.01625732962277,
+      -6.256183999549592
+    ],
+    [
+      82.54596344950417,
+      -54.190575999704436
+    ],
+    [
+      130.4797014205622,
+      -16.531019999393948
+    ],
+    [
+      179.88145000954293,
+      -32.18261199958448
+    ],
+    [
+      194.06917994735198,
+      -178.42369599927252
+    ],
+    [
+      76.67392098170058,
+      -175.0061719996748
+    ],
+    [
+      9.665163068429747,
+      -219.51190799931084
+    ],
+    [
+      -112.61738590162543,
+      -269.40553199942315
+    ],
+    [
+      -170.82719819166365,
+      -288.9644559993985
+    ],
+    [
+      -259.3546210493492,
+      -268.91572399923604
+    ],
+    [
+      -280.390027839241,
+      -266.95649199927857
+    ],
+    [
+      -402.1802005782441,
+      -300.2189079996171
+    ],
+    [
+      -445.34518356310105,
+      -229.17448399991002
+    ],
+    [
+      -408.4169661797764,
+      -203.24805599987513
+    ],
+    [
+      -408.2984311615737,
+      -188.33117599956978
+    ],
+    [
+      -447.5517585276018,
+      -149.9369079993741
+    ],
+    [
+      -474.20390159324205,
+      -126.82687599982188
+    ],
+    [
+      -496.8258540192592,
+      -106.52210799983123
+    ],
+    [
+      -512.973970806043,
+      -87.69789599974104
+    ],
+    [
+      -517.6150726949207,
+      -76.93325199970957
+    ],
+    [
+      -514.5605164421685,
+      -61.03675599982097
+    ],
+    [
+      -487.8992552987033,
+      -37.19201199959258
+    ],
+    [
+      -494.62839713258336,
+      7.681080000381542
+    ],
+    [
+      -456.47835724815775,
+      97.92820400064699
+    ],
+    [
+      -428.59527360488744,
+      175.21768000056454
+    ],
+    [
+      -416.36793051605315,
+      201.62278400065645
+    ],
+    [
+      -410.4958880482496,
+      228.5288280002746
+    ]
+  ],
+  "currentWorldBounds": [
+    -530,
+    160,
+    -330,
+    200
+  ],
+  "regionalGrid": {
+    "xs": [
+      -750,
+      -500,
+      -250,
+      0,
+      250,
+      500,
+      750,
+      1000,
+      1250,
+      1500,
+      1750
+    ],
+    "zs": [
+      -1500,
+      -1250,
+      -1000,
+      -750,
+      -500,
+      -250,
+      0,
+      250,
+      500
+    ],
+    "spacingMetres": 250
+  },
+  "campusGrid": {
+    "xs": [
+      -525,
+      -435,
+      -345,
+      -255,
+      -165,
+      -75,
+      15,
+      105,
+      195
+    ],
+    "zs": [
+      -300,
+      -210,
+      -120,
+      -30,
+      60,
+      150,
+      240
+    ],
+    "spacingMetres": 90
+  },
+  "regionalSurfaceSummary": {
+    "sampleCount": 99,
+    "minimumMetres": 24.0,
+    "maximumMetres": 258.0,
+    "sampledRangeMetres": 234.0,
+    "lowestSample": {
+      "label": "grid-0-0",
+      "x": -750,
+      "z": -1500,
+      "latitude": 35.0199547,
+      "longitude": 126.8174435,
+      "row": 0,
+      "col": 0,
+      "elevationMetres": 24.0
+    },
+    "highestSample": {
+      "label": "grid-7-5",
+      "x": 500,
+      "z": 250,
+      "latitude": 35.0042342,
+      "longitude": 126.8311525,
+      "row": 7,
+      "col": 5,
+      "elevationMetres": 258.0
+    }
+  },
+  "insideCampusSurfaceSummary": {
+    "sampleCount": 29,
+    "minimumMetres": 39.0,
+    "maximumMetres": 79.0,
+    "sampledRangeMetres": 40.0,
+    "lowestSample": {
+      "label": "grid-2-1",
+      "x": -435,
+      "z": -120,
+      "latitude": 35.007558,
+      "longitude": 126.8208982,
+      "row": 2,
+      "col": 1,
+      "elevationMetres": 39.0
+    },
+    "highestSample": {
+      "label": "grid-5-6",
+      "x": 15,
+      "z": 150,
+      "latitude": 35.0051325,
+      "longitude": 126.8258334,
+      "row": 5,
+      "col": 6,
+      "elevationMetres": 79.0
+    }
+  },
+  "landmarkSurfaceSamples": [
+    {
+      "label": "spawn",
+      "x": -463.24,
+      "z": -47.6,
+      "latitude": 35.0069076,
+      "longitude": 126.8205884,
+      "elevationMetres": 40.0
+    },
+    {
+      "label": "avenue",
+      "x": -450.5,
+      "z": -45.0,
+      "latitude": 35.0068842,
+      "longitude": 126.8207282,
+      "elevationMetres": 40.0
+    },
+    {
+      "label": "juniper",
+      "x": -320.3421799962313,
+      "z": -207.5833180184665,
+      "latitude": 35.0083447,
+      "longitude": 126.8221556,
+      "elevationMetres": 42.0
+    },
+    {
+      "label": "garden",
+      "x": -382.3688419151419,
+      "z": 70.12824737720535,
+      "latitude": 35.00585,
+      "longitude": 126.8214754,
+      "elevationMetres": 45.0
+    },
+    {
+      "label": "playground",
+      "x": -248.02,
+      "z": -56.76,
+      "latitude": 35.0069899,
+      "longitude": 126.8229488,
+      "elevationMetres": 46.0
+    },
+    {
+      "label": "flowers",
+      "x": -304.82,
+      "z": 21.480000000000004,
+      "latitude": 35.006287,
+      "longitude": 126.8223259,
+      "elevationMetres": 48.0
+    }
+  ],
+  "avenueSurfaceProfile": {
+    "samples": [
+      {
+        "label": "avenue-profile-0",
+        "x": -475.0,
+        "z": -50.0,
+        "latitude": 35.0069292,
+        "longitude": 126.8204595,
+        "avenueParameter": 0,
+        "elevationMetres": 40.0
+      },
+      {
+        "label": "avenue-profile-1",
+        "x": -432.86,
+        "z": -41.4,
+        "latitude": 35.0068519,
+        "longitude": 126.8209216,
+        "avenueParameter": 43,
+        "elevationMetres": 42.0
+      },
+      {
+        "label": "avenue-profile-2",
+        "x": -390.72,
+        "z": -32.8,
+        "latitude": 35.0067746,
+        "longitude": 126.8213838,
+        "avenueParameter": 86,
+        "elevationMetres": 42.0
+      },
+      {
+        "label": "avenue-profile-3",
+        "x": -348.58,
+        "z": -24.2,
+        "latitude": 35.0066974,
+        "longitude": 126.8218459,
+        "avenueParameter": 129,
+        "elevationMetres": 44.0
+      },
+      {
+        "label": "avenue-profile-4",
+        "x": -306.44,
+        "z": -15.600000000000001,
+        "latitude": 35.0066201,
+        "longitude": 126.8223081,
+        "avenueParameter": 172,
+        "elevationMetres": 48.0
+      },
+      {
+        "label": "avenue-profile-5",
+        "x": -264.3,
+        "z": -7.0,
+        "latitude": 35.0065429,
+        "longitude": 126.8227703,
+        "avenueParameter": 215,
+        "elevationMetres": 53.0
+      },
+      {
+        "label": "avenue-profile-6",
+        "x": -222.16,
+        "z": 1.6000000000000014,
+        "latitude": 35.0064656,
+        "longitude": 126.8232324,
+        "avenueParameter": 258,
+        "elevationMetres": 53.0
+      },
+      {
+        "label": "avenue-profile-7",
+        "x": -180.01999999999998,
+        "z": 10.200000000000003,
+        "latitude": 35.0063884,
+        "longitude": 126.8236946,
+        "avenueParameter": 301,
+        "elevationMetres": 56.0
+      },
+      {
+        "label": "avenue-profile-8",
+        "x": -137.88,
+        "z": 18.799999999999997,
+        "latitude": 35.0063111,
+        "longitude": 126.8241567,
+        "avenueParameter": 344,
+        "elevationMetres": 60.0
+      },
+      {
+        "label": "avenue-profile-9",
+        "x": -95.74000000000001,
+        "z": 27.400000000000006,
+        "latitude": 35.0062339,
+        "longitude": 126.8246189,
+        "avenueParameter": 387,
+        "elevationMetres": 60.0
+      },
+      {
+        "label": "avenue-profile-10",
+        "x": -53.60000000000002,
+        "z": 36.0,
+        "latitude": 35.0061566,
+        "longitude": 126.8250811,
+        "avenueParameter": 430,
+        "elevationMetres": 65.0
+      }
+    ],
+    "horizontalLengthMetres": 430.09,
+    "endpointRiseMetres": 25.0,
+    "endpointAverageSurfaceGradePercent": 5.81,
+    "caveat": "DSM profile only; not a path survey and not the final slope to implement"
+  },
+  "cautions": [
+    "GLO-90 surface values can include tree canopy and roofs.",
+    "250 m regional spacing may miss a summit or local ridgeline.",
+    "A denser Blender mesh is interpolation, not higher source accuracy.",
+    "The official visitor diagram is not georeferenced; do not treat diagram-up as north."
+  ]
+}

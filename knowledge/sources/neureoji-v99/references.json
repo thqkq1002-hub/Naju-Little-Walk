@@ -1,0 +1,42 @@
+{
+  "page": "https://localm.kr/bbs/board.php?bo_table=news&me_id=4&wr_id=4488",
+  "published": "2026-07-10",
+  "photos": [
+    {
+      "file": "work/neureoji-v99/references/2026-00.jpg",
+      "url": "https://localm.kr/data/photo/2607/20260710111848_a8a5d759051eaa69e2296b4e64ea67e4_cfg4.jpg",
+      "sha256": "89c538adde94eff74b8afb4e45e700132918712e3535bae2e982f5c4142ec334",
+      "size": [
+        700,
+        525
+      ]
+    },
+    {
+      "file": "work/neureoji-v99/references/2026-01.jpg",
+      "url": "https://localm.kr/data/photo/2607/20260710111907_a8a5d759051eaa69e2296b4e64ea67e4_mqag.jpg",
+      "sha256": "dd61907b3b18a7e2bebdfddbd9e9393c22293bbda39b00ea330bb1ba55ae1890",
+      "size": [
+        700,
+        525
+      ]
+    },
+    {
+      "file": "work/neureoji-v99/references/2026-02.jpg",
+      "url": "https://localm.kr/data/photo/2607/20260710111928_a8a5d759051eaa69e2296b4e64ea67e4_vthp.jpg",
+      "sha256": "2e5054186669dcdef9eb53da8fdb685013f55d4f356db600fe05f44e307a8140",
+      "size": [
+        700,
+        525
+      ]
+    },
+    {
+      "file": "work/neureoji-v99/references/2026-03.jpg",
+      "url": "https://localm.kr/data/photo/2607/20260710111944_a8a5d759051eaa69e2296b4e64ea67e4_if45.jpg",
+      "sha256": "de40b38f4bcf9a1cfe73ec1cb08bd4ce39d9c35c1a27717701b8a6709421eb08",
+      "size": [
+        700,
+        525
+      ]
+    }
+  ]
+}

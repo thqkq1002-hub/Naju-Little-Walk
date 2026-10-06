@@ -1,0 +1,36 @@
+{
+  "created": "2026-10-05",
+  "repository": "reinhardt7177-lab/naju-little-walk",
+  "latestNeureoji": "outputs/neureoji-v99/neureoji-reference-v99.blend",
+  "latestBitgaram": "outputs/relief-v96/bitgaram-overview-relief-v96b.blend",
+  "preservedRevisions": [
+    {
+      "path": "outputs/relief-v96/neureoji-relief-v96.blend",
+      "bytes": 128832580,
+      "sha256": "79a702cd9caf8d8aeeb14d3480ff3f553be9a919851bdb88e23ff6e20cb7e5f2"
+    },
+    {
+      "path": "outputs/relief-v96/bitgaram-overview-relief-v96b.blend",
+      "bytes": 54419767,
+      "sha256": "141d8c56d18d373bab022bd1466416603544b0f2f086a57aaecf2958be1fd6f7"
+    },
+    {
+      "path": "outputs/quality-v97/neureoji-canopy-v97b.blend",
+      "bytes": 133670142,
+      "sha256": "044c4a5386ef49a36fdea036fb0e4ebd814181f136a060dcf0e6af08db5bb046"
+    },
+    {
+      "path": "outputs/neureoji-polish-v98/neureoji-polish-v98.blend",
+      "bytes": 133955593,
+      "sha256": "35ad4027d72e5eaee7a6b901d24a102749fb9b058b14bd73ce707ec102847bb3"
+    },
+    {
+      "path": "outputs/neureoji-v99/neureoji-reference-v99.blend",
+      "bytes": 133974836,
+      "sha256": "83f492efe7eb9efd041ff58eb8a62a0840628ae9a656a87f00881b722f55b428"
+    }
+  ],
+  "deploymentIncludesBlender": false,
+  "archiveSha256": "e2f896ff12104b1bfa49b7322ec39423ed98ecd301653be041ee33cc4304b06d",
+  "archiveBytes": 240505967
+}

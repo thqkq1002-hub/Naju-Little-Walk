@@ -1,0 +1,20 @@
+{
+  "revision": "neureoji-hydrangea-v95c",
+  "neureojiTestsPassed": 8,
+  "worldTestsPassed": 74,
+  "typescriptPassed": true,
+  "staticBuildPassed": true,
+  "gzipBytesMatch": true,
+  "navigationSolidsUnchanged": true,
+  "browserQA": {
+    "viewport": [
+      1280,
+      720
+    ],
+    "forestRendered": true,
+    "consoleErrors": [],
+    "androidHardwareVerified": false
+  },
+  "modelBytes": 16052644,
+  "existingUnrelatedFailures": "Two prior Bitgaram access-route tests remain documented in v94; this change does not modify that map."
+}

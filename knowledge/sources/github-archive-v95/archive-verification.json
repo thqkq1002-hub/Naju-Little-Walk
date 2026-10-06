@@ -1,0 +1,33 @@
+{
+  "verifiedAt": "2026-10-04T04:58:03.973460+00:00",
+  "scope": "current_project_only",
+  "allObjectsVerified": true,
+  "allPackageChecksumsVerified": true,
+  "allCandidatePathsAccountedFor": true,
+  "candidateFiles": 8160,
+  "restorableFiles": 8160,
+  "objects": 5665,
+  "packages": 13,
+  "packageBytes": 8615846103,
+  "sourceBytes": 27895509799,
+  "uniqueBytes": 22619843898,
+  "blendFiles": 246,
+  "allBlendFilesIncluded": true,
+  "deliveredItemsPresent": [
+    "outputs/neureoji-v95/neureoji-hydrangea-v95c.blend",
+    "public/models/neureoji.glb",
+    "public/models/neureoji.glb.gz",
+    "public/neureoji-world.json",
+    "lib/destinations.ts",
+    "knowledge/neureoji-hydrangea-v95-plan-2026-10-04.md"
+  ],
+  "excludedBlockedFiles": [],
+  "sanitizedLegacyPackages": [
+    "outputs/naju-site-npc-start-20261002.tar.gz",
+    "outputs/naju-site-v75-20261002.tar.gz",
+    "work/tablet-site-source.tar"
+  ],
+  "localOriginalsDeleted": false,
+  "snapshotCommit": "b6ff71be3c5769f119c7ee557a7527d32248e99c",
+  "manifestSha256": "44e55eb7ed5dd1f7b71822666ede6247a0e806f265db7acb2ad4c339512c877a"
+}

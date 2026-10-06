@@ -1,0 +1,65 @@
+{
+  "revision": "history-complete-v91c",
+  "sourceBlend": "outputs/yeongsanpo-v79/yeongsanpo-history-detail-v79.blend",
+  "editedBlend": "outputs/history-gallery-v91/yeongsanpo-history-complete-v91c.blend",
+  "sourceSha256": "3b1637e8ce1bcf67ca74cbb47e6c1e2581ea42cdc8a4d23fe203b0b3ac1487b4",
+  "sourcePreserved": true,
+  "legacyNavigationSha256": "fd2f1f375c1b096aae8a0725972306ec1795484a6fa261080d6179ca9e80ed76",
+  "navigationKeys": [
+    "solids",
+    "spawn",
+    "bounds",
+    "arrivals",
+    "portals",
+    "navigationWater",
+    "dockStairRoute",
+    "literatureGarden"
+  ],
+  "navigationSha256": "e380d1c5d2e0dce6207e3b4f847ea2c7b48f40d3699bc4273dcf41b5d2b1d46b",
+  "sections": [
+    "origin",
+    "timeline",
+    "transport",
+    "modern-city",
+    "literature",
+    "boat-screen",
+    "skate-food",
+    "onggi",
+    "salted-seafood",
+    "eight-river-scenes",
+    "four-local-crafts"
+  ],
+  "craftCases": 4,
+  "riverScenes": 8,
+  "foodDishes": [
+    "홍어애국",
+    "홍어삼합",
+    "홍어찜"
+  ],
+  "unchangedDoorwayAndSpawn": true,
+  "assumptions": [
+    "2026-09 KTO description cross-checked with 2024-03-24 visitor photographs and undated official interior photographs.",
+    "First-floor photographed exhibit subjects are represented; complete present-day floor plan and second-floor use are unverified.",
+    "Room size 12 x 19m retained from v79 estimates. Fixture positions, craft motifs and short panel captions are original interpretations; not museum scans."
+  ],
+  "export": {
+    "merged": 1539,
+    "meshes": 445,
+    "materials": 126,
+    "images": 16,
+    "bytes": 15536992,
+    "gzipBytes": 4342327,
+    "sha256": "43c58cf7ec851d3c93c600f7bc95228ac47d7454b26bd20fc535069a0b2efcb1",
+    "gzipSha256": "5e39b0eea122f1623c4bdc5a2927d07652d590280dc064fdc471c42344ff82a6"
+  },
+  "eyeLevelReviewPasses": 3,
+  "finalBlendSha256": "68cf2929c940167eded1aac5f7f55161634e89cd35db4727a1d135f7b3cbcfc5",
+  "worldSha256": "847085dbe64590a0936bc11d8ab3c0e5b5e3920f4a468c1debcf10c8c627156d",
+  "verification": {
+    "functionalTests": 97,
+    "typeCheck": "passed",
+    "staticBuild": "passed",
+    "browserPixelCheck": "unavailable",
+    "androidHardwareCheck": "not run"
+  }
+}

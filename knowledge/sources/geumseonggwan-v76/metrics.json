@@ -1,0 +1,47 @@
+{
+  "sourceBlend": "D:\\새 폴더\\나주 도시 만들기\\outputs\\palette-v51\\geumseonggwan-color-v51.blend",
+  "outputBlend": "D:\\새 폴더\\나주 도시 만들기\\outputs\\geumseonggwan-exclusive-v76\\geumseonggwan-exclusive-v76.blend",
+  "objects": 543,
+  "removedObjects": 6409,
+  "trees": 8,
+  "roofTileDetailMeshes": 5,
+  "webBytes": 37756824,
+  "compressedBytes": 19949188,
+  "boundary": [
+    [
+      -68.71912335983491,
+      -89.36769599948008
+    ],
+    [
+      -46.16823979502326,
+      -100.96723999977655
+    ],
+    [
+      25.13047129639932,
+      -107.42379999929483
+    ],
+    [
+      48.036845749677624,
+      -42.902727999886565
+    ],
+    [
+      44.16290657577332,
+      -27.740943999883143
+    ],
+    [
+      45.457258016794604,
+      27.752076000013233
+    ],
+    [
+      -29.6515861901666,
+      52.97718800055321
+    ],
+    [
+      -33.37968294772508,
+      42.702352000708856
+    ]
+  ],
+  "originalTextureMaps": 15,
+  "webTextureResolution": 512,
+  "webTextureFormat": "WebP quality 82"
+}

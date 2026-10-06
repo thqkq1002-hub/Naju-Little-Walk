@@ -1,0 +1,121 @@
+{
+  "repo": "reinhardt7177-lab/naju-little-walk-project-archive",
+  "private": true,
+  "releaseURL": "https://github.com/reinhardt7177-lab/naju-little-walk-project-archive/releases/tag/naju-project-v95-20261004",
+  "tag": "naju-project-v95-20261004",
+  "allRemoteDigestsMatch": true,
+  "uploadedBytes": 8635658214,
+  "checks": {
+    "naju-project-001.zip": {
+      "bytes": 778457906,
+      "sha256": "3498b0ea5836259473a36620c520578c9340426bca0dbcf15559c101b03a8dc2",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "naju-project-002.zip": {
+      "bytes": 672960381,
+      "sha256": "a9870bdd094093e1fb32c29ef936b75373c1f9c0b85bbfddef379ae933ea237a",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "naju-project-003.zip": {
+      "bytes": 609470663,
+      "sha256": "773f58533ae8c1d1b1293abb51d55549ef3506c87143ca4405a75f020621e690",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "naju-project-004.zip": {
+      "bytes": 563698816,
+      "sha256": "bdf5cc11fa9fef38afc157abfa779d53c45c2bbb07646c53db38a731e5467c56",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "naju-project-005.zip": {
+      "bytes": 775859556,
+      "sha256": "bac9fcb1190937de0d8fea5ce2e00cfd74a6a9bfaff91a8ac533b9d083d19bf5",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "naju-project-006.zip": {
+      "bytes": 585721956,
+      "sha256": "17a7f26c410ddbfba6d0fd782daae9fc4b1a37299ae417fc08282fcb68966454",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "naju-project-007.zip": {
+      "bytes": 625221412,
+      "sha256": "48d10d5b95c2847ac0149a8e9142313d0e15000d576326996ffc72a79bb4f3d3",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "naju-project-008.zip": {
+      "bytes": 545501111,
+      "sha256": "4fc44de43a0470475f0349b39c9000fe3b8b972725f62030f7a02e2f1736385b",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "naju-project-009.zip": {
+      "bytes": 504046519,
+      "sha256": "9a4557ed2eeef7be752416a480ea8c5f3f7f20af94962b11ce804b0d286898b0",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "naju-project-010.zip": {
+      "bytes": 1345776703,
+      "sha256": "39b39d4a695b9b40618a806e427f616a0d107556cf05370f87944a210e45af26",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "naju-project-011.zip": {
+      "bytes": 659858456,
+      "sha256": "ee31553bf1485a69c4fc18d5676d13958ff96bc080a55ed5b133171dcbc19520",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "naju-project-012.zip": {
+      "bytes": 621228806,
+      "sha256": "44f801c2c5138370e228ca791b6bb7f854321f783508e77405bd049daeaf3692",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "naju-project-013.zip": {
+      "bytes": 328043818,
+      "sha256": "397c1675eaf6377416e4ff002d9becb1f0515e4c96dfc491ea85b55e54bb5655",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "manifest.json": {
+      "bytes": 19802862,
+      "sha256": "44e55eb7ed5dd1f7b71822666ede6247a0e806f265db7acb2ad4c339512c877a",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "SHA256SUMS": {
+      "bytes": 1144,
+      "sha256": "b474ed44424200a7af2da7d63cec584404222d0b502524691427c192b6e170aa",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "restore_github_project.py": {
+      "bytes": 3835,
+      "sha256": "6a4fd34fc66730276c7b61e7b95f4f043df26e0e6b6483587730afa28e812fab",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "README.md": {
+      "bytes": 3139,
+      "sha256": "7a700c3868a10a63414ac1a3572b3c1d26d334a0a0f3e3cf48ed3d4828a4955b",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    },
+    "archive-verification.json": {
+      "bytes": 1131,
+      "sha256": "3760a28c7602e304bf246675863ca670beac8c6956f45b7df655dcf6b5b0ff81",
+      "githubDigestMatches": true,
+      "state": "uploaded"
+    }
+  },
+  "snapshotCommit": "b6ff71be3c5769f119c7ee557a7527d32248e99c",
+  "files": 8160,
+  "objects": 5665
+}

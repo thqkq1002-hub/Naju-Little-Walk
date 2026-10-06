@@ -1,0 +1,18 @@
+{
+  "vertices": 14109,
+  "triangles": 24807,
+  "mappedLandAreaMetres2": 306327.6664137018,
+  "triangulatedAreaMetres2": 306327.6664136998,
+  "refinementRegion": [
+    -300,
+    -300,
+    300,
+    300
+  ],
+  "displayCellMetres": 4,
+  "nativeSourceResolutionMetres": 30,
+  "parkOutlinePreserved": true,
+  "waterHolesPreserved": true,
+  "centralExclusionPreserved": true,
+  "source": "OSM stored park/water polygons plus recorded DSM"
+}

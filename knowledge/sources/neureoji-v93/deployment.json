@@ -1,0 +1,66 @@
+{
+  "revision": "neureoji-quality-v93d",
+  "implementationCommit": "827b8df",
+  "verifiedAtUTC": "2026-10-04T00:54:44.250420+00:00",
+  "vercelDeploymentUrl": "https://vercel.com/reinhardt7177-labs-projects/naju-little-walk/3mVDGh9VjCeyi4RLaorVvePPy8zM",
+  "vercelStatus": "success",
+  "htmlHttpStatus": 200,
+  "htmlMatchesLocal": true,
+  "checks": {
+    "dist/client/assets/index-Cmim88bB.js": {
+      "status": 200,
+      "bytes": 210396,
+      "sha256": "6524d29107fb378501e67995672b509533dbe33edbafefa6e7e2b3cd74adf03a",
+      "matchesLocal": true
+    },
+    "public/models/neureoji.glb.gz": {
+      "status": 200,
+      "bytes": 10318209,
+      "sha256": "20888a80e0f488fe66f81c37f87f6bcb547e2c98c0711722ed9d51a02634583f",
+      "matchesLocal": true
+    },
+    "public/neureoji-world.json": {
+      "status": 200,
+      "bytes": 146097,
+      "sha256": "3aff94e90af197664dc40bcb9bd07661e2f7fcebef846cd0555fb80999366a6d",
+      "matchesLocal": true
+    },
+    "public/naju-region-map.json": {
+      "status": 200,
+      "bytes": 345156,
+      "sha256": "7f0d28f2287caee87ccf9e1092ab3c3b5be66a4a5148440cf17d54495d2ea081",
+      "matchesLocal": true
+    },
+    "dist/client/assets/explorer-B7Cfb-_r.js": {
+      "status": 200,
+      "bytes": 60543,
+      "sha256": "23115a98c1d0a717da11e0fac1451379df3b88f6e36ab5a3bf2fa51509342a4d",
+      "matchesLocal": true
+    },
+    "dist/client/assets/map-travel-puWJT9yd.js": {
+      "status": 200,
+      "bytes": 643142,
+      "sha256": "052ab59846e2146ec18ba2f0d6bf142b692f17738b1930795e975433072de157",
+      "matchesLocal": true
+    }
+  },
+  "relevantTestsPassed": 80,
+  "allTests": {
+    "total": 187,
+    "passed": 185,
+    "baselineFailures": 2
+  },
+  "typescriptPassed": true,
+  "staticBuildPassed": true,
+  "productionPixelsVerified": true,
+  "androidHardwareVerified": false,
+  "limitations": [
+    "Tower dimensions, canopy allowance and fine land-use subdivisions are photo interpretations; terrain uses 30m DSM.",
+    "Two legacy Bitgaram access-route tests also fail with pre-change HEAD code."
+  ],
+  "productionScreenshots": [
+    "outputs/neureoji-v93/web-panorama-production-d.jpg",
+    "outputs/neureoji-v93/web-overview-production-d.jpg"
+  ],
+  "productionConsoleErrors": []
+}

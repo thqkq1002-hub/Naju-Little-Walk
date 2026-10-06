@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-03",
+  "implementation_commit": "a963d0646b9237e8bcaeb16071989af97edee3f6",
+  "vercel_deployment": "98y9jo2JsiDY2777fcS445F22oJB",
+  "vercel_status": "success",
+  "github_status_url": "https://vercel.com/reinhardt7177-labs-projects/naju-little-walk/98y9jo2JsiDY2777fcS445F22oJB",
+  "url": "https://naju-little-walk.vercel.app/?place=naju-arboretum&v=canopy-v87-r4-20261003",
+  "html_http_status": 200,
+  "model_http_status": 200,
+  "normalized_html_matches_built_entry": true,
+  "app_entry_script": "/assets/index-Ri_E0n1V.js",
+  "model_matches_local": true,
+  "model_gzip_sha256": "46089dbceac2e9fe2d83d9d8885988c7399ad256fd4b28d5231a374e3d4ac204",
+  "model_gzip_bytes": 12540940,
+  "production_scene_verified": true,
+  "production_screenshot": "outputs/quality-v87/avenue-production-after.png",
+  "tests_passed": 83,
+  "typescript_passed": true,
+  "static_build_passed": true,
+  "tablet_viewport_checked": [1024, 600],
+  "android_hardware_verified": false,
+  "terrain_implementation_complete": false
+}

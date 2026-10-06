@@ -1,0 +1,43 @@
+{
+  "revision": "neureoji-boardwalk-v102",
+  "blend": "outputs/neureoji-v102/neureoji-boardwalk-v102.blend",
+  "preservedSource": "outputs/neureoji-v100/neureoji-close-detail-v100.blend",
+  "preservedSourceSha256": "822de6ef0745658f3b491701f8d6b92cffaeefaa12802b8e1e2481c896f6f56a",
+  "navigationSolidsSha256": "457b5819494149244a2766487b8d05f11cf84ae5f2a8d0740c510fabb5ac4ad8",
+  "navigationChanged": false,
+  "restoredTimberFaces": 395,
+  "sectionBoundaryZ": -190,
+  "sectionBoundarySurveyed": false,
+  "restoredCutoutMaterials": [
+    "Neureoji93_near_leaves",
+    "Neureoji93_crown_2",
+    "Neureoji93_crown_0",
+    "Neureoji93_crown_1",
+    "Neureoji93_crown_3",
+    "Neureoji95_leaf_0",
+    "Neureoji95_leaf_1",
+    "Neureoji95_leaf_2",
+    "Neureoji97_leaf_detail"
+  ],
+  "normalStorage": {
+    "vertices": 2021220,
+    "maximumLightingNormalErrorDegrees": 0.3840910405490917,
+    "positionChanges": 0
+  },
+  "export": {
+    "merged": 2409,
+    "meshes": 97,
+    "materials": 82,
+    "images": 20,
+    "bytes": 50173168,
+    "gzipBytes": 16750540,
+    "sha256": "80b64b5652eea148097d6f52412c1b23f6d9b56eb8b5f47ef2b591d26cf75eb7",
+    "gzipSha256": "e2f9bf3168627bcf06442f659ef4e2610a755bc05c1f12dc53df395bc1e12791"
+  },
+  "plantPositionStorage": {
+    "vertices": 1110632,
+    "maxDecorativePlantErrorMetres": 0.004657457994672191,
+    "walkingAndRiverPositionChanges": 0,
+    "uniformScale": true
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "revision": "neureoji-hydrangea-v94h",
+  "implementationCommit": "f4c86d3f99c995ca67c4a07e7f819c8996083441",
+  "verifiedAtUTC": "2026-10-04T01:55:20.940664+00:00",
+  "vercelDeploymentUrl": "https://vercel.com/reinhardt7177-labs-projects/naju-little-walk/HS5xFYkRnrrkVdCRQn27EyXwphQY",
+  "vercelStatus": "success",
+  "htmlHttpStatus": 200,
+  "htmlMatchesLocal": true,
+  "checks": {
+    "dist/client/assets/index-BLjm-FEq.js": {
+      "status": 200,
+      "bytes": 210400,
+      "sha256": "b9757b3df16c5eb7884d2ec926cc8dd1051b589023fab2789eb145932b3a8352",
+      "matchesLocal": true
+    },
+    "public/models/neureoji.glb.gz": {
+      "status": 200,
+      "bytes": 14325949,
+      "sha256": "d9006bf06bef3abaf7d25f84fda0de158de9defcc8780ebe1b924b6599123b1d",
+      "matchesLocal": true
+    },
+    "public/neureoji-world.json": {
+      "status": 200,
+      "bytes": 591328,
+      "sha256": "3f4035d5b421e934452922d839b5f16729926c084302a5cb6774828c7655bdd3",
+      "matchesLocal": true
+    },
+    "public/naju-region-map.json": {
+      "status": 200,
+      "bytes": 345156,
+      "sha256": "7f0d28f2287caee87ccf9e1092ab3c3b5be66a4a5148440cf17d54495d2ea081",
+      "matchesLocal": true
+    },
+    "dist/client/assets/explorer-DMZmI51K.js": {
+      "status": 200,
+      "bytes": 60662,
+      "sha256": "924657154f2d4533389aac59654219cdd107346933e1aba338241aac90bbc470",
+      "matchesLocal": true
+    },
+    "dist/client/assets/map-travel-B30i9cQ4.js": {
+      "status": 200,
+      "bytes": 643305,
+      "sha256": "8307a180c28bcd5257d7000ada1187cd2d61da27144db83f7fc30c54967f1e4a",
+      "matchesLocal": true
+    }
+  },
+  "productionPixelsVerified": true,
+  "androidHardwareVerified": false,
+  "productionConsoleErrors": [],
+  "screenshots": [
+    "outputs/neureoji-v94/web-hydrangea-production-h.jpg",
+    "outputs/neureoji-v94/web-forest-local-h.jpg",
+    "outputs/neureoji-v94/web-top-local-h.jpg"
+  ]
+}

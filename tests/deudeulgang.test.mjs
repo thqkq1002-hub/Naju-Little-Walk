@@ -4,11 +4,30 @@ import fs from 'node:fs';
 import zlib from 'node:zlib';
 import {canTravelTo,regionalPoint,regionalSize} from '../lib/map-navigation.ts';
 import {destinations,destinationFromSearch} from '../lib/destinations.ts';
-import {movePlayer,solidCollider} from '../lib/world.ts';
+import {moveOnFloors,solidCollider,worldFloors,worldObstacles} from '../lib/world.ts';
 const root=new URL('../',import.meta.url);
 const world=JSON.parse(fs.readFileSync(new URL('public/deudeulgang-world.json',root)));
 const osm=JSON.parse(fs.readFileSync(new URL('knowledge/sources/deudeulgang/geometry.json',root)));
 const geo=([lon,lat])=>[(lon-126.85475)*91175,(35.0185-lat)*111195];
+
+test('far water is cropped in both the authored GLB and navigation footprint',()=>{
+ const report=JSON.parse(fs.readFileSync(new URL('knowledge/sources/deudeulgang/river-trim-v82.json',root)));
+ const river=world.solids.find(s=>s.name==='mapped_river_water').footprint;
+ assert.deepEqual(river,world.solids.find(s=>s.name==='river_no_walking').footprint);
+ assert.deepEqual(river,report.riverFootprint);
+ assert.equal(world.bounds[0],report.cutMinimumX);
+ assert.ok(river.every(p=>p[0]>=report.cutMinimumX));
+ const area=p=>Math.abs(p.reduce((sum,a,i)=>{const b=p[(i+1)%p.length];return sum+a[0]*b[1]-b[0]*a[1]},0))/2;
+ assert.ok(Math.abs(area(river)-report.riverAreaAfter)<.001);
+ assert.ok(report.removedPercent>45&&report.removedPercent<60);
+ assert.ok(report.sourceUnchanged&&report.allNonWaterMeshesUnchanged);
+ assert.ok(report.protectedMeshObjects>=560);
+ const raw=fs.readFileSync(new URL('public/models/deudeulgang.glb',root));
+ const d=JSON.parse(raw.subarray(20,20+raw.readUInt32LE(12)));
+ const water=d.nodes.find(n=>n.name==='mapped_river_water');
+ for(const p of d.meshes[water.mesh].primitives)
+  assert.ok(d.accessors[p.attributes.POSITION].min[0]>=report.cutMinimumX-.001);
+});
 
 test('Drdeulgang is selectable and its geographic pin is inside the regional map',()=>{
  assert.equal(destinationFromSearch('?place=deudeulgang'),'deudeulgang');
@@ -25,7 +44,8 @@ test('mapped pine-grove centreline remains walkable continuously',()=>{
    const a=path[i-1],b=path[i],len=Math.hypot(b[0]-a[0],b[1]-a[1]);
    for(let j=0;j<=Math.ceil(len*2);j++){
     const t=j/Math.ceil(len*2),p=[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t];
-    assert.ok(canTravelTo(p,world),`Blocked OSM path ${id}, segment ${i}: ${p}`);
+    if(p[1]>world.cropRevision.trailEnd)continue; // off-grove continuation was intentionally removed
+    assert.ok(canTravelTo(p,world),`Blocked retained OSM path ${id}, segment ${i}: ${p}`);
    }
   }
  }
@@ -57,21 +77,29 @@ test('pine canopy has paired authored LOD, alpha-tested needles and exact gzip t
  }
 });
 
-test('distant wooded background stays opaque and outside the walking shadow pass',()=>{
+test('compact grove contains no hills, fields, bridge or external roads',()=>{
  const raw=fs.readFileSync(new URL('public/models/deudeulgang.glb',root));
  const d=JSON.parse(raw.subarray(20,20+raw.readUInt32LE(12)));
- const backdrop=d.nodes.filter(n=>n.extras?.background_only);
- assert.ok(backdrop.length>=3&&backdrop.length<=16,'Background is delivered as a bounded set of batched meshes');
- assert.equal(d.nodes.some(n=>n.name?.startsWith('west_bank_background_pine')),false,'Sparse alpha needle trees were replaced');
- for(const n of backdrop){
-  assert.equal(n.extras.no_shadow,true);assert.equal(n.extras.no_receive_shadow,true);
-  for(const p of d.meshes[n.mesh].primitives){
-   const m=d.materials[p.material];
-   assert.ok(!m.alphaMode||m.alphaMode==='OPAQUE','Canopies must not disappear from distant alpha testing');
-   const t=m.pbrMetallicRoughness.baseColorTexture;
-   assert.ok(t,'Wooded hills must retain their detailed forest surface');
-   assert.ok(Number.isInteger(d.images[d.textures[t.index].source].bufferView),'Texture is embedded, with no external image dependency');
-  }
- }
- assert.ok(world.solids.some(s=>s.name==='background_ridge_boundary'&&s.collision),'Background remains inaccessible');
+ const removed=/^(background_|estimated_|west_bank_|satellite_field|crop_row|bridge_|road_parking|ground_floor_landscape)/;
+ assert.equal(d.nodes.some(n=>removed.test(n.name??'')),false);
+ assert.equal(world.solids.some(s=>removed.test(s.name)),false);
+ assert.ok(d.nodes.some(n=>n.name==='mapped_river_water'));
+ assert.equal(d.materials.some(m=>m.name==='Background_mixed_woodland_texture'),false);
+ assert.ok(packedSize()<6*1024*1024,'Removing the background must reduce the transport size');
+ assert.ok(world.bounds[1]-world.bounds[0]<350);
+ assert.ok(world.bounds[3]-world.bounds[2]<500);
+ const river=world.solids.find(s=>s.name==='river_no_walking');
+ for(const [x,z] of river.footprint)assert.ok(x>=world.bounds[0]&&x<=world.bounds[1]&&z>=world.bounds[2]&&z<=world.bounds[3]);
+});
+const packedSize=()=>fs.statSync(new URL('public/models/deudeulgang.glb.gz',root)).size;
+
+test('removed land is inaccessible and retained paths cannot lead into water or empty sky',()=>{
+ assert.equal(world.requireFloor,true);assert.equal(world.verticalNavigation,true);
+ for(const p of [[75,0],[-228,0],[60,200],[-150,50],[0,279]])assert.equal(canTravelTo(p,world),false,String(p));
+ const p=world.places.find(p=>p.id==='riverside').arrival;
+ const result=moveOnFloors(...p,0,-200,0,worldObstacles(world.solids),worldFloors(world.solids),world.bounds,true);
+ assert.ok(result.x>world.bounds[0]+1,'Crossing the entire river must be blocked');
+ assert.ok(canTravelTo([result.x,result.z],world,result.height));
+ const source=JSON.parse(fs.readFileSync(new URL('knowledge/sources/deudeulgang/crop-v81.json',root)));
+ assert.equal(source.sourceUnchanged,true);assert.equal(source.pineObjectsPreserved,560);
 });

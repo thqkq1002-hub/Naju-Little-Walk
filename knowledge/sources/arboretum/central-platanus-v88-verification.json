@@ -1,0 +1,14 @@
+{
+  "blend_revision": "outputs\\quality-v88\\naju-arboretum-central-platanus-v88.blend",
+  "blend_sha256": "cd73e24438053b4d8ba1b7ce298d5e72e8be2166477d9b880a11686c967c6fda",
+  "protected_meshes": 21507,
+  "central_tree_pairs": 120,
+  "shared_prototypes": 6,
+  "lower_trunk_preserved": true,
+  "transforms_preserved": true,
+  "matched_lod_volume": true,
+  "foliage_above_5m": true,
+  "navigation_unchanged": true,
+  "world_metadata_only": true,
+  "font_labels_verified": true
+}

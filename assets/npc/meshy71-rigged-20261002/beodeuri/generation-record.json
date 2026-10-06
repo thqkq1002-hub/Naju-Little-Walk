@@ -1,0 +1,28 @@
+{
+  "character": "beodeuri",
+  "submission": "accepted",
+  "settings": {
+    "model_type": "standard",
+    "ai_model": "meshy-7.1",
+    "geometry_resolution": "4k",
+    "texture_resolution": "4k",
+    "should_texture": true,
+    "enable_pbr": true,
+    "should_remesh": false,
+    "image_enhancement": false,
+    "pose_mode": "a-pose",
+    "target_formats": [
+      "glb"
+    ],
+    "multi_view_thumbnails": true
+  },
+  "created_at": "2026-10-02T09:47:21.347110+00:00",
+  "balance_before": 1065,
+  "estimated_credits": 35,
+  "reference": "assets\\npc\\higgsfield-rebuild-20261002\\references\\beodeuri-front.png",
+  "reference_sha256": "3ba76e77085b352ad5bbad6e4b2c10134582be01c00d6e3697cbdb784d81162a",
+  "task_id": "01a0fc02-e1a5-726a-bd83-f3ab678ef559",
+  "status": "SUCCEEDED",
+  "progress": 100,
+  "consumed_credits": 35
+}

@@ -1,0 +1,55 @@
+{
+  "revision": "neureoji-v92e",
+  "blend": "outputs/neureoji-v92/neureoji-v92e.blend",
+  "geography": "knowledge/sources/neureoji-v92/geography.json",
+  "terrain": "knowledge/sources/neureoji-v92/native-terrain.json",
+  "origin": {
+    "lat": 34.9159348,
+    "lon": 126.5419381
+  },
+  "waterArea": 4305638.029570147,
+  "padHeight": 37.76367950439453,
+  "topHeight": 49.76367950439453,
+  "walkingBounds": [
+    -7,
+    8,
+    -7,
+    23
+  ],
+  "backgroundBounds": [
+    -3100,
+    3100,
+    -2700,
+    2300
+  ],
+  "export": {
+    "merged": 4047,
+    "meshes": 50,
+    "materials": 45,
+    "images": 11,
+    "bytes": 39931368,
+    "gzipBytes": 11246434,
+    "sha256": "2ddb897d7f1c0f31662cdd3517c33d7347906397d45ac3d8492148e0271ec650",
+    "gzipSha256": "ebb44b919d168e0b4ca77d64f147984f7c7c13621f3017279186f3541240d009"
+  },
+  "assumptions": [
+    "현재 4층 철골 전망대. 향후 계획된 45m 전망타워와 구분.",
+    "계단·난간·원형 데크 치수와 개별 식재는 사진 기반 추정.",
+    "30m DSM에서 수관 8m를 감한 지면 추정. 지면 측량 자료 아님.",
+    "영산강 윤곽은 OSM, 지형은 Copernicus GLO-30. 들판 재질과 작물 색상은 자체 제작 해석.",
+    "강둑 수림과 개별 수목은 사진·지형 참고 추정, 개별 나무 실측 아님.",
+    "상하 계단의 충돌을 피하는 병렬 계단 폭은 사진 기반 추정. 실측 구조도 아님.",
+    "상하 계단의 충돌을 피하는 병렬 계단 폭은 사진 기반 추정. 실측 구조도 아님."
+  ],
+  "reviewPasses": 5,
+  "backgroundCanopies": 11056,
+  "finalBlendSha256": "8a74b4fd1b0b164b6e979839d10ac93a2ef718c3fcbb97e175107112fe9c26ff",
+  "worldSha256": "a447d9deecd683b2be235b1c679e6343eb09a2fdba9bcd9980d1ac5453abf23e",
+  "verification": {
+    "functionalTests": 97,
+    "typeCheck": "passed",
+    "staticBuild": "passed",
+    "browserPixelCheck": "unavailable",
+    "androidHardwareCheck": "not run"
+  }
+}

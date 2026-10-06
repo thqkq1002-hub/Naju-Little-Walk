@@ -1,0 +1,25 @@
+{
+  "retrievedAtUTC": "2026-10-03T12:17:59.069867+00:00",
+  "requestUrl": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=14117253.232193254%2C4164151.36896162%2C14120305.396430114%2C4166593.234447079&bboxSR=3857&imageSR=3857&size=1600%2C1280&format=jpg&f=json",
+  "service": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+  "imageSHA256": "356ad3346a1bbcec06d76a881425ba40c5177279917b1c2415c10504d039615f",
+  "copyrightText": "Source: Esri, Vantor, Earthstar Geographics, and the GIS User Community",
+  "imageryAcquisitionDate": "unverified",
+  "usage": "offline terrain research reference, not a runtime texture",
+  "response": {
+    "href": "https://services.arcgisonline.com/arcgis/rest/directories/arcgisoutput/World_Imagery_MapServer/_ags_map62eb0f33ab0d461cb99a575fef6f38e6.jpg",
+    "width": 1600,
+    "height": 1280,
+    "extent": {
+      "xmin": 14117253.148383278,
+      "ymin": 4164151.3689616206,
+      "xmax": 14120305.480240101,
+      "ymax": 4166593.2344470792,
+      "spatialReference": {
+        "wkid": 102100,
+        "latestWkid": 3857
+      }
+    },
+    "scale": 7210.218312186333
+  }
+}

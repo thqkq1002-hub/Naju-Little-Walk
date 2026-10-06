@@ -1,0 +1,27 @@
+{
+  "verifiedAt": "2026-10-03T14:59:37.290887+00:00",
+  "testsPassed": 95,
+  "testsFailed": 0,
+  "typescriptPassed": true,
+  "staticBuildPassed": true,
+  "sourceBlendPreserved": true,
+  "modelSha256": "a85eafab2a262ee8e7e961015b47bf69d134b7133be000b6976e3dbc03aa6283",
+  "gzipSha256": "51063a15960c1e67bc13d170fa01ad7b4dc679d3dc7d830c7ffe70465a6113cf",
+  "gzipMatchesModel": true,
+  "modelBytes": 18679088,
+  "gzipBytes": 5107143,
+  "blenderReviewImages": [
+    "outputs/terrain-v89/aerial-before.png",
+    "outputs/terrain-v89/aerial-after.png",
+    "outputs/terrain-v89/walk-after.png",
+    "outputs/terrain-v89/terrain-comparison.png"
+  ],
+  "displayInterpolationMetres": {
+    "core": 1.5,
+    "outerLawn": 4
+  },
+  "nativeSourceResolutionMetres": 30,
+  "productionSceneVerified": false,
+  "androidHardwareVerified": false,
+  "browserLimitation": "Computer-use runtime kernel assets path not found; app pixels and tablet interaction not reverified."
+}

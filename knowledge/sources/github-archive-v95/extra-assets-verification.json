@@ -1,0 +1,24 @@
+{
+  "verifiedAt": "2026-10-04T05:02:40.729900+00:00",
+  "private": true,
+  "releaseURL": "https://github.com/reinhardt7177-lab/naju-little-walk-project-archive/releases/tag/naju-project-v95-20261004",
+  "allExtraDigestsMatch": true,
+  "totalReleaseAssets": 21,
+  "checks": {
+    "remote-verification.json": {
+      "bytes": 4261,
+      "sha256": "d396935866be663c5870d888cc2c1f69b337e1dda516047ae7b57a6ebaa4dc41",
+      "githubDigestMatches": true
+    },
+    "neureoji-v95-deployment.json": {
+      "bytes": 1863,
+      "sha256": "d2c0517127d987590ac3d710e2ac913b2a64314ffa1247a6c3ecc8c940abe728",
+      "githubDigestMatches": true
+    },
+    "neureoji-hydrangea-v95c-production.jpg": {
+      "bytes": 158259,
+      "sha256": "7d0ee43fcd0494770ea11907e166da587a21841bd616d49a7a0a2c3ef791456f",
+      "githubDigestMatches": true
+    }
+  }
+}

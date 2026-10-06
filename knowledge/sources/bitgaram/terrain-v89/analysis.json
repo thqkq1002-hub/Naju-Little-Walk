@@ -1,0 +1,42 @@
+{
+  "samples": [
+    {
+      "label": "summit",
+      "x": 0,
+      "z": 0,
+      "elevationMetres": 79.14212036132812
+    },
+    {
+      "label": "upper-platform-location",
+      "x": 12,
+      "z": 16,
+      "elevationMetres": 77.31915283203125
+    },
+    {
+      "label": "lower-platform-location",
+      "x": 16,
+      "z": 108,
+      "elevationMetres": 44.70902633666992
+    },
+    {
+      "label": "forest-start",
+      "x": 70.547,
+      "z": 170.13,
+      "elevationMetres": 33.4511833190918
+    }
+  ],
+  "adoptedUpperSurfaceMetres": 79.14212036132812,
+  "adoptedLowerSurfaceMetres": 44.70902633666992,
+  "interpretedPlatformDifferenceMetres": 34.4330940246582,
+  "previousPlatformDifferenceMetres": 9.78,
+  "officialCrossCheck": {
+    "url": "https://webgis.neins.go.kr/map.do",
+    "dataset": "2022 NGII 5 m classified elevation",
+    "summitClass": "50-100 m"
+  },
+  "officialSummitDescription": {
+    "url": "https://korean.visitkorea.or.kr/detail/rem_detail.do?con_type=11300&cotid=9bcea016-ebf7-4cec-ae02-4d67ce2d49fe",
+    "describedHillMetres": 80
+  },
+  "userDecision": "30m 자료로 우선 보강하고 정밀도 한계 기록"
+}

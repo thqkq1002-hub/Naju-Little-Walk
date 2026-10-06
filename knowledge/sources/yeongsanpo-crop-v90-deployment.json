@@ -1,0 +1,34 @@
+{
+  "verifiedAtUTC": "2026-10-03T20:27:40.695218+00:00",
+  "implementationCommit": "d372b7e689ab0f5d3b147114c1e7d8714d05608e",
+  "vercelStatus": "success",
+  "vercelDeploymentUrl": "https://vercel.com/reinhardt7177-labs-projects/naju-little-walk/EcxNzjbES2qQZhMrCJ48NJWBiMZM",
+  "url": "https://naju-little-walk.vercel.app/?place=yeongsanpo&v=north-crop-v90",
+  "htmlHttpStatus": 200,
+  "entryHttpStatus": 200,
+  "htmlMatchesLocal": true,
+  "entryBundleMatchesLocal": true,
+  "checks": {
+    "public/models/yeongsanpo.glb.gz": {
+      "httpStatus": 200,
+      "sha256": "f811a41c245bb7617e7d7e6efa69ad5065b0a23408625d4f6c634d76e682d380",
+      "bytes": 16917853,
+      "matchesLocal": true
+    },
+    "public/yeongsanpo-world.json": {
+      "httpStatus": 200,
+      "sha256": "4e72b8626a31a7efa3b37eeba403260edacb550cfbca2af1604c326815735041",
+      "bytes": 558454,
+      "matchesLocal": true
+    }
+  },
+  "testsPassed": 91,
+  "typescriptPassed": true,
+  "staticBuildPassed": true,
+  "sourceBlendPreserved": true,
+  "blenderReviewImage": "outputs/yeongsanpo-crop-v90/yeongsanpo-crop-review.png",
+  "blenderReviewComplete": true,
+  "productionSceneVerified": false,
+  "androidHardwareVerified": false,
+  "browserVerificationLimitation": "Computer-use runtime kernel assets initialization failed earlier in this session; production pixels and tablet input were not verified."
+}

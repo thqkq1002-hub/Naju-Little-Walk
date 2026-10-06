@@ -1,0 +1,33 @@
+{
+  "revision": "gallery-neureoji-v92",
+  "createdAtUTC": "2026-10-03T21:48:31.391979+00:00",
+  "models": [
+    {
+      "scene": "yeongsanpo-history",
+      "blend": "outputs/history-gallery-v91/yeongsanpo-history-complete-v91c.blend",
+      "blendSha256": "68cf2929c940167eded1aac5f7f55161634e89cd35db4727a1d135f7b3cbcfc5",
+      "worldSha256": "847085dbe64590a0936bc11d8ab3c0e5b5e3920f4a468c1debcf10c8c627156d",
+      "modelSha256": "43c58cf7ec851d3c93c600f7bc95228ac47d7454b26bd20fc535069a0b2efcb1",
+      "compressedSha256": "5e39b0eea122f1623c4bdc5a2927d07652d590280dc064fdc471c42344ff82a6",
+      "gzipBytes": 4342327
+    },
+    {
+      "scene": "neureoji",
+      "blend": "outputs/neureoji-v92/neureoji-v92e.blend",
+      "blendSha256": "8a74b4fd1b0b164b6e979839d10ac93a2ef718c3fcbb97e175107112fe9c26ff",
+      "worldSha256": "a447d9deecd683b2be235b1c679e6343eb09a2fdba9bcd9980d1ac5453abf23e",
+      "modelSha256": "2ddb897d7f1c0f31662cdd3517c33d7347906397d45ac3d8492148e0271ec650",
+      "compressedSha256": "ebb44b919d168e0b4ca77d64f147984f7c7c13621f3017279186f3541240d009",
+      "gzipBytes": 11246434
+    }
+  ],
+  "tests": 97,
+  "typeCheck": true,
+  "staticBuild": true,
+  "originalGalleryPreserved": true,
+  "limitations": [
+    "No complete current gallery floor plan / verified second-floor use.",
+    "30m DSM interpreted ground and photo-estimated tower dimensions.",
+    "Geometry and production files verified; no live browser pixel or Android hardware check."
+  ]
+}

@@ -9,11 +9,13 @@ export type Solid = {
   rotation?: number;
   footprint?: Point[];
   collision?: boolean;
+  /** Authored sloping surface: y = a*x + b*z + c, in world metres. */
+  floorPlane?: [number, number, number];
 };
 export type Sign = { text: string; position: Vec3; width: number; rotation?: number; color?: string };
-export type Arrival = { x: number; z: number; yaw: number; height?: number };
+export type Arrival = { x: number; z: number; yaw: number; pitch?: number; height?: number };
 export type Portal = { id: string; position: Point; radius: number; target: string; arrival: string; label: string; height?: number };
-export type Place = { id: string; name: string; description: string; position: Point; radius: number; indoor?: boolean; footprint?: Point[]; arrival?: Point; arrivalHeight?: number };
+export type Place = { id: string; name: string; description: string; position: Point; radius: number; indoor?: boolean; footprint?: Point[]; arrival?: Point; arrivalHeight?: number; arrivalYaw?: number; arrivalPitch?: number; mapLabel?: string };
 export type World = {
   title: string;
   subtitle: string;
@@ -29,10 +31,12 @@ export type World = {
   arrivals?: Record<string, Arrival>;
   portals?: Portal[];
   sceneLinks?: {label:string;target:string}[];
+  viewMode?: 'panorama';
   boats?: import('./boat-navigation.ts').BoatDefinition[];
+  monorail?: import('./monorail.ts').MonorailDefinition;
   navigationWater?: import('./boat-navigation.ts').NavigationWater;
-  npcs?: import('./npc.ts').NpcDefinition[];
   lighting?: { exposure: number; ambient: number; sun: number };
+  architectureViews?: { id: string; label: string; center: Vec3; radius: number; elevation: number; angle: number; fov?: number }[];
 };
 
 export function currentPlace(x: number, z: number, places: Place[], height?:number): Place | undefined {
@@ -40,7 +44,11 @@ export function currentPlace(x: number, z: number, places: Place[], height?:numb
 }
 
 export type Collider = Point[];
-export type Floor = { polygon: Collider; height: number };
+export type Floor = { polygon: Collider; height: number; plane?: [number, number, number] };
+
+export function heightOnFloor(floor: Floor, x: number, z: number): number {
+  return floor.plane ? floor.plane[0]*x + floor.plane[1]*z + floor.plane[2] : floor.height;
+}
 
 export type WalkObstacle = { polygon: Collider; minY: number; maxY: number; minX: number; maxX: number; minZ: number; maxZ: number };
 
@@ -59,8 +67,10 @@ export function blocksWalking(x: number,z: number,height: number,obstacles: Walk
 export function reachableFloor(x: number,z: number,height: number,floors: Floor[],requireFloor=false): number | null {
   let best: number|null = !requireFloor && Math.abs(height)<=.36?0:null;
   for(const floor of floors){
-    if(Math.abs(floor.height-height)>.36 || !hitsPolygon(x,z,floor.polygon,0))continue;
-    if(best===null || floor.height>best)best=floor.height;
+    if(!hitsPolygon(x,z,floor.polygon,0))continue;
+    const surfaceHeight=heightOnFloor(floor,x,z);
+    if(Math.abs(surfaceHeight-height)>.36)continue;
+    if(best===null || surfaceHeight>best)best=surfaceHeight;
   }
   return best;
 }
@@ -77,11 +87,11 @@ export function moveOnFloors(x: number,z: number,height: number,dx: number,dz: n
 }
 
 export function worldFloors(solids: Solid[]): Floor[] {
-  return solids.filter(s => s.name.startsWith('ground_floor') || s.name.startsWith('walk-floor')).map(s => ({ polygon: solidCollider(s), height: s.position[1] + s.size[1] * (s.kind === 'building' ? 1 : .5) }));
+  return solids.filter(s => s.name.startsWith('ground_floor') || s.name.startsWith('walk-floor')).map(s => ({ polygon: solidCollider(s), height: s.position[1] + s.size[1] * (s.kind === 'building' ? 1 : .5), ...(s.floorPlane ? {plane:s.floorPlane} : {}) }));
 }
 
 export function floorHeight(x: number, z: number, floors: Floor[]) {
-  return floors.reduce((height, floor) => hitsPolygon(x, z, floor.polygon, 0) ? Math.max(height, floor.height) : height, 0);
+  return floors.reduce((height, floor) => hitsPolygon(x, z, floor.polygon, 0) ? Math.max(height, heightOnFloor(floor,x,z)) : height, 0);
 }
 
 export function solidCollider(s: Solid): Collider {

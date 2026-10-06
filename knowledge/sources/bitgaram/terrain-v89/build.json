@@ -1,0 +1,30 @@
+{
+  "source": "outputs\\monorail-v83\\bitgaram-park-monorail-v83.blend",
+  "sourceSha256": "e359827ae4b224ac6dbe3397bd40b8cc2f4b3c7dc9f21cddd9a9da0d218ae193",
+  "sourceUnchanged": true,
+  "output": "outputs\\terrain-v89\\bitgaram-park-glo30-terrain-v89d.blend",
+  "changedObjects": 10603,
+  "treeRootsMoved": 2250,
+  "upperModelHeight": 53.642120361328125,
+  "lowerModelHeight": 19.209026336669922,
+  "elevationDifferenceMetres": 34.4330940246582,
+  "railLengthMetres": 98.07618513762843,
+  "monorailPlanPreserved": true,
+  "maxFloorStep": {
+    "walk-floor_mapped_forest_549492174": 0.34616520927092154,
+    "walk-floor_slide_side_stairs": 0.18535364531675924
+  },
+  "modelBytes": 18679088,
+  "gzipBytes": 5107143,
+  "modelSha256": "a85eafab2a262ee8e7e961015b47bf69d134b7133be000b6976e3dbc03aa6283",
+  "sourceResolutionMetres": 30,
+  "displayGridMetres": 1.5,
+  "surveyedBareEarth": false,
+  "limitations": [
+    "Native grid about 25 m east-west / 31 m north-south here; 30 m nominal. Smaller structures and steps unresolved.",
+    "Observations mainly 2010-2015; edited 2021 release does not guarantee present grading or station surfaces.",
+    "Public NEINS 2022 NGII 5 m analysis returned elevation class 50-100 m, not numeric ground heights. It is only a cross-check.",
+    "Platform levelling, building cut/fill, rail clearances and slide profiles are modelling interpretations. Obtain current NGII contours/DEM or as-built survey to replace them."
+  ],
+  "sourceAttribution": "Contains modified Copernicus Service information 2021. Produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved."
+}

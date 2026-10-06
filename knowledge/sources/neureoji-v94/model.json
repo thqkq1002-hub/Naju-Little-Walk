@@ -1,0 +1,44 @@
+{
+  "revision": "neureoji-hydrangea-v94h",
+  "blend": "outputs/neureoji-v94/neureoji-hydrangea-v94h.blend",
+  "preservedSource": "outputs/neureoji-v93/neureoji-quality-v93d.blend",
+  "preservedSourceSha256": "fd2734575ca316c9709ac2c5611f1b172f8ecc29231beeb628902e4fd4d3c623",
+  "export": {
+    "merged": 2409,
+    "meshes": 83,
+    "materials": 73,
+    "images": 22,
+    "bytes": 47406556,
+    "gzipBytes": 14325949,
+    "sha256": "29617084455f2476652a78bd1a37a65eb4b9b2bfb79b5ebb8053756b9cc88082",
+    "gzipSha256": "d9006bf06bef3abaf7d25f84fda0de158de9defcc8780ebe1b924b6599123b1d"
+  },
+  "hydrangeaBushes": 550,
+  "trailTrees": 142,
+  "trailLengthMetres": 365.94949453855116,
+  "slopedFloorTriangles": 1036,
+  "railGuards": 103,
+  "reference": [
+    "https://akekanfl.tistory.com/8708274",
+    "https://www.openstreetmap.org/way/699922279",
+    "https://www.openstreetmap.org/way/947992194",
+    "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N34_00_E126_00_DEM/Copernicus_DSM_COG_10_N34_00_E126_00_DEM.tif"
+  ],
+  "limitations": [
+    "Route centerlines are OSM cycleways shared with pedestrians, not a surveyed hydrangea planting plan.",
+    "Widths, near-tower connections, individual plants and local grading are photo interpretations.",
+    "Only the near-tower sections are reproduced, not the entire reported ten-minute flower walk.",
+    "Summer flowering appearance; not a live bloom condition."
+  ],
+  "artistRevision": "h",
+  "normalStorage": {
+    "vertices": 1579928,
+    "maximumLightingNormalErrorDegrees": 0.3762806806408106,
+    "positionChanges": 0
+  },
+  "preservedReviewSource": "outputs/neureoji-v94/neureoji-hydrangea-v94g.blend",
+  "preservedReviewSourceSha256": "5156a49676cc4f28d3bb1387dab62800ef305b96e059bf124b75d8fd58abb0d1",
+  "shadowReview": "Sloping path internal faces do not cast shadows. Authored positions, normals and navigation preserved; final surface material changes recorded separately.",
+  "surfaceReview": "Northern railed path uses concrete matching OSM surface=concrete and the 2026 visitor photographs. End boardwalk retains timber.",
+  "renderMetadataOnlyBinarySha256": "2d4b4ed5d46257f51be92aa5ca6a349d0ee49dd8737951dce944f5c30dfebeb4"
+}

@@ -1,0 +1,44 @@
+{
+  "implementationCommit": "40aca1c7066534f5c85947193e7474d0968f4c0d",
+  "vercelStatus": "success",
+  "vercelDeploymentUrl": "https://vercel.com/reinhardt7177-labs-projects/naju-little-walk/C7bnLs7Wvv43YAUosXP2QVX4XhKY",
+  "url": "https://naju-little-walk.vercel.app/?place=bitgaram-park&v=terrain-v89",
+  "htmlHttpStatus": 200,
+  "entryHttpStatus": 200,
+  "normalizedHtmlMatchesLocal": true,
+  "entryBundleMatchesLocal": true,
+  "checks": {
+    "public/models/bitgaram-park.glb.gz": {
+      "httpStatus": 200,
+      "sha256": "51063a15960c1e67bc13d170fa01ad7b4dc679d3dc7d830c7ffe70465a6113cf",
+      "bytes": 5107143,
+      "matchesLocal": true
+    },
+    "public/bitgaram-park-world.json": {
+      "httpStatus": 200,
+      "sha256": "bde1119415ea1a84cc238a10d891d55c158bfc93b1b6194e012e6355363afd9f",
+      "bytes": 447234,
+      "matchesLocal": true
+    },
+    "public/npc-placements.json": {
+      "httpStatus": 200,
+      "sha256": "621000a61e9e30f7028e7d7e22dbc28531d5c92b8e1f736adf78e01d827dd086",
+      "bytes": 5109,
+      "matchesLocal": true
+    },
+    "explorer-MxQbngX3.js": {
+      "httpStatus": 200,
+      "sha256": "5f117c31a6abdaf1afe7eafe22115270c78c3065306a6a199007e7752f9bd559",
+      "matchesLocal": true
+    }
+  },
+  "testsPassed": 95,
+  "typescriptPassed": true,
+  "staticBuildPassed": true,
+  "blenderComparisonReviewed": true,
+  "productionSceneVerified": false,
+  "androidHardwareVerified": false,
+  "browserVerificationLimitation": "Computer-use runtime could not initialize its kernel assets. Production scene pixels and Android input were not verified.",
+  "sourceResolutionMetres": 30,
+  "surveyedBareEarth": false
+}

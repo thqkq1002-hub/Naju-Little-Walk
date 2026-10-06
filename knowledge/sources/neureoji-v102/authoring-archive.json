@@ -1,0 +1,11 @@
+{
+  "archive": "outputs/neureoji-v102/neureoji-boardwalk-v102-authoring.zip",
+  "bytes": 47734294,
+  "sha256": "563bc7d629102703f2258f99e67d01393d1d8edf9c1d6a7fa2cf1b717e25e1ed",
+  "files": [
+    {
+      "path": "neureoji-boardwalk-v102.blend",
+      "sha256": "94b59703a14f1056c25b0f618f04cb398a176652050a009313faed80289365c1"
+    }
+  ]
+}

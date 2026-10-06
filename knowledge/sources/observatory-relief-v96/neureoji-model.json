@@ -1,0 +1,40 @@
+{
+  "revision": "neureoji-relief-v96",
+  "blend": "outputs/relief-v96/neureoji-relief-v96.blend",
+  "preservedSource": "outputs/neureoji-v95/neureoji-hydrangea-v95c.blend",
+  "preservedSourceSha256": "87b1eef38a34ed7421be0667c1a6b70fe2ee3101dcf3fbfc7426c8e42d0f7860",
+  "changedObjects": 843,
+  "relief": {
+    "towerBaseMetres": 45.76367950439453,
+    "topDeckMetres": 57.76367950439453,
+    "canopyDeductionMetres": 0,
+    "previousCanopyDeductionMetres": 8,
+    "transitionRadiiMetres": [
+      280,
+      480
+    ],
+    "evidence": "knowledge/sources/observatory-relief-v96/independent-terrain.json",
+    "surveyed": false
+  },
+  "export": {
+    "merged": 2409,
+    "meshes": 90,
+    "materials": 76,
+    "images": 20,
+    "bytes": 49029700,
+    "gzipBytes": 16104160,
+    "sha256": "801fc09450f29abd5f1191df9168803df6e7d99a446371910ebf4245f4c016d2",
+    "gzipSha256": "8dd7b248812be408ce0890b5332d954aebbd208432c31a740076ba04b52a2e8d"
+  },
+  "normalStorage": {
+    "vertices": 1961486,
+    "maximumLightingNormalErrorDegrees": 0.3840910405490917,
+    "positionChanges": 0
+  },
+  "plantPositionStorage": {
+    "vertices": 1022578,
+    "maxDecorativePlantErrorMetres": 0.004657457994672191,
+    "walkingAndRiverPositionChanges": 0,
+    "uniformScale": true
+  }
+}

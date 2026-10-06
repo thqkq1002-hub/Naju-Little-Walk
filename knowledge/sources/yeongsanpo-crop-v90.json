@@ -1,0 +1,151 @@
+{
+  "sourceBlend": "outputs\\yeongsanpo-v79\\yeongsanpo-detail-v79.blend",
+  "sourceSha256": "c67677129e5b3ee99fc7f1dff9801774e5792146f4e5cb45e95afb11579f63ae",
+  "sourceUnchanged": true,
+  "editedBlend": "outputs\\yeongsanpo-crop-v90\\yeongsanpo-north-crop-v90b.blend",
+  "northCutMetres": -230,
+  "oldBounds": [
+    -410,
+    395,
+    -315,
+    300
+  ],
+  "newBounds": [
+    -410,
+    395,
+    -230,
+    300
+  ],
+  "beforeVisualExtent": [
+    -500,
+    500,
+    -410,
+    301.9701232910156
+  ],
+  "afterVisualExtent": [
+    -411.3251953125,
+    438.5157775878906,
+    -230,
+    301.9701232910156
+  ],
+  "removedObjects": [
+    "north_bank_background",
+    "bridge_pier.003",
+    "bridge_pier.004",
+    "bridge_pier.005",
+    "road_center_mark.028",
+    "road_center_mark.029",
+    "road_center_mark.030",
+    "road_center_mark.031",
+    "road_center_mark.032",
+    "road_center_mark.033",
+    "road_center_mark.034",
+    "road_center_mark.035",
+    "road_center_mark.036",
+    "road_center_mark.037",
+    "road_center_mark.038",
+    "road_center_mark.039",
+    "road_center_mark.040",
+    "bridge_pier.010",
+    "bridge_pier.011",
+    "road_center_mark.060",
+    "road_center_mark.061",
+    "road_center_mark.062",
+    "road_center_mark.063",
+    "road_center_mark.064",
+    "road_center_mark.065",
+    "road_center_mark.066",
+    "road_center_mark.067",
+    "road_center_mark.068"
+  ],
+  "trimmedObjects": [
+    "mapped_river_water",
+    "road-edge_way/303738250.002",
+    "road_way/303738250.002",
+    "walk-floor_bridge_way/303738250.002",
+    "road_center_mark.027",
+    "road-edge_way/320473144",
+    "road_way/320473144",
+    "walk-floor_bridge_way/320473144",
+    "road_center_mark.059"
+  ],
+  "changedSolidNames": [
+    "mapped_river_water",
+    "road-edge_way/303738250",
+    "road_way/303738250",
+    "walk-floor_bridge_way/303738250",
+    "road-edge_way/320473144",
+    "road_way/320473144",
+    "walk-floor_bridge_way/320473144"
+  ],
+  "removedSolidNames": [],
+  "westernBridgeEndBoundary": [
+    [
+      -71.66395292358195,
+      -175.19541600030436
+    ],
+    [
+      -157.10627877825942,
+      -145.6176920003128
+    ]
+  ],
+  "westernBridgeBoundarySource": "Existing OSM navigationWater polygon edge; remove bridge overhang after opposite-bank background removal.",
+  "presentationOnly": true,
+  "geographicSourceUnmodified": true,
+  "webMeshes": 1405,
+  "mergedObjects": 17695,
+  "modelBytes": 52749812,
+  "gzipBytes": 16917853,
+  "modelSha256": "46b353ae98c889882e35560c81b00a51681c4856cb3ba9e637505c44b170606c",
+  "legacyNavigationSha256": "c23dddb7674a7aa82194da2db03b4e8e93cdc52b2eea83d07a26e62cce67b6b0",
+  "navigationSha256": "839d043eed5fdd0ee4778f7d937efe973d4278989a59a12026cc1c6cc6787b37",
+  "preservedNavigation": {
+    "spawn": {
+      "beforeSha256": "84d967a1eb4dea944792cfe23c5bb2887338e0b979fc5a07a06913d7a5861814",
+      "afterSha256": "84d967a1eb4dea944792cfe23c5bb2887338e0b979fc5a07a06913d7a5861814",
+      "unchanged": true
+    },
+    "arrivals": {
+      "beforeSha256": "15deeac1803564bffd56fa1615762af169e198868c3fd9dd24cf209b54da4a97",
+      "afterSha256": "15deeac1803564bffd56fa1615762af169e198868c3fd9dd24cf209b54da4a97",
+      "unchanged": true
+    },
+    "portals": {
+      "beforeSha256": "725630257c5ef116918ba7ca6ebe74fdb09fb2d8d63cf1c16f576c7e6d7ea8fa",
+      "afterSha256": "725630257c5ef116918ba7ca6ebe74fdb09fb2d8d63cf1c16f576c7e6d7ea8fa",
+      "unchanged": true
+    },
+    "places": {
+      "beforeSha256": "6d83a5633de08ea56e24541c421d679950619f9c049349fcfae95a8455c31a21",
+      "afterSha256": "6d83a5633de08ea56e24541c421d679950619f9c049349fcfae95a8455c31a21",
+      "unchanged": true
+    },
+    "boats": {
+      "beforeSha256": "994bc98e650b50c788c7ddfdaed9c692f67fc21611f0c9f1c2a01464b93dfc48",
+      "afterSha256": "994bc98e650b50c788c7ddfdaed9c692f67fc21611f0c9f1c2a01464b93dfc48",
+      "unchanged": true
+    },
+    "literatureGarden": {
+      "beforeSha256": "9147215091e9ade16be4ef7b962806f6a021fb292dcac5f52b7ce6ff4dc18dd2",
+      "afterSha256": "9147215091e9ade16be4ef7b962806f6a021fb292dcac5f52b7ce6ff4dc18dd2",
+      "unchanged": true
+    },
+    "dockStairRoute": {
+      "beforeSha256": "9f357a44581033c1f5c861ec79b61e1c97e793ea84916e01ddcb5bcdebdaf42e",
+      "afterSha256": "9f357a44581033c1f5c861ec79b61e1c97e793ea84916e01ddcb5bcdebdaf42e",
+      "unchanged": true
+    },
+    "dockHeight": {
+      "beforeSha256": "58d8e2b759cbdbfdbb48691455f480410bb9dca7b0610e06cac14871d097ad21",
+      "afterSha256": "58d8e2b759cbdbfdbb48691455f480410bb9dca7b0610e06cac14871d097ad21",
+      "unchanged": true
+    },
+    "architectureViews": {
+      "beforeSha256": "583877049ac786e29ae88d4eb46ca27391b417ad872e37ed1bfa6fc7e89f1bb0",
+      "afterSha256": "583877049ac786e29ae88d4eb46ca27391b417ad872e37ed1bfa6fc7e89f1bb0",
+      "unchanged": true
+    }
+  },
+  "uncroppedSolidsSha256": "407641cc8edb78149a9b5058c1a88410decddd364d1ebc581cf97b4126f5b309",
+  "uncroppedSolidCount": 1455
+}

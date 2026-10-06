@@ -1,0 +1,132 @@
+{
+  "models": [
+    {
+      "model": "yeongsanpo",
+      "sourceSha256": "7d782a6c5a62711a8e8348527f31a26ea98732591f38f491605f01d826a8ab11",
+      "beforeObjects": 19715,
+      "webObjects": 1410,
+      "merged": 17718,
+      "texturedObjects": 11859,
+      "compressedBytes": 16917688,
+      "triangles": 763375,
+      "materials": 543,
+      "images": 35,
+      "detail": {
+        "deckFasteners": 480,
+        "shopDripEdges": 125,
+        "lighthouseFormworkCourses": 11,
+        "replacedCrownMasses": 591,
+        "leafCards": 34896
+      }
+    },
+    {
+      "model": "yeongsanpo-history",
+      "sourceSha256": "fdf0e4b46f2aaa1f42b5d152732accf2022d983375f4d27f7f7fd5587e1b50e9",
+      "beforeObjects": 1720,
+      "webObjects": 360,
+      "merged": 1361,
+      "texturedObjects": 161,
+      "compressedBytes": 1865627,
+      "triangles": 108397,
+      "materials": 74,
+      "images": 13,
+      "detail": {
+        "joineryFixings": 8
+      }
+    },
+    {
+      "model": "yeongsanpo-literature",
+      "sourceSha256": "f987ab1798559c00420e4c08f82de3b516e869b58f38b44c0a0fac8d2587c606",
+      "beforeObjects": 6037,
+      "webObjects": 195,
+      "merged": 5820,
+      "texturedObjects": 1695,
+      "compressedBytes": 4349339,
+      "triangles": 288477,
+      "materials": 149,
+      "images": 26,
+      "detail": {
+        "joineryFixings": 52,
+        "replacedCrownMasses": 24,
+        "leafCards": 2962
+      }
+    },
+    {
+      "model": "najuho",
+      "sourceSha256": "ce5f8642ef9d6a0366033f0939e70edd76e8482ea4c6c969bd808169bf7d62aa",
+      "beforeObjects": 1096,
+      "webObjects": 58,
+      "merged": 1039,
+      "texturedObjects": 721,
+      "compressedBytes": 1203507,
+      "triangles": 63814,
+      "materials": 36,
+      "images": 16,
+      "detail": {
+        "joineryFixings": 228
+      }
+    },
+    {
+      "model": "wanggeonho",
+      "sourceSha256": "cf969e072441d662edc166e9c4211b329d8597c87171170a3eaf536cd71f4233",
+      "beforeObjects": 1034,
+      "webObjects": 55,
+      "merged": 980,
+      "texturedObjects": 715,
+      "compressedBytes": 1325793,
+      "triangles": 66976,
+      "materials": 38,
+      "images": 17,
+      "detail": {
+        "joineryFixings": 288
+      }
+    }
+  ],
+  "navigation": [
+    {
+      "scene": "yeongsanpo",
+      "navigationSha256": "c23dddb7674a7aa82194da2db03b4e8e93cdc52b2eea83d07a26e62cce67b6b0",
+      "unchanged": true,
+      "navigationKeys": [
+        "solids",
+        "spawn",
+        "bounds",
+        "arrivals",
+        "portals",
+        "navigationWater",
+        "dockStairRoute",
+        "literatureGarden"
+      ]
+    },
+    {
+      "scene": "yeongsanpo-history",
+      "navigationSha256": "fd2f1f375c1b096aae8a0725972306ec1795484a6fa261080d6179ca9e80ed76",
+      "unchanged": true,
+      "navigationKeys": [
+        "solids",
+        "spawn",
+        "bounds",
+        "arrivals",
+        "portals",
+        "navigationWater",
+        "dockStairRoute",
+        "literatureGarden"
+      ]
+    },
+    {
+      "scene": "yeongsanpo-literature",
+      "navigationSha256": "35cc2298cc9a44267b013aec7c346177ddd00f38318e839efee0eabf4338d3fa",
+      "unchanged": true,
+      "navigationKeys": [
+        "solids",
+        "spawn",
+        "bounds",
+        "arrivals",
+        "portals",
+        "navigationWater",
+        "dockStairRoute",
+        "literatureGarden"
+      ]
+    }
+  ]
+}

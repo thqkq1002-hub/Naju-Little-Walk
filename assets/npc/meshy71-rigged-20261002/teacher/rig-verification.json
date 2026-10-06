@@ -1,0 +1,44 @@
+{
+  "character": "teacher",
+  "height_m": 1.72,
+  "original_triangles": 323340,
+  "web_triangles": 55000,
+  "bones": 18,
+  "clips": {
+    "Idle": 5,
+    "Greeting": 3.2,
+    "Explain": 5.6,
+    "Nod": 2.6,
+    "Listen": 4
+  },
+  "web_bytes": 4235364,
+  "textures": [
+    {
+      "name": "Image_0",
+      "source_size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "Image_1",
+      "source_size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "Image_2",
+      "source_size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "rigging": "Blender region-guide custom skeleton and smooth skin weights",
+  "facial_lipsync": false,
+  "feet_animated": false,
+  "original_preserved": true,
+  "web_texture_resolution": 2048,
+  "web_texture_format": "WebP, quality 95"
+}

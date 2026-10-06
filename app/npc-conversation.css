@@ -1,0 +1,17 @@
+.npc-talk-button{position:absolute;z-index:24;left:50%;bottom:96px;transform:translateX(-50%);display:flex;align-items:center;gap:8px;min-height:46px;padding:11px 18px;background:#254e43;color:#fff;border:1px solid #f7f5e9;border-radius:10px;cursor:pointer;box-shadow:0 3px 12px #17352a25;}
+.npc-conversation{position:absolute;z-index:45;right:24px;bottom:92px;width:min(350px,calc(100vw - 32px));max-height:calc(100dvh - 125px);overflow:auto;padding:18px;background:#faf9f1f7;color:#254e43;border:1px solid #c4cebf;border-radius:14px;box-shadow:0 8px 32px #17352a20;}
+.npc-conversation header,.npc-conversation header>div:last-child{display:flex;align-items:center;justify-content:space-between;gap:6px;}
+.npc-conversation header span{display:block;font-size:12px;color:#718374;margin-bottom:2px;}
+.npc-conversation header strong{font-size:19px;}
+.npc-conversation button{min-height:44px;min-width:44px;border:1px solid #d2dacb;border-radius:8px;background:#edf0e6;color:#254e43;cursor:pointer;padding:9px 11px;}
+.npc-conversation header button{display:grid;place-items:center;background:transparent;border:0;}
+.npc-conversation .npc-reply{font-size:15px;line-height:1.75;margin:16px 0;}
+.npc-conversation small{display:block;font-size:12px;color:#718374;margin-bottom:10px;}
+.npc-prompts{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0;}
+.npc-prompts button{font-size:13px;}
+.npc-conversation form{display:flex;gap:6px;}
+.npc-conversation input{width:100%;min-width:0;border:1px solid #c5d0c0;background:white;color:#254e43;border-radius:8px;padding:10px;font-size:16px;}
+.npc-conversation form button{background:#254e43;color:white;display:grid;place-items:center;}
+.npc-conversation button:disabled{opacity:.45;cursor:default;}
+.npc-conversation button:focus-visible,.npc-conversation input:focus-visible,.npc-talk-button:focus-visible{outline:3px solid #bd914c;outline-offset:2px;}
+@media(max-height:600px){.npc-conversation{bottom:72px;right:16px;padding:12px;max-height:calc(100dvh - 92px);}.npc-conversation .npc-reply{margin:10px 0;font-size:14px;}.npc-talk-button{bottom:82px;}}

@@ -1,0 +1,10 @@
+{
+  "source": "outputs\\bitgaram-v101\\cabin-source-v83.glb",
+  "sourceSha256": "d5b0ca683e7f6e6b7d0d028ec4032f6ba272b74490ff92b0ca9df3f987b511e0",
+  "sourceType": "preserved shipped v83 GLB; original v83 blend unavailable locally",
+  "output": "outputs\\bitgaram-v101\\bitgaram-monorail-v101.blend",
+  "modelBytes": 223280,
+  "gzipBytes": 27670,
+  "doorsPreserved": true,
+  "surveyed": false
+}

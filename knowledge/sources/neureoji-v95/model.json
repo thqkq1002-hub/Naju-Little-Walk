@@ -1,0 +1,40 @@
+{
+  "revision": "neureoji-hydrangea-v95c",
+  "blend": "outputs/neureoji-v95/neureoji-hydrangea-v95c.blend",
+  "preservedSource": "outputs/neureoji-v95/neureoji-hydrangea-v95b.blend",
+  "preservedSourceSha256": "81317453d15ca13f7c1fa09a1e12f804fded76ebfbe69a2ed93d66c543a34ef6",
+  "navigationSolidsSha256": "bfc7bdda6faf9d02a1c33538460fba0698ac65d02001b2e71ca7de391d261a64",
+  "navigationChanged": false,
+  "export": {
+    "merged": 2409,
+    "meshes": 90,
+    "materials": 76,
+    "images": 20,
+    "bytes": 49029084,
+    "gzipBytes": 16052644,
+    "sha256": "70968478ae50eaa639033d33aa3b6cfec654c7ebe2c3b0f4cb4463f298fd5e3d",
+    "gzipSha256": "f327989c109f8291b778f6de3e071acb22edc0d792b0f721e2ec50fba9671eb5"
+  },
+  "planting": {
+    "bushes": 749,
+    "roundHeads": 2149,
+    "lacecapHeads": 1596,
+    "modeledSepals": 84612,
+    "leaves": 33705
+  },
+  "normalStorage": {
+    "vertices": 1961486,
+    "maximumLightingNormalErrorDegrees": 0.3840910405490917,
+    "positionChanges": 0
+  },
+  "sourceURLs": [
+    "https://akekanfl.tistory.com/8708274",
+    "https://naju-senior.com/local-news/21984/"
+  ],
+  "plantPositionStorage": {
+    "vertices": 1022578,
+    "maxDecorativePlantErrorMetres": 0.004657457994672191,
+    "walkingAndRiverPositionChanges": 0,
+    "uniformScale": true
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "source": "outputs\\terrain-v89\\bitgaram-park-glo30-terrain-v89d.blend",
+  "sourceSha256": "4b6a8a260c999f9cdb0061e221b1f866bbcbeea1c510e3a89ac17f601547d044",
+  "sourceUnchanged": true,
+  "output": "outputs/bitgaram-v101/bitgaram-access-v101d.blend",
+  "protectedMeshes": 11119,
+  "removedInferredTreeRoots": 30,
+  "addedMeshGroups": 30,
+  "gzipBytes": 6480762,
+  "modelSha256": "2002ec343e0a1dc187d4a989a5691d50d70eca639e1d388bf81d19d571b90ded",
+  "slidePlanLengthMetres": 86.64799698056281,
+  "slide3dLengthMetres": 93.70423969037186,
+  "slideTracePixels": [
+    [
+      515,
+      462
+    ],
+    [
+      504,
+      484
+    ],
+    [
+      494,
+      518
+    ],
+    [
+      487,
+      552
+    ],
+    [
+      479,
+      590
+    ],
+    [
+      466,
+      625
+    ],
+    [
+      451,
+      663
+    ],
+    [
+      448,
+      689
+    ],
+    [
+      452,
+      713
+    ],
+    [
+      463,
+      743
+    ],
+    [
+      481,
+      778
+    ]
+  ],
+  "outdoorTracePixels": [
+    [
+      601,
+      470
+    ],
+    [
+      604,
+      521
+    ],
+    [
+      603,
+      574
+    ],
+    [
+      606,
+      617
+    ],
+    [
+      550,
+      636
+    ],
+    [
+      539,
+      661
+    ],
+    [
+      514,
+      682
+    ],
+    [
+      500,
+      700
+    ],
+    [
+      570,
+      706
+    ],
+    [
+      570,
+      718
+    ],
+    [
+      486,
+      726
+    ],
+    [
+      496,
+      777
+    ]
+  ],
+  "satelliteExtent": {
+    "xmin": 14114063.604869852,
+    "ymin": 4165919.77103154,
+    "xmax": 14114444.189979266,
+    "ymax": 4166300.3561409544,
+    "spatialReference": {
+      "wkid": 102100,
+      "latestWkid": 3857
+    }
+  },
+  "coordinateOrigin": {
+    "lon": 126.790447,
+    "lat": 35.016925
+  },
+  "terrainDatumMetres": 25.5,
+  "upperModelHeight": 53.642120361328125,
+  "lowerModelHeight": 19.209026336669922,
+  "surveyed": false,
+  "maxGalleryStep": 0.09165375846225032,
+  "maxOutdoorStep": 0.11965973529772356,
+  "shelterPostsClearConnector": true
+}

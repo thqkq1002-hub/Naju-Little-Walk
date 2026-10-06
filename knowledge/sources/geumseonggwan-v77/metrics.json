@@ -1,0 +1,24 @@
+{
+  "source": "outputs\\geumseonggwan-exclusive-v76\\geumseonggwan-exclusive-v76.blend",
+  "sourceSHA256": "27ac5316e94fc09ab8fdafc11a0e15098c00f82946a848705077a7d5b3d2cab0",
+  "sourceUnchanged": true,
+  "editableBlend": "outputs\\geumseonggwan-v77\\geumseonggwan-v77.blend",
+  "ikgongStations": 20,
+  "beveledStoneGroups": [
+    "walk-floor_terrace",
+    "hall-column_stone",
+    "hall-side-column_stone",
+    "walk-floor_step",
+    "inner_gate_stone_base",
+    "memorial_stele_plinth"
+  ],
+  "objects": 542,
+  "triangles": 824010,
+  "rawBytes": 41566356,
+  "gzipBytes": 22340952,
+  "textureImages": 18,
+  "webCoordinatePrecisionMeters": 0.0001,
+  "collisionUnchanged": true,
+  "collisionSHA256": "a1cef160aeae57598f313bbfdbe9d6457f92b5edf3643377ddd8b44b90fe6044",
+  "collisionSerialization": "JavaScript JSON.stringify, UTF-8"
+}

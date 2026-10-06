@@ -1,0 +1,28 @@
+{
+  "character": "hongdoli",
+  "submission": "accepted",
+  "settings": {
+    "model_type": "standard",
+    "ai_model": "meshy-7.1",
+    "geometry_resolution": "4k",
+    "texture_resolution": "4k",
+    "should_texture": true,
+    "enable_pbr": true,
+    "should_remesh": false,
+    "image_enhancement": false,
+    "pose_mode": "",
+    "target_formats": [
+      "glb"
+    ],
+    "multi_view_thumbnails": true
+  },
+  "created_at": "2026-10-02T09:47:23.287350+00:00",
+  "balance_before": 1030,
+  "estimated_credits": 35,
+  "reference": "assets\\npc\\higgsfield-rebuild-20261002\\references\\hongdoli-front.png",
+  "reference_sha256": "d458eecce233867e98d7cf2f9fe276a76000bf91b3e7b87b173257f80b6de442",
+  "task_id": "01a0fc02-e930-766e-8557-7708e1f558aa",
+  "status": "SUCCEEDED",
+  "progress": 100,
+  "consumed_credits": 35
+}

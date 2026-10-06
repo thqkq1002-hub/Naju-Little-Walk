@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-05",
+  "sources": {
+    "outputs/neureoji-v95/neureoji-hydrangea-v95c.blend": {
+      "sha256": "87b1eef38a34ed7421be0667c1a6b70fe2ee3101dcf3fbfc7426c8e42d0f7860",
+      "preserved": true
+    },
+    "outputs/terrain-v89/bitgaram-park-glo30-terrain-v89d.blend": {
+      "sha256": "4b6a8a260c999f9cdb0061e221b1f866bbcbeea1c510e3a89ac17f601547d044",
+      "preserved": true
+    }
+  },
+  "models": {
+    "neureoji": {
+      "sha256": "801fc09450f29abd5f1191df9168803df6e7d99a446371910ebf4245f4c016d2",
+      "gzipExact": true,
+      "buildMatches": true
+    },
+    "bitgaram-overview": {
+      "sha256": "f2aee0dffb376ab08d62d99a0ff320211d4e7242a48cbde0488562f122d194db",
+      "gzipExact": true,
+      "buildMatches": true
+    },
+    "bitgaram-overview-part2": {
+      "sha256": "0f88f40f56477ea343aa9b169b88b2d2e3a16196a2c2b190d38e5af93e826001",
+      "gzipExact": true,
+      "buildMatches": true
+    }
+  },
+  "overview": {
+    "bitgaram-overview": {
+      "unchangedPrimitives": 306,
+      "indexStreamsPreserved": 346,
+      "maxPlanCoordinateChangeMetres": 0
+    },
+    "bitgaram-overview-part2": {
+      "unchangedPrimitives": 334,
+      "indexStreamsPreserved": 372,
+      "maxPlanCoordinateChangeMetres": 0
+    }
+  },
+  "riverGeometryUnchanged": true,
+  "selectedTestsPassed": {
+    "commonMovement": 74,
+    "neureoji": 8,
+    "bitgaramOverviewAndTerrain": 11,
+    "newRelief": 3
+  },
+  "browser": {
+    "bitgaram": "outputs/relief-v96/browser-bitgaram-close.png",
+    "neureoji": "outputs/relief-v96/browser-neureoji-top.png",
+    "pageErrors": 0,
+    "localOnly": true
+  },
+  "buildContainsNoAuthoringFiles": true
+}

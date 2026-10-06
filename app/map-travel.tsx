@@ -8,7 +8,7 @@ import { solidCollider, type Point, type World } from '@/lib/world';
 
 type Region = { paths: { id: number; kind: string; name: string; points: Point[] }[]; labels: { name: string; point: Point }[] };
 type Props = { destinationId: DestinationId; world: World | null; position: Point; onClose: () => void; onTravel: (point: Point,height?:number) => boolean };
-const mapLabels: Partial<Record<DestinationId,string>> = {deudeulgang:'드들강', 'naju-arboretum':'나주수목원', bitgaram:'빛가람동', yeongsanpo:'영산포', dasi:'다시초', bogam:'복암리 고분군', 'bogam-museum':'고분전시관'};
+const mapLabels: Partial<Record<DestinationId,string>> = {neureoji:'느러지 전망대', deudeulgang:'드들강', 'naju-arboretum':'나주수목원', bitgaram:'빛가람동', yeongsanpo:'영산포', dasi:'다시초', bogam:'복암리 고분군', 'bogam-museum':'고분전시관'};
 
 export default function MapTravel({destinationId,world,position,onClose,onTravel}: Props) {
   const dialog=useRef<HTMLDialogElement>(null);
@@ -46,8 +46,9 @@ export default function MapTravel({destinationId,world,position,onClose,onTravel
             <rect width={regionalSize[0]} height={regionalSize[1]} fill="#e7ebdd"/>
             <defs><pattern id="map-grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 H 0 V 50" fill="none" stroke="#566e5310" strokeWidth="1"/></pattern></defs>
             <rect width={regionalSize[0]} height={regionalSize[1]} fill="url(#map-grid)"/>
+            {region?.paths.filter(p=>p.kind==='water').map(p=><polygon key={p.id} points={p.points.map(p=>regionalPoint(...p).join(',')).join(' ')} fill="#a9cdd0"/>)}
             {region?.paths.filter(p=>p.kind==='river').map(p=><polyline key={p.id} points={p.points.map(p=>regionalPoint(...p).join(',')).join(' ')} fill="none" stroke="#a9cdd0" strokeWidth="19" strokeLinejoin="round" strokeLinecap="round"/>)}
-            {region?.paths.filter(p=>p.kind!=='river'&&p.kind!=='rail').map(p=><polyline key={p.id} points={p.points.map(p=>regionalPoint(...p).join(',')).join(' ')} fill="none" stroke="#fffdf5" strokeWidth={p.kind==='trunk'?9:p.kind==='primary'?7:4} strokeLinejoin="round" strokeLinecap="round"/>)}
+            {region?.paths.filter(p=>!['river','rail','water'].includes(p.kind)).map(p=><polyline key={p.id} points={p.points.map(p=>regionalPoint(...p).join(',')).join(' ')} fill="none" stroke="#fffdf5" strokeWidth={p.kind==='trunk'?9:p.kind==='primary'?7:4} strokeLinejoin="round" strokeLinecap="round"/>)}
             {region?.paths.filter(p=>p.kind==='rail').map(p=><polyline key={p.id} points={p.points.map(p=>regionalPoint(...p).join(',')).join(' ')} fill="none" stroke="#9da595" strokeWidth="2" strokeDasharray="4 4"/>)}
             {region?.labels.map((l,i)=>{const p=regionalPoint(...l.point);return <text key={i} x={p[0]} y={p[1]} className="map-village" textAnchor="middle">{l.name}</text>;})}
             <text x="28" y="38" className="map-north">N ↑</text>
@@ -65,7 +66,7 @@ export default function MapTravel({destinationId,world,position,onClose,onTravel
           {arrivals.map(({place,point},i)=><button key={place.id} className="local-pin" style={{left:`${(point![0]-world.bounds[0])/span[0]*100}%`,top:`${(point![1]-world.bounds[2])/span[1]*100}%`}} onClick={()=>travel(point!,place.arrivalHeight)} aria-label={`${place.name}로 이동`} title={place.name}>{i+1}</button>)}
           <span className="local-north">장소 지도</span>
         </div>
-        <aside className="travel-list"><p>열린 길이나 번호를 누르면 이동합니다. 다른 층은 목록에서 선택하세요.</p>{arrivals.map(({place,point},i)=><button key={place.id} onClick={()=>travel(point!,place.arrivalHeight)}><span className="travel-index">{i+1}</span><div><strong>{place.name}</strong><small>{place.arrivalHeight?(place.arrivalHeight<0?'강변 아래 데크':'상부 관람 공간'):place.indoor?'실내':'산책 지점'}</small></div><Footprints size={17}/></button>)}{notice&&<p className="map-notice" role="status">{notice}</p>}</aside>
+        <aside className="travel-list"><p>열린 길이나 번호를 누르면 이동합니다. 다른 층은 목록에서 선택하세요.</p>{arrivals.map(({place,point},i)=><button key={place.id} onClick={()=>travel(point!,place.arrivalHeight)}><span className="travel-index">{i+1}</span><div><strong>{place.name}</strong><small>{place.mapLabel ?? (place.arrivalHeight?(place.arrivalHeight<0?'강변 아래 데크':'상부 관람 공간'):place.indoor?'실내':'산책 지점')}</small></div><Footprints size={17}/></button>)}{notice&&<p className="map-notice" role="status">{notice}</p>}</aside>
       </div>}
     </div>
   </dialog>;

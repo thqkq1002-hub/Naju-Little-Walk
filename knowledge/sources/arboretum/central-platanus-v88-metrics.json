@@ -1,0 +1,10 @@
+{
+  "central_tree_pairs": 120,
+  "shared_central_prototypes": 6,
+  "glb_bytes": 30228332,
+  "gzip_bytes": 11972016,
+  "model_sha256": "6efaff22f170dd5a7381de29f4e16545c95549ca0cf3969f70729d08bda7c931",
+  "gzip_sha256": "5cfbc916a38aeb2a94138ce17098178e180e782ffbbfc0c8035ea353132e4bdf",
+  "world_sha256": "82e51da778b465e24f762e33e5745f4457838b79b6b050373079b280951f889b",
+  "navigation_unchanged": true
+}

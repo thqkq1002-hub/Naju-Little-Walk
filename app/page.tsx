@@ -1,7 +1,8 @@
 'use client';
 
 import { Component, lazy, Suspense, useEffect, useState, type ReactNode } from 'react';
-import { destinationFromSearch, type DestinationId } from '@/lib/destinations';
+import { type DestinationId } from '@/lib/destinations';
+import { appDestinationFromSearch } from '@/lib/app-destination';
 import ScreenMode, { useScreenMode } from './screen-mode';
 
 const Explorer=lazy(()=>import('./explorer'));
@@ -16,7 +17,9 @@ function DestinationApp() {
   const [selected,setSelected]=useState<DestinationId|null>(null);
   const [opened,setOpened]=useState(false);
   const { initialized,portrait }=useScreenMode();
-  useEffect(()=>setSelected(destinationFromSearch(window.location.search)),[]);
+  useEffect(()=>{
+    setSelected(appDestinationFromSearch(window.location.search));
+  },[]);
   useEffect(()=>{if(initialized&&!portrait)setOpened(true);},[initialized,portrait]);
   // Mount once after a usable orientation; later rotations keep the scene and position.
   if(!initialized||!selected||!opened)return waiting;

@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-03",
+  "scope": "Existing school forms, places and navigation retained",
+  "sourceBlend": "outputs/palette-v51/dasi-neighborhood-color-v51.blend",
+  "sourceSha256": "73b96a7f563d5af1568ac293f9763f510734e4cc75bcb475a5b38e13962cb17e",
+  "navigation": [
+    {
+      "file": "dasi-neighborhood-world.json",
+      "navigationKeys": [
+        "solids",
+        "bounds",
+        "spawn",
+        "interior",
+        "buildings",
+        "neighborhood",
+        "signs"
+      ],
+      "unchanged": true,
+      "navigationSha256": "b7720cd4526ec3d01cde7cf5b05bbcc3b91214f126dc37b17c131358142923c2"
+    },
+    {
+      "file": "dasi-world.json",
+      "navigationKeys": [
+        "solids",
+        "bounds",
+        "spawn",
+        "interior",
+        "buildings",
+        "neighborhood",
+        "signs"
+      ],
+      "unchanged": true,
+      "navigationSha256": "777baae5584004e40636824d0d24040ca133a368b1b06c33591ea532b5312d28"
+    }
+  ],
+  "canopyBounds": {
+    "min": [
+      -184.50033569335938,
+      1.8599998950958252,
+      -139.8159942626953
+    ],
+    "max": [
+      76.64435577392578,
+      10.045000076293945,
+      50.08000183105469
+    ]
+  },
+  "build": {
+    "sourceSha256": "73b96a7f563d5af1568ac293f9763f510734e4cc75bcb475a5b38e13962cb17e",
+    "beforeObjects": 9711,
+    "webObjects": 645,
+    "merged": 8857,
+    "texturedObjects": 4579,
+    "shadowFixes": 3216,
+    "replacedCrownAndIvyObjects": 235,
+    "leafCards": 57808,
+    "ivyCards": 2800,
+    "windowDripProfiles": 89,
+    "compressedBytes": 8191178,
+    "rawBytes": 26519916,
+    "materials": 253,
+    "images": 36,
+    "triangles": 358739,
+    "nearVegetationCells": 11,
+    "farVegetationCells": 11
+  }
+}

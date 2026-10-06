@@ -1,0 +1,32 @@
+{
+  "revision": "neureoji-hydrangea-v94h",
+  "relevantTestsPassed": 82,
+  "allTests": {
+    "total": 189,
+    "passed": 187,
+    "baselineFailures": 2
+  },
+  "typescriptPassed": true,
+  "staticBuildPassed": true,
+  "compressionBytesMatch": true,
+  "preservedSourceVerified": true,
+  "modelBytes": 14325949,
+  "meshes": 83,
+  "androidHardwareVerified": false,
+  "browserQA": {
+    "viewport": [
+      1024,
+      768
+    ],
+    "completed": true,
+    "localPort": 4181,
+    "hydrangeaRendered": true,
+    "forestRendered": true,
+    "localMapLabelsVerified": true,
+    "mapArrivalVerified": true,
+    "consoleErrors": []
+  },
+  "knownFailures": [
+    "tests/bitgaram-access.test.mjs: old v69 approach-route fixtures differ from the existing v89 terrain; same two failures reproduced before these changes."
+  ]
+}

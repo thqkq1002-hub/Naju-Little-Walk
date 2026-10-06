@@ -1,0 +1,1097 @@
+{
+  "preserved": [
+    "All .blend/.blend1 files",
+    "Active public models and world JSON",
+    "Character originals and untracked user work",
+    "Research/reference photographs",
+    "Generation scripts",
+    "At least one identical source model for every removed duplicate"
+  ],
+  "bytesDeleted": 4815265636,
+  "revision": "workspace-cleanup-v91",
+  "applied": true,
+  "deleted": [
+    {
+      "path": "work/bitgaram-v51/dist/models/bitgaram-kepco.glb.gz",
+      "bytes": 1450990,
+      "sha256": "24cef40a1c554fd76b2da9e9cc4c55c2ba44ebe796774f7f9d8cd916254105f8",
+      "retained": "public/models/bitgaram-kepco.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v51/dist/models/bitgaram-observatory.glb.gz",
+      "bytes": 3427473,
+      "sha256": "94a926fb384949f42f0153a79d6b9bdff1b6ddf59433c51d1f480c1b022268a1",
+      "retained": "public/models/bitgaram-observatory.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v51/dist/models/bogam-museum.glb.gz",
+      "bytes": 8422310,
+      "sha256": "af5fd999eadd8b4e407dcc3213a826f1fd2ab9626902a4df26fad2aaeabf43c5",
+      "retained": "public/models/bogam-museum.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v51/dist/models/bogam-tumuli.glb.gz",
+      "bytes": 3891512,
+      "sha256": "32e6dd3024457b560bfb282077f59568cd02b211e6de6c127234d771d51d414d",
+      "retained": "public/models/bogam-tumuli.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v51/dist/models/dasi-elementary.glb.gz",
+      "bytes": 930668,
+      "sha256": "e0ab5d18add79ce855fd9109deeab6ec703d238f68f0d2a3d5490e20a795cf1c",
+      "retained": "public/models/dasi-elementary.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v52/dist/models/bitgaram-kepco.glb.gz",
+      "bytes": 1450990,
+      "sha256": "24cef40a1c554fd76b2da9e9cc4c55c2ba44ebe796774f7f9d8cd916254105f8",
+      "retained": "public/models/bitgaram-kepco.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v52/dist/models/bitgaram-observatory.glb.gz",
+      "bytes": 3427473,
+      "sha256": "94a926fb384949f42f0153a79d6b9bdff1b6ddf59433c51d1f480c1b022268a1",
+      "retained": "public/models/bitgaram-observatory.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v52/dist/models/bogam-museum.glb.gz",
+      "bytes": 8422310,
+      "sha256": "af5fd999eadd8b4e407dcc3213a826f1fd2ab9626902a4df26fad2aaeabf43c5",
+      "retained": "public/models/bogam-museum.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v52/dist/models/bogam-tumuli.glb.gz",
+      "bytes": 3891512,
+      "sha256": "32e6dd3024457b560bfb282077f59568cd02b211e6de6c127234d771d51d414d",
+      "retained": "public/models/bogam-tumuli.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v52/dist/models/dasi-elementary.glb.gz",
+      "bytes": 930668,
+      "sha256": "e0ab5d18add79ce855fd9109deeab6ec703d238f68f0d2a3d5490e20a795cf1c",
+      "retained": "public/models/dasi-elementary.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v53/dist/models/bitgaram-kentech.glb.gz",
+      "bytes": 3821613,
+      "sha256": "117c8a3b9608517db2eddb0d162bbf9ae1df4dd71c1d6b67d119f60a96ffaa36",
+      "retained": "public/models/bitgaram-kentech.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v53/dist/models/bitgaram-kepco.glb.gz",
+      "bytes": 1450990,
+      "sha256": "24cef40a1c554fd76b2da9e9cc4c55c2ba44ebe796774f7f9d8cd916254105f8",
+      "retained": "public/models/bitgaram-kepco.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v53/dist/models/bitgaram-observatory.glb.gz",
+      "bytes": 3427473,
+      "sha256": "94a926fb384949f42f0153a79d6b9bdff1b6ddf59433c51d1f480c1b022268a1",
+      "retained": "public/models/bitgaram-observatory.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v53/dist/models/bogam-museum.glb.gz",
+      "bytes": 8422310,
+      "sha256": "af5fd999eadd8b4e407dcc3213a826f1fd2ab9626902a4df26fad2aaeabf43c5",
+      "retained": "public/models/bogam-museum.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v53/dist/models/bogam-tumuli.glb.gz",
+      "bytes": 3891512,
+      "sha256": "32e6dd3024457b560bfb282077f59568cd02b211e6de6c127234d771d51d414d",
+      "retained": "public/models/bogam-tumuli.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v53/dist/models/dasi-elementary.glb.gz",
+      "bytes": 930668,
+      "sha256": "e0ab5d18add79ce855fd9109deeab6ec703d238f68f0d2a3d5490e20a795cf1c",
+      "retained": "public/models/dasi-elementary.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v54/dist/models/bitgaram-kentech.glb.gz",
+      "bytes": 3821613,
+      "sha256": "117c8a3b9608517db2eddb0d162bbf9ae1df4dd71c1d6b67d119f60a96ffaa36",
+      "retained": "public/models/bitgaram-kentech.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v54/dist/models/bitgaram-kepco.glb.gz",
+      "bytes": 1450990,
+      "sha256": "24cef40a1c554fd76b2da9e9cc4c55c2ba44ebe796774f7f9d8cd916254105f8",
+      "retained": "public/models/bitgaram-kepco.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v54/dist/models/bitgaram-observatory.glb.gz",
+      "bytes": 3427473,
+      "sha256": "94a926fb384949f42f0153a79d6b9bdff1b6ddf59433c51d1f480c1b022268a1",
+      "retained": "public/models/bitgaram-observatory.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v54/dist/models/bogam-museum.glb.gz",
+      "bytes": 8422310,
+      "sha256": "af5fd999eadd8b4e407dcc3213a826f1fd2ab9626902a4df26fad2aaeabf43c5",
+      "retained": "public/models/bogam-museum.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v54/dist/models/bogam-tumuli.glb.gz",
+      "bytes": 3891512,
+      "sha256": "32e6dd3024457b560bfb282077f59568cd02b211e6de6c127234d771d51d414d",
+      "retained": "public/models/bogam-tumuli.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v54/dist/models/dasi-elementary.glb.gz",
+      "bytes": 930668,
+      "sha256": "e0ab5d18add79ce855fd9109deeab6ec703d238f68f0d2a3d5490e20a795cf1c",
+      "retained": "public/models/dasi-elementary.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v55/dist/models/bitgaram-kentech.glb.gz",
+      "bytes": 3821613,
+      "sha256": "117c8a3b9608517db2eddb0d162bbf9ae1df4dd71c1d6b67d119f60a96ffaa36",
+      "retained": "public/models/bitgaram-kentech.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v55/dist/models/bitgaram-kepco.glb.gz",
+      "bytes": 1450990,
+      "sha256": "24cef40a1c554fd76b2da9e9cc4c55c2ba44ebe796774f7f9d8cd916254105f8",
+      "retained": "public/models/bitgaram-kepco.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v55/dist/models/bitgaram-observatory.glb.gz",
+      "bytes": 3427473,
+      "sha256": "94a926fb384949f42f0153a79d6b9bdff1b6ddf59433c51d1f480c1b022268a1",
+      "retained": "public/models/bitgaram-observatory.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v55/dist/models/bogam-museum.glb.gz",
+      "bytes": 8422310,
+      "sha256": "af5fd999eadd8b4e407dcc3213a826f1fd2ab9626902a4df26fad2aaeabf43c5",
+      "retained": "public/models/bogam-museum.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v55/dist/models/bogam-tumuli.glb.gz",
+      "bytes": 3891512,
+      "sha256": "32e6dd3024457b560bfb282077f59568cd02b211e6de6c127234d771d51d414d",
+      "retained": "public/models/bogam-tumuli.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/bitgaram-v55/dist/models/dasi-elementary.glb.gz",
+      "bytes": 930668,
+      "sha256": "e0ab5d18add79ce855fd9109deeab6ec703d238f68f0d2a3d5490e20a795cf1c",
+      "retained": "public/models/dasi-elementary.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "dist",
+      "files": 54,
+      "bytes": 151850246,
+      "reason": "Rebuildable build/package cache"
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "files": 1,
+      "bytes": 248221,
+      "reason": "Rebuildable build/package cache"
+    },
+    {
+      "path": "work/npm-cache",
+      "files": 14,
+      "bytes": 2017183,
+      "reason": "Rebuildable build/package cache"
+    },
+    {
+      "path": "work/package-tmp",
+      "files": 0,
+      "bytes": 0,
+      "reason": "Rebuildable build/package cache"
+    },
+    {
+      "path": "scripts/__pycache__",
+      "files": 27,
+      "bytes": 564715,
+      "reason": "Python bytecode cache"
+    },
+    {
+      "path": "work/quality-site-publish/assets/npc/meshy-first-pass-20261002/baedoli/baedoli-colored-v4.glb",
+      "bytes": 2531924,
+      "sha256": "6c727ee5cbd1cd553750c0a0b1abd9de52ccf87efaec06a06b79e64a363113a2",
+      "retained": "outputs/cleanup-v81/removed/public/models/npc/baedoli-v4.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/assets/npc/meshy-first-pass-20261002/baedoli/meshy-original.glb",
+      "bytes": 201520,
+      "sha256": "a30473ef9b36a9ed99ee1bb8b6970562959bf99aefe6ea57fe0c9562422debe7",
+      "retained": "outputs/npc-meshy-20261002/baedoli/meshy-original.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/assets/npc/meshy-first-pass-20261002/beodeuri/beodeuri-colored-v4.glb",
+      "bytes": 2149224,
+      "sha256": "b87a1448a9d894cf569ef1398d4d23911691d7732e83d0b1b1178662c153bedd",
+      "retained": "outputs/cleanup-v81/removed/public/models/npc/beodeuri-v4.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/assets/npc/meshy-first-pass-20261002/beodeuri/meshy-original.glb",
+      "bytes": 281524,
+      "sha256": "853f390233b20583464adb6e6cfb443c17f666b040880019e49886fd1193d783",
+      "retained": "outputs/npc-meshy-20261002/beodeuri/meshy-original.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/assets/npc/meshy-first-pass-20261002/hongdoli/hongdoli-colored-v4.glb",
+      "bytes": 1980076,
+      "sha256": "9da99d8671efbc4713183caf730a621feb1b2bf555ee43e3c76a4065d78910b0",
+      "retained": "outputs/cleanup-v81/removed/public/models/npc/hongdoli-v4.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/assets/npc/meshy-first-pass-20261002/hongdoli/meshy-original.glb",
+      "bytes": 230600,
+      "sha256": "4b00b372407ba1e0b957c58a0257576541459deffe4590b1761587439fa6c031",
+      "retained": "outputs/npc-meshy-20261002/hongdoli/meshy-original.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/assets/npc/meshy-first-pass-20261002/teacher/meshy-original.glb",
+      "bytes": 274240,
+      "sha256": "2a16381c2a6728011bfc784c8930b75c27f9ab1f5bfef3cfe49a6a64a5efae94",
+      "retained": "outputs/npc-meshy-20261002/teacher/meshy-original.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/assets/npc/meshy-first-pass-20261002/teacher/teacher-colored-v4.glb",
+      "bytes": 2144848,
+      "sha256": "02519d1d464ca42aa6f621d67af0a2ef1ab58daa5c417cb4fd53aee348dcc5ed",
+      "retained": "outputs/cleanup-v81/removed/public/models/npc/teacher-v4.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client/models/bitgaram-kentech.glb.gz",
+      "bytes": 3821613,
+      "sha256": "117c8a3b9608517db2eddb0d162bbf9ae1df4dd71c1d6b67d119f60a96ffaa36",
+      "retained": "public/models/bitgaram-kentech.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client/models/bitgaram-kepco.glb.gz",
+      "bytes": 1450990,
+      "sha256": "24cef40a1c554fd76b2da9e9cc4c55c2ba44ebe796774f7f9d8cd916254105f8",
+      "retained": "public/models/bitgaram-kepco.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client/models/bitgaram-observatory.glb.gz",
+      "bytes": 3427473,
+      "sha256": "94a926fb384949f42f0153a79d6b9bdff1b6ddf59433c51d1f480c1b022268a1",
+      "retained": "public/models/bitgaram-observatory.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client/models/bitgaram-overview-part2.glb.gz",
+      "bytes": 9916111,
+      "sha256": "fc66b9b1f5bd117e95f2ca0ad229541fb7dd66db3fd38538b621712776c7802d",
+      "retained": "public/models/bitgaram-overview-part2.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client/models/bitgaram-overview.glb.gz",
+      "bytes": 10440895,
+      "sha256": "8bc8507c88cc6ac82ae972e31c5e70f5669d5c2de0722c6c32d38ddc1f656335",
+      "retained": "public/models/bitgaram-overview.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client/models/bogam-museum.glb.gz",
+      "bytes": 8422310,
+      "sha256": "af5fd999eadd8b4e407dcc3213a826f1fd2ab9626902a4df26fad2aaeabf43c5",
+      "retained": "public/models/bogam-museum.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client/models/bogam-tumuli.glb.gz",
+      "bytes": 3891512,
+      "sha256": "32e6dd3024457b560bfb282077f59568cd02b211e6de6c127234d771d51d414d",
+      "retained": "public/models/bogam-tumuli.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client/models/dasi-elementary.glb.gz",
+      "bytes": 930668,
+      "sha256": "e0ab5d18add79ce855fd9109deeab6ec703d238f68f0d2a3d5490e20a795cf1c",
+      "retained": "public/models/dasi-elementary.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client/models/npc/baedoli-v4.glb",
+      "bytes": 2531924,
+      "sha256": "6c727ee5cbd1cd553750c0a0b1abd9de52ccf87efaec06a06b79e64a363113a2",
+      "retained": "outputs/cleanup-v81/removed/public/models/npc/baedoli-v4.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client/models/npc/beodeuri-v4.glb",
+      "bytes": 2149224,
+      "sha256": "b87a1448a9d894cf569ef1398d4d23911691d7732e83d0b1b1178662c153bedd",
+      "retained": "outputs/cleanup-v81/removed/public/models/npc/beodeuri-v4.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client/models/npc/hongdoli-v4.glb",
+      "bytes": 1980076,
+      "sha256": "9da99d8671efbc4713183caf730a621feb1b2bf555ee43e3c76a4065d78910b0",
+      "retained": "outputs/cleanup-v81/removed/public/models/npc/hongdoli-v4.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client/models/npc/teacher-v4.glb",
+      "bytes": 2144848,
+      "sha256": "02519d1d464ca42aa6f621d67af0a2ef1ab58daa5c417cb4fd53aee348dcc5ed",
+      "retained": "outputs/cleanup-v81/removed/public/models/npc/teacher-v4.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client-before-npc-20261002/models/bitgaram-kentech.glb.gz",
+      "bytes": 3821613,
+      "sha256": "117c8a3b9608517db2eddb0d162bbf9ae1df4dd71c1d6b67d119f60a96ffaa36",
+      "retained": "public/models/bitgaram-kentech.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client-before-npc-20261002/models/bitgaram-kepco.glb.gz",
+      "bytes": 1450990,
+      "sha256": "24cef40a1c554fd76b2da9e9cc4c55c2ba44ebe796774f7f9d8cd916254105f8",
+      "retained": "public/models/bitgaram-kepco.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client-before-npc-20261002/models/bitgaram-observatory.glb.gz",
+      "bytes": 3427473,
+      "sha256": "94a926fb384949f42f0153a79d6b9bdff1b6ddf59433c51d1f480c1b022268a1",
+      "retained": "public/models/bitgaram-observatory.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client-before-npc-20261002/models/bitgaram-overview-part2.glb.gz",
+      "bytes": 9916111,
+      "sha256": "fc66b9b1f5bd117e95f2ca0ad229541fb7dd66db3fd38538b621712776c7802d",
+      "retained": "public/models/bitgaram-overview-part2.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client-before-npc-20261002/models/bitgaram-overview.glb.gz",
+      "bytes": 10440895,
+      "sha256": "8bc8507c88cc6ac82ae972e31c5e70f5669d5c2de0722c6c32d38ddc1f656335",
+      "retained": "public/models/bitgaram-overview.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client-before-npc-20261002/models/bogam-museum.glb.gz",
+      "bytes": 8422310,
+      "sha256": "af5fd999eadd8b4e407dcc3213a826f1fd2ab9626902a4df26fad2aaeabf43c5",
+      "retained": "public/models/bogam-museum.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client-before-npc-20261002/models/bogam-tumuli.glb.gz",
+      "bytes": 3891512,
+      "sha256": "32e6dd3024457b560bfb282077f59568cd02b211e6de6c127234d771d51d414d",
+      "retained": "public/models/bogam-tumuli.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/dist/client-before-npc-20261002/models/dasi-elementary.glb.gz",
+      "bytes": 930668,
+      "sha256": "e0ab5d18add79ce855fd9109deeab6ec703d238f68f0d2a3d5490e20a795cf1c",
+      "retained": "public/models/dasi-elementary.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/public/models/bitgaram-kentech.glb.gz",
+      "bytes": 3821613,
+      "sha256": "117c8a3b9608517db2eddb0d162bbf9ae1df4dd71c1d6b67d119f60a96ffaa36",
+      "retained": "public/models/bitgaram-kentech.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/public/models/bitgaram-kepco.glb.gz",
+      "bytes": 1450990,
+      "sha256": "24cef40a1c554fd76b2da9e9cc4c55c2ba44ebe796774f7f9d8cd916254105f8",
+      "retained": "public/models/bitgaram-kepco.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/public/models/bitgaram-observatory.glb.gz",
+      "bytes": 3427473,
+      "sha256": "94a926fb384949f42f0153a79d6b9bdff1b6ddf59433c51d1f480c1b022268a1",
+      "retained": "public/models/bitgaram-observatory.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/public/models/bitgaram-overview-part2.glb.gz",
+      "bytes": 9916111,
+      "sha256": "fc66b9b1f5bd117e95f2ca0ad229541fb7dd66db3fd38538b621712776c7802d",
+      "retained": "public/models/bitgaram-overview-part2.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/public/models/bitgaram-overview.glb.gz",
+      "bytes": 10440895,
+      "sha256": "8bc8507c88cc6ac82ae972e31c5e70f5669d5c2de0722c6c32d38ddc1f656335",
+      "retained": "public/models/bitgaram-overview.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/public/models/bitgaram-park.glb",
+      "bytes": 13647460,
+      "sha256": "ea055ad3cc4700fef2d236198d96788d978e4ed6bd3b122b9e34efcb98c602fe",
+      "retained": "outputs/quality-v75/bitgaram-park-v75.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/public/models/bogam-museum.glb.gz",
+      "bytes": 8422310,
+      "sha256": "af5fd999eadd8b4e407dcc3213a826f1fd2ab9626902a4df26fad2aaeabf43c5",
+      "retained": "public/models/bogam-museum.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/public/models/bogam-tumuli.glb.gz",
+      "bytes": 3891512,
+      "sha256": "32e6dd3024457b560bfb282077f59568cd02b211e6de6c127234d771d51d414d",
+      "retained": "public/models/bogam-tumuli.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/public/models/dasi-elementary.glb.gz",
+      "bytes": 930668,
+      "sha256": "e0ab5d18add79ce855fd9109deeab6ec703d238f68f0d2a3d5490e20a795cf1c",
+      "retained": "public/models/dasi-elementary.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/public/models/npc/baedoli-v4.glb",
+      "bytes": 2531924,
+      "sha256": "6c727ee5cbd1cd553750c0a0b1abd9de52ccf87efaec06a06b79e64a363113a2",
+      "retained": "outputs/cleanup-v81/removed/public/models/npc/baedoli-v4.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/public/models/npc/beodeuri-v4.glb",
+      "bytes": 2149224,
+      "sha256": "b87a1448a9d894cf569ef1398d4d23911691d7732e83d0b1b1178662c153bedd",
+      "retained": "outputs/cleanup-v81/removed/public/models/npc/beodeuri-v4.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/public/models/npc/hongdoli-v4.glb",
+      "bytes": 1980076,
+      "sha256": "9da99d8671efbc4713183caf730a621feb1b2bf555ee43e3c76a4065d78910b0",
+      "retained": "outputs/cleanup-v81/removed/public/models/npc/hongdoli-v4.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/quality-site-publish/public/models/npc/teacher-v4.glb",
+      "bytes": 2144848,
+      "sha256": "02519d1d464ca42aa6f621d67af0a2ef1ab58daa5c417cb4fd53aee348dcc5ed",
+      "retained": "outputs/cleanup-v81/removed/public/models/npc/teacher-v4.glb",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/tablet-site-source/dist/client/models/bitgaram-kentech.glb.gz",
+      "bytes": 3821613,
+      "sha256": "117c8a3b9608517db2eddb0d162bbf9ae1df4dd71c1d6b67d119f60a96ffaa36",
+      "retained": "public/models/bitgaram-kentech.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/tablet-site-source/dist/client/models/bitgaram-kepco.glb.gz",
+      "bytes": 1450990,
+      "sha256": "24cef40a1c554fd76b2da9e9cc4c55c2ba44ebe796774f7f9d8cd916254105f8",
+      "retained": "public/models/bitgaram-kepco.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/tablet-site-source/dist/client/models/bitgaram-observatory.glb.gz",
+      "bytes": 3427473,
+      "sha256": "94a926fb384949f42f0153a79d6b9bdff1b6ddf59433c51d1f480c1b022268a1",
+      "retained": "public/models/bitgaram-observatory.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/tablet-site-source/dist/client/models/bogam-museum.glb.gz",
+      "bytes": 8422310,
+      "sha256": "af5fd999eadd8b4e407dcc3213a826f1fd2ab9626902a4df26fad2aaeabf43c5",
+      "retained": "public/models/bogam-museum.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/tablet-site-source/dist/client/models/bogam-tumuli.glb.gz",
+      "bytes": 3891512,
+      "sha256": "32e6dd3024457b560bfb282077f59568cd02b211e6de6c127234d771d51d414d",
+      "retained": "public/models/bogam-tumuli.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/tablet-site-source/dist/client/models/dasi-elementary.glb.gz",
+      "bytes": 930668,
+      "sha256": "e0ab5d18add79ce855fd9109deeab6ec703d238f68f0d2a3d5490e20a795cf1c",
+      "retained": "public/models/dasi-elementary.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/tablet-site-source/public/models/bitgaram-kentech.glb.gz",
+      "bytes": 3821613,
+      "sha256": "117c8a3b9608517db2eddb0d162bbf9ae1df4dd71c1d6b67d119f60a96ffaa36",
+      "retained": "public/models/bitgaram-kentech.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/tablet-site-source/public/models/bitgaram-kepco.glb.gz",
+      "bytes": 1450990,
+      "sha256": "24cef40a1c554fd76b2da9e9cc4c55c2ba44ebe796774f7f9d8cd916254105f8",
+      "retained": "public/models/bitgaram-kepco.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/tablet-site-source/public/models/bitgaram-observatory.glb.gz",
+      "bytes": 3427473,
+      "sha256": "94a926fb384949f42f0153a79d6b9bdff1b6ddf59433c51d1f480c1b022268a1",
+      "retained": "public/models/bitgaram-observatory.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/tablet-site-source/public/models/bogam-museum.glb.gz",
+      "bytes": 8422310,
+      "sha256": "af5fd999eadd8b4e407dcc3213a826f1fd2ab9626902a4df26fad2aaeabf43c5",
+      "retained": "public/models/bogam-museum.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/tablet-site-source/public/models/bogam-tumuli.glb.gz",
+      "bytes": 3891512,
+      "sha256": "32e6dd3024457b560bfb282077f59568cd02b211e6de6c127234d771d51d414d",
+      "retained": "public/models/bogam-tumuli.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/tablet-site-source/public/models/dasi-elementary.glb.gz",
+      "bytes": 930668,
+      "sha256": "e0ab5d18add79ce855fd9109deeab6ec703d238f68f0d2a3d5490e20a795cf1c",
+      "retained": "public/models/dasi-elementary.glb.gz",
+      "reason": "Byte-identical generated model copy in an inactive upload stage"
+    },
+    {
+      "path": "work/access-arboretum-site-v69.tar.gz",
+      "bytes": 107134727,
+      "files": 54,
+      "sha256": "a4366c7cf87c899c1506698163e930ac0ffd7e37c622ae706d676b03c483b346",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/arboretum-detail-site.tar.gz",
+      "bytes": 79079843,
+      "files": 49,
+      "sha256": "60a8811ccf21abd5b2058644972fe51597f5c27c82d16bc1e783f403a1e62d03",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/arboretum-garden-site-v61.tar.gz",
+      "bytes": 106356018,
+      "files": 55,
+      "sha256": "1b0e664d57d8442e667ca20d2af6c164db2cf284a179a98740b64043d8086873",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/arboretum-site.tar.gz",
+      "bytes": 77933567,
+      "files": 49,
+      "sha256": "028ce9267c76819236cbba2ec9ff6f7ae727cc43b177f12482c0d70425de3741",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/arboretum-surface-site.tar.gz",
+      "bytes": 82883840,
+      "files": 49,
+      "sha256": "f410638bdd425fa4cdcbb365764109be5023ab92c5851b41f8315b44e821995f",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/arboretum-tree-crowns-v74.tar.gz",
+      "bytes": 109471714,
+      "files": 55,
+      "sha256": "336b6196405dfb32c4a89dcfe465262c3e95ab15a7612786bbe78f401046cc1d",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/arboretum-v42.tar.gz",
+      "bytes": 82955694,
+      "files": 49,
+      "sha256": "f6b044a45a678d0435d99673c493174e7f7dea929826db4ff19ef10b7c91c163",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/arboretum-v43.tar.gz",
+      "bytes": 87463330,
+      "files": 49,
+      "sha256": "ab2af782cedd11372e440ce0ad8c3a40a2e43c291ad607b9868532f0b641e5a3",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/arboretum-v44.tar.gz",
+      "bytes": 85576805,
+      "files": 49,
+      "sha256": "414529976bff3a18c5b435d7d5c14dbf176d9703b814fd87a0273bb5125c671c",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/arboretum-v45.tar.gz",
+      "bytes": 87417703,
+      "files": 49,
+      "sha256": "8b6f6313a4304ce6e0b9c1cb6be4a320bea5a0d364c7a4a98818b2c933bc3896",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-aerial-site.tar.gz",
+      "bytes": 45994002,
+      "files": 40,
+      "sha256": "6859f41b11e2a1a5841f03f85bcf797d30c5e67e58716ff285b32c3cea1000fa",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-depth-site.tar.gz",
+      "bytes": 47127843,
+      "files": 40,
+      "sha256": "dee666082195b6af743b393b45f383d4461e969684cfbf87c40fca6f89b299ef",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-entry-site.tar.gz",
+      "bytes": 46258573,
+      "files": 40,
+      "sha256": "04316c618f86cc6c966c4ed2853ac8db3635760263150ad3f999a4fc62c502a0",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-forest-site.tar.gz",
+      "bytes": 46404590,
+      "files": 40,
+      "sha256": "f9d3bcab483194fa95dea162ad8c9ceafd66812ffeb43595a48cce502c69077b",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-landscape-site.tar.gz",
+      "bytes": 44412553,
+      "files": 40,
+      "sha256": "476cfbfbd9fcf525550a56e1be9b2a5dcc44623a0c7a820422fba8cd1a05f274",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-orbit-site.tar.gz",
+      "bytes": 44185873,
+      "files": 40,
+      "sha256": "64ec843f54b37c1653a906bd03eba4f726700cc875eae0c541e0e965041f6287",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-shore-site.tar.gz",
+      "bytes": 48659823,
+      "files": 40,
+      "sha256": "8c4b7fde4ccc5c8acd22e29e269dd5d74516e3164963a356705283afec3f9b11",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-site.tar.gz",
+      "bytes": 42929188,
+      "files": 38,
+      "sha256": "8df96c11f603153e3fefdf8af09f61e2f0ac20aefa19f48972e7684b532d3825",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-soft-site.tar.gz",
+      "bytes": 48668269,
+      "files": 40,
+      "sha256": "1505f0a87245809029a031f5033ac645781ee3c948525535e3ce74e4e5d402bd",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-surroundings-site.tar.gz",
+      "bytes": 47127855,
+      "files": 40,
+      "sha256": "494bd5aad1599ea6811e14f1b3c844186ca2cf3cd52a343a9f80a6e4a47bb3a7",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-v46-final.tar.gz",
+      "bytes": 92227966,
+      "files": 49,
+      "sha256": "62c44062cbb0cd14c3ec84f2bf2477f8f32f79ab915c98bab4fd1c4ce5d0869f",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-v46-split.tar.gz",
+      "bytes": 92235115,
+      "files": 50,
+      "sha256": "1d0c3b82e09f6195a886cdee83a2db4b22362e202af5781e60ba3f9516664593",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-v46.tar.gz",
+      "bytes": 91678657,
+      "files": 49,
+      "sha256": "cd27d6c9862bd8253125ded3e77b812073a8f92feb6b3bd2161a9afb7dd96fac",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-v47.tar.gz",
+      "bytes": 92971223,
+      "files": 50,
+      "sha256": "ea409e741b6019b515fbb9def0357b3b809262c3ac3e18b02f214c3aa659951d",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-v48.tar.gz",
+      "bytes": 95436249,
+      "files": 50,
+      "sha256": "0f82a35e1151cc661391623e2fe0c398489aec87cf08e94588000722011cbbd6",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-v49.tar.gz",
+      "bytes": 95471305,
+      "files": 50,
+      "sha256": "1e0a3ff92e82d69f15a298076787073860e58bebd71c6b20a0bb138f6ab1dca0",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-v50.tar.gz",
+      "bytes": 95471561,
+      "files": 50,
+      "sha256": "159d0170516cfaf83be7a22ba90e3ee9ea99f789b5c54ae4dd35dd623757d207",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-v51.tar.gz",
+      "bytes": 93881940,
+      "files": 52,
+      "sha256": "cc0e471fdb431c4aa4a539025ad0c09492d2b1f9709ecbb0451573a71274ef17",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-v52.tar.gz",
+      "bytes": 95139692,
+      "files": 52,
+      "sha256": "0905edf3bdfb2d05e28f306285e2337677bd73ee2a2e7fa5c1e7ef971db1fd35",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-v53.tar.gz",
+      "bytes": 97104962,
+      "files": 52,
+      "sha256": "3bc7366223845a50b6c999e7fc6338bf7774bb567d9fcae159a2b4b35cabc127",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-v54.tar.gz",
+      "bytes": 99208359,
+      "files": 52,
+      "sha256": "4bd2d05d8383b7be070e97086df6a462a4de8048b34ae5046130b111d31bcfc6",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/bitgaram-v55.tar.gz",
+      "bytes": 104348201,
+      "files": 52,
+      "sha256": "388573c21857c10caabb22834edebf95eb9c78f5bf0e34543c95aaac1b52a7d7",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/compact-ui-site.tar.gz",
+      "bytes": 46405017,
+      "files": 40,
+      "sha256": "964a1e58d4115c894dda6d4edc5071cd53a968d19669faa0d5f29422d1bc168f",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/deudeul-surfaces-v72.tar.gz",
+      "bytes": 107727992,
+      "files": 55,
+      "sha256": "8b5f64268556bd9b770a80783be8d101c433bd98070d1b51e1a1ef9c4a80ccdb",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/district-final.tar.gz",
+      "bytes": 54203765,
+      "files": 40,
+      "sha256": "5ae7cf0b6da61cab721519c976e842ff1a7bd091ea116867fbfc6dee4bb9f5a5",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/drone-final.tar.gz",
+      "bytes": 71912959,
+      "files": 45,
+      "sha256": "fc60948177ae0e6e24fac98db99b12212c96b9d2d1e436c5daeb069c0e2f957c",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/facade-site-v60.tar.gz",
+      "bytes": 106916431,
+      "files": 55,
+      "sha256": "2717bd91f0e87e4b208c3e250f5542f543f12f18c84394a6fbb8805054dc55f1",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/kepco-campus-site.tar.gz",
+      "bytes": 49297163,
+      "files": 40,
+      "sha256": "2f3c745b0673c7f7da7a914e937ade614917d25a228414079de7ba060cde602a",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/kepco-performance.tar.gz",
+      "bytes": 77633851,
+      "files": 47,
+      "sha256": "b38a1d60e1f2b294eb0f2cd6c8389099b2b9e2ab22326ef0ab5654e44957cd99",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/kepco-photo-site.tar.gz",
+      "bytes": 49502146,
+      "files": 40,
+      "sha256": "642be79e889df3e543b322e38a62993e33121681ec134450e1c5184487301de6",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/kepco-surroundings-final.tar.gz",
+      "bytes": 50771033,
+      "files": 40,
+      "sha256": "8ccf6798106d658362b3daa31ecc0670ee179a79f4ff66634fb1dd6241efd106",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/kepco-surroundings-site.tar.gz",
+      "bytes": 51195491,
+      "files": 40,
+      "sha256": "60837bc5bea87d3764ef357ffbece930141f16bf1754c880b7267a8e6c6d7c92",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/naju-bogam-museum-site.tar.gz",
+      "bytes": 13408201,
+      "files": 20,
+      "sha256": "8a0854d93caae462d5588b60699a292e3d5d6319b04f501dad60a87eed5122a5",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/naju-bridge-finished-site.tar.gz",
+      "bytes": 13415988,
+      "files": 20,
+      "sha256": "8c7c8c9253ffb9b47b170bfcc9446732122a597af3f74b3648da03247b46f25b",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/naju-dasi-detail-site.tar.gz",
+      "bytes": 2189511,
+      "files": 13,
+      "sha256": "1f927f53587f687052e3c9ccd286176449ecfade214c554b7acd338e0cd43626",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/naju-dasi-site.tar.gz",
+      "bytes": 1572945,
+      "files": 13,
+      "sha256": "94d0ce566209e4463b7557a24aa92bc01af9246530fe6dd3df27151b45f1624c",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/naju-geumseonggwan-detailed-site.tar.gz",
+      "bytes": 18664947,
+      "files": 20,
+      "sha256": "7b57589c76e61eca1255a850e7f51a80b2cb664df415db514195ed41b8c102d1",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/naju-geumseonggwan-surroundings-gzip-site.tar.gz",
+      "bytes": 21464323,
+      "files": 20,
+      "sha256": "3237323083c3286134682a24b5f14023e9f7d3d2bda9b8ef411a0f69aa2fe76f",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/naju-geumseonggwan-surroundings-site.tar.gz",
+      "bytes": 22004297,
+      "files": 20,
+      "sha256": "a8fbd5238090eb7a8a6e643d9060403772f9dde09d685941a859b48fbd85c23e",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/naju-neighborhood-site.tar.gz",
+      "bytes": 4133863,
+      "files": 15,
+      "sha256": "88d4610db0440f79055b92c9e2168907bac29721d70a428ee64416e45b49d710",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/naju-site.tar.gz",
+      "bytes": 1156293,
+      "files": 11,
+      "sha256": "da30636f722d6115f7f1ff75c43b7be36f5fcdefcd51a3c45147ccb36e2c669a",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/naju-yeongsanpo-site.tar.gz",
+      "bytes": 25997432,
+      "files": 26,
+      "sha256": "7b1ddf5ddb23a2a9be97621965bd2e429463b18f4cba505bcbaa257b9c0af8eb",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/observatory-empty-final.tar.gz",
+      "bytes": 53963056,
+      "files": 40,
+      "sha256": "e89846ce48f6b613ea76b0ad39909b291cd1b2a8412df007b3c3a6bebbbd755d",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/observatory-finish-site.tar.gz",
+      "bytes": 48931886,
+      "files": 40,
+      "sha256": "5b0a25102541c8f75afc5a309c93c6c4bc69eed67a1daf47b893c5e5c2ce7cbd",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/observatory-video-final.tar.gz",
+      "bytes": 71046379,
+      "files": 45,
+      "sha256": "59974af35c245e509740f4aa1b96ab8bdb3319ee1fbd4db36e82687660600b16",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/panorama-v38.tar.gz",
+      "bytes": 77633138,
+      "files": 47,
+      "sha256": "357ee7453cfa925e2bcd5671263a5b5df1944288f4710b5799cc1334f87a73a2",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/pine-crowns-site-v71.tar.gz",
+      "bytes": 107152321,
+      "files": 54,
+      "sha256": "d343854ddf4f776ef3505530a5291484d1616b913e69150eb9381f8d26bbad57",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/quality-site-v57.tar.gz",
+      "bytes": 104904368,
+      "files": 52,
+      "sha256": "531f651545fcb298dcb4fe9542ff6d03507612753979f1d83a9cbff0a94f388d",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/site-bogam-detail.tar.gz",
+      "bytes": 38659205,
+      "files": 28,
+      "sha256": "3d58d67d00ee0e632cd3ec6fe06dc495a228ab86e6ba9aa5a390b4d2f1a5f706",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/site-courtyard.tar.gz",
+      "bytes": 30217640,
+      "files": 28,
+      "sha256": "b7b601efa1d4d70bfcf4be4e5cdac33b03b78c865b9c92b7b654b1844508513d",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/site-literature-boundary.tar.gz",
+      "bytes": 34882178,
+      "files": 28,
+      "sha256": "7c1bd8f3de1281c4d844f186969a0b2f1549df0def053d499afd0a60ada73b05",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/site-literature-ground.tar.gz",
+      "bytes": 34388262,
+      "files": 28,
+      "sha256": "3bc854ac9751f094de022e5da9df1fdfd40ea15bcd041955bd1ee172f4139383",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/site-literature-interior.tar.gz",
+      "bytes": 32617317,
+      "files": 28,
+      "sha256": "8be033d6c0a21ea898b3805000effb09e4a5ca31266ca6c7432a8d9dee84dc39",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/site-streets.tar.gz",
+      "bytes": 33014277,
+      "files": 28,
+      "sha256": "45a1b41866aad49469088c4189130a06839b22b3a773e90e67423771fdb834c8",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/site-yeongsanpo-riverfront.tar.gz",
+      "bytes": 35174545,
+      "files": 28,
+      "sha256": "d50d7eb8af8a2dfd5e9b84b378622b95547b496523d3e209aa785861f9b814a3",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/tablet-finish-site-v58.tar.gz",
+      "bytes": 104905667,
+      "files": 55,
+      "sha256": "e6e755657b33a6345d6aad259f5f4f5110d915725cfa1d8216b79c7c444fd907",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/tablet-ui-release-2026-10-01-final.tar.gz",
+      "bytes": 104152376,
+      "files": 51,
+      "sha256": "dbad2c4cade4c7870c58895f001f81e7fa0406b5cbaf0902e81d466ea1e41591",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/tablet-ui-release-2026-10-01.tar.gz",
+      "bytes": 104152332,
+      "files": 51,
+      "sha256": "61399ecc111e111215334903eef2ca13554832228de7003ad6bf395c79db7147",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    },
+    {
+      "path": "work/yeongsanpo-detail-site.tar.gz",
+      "bytes": 28072624,
+      "files": 28,
+      "sha256": "2e208a9cafafc8b80f4e932d535cf6fb3ca38fd160739696197d86488c2d3a94",
+      "reason": "Obsolete generated upload archive: only dist/hosting files; current Vercel builds from Git; authoring sources retained"
+    }
+  ],
+  "unusedRuntimeCode": 0,
+  "completedAtUTC": "2026-10-03T20:51:51.9094279Z"
+}

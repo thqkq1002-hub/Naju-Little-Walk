@@ -1,0 +1,15 @@
+{
+  "blend_revision": "outputs\\quality-v87\\naju-arboretum-canopy-v87-r4.blend",
+  "blend_sha256": "2283ef20091c04324a66cac1cf136b4403e2567a1aacb46366d1481f016f084c",
+  "protected_meshes": 13345,
+  "tree_objects": 2382,
+  "tree_pairs": 1191,
+  "shared_prototypes": 30,
+  "wood_preserved": true,
+  "transforms_preserved": true,
+  "world_unchanged": true,
+  "matched_lod_volume": true,
+  "groundcover_pairs": 3010,
+  "groundcover_path_clearance": true,
+  "groundcover_height_under_55cm": true
+}
