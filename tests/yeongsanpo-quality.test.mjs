@@ -21,6 +21,16 @@ test('all refined scenes and moving boats have standalone compressed PBR models'
     assert.equal(gltf.buffers.length,1);assert.ok(!gltf.buffers[0].uri);
   }
 });
+test('both boats keep every wheelhouse and cabin pane see-through from the helm',()=>{
+  for(const id of ['najuho','wanggeonho']){
+    const {gltf}=model(id),glass=gltf.materials.find(m=>m.name==='Museum_97b6be');
+    assert.equal(glass.alphaMode,'BLEND');assert.ok(glass.pbrMetallicRoughness.baseColorFactor[3]<.5);
+    const rgb=m=>m.pbrMetallicRoughness?.baseColorFactor?.slice(0,3).map(v=>v.toFixed(4)).join();
+    const panes=gltf.meshes.flatMap(m=>m.primitives).map(p=>gltf.materials[p.material]).filter(m=>rgb(m)===rgb(glass));
+    assert.ok(panes.length>0);
+    for(const m of panes)assert.equal(m.alphaMode,'BLEND',`${id}: ${m.name} paints a glass pane opaque`);
+  }
+});
 test('river has physically shaded ripples and leaves use clipped silhouettes',()=>{
   const {gltf}=model('yeongsanpo');
   const water=gltf.materials.find(m=>m.name.startsWith('Y79_water_'));
