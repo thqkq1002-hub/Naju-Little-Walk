@@ -25,6 +25,7 @@ import { ViewGesture } from '@/lib/view-gesture';
 import { RenderDemand } from '@/lib/render-demand';
 import { guidePlacements, withNpcObstacle, type NpcManifest } from '@/lib/npc-placement';
 import { loadNpcGuide } from '@/lib/npc-scene';
+import { guideYaw } from '@/lib/npc-facing';
 import type {NpcAnimation, GuideGesture} from '@/lib/npc-animation';
 import NpcConversation from './npc-conversation';
 import { nameWith } from '@/lib/npc-dialogue';
@@ -469,6 +470,7 @@ export default function Explorer() {
             if(href){changingScene=true;keys.clear();playing=false;window.location.assign(href);}
           }
         }
+        if(!bird)npcs.forEach((npc,i)=>{npc.root.rotation.y=guideYaw(npc.root.rotation.y,npcPlacements[i],{x:px,z:pz,height:elevation},dt,npc.reducedMotion);});
         roofParts.forEach(o=>{o.visible=!bird;});
         if (bird) {
           camera.position.set(center.x + Math.sin(orbit) * Math.cos(orbitElevation) * orbitRadius, center.y + Math.sin(orbitElevation) * orbitRadius, center.z + Math.cos(orbit) * Math.cos(orbitElevation) * orbitRadius); camera.lookAt(center);
