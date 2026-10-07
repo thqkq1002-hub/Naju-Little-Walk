@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowUpRight, Footprints, MapPin, Map, RotateCcw, Pause, MoveUpRight, ArrowUp, ArrowDown, ArrowLeft, ArrowRight, Compass, CircleHelp, Plus, Minus, MessageCircle } from 'lucide-react';
+import { ArrowUpRight, Footprints, MapPin, Map, RotateCcw, Pause, MoveUpRight, ArrowUp, ArrowDown, ArrowLeft, ArrowRight, Compass, CircleHelp, Plus, Minus, MessageCircle, MoveDownRight } from 'lucide-react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { Sky } from 'three/addons/objects/Sky.js';
@@ -26,13 +26,14 @@ import { RenderDemand } from '@/lib/render-demand';
 import { guidePlacements, withNpcObstacle, type NpcManifest } from '@/lib/npc-placement';
 import { loadNpcGuide } from '@/lib/npc-scene';
 import { guideYaw } from '@/lib/npc-facing';
+import { SlideRide, slideRideUrl, withSlideLanding, type SlidePose, type SlideRideData } from '@/lib/slide-ride';
 import type {NpcAnimation, GuideGesture} from '@/lib/npc-animation';
 import NpcConversation from './npc-conversation';
 import { nameWith } from '@/lib/npc-dialogue';
 import { BgmButton, useBgm } from './bgm';
 
 type ViewState = { x: number; z: number; yaw: number; place: string; detail: string; indoor: boolean };
-type Engine = { start: () => void; pause: () => void; reset: () => void; overview: () => void; inspect: (id: string) => void; zoom: (scale: number) => void; key: (key: string, down: boolean) => void; travel: (point: Point, height?:number) => boolean; boatAction: (action:string,id?:string)=>void; railAction:(action:string,id?:string)=>void; npcGesture:(gesture:GuideGesture)=>void };
+type Engine = { start: () => void; pause: () => void; reset: () => void; overview: () => void; inspect: (id: string) => void; zoom: (scale: number) => void; key: (key: string, down: boolean) => void; travel: (point: Point, height?:number) => boolean; boatAction: (action:string,id?:string)=>void; railAction:(action:string,id?:string)=>void; slideAction:(action:'ride'|'skip')=>void; npcGesture:(gesture:GuideGesture)=>void };
 
 export default function Explorer() {
   const { touch, portrait, quality } = useScreenMode();
@@ -58,6 +59,7 @@ export default function Explorer() {
   const [error, setError] = useState('');
   const [boatHud,setBoatHud] = useState<BoatHud|null>(null);
   const [railHud,setRailHud] = useState<RailHud|null>(null);
+  const [slideHud,setSlideHud] = useState<{near:boolean;riding:boolean;speed:number;progress:number;landed:boolean}|null>(null);
   const [destinationId, setDestinationId] = useState<DestinationId>('geumseonggwan');
   const destination = destinations[destinationId];
   useBgm(destinationId);
@@ -74,7 +76,7 @@ export default function Explorer() {
   useEffect(() => {
     const selectedId = appDestinationFromSearch(window.location.search);
     setReady(false); setError(''); setActive(false); setStarted(false); setOverview(true);
-    setBoatHud(null);setRailHud(null); setNpcHud(null);setNpcOpen(false);setWorld(null); setLoadStage('지도를 준비하고 있습니다');setLoadPercent(undefined);
+    setBoatHud(null);setRailHud(null);setSlideHud(null); setNpcHud(null);setNpcOpen(false);setWorld(null); setLoadStage('지도를 준비하고 있습니다');setLoadPercent(undefined);
     const selected = destinations[selectedId];
     const optimizedCampus=selectedId==='bitgaram-park'||selectedId==='bitgaram-kepco'||selectedId==='bitgaram-kentech'||selectedId==='naju-arboretum'||selectedId==='deudeulgang'||selectedId==='dasi';
     setDestinationId(selectedId);
@@ -95,6 +97,14 @@ export default function Explorer() {
       const npcManifest:NpcManifest=await npcResponse.json();
       const npcPlacements=guidePlacements(npcManifest,selectedId);
       for(const placement of npcPlacements)data=withNpcObstacle(data,placement);
+      const rideUrl=slideRideUrl(selectedId);
+      let slideData:SlideRideData|undefined;
+      if(rideUrl){
+        const rideResponse=await fetch(rideUrl,{signal:abort.signal});
+        if(!rideResponse.ok)throw new Error('미끄럼틀 자료를 불러오지 못했습니다.');
+        slideData=await rideResponse.json() as SlideRideData;
+        data=withSlideLanding(data,slideData);
+      }
       if (disposed) return;
       setWorld(data);
       const panoramaRoom=data.viewMode==='panorama';
@@ -250,6 +260,15 @@ export default function Explorer() {
         setNpcHud({name:guideName(0),near:false,script:npcPlacements[0].script});
       }
       const idleGuides=()=>{for(const npc of npcs)npc.setGesture('Idle');};
+      if(slideData){
+        const matResponse=await fetch(slideData.mat.modelUrl,{signal:abort.signal});
+        if(!matResponse.ok)throw new Error('착지 매트를 불러오지 못했습니다.');
+        const mat=(await loader.parseAsync(await matResponse.arrayBuffer(),'')).scene;
+        mat.name='slide_landing_mat';mat.position.fromArray(slideData.mat.position);mat.rotation.y=slideData.mat.yaw;
+        mat.traverse(o=>{if(o instanceof THREE.Mesh){o.castShadow=false;o.receiveShadow=true;}});
+        if(disposed){mat.traverse(disposeObject);return;}
+        scene.add(mat);
+      }
       if(optimizedCampus){
         gltf.scene.traverse(o=>{o.updateMatrix();o.matrixAutoUpdate=false;});
         renderer.shadowMap.autoUpdate=false;
@@ -335,13 +354,29 @@ export default function Explorer() {
         }
         setRailHud(rail.hud([px,pz],elevation));start();
       };
+      let slide:SlideRide|null=null,slidePose:SlidePose|null=null;
+      const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+      const nearSlideEntry=()=>!!slideData&&Math.hypot(px-slideData.entry.x,pz-slideData.entry.z)<slideData.entry.radius&&Math.abs(elevation-slideData.entry.height)<.6;
+      /** Stand up on the mat and walk on from there. */
+      const finishSlide=()=>{
+        if(!slide)return;
+        const pose=slidePose?.done?slidePose:slide.skip();
+        slide=null;slidePose=null;
+        px=pose.x;pz=pose.z;elevation=reachableFloor(px,pz,pose.y,floors,data.requireFloor)??pose.y;yaw=pose.yaw;pitch=0;
+        camera.fov=60;camera.updateProjectionMatrix();demand.invalidate();
+      };
+      const slideAction=(action:'ride'|'skip')=>{
+        if(action==='skip'){if(slide){finishSlide();start();}return;}
+        if(!slideData||slide||fleet.passenger||rail?.state.aboard||!nearSlideEntry())return;
+        slide=new SlideRide(slideData);slidePose=null;keys.clear();idleGuides();setNpcOpen(false);start();
+      };
       engine.current = {
-        start, pause, boatAction,railAction,
+        start, pause, boatAction,railAction,slideAction,
         npcGesture:(gesture)=>{npcs[activeNpc]?.setGesture(gesture);demand.invalidate();},
-        reset: () => { idleGuides();setNpcOpen(false);fleet.reset();rail?.reset();if(rail)setRailHud(rail.hud([data.spawn.x,data.spawn.z],data.spawn.height??0));px = data.spawn.x; pz = data.spawn.z; elevation=reachableFloor(px,pz,data.spawn.height??0,floors)??0; yaw = data.spawn.yaw; pitch = 0; start(); },
+        reset: () => { slide=null;slidePose=null;idleGuides();setNpcOpen(false);fleet.reset();rail?.reset();if(rail)setRailHud(rail.hud([data.spawn.x,data.spawn.z],data.spawn.height??0));px = data.spawn.x; pz = data.spawn.z; elevation=reachableFloor(px,pz,data.spawn.height??0,floors)??0; yaw = data.spawn.yaw; pitch = 0; start(); },
         overview: () => {
           if(panoramaRoom){start();return;}
-          pause();idleGuides();setNpcOpen(false);bird=true;setOverview(true);
+          finishSlide();pause();idleGuides();setNpcOpen(false);bird=true;setOverview(true);
           inspectingCeiling=false;inspectingArchitecture=false;
           center.set(selected.overview.center[0],selectedId==='neureoji'?(data.spawn.height??0)+7:0,selected.overview.center[1]);
           orbit=selected.overview.angle;orbitElevation=selected.overview.elevation;orbitRadius=selected.overview.radius;demand.invalidate();
@@ -349,7 +384,7 @@ export default function Explorer() {
         },
         inspect: (id) => {
           const view=data.architectureViews?.find(v=>v.id===id);if(!view)return;
-          pause();idleGuides();setNpcOpen(false);bird=true;setOverview(true);
+          finishSlide();pause();idleGuides();setNpcOpen(false);bird=true;setOverview(true);
           inspectingCeiling=view.id==='ceiling';inspectingArchitecture=true;
           center.fromArray(view.center);orbit=view.angle;orbitElevation=view.elevation;orbitRadius=view.radius;demand.invalidate();
           camera.fov=view.fov??60;camera.updateProjectionMatrix();
@@ -359,6 +394,7 @@ export default function Explorer() {
         travel: (point,height=0) => {
           if(rail?.state.aboard)return false;
           if(!canTravelTo(point,data,height))return false;
+          slide=null;slidePose=null;
           fleet.leaveForTravel();
           px=point[0];pz=point[1];pitch=0;keys.clear();
           elevation=reachableFloor(px,pz,height,floors)??0;
@@ -450,7 +486,11 @@ export default function Explorer() {
         const movingNpcs=bird||!(playing||npcOpenRef.current)?[]:npcs.filter(npc=>!npc.reducedMotion&&npc.root.position.distanceTo(viewer)<18);
         if(!demand.take(playing||movingNpcs.length>0,document.hidden||portraitRef.current||contextLost))return;
         for(const npc of movingNpcs)npc.update(dt);
-        if (playing) {
+        if (playing && slide) {
+          slidePose=slide.update(dt,reduceMotion.matches);
+          px=slidePose.x;pz=slidePose.z;elevation=slidePose.y;yaw=slidePose.yaw;pitch=slidePose.pitch;
+          if(slidePose.done)finishSlide();
+        } else if (playing) {
           const forward = Number(keys.has('KeyW') || keys.has('ArrowUp')) - Number(keys.has('KeyS') || keys.has('ArrowDown'));
           const side = Number(keys.has('KeyD')) - Number(keys.has('KeyA'));
           yaw += (Number(keys.has('KeyQ') || (!fleet.passenger?.helm&&keys.has('ArrowLeft'))) - Number(keys.has('KeyE') || (!fleet.passenger?.helm&&keys.has('ArrowRight')))) * dt * 1.6;
@@ -469,11 +509,19 @@ export default function Explorer() {
             const portal=portalAt(data,px,pz,elevation),href=portal&&portalHref(portal);
             if(href){changingScene=true;keys.clear();playing=false;window.location.assign(href);}
           }
+          // Walking into the chute mouth while facing down it starts the ride.
+          if(slideData&&forward>0&&!fleet.passenger&&!rail?.state.aboard){
+            const [x0,,z0]=slideData.route[0],[x1,,z1]=slideData.route[4],l=Math.hypot(x1-x0,z1-z0);
+            if(Math.hypot(px-x0,pz-z0)<1.2&&(-Math.sin(yaw)*(x1-x0)-Math.cos(yaw)*(z1-z0))/l>.5)slideAction('ride');
+          }
         }
         if(!bird)npcs.forEach((npc,i)=>{npc.root.rotation.y=guideYaw(npc.root.rotation.y,npcPlacements[i],{x:px,z:pz,height:elevation},dt,npc.reducedMotion);});
         roofParts.forEach(o=>{o.visible=!bird;});
         if (bird) {
           camera.position.set(center.x + Math.sin(orbit) * Math.cos(orbitElevation) * orbitRadius, center.y + Math.sin(orbitElevation) * orbitRadius, center.z + Math.cos(orbit) * Math.cos(orbitElevation) * orbitRadius); camera.lookAt(center);
+        } else if (slidePose) {
+          camera.position.set(slidePose.x,slidePose.y+slidePose.eye,slidePose.z);camera.rotation.order='YXZ';camera.rotation.set(slidePose.pitch,slidePose.yaw,slidePose.roll);
+          if(Math.abs(camera.fov-slidePose.fov)>.05){camera.fov=slidePose.fov;camera.updateProjectionMatrix();}
         } else { camera.position.set(px, 1.72 + (data.verticalNavigation?elevation:floorHeight(px, pz, floors)), pz); camera.rotation.order = 'YXZ'; camera.rotation.set(pitch, yaw, 0); }
         if(localLights && now-lastLightUpdate>150){localLights.update(camera.position);lastLightUpdate=now;}
         if(updateVegetationDetail(gltf.scene,camera.position))renderer.shadowMap.needsUpdate=true;
@@ -492,6 +540,10 @@ export default function Explorer() {
             setNpcHud(current=>current?.near===near&&current.script===script?current:{name,near,script});
           }
           const hud=fleet.hud([px,pz],elevation);if(fleet.vessels.length)setBoatHud(hud);
+          if(slideData){
+            const next=slide&&slidePose?{near:false,riding:true,speed:slidePose.speed,progress:Math.round(slidePose.progress*100)/100,landed:slidePose.landed}:{near:!bird&&!fleet.passenger&&!rail?.state.aboard&&nearSlideEntry(),riding:false,speed:0,progress:0,landed:false};
+            setSlideHud(current=>current&&current.near===next.near&&current.riding===next.riding&&current.speed===next.speed&&current.progress===next.progress&&current.landed===next.landed?current:next);
+          }
           if(rail)setRailHud(rail.hud([px,pz],elevation));
           const place = currentPlace(px, pz, data.places, data.verticalNavigation?elevation:undefined);
           const doorway=data.portals?.find(p=>Math.hypot(p.position[0]-px,p.position[1]-pz)<4 && Math.abs((p.height??0)-elevation)<.6);
@@ -559,10 +611,17 @@ export default function Explorer() {
         {welcomeExpanded && <div className="welcome-help">{touch ? '왼쪽 버튼으로 이동 · 화면을 드래그해 둘러보기' : <><span><kbd>W A S D</kbd> 이동</span><span>드래그로 둘러보기</span></>}</div>}
       </section>}
       {error&&<section className="scene-recovery" role="alert" aria-label="3D 화면 복구"><strong>화면을 다시 열어 주세요</strong><p>{error}</p><button onClick={()=>setAttempt(value=>value+1)}>출발 위치에서 다시 불러오기</button></section>}
-      {npcHud?.near&&!npcOpen&&!mapOpen&&!guideOpen&&<button className="npc-talk-button" onClick={()=>{engine.current?.pause();engine.current?.npcGesture('Greeting');setNpcOpen(true);}}><MessageCircle size={19}/>{nameWith(npcHud.name)} 이야기</button>}
+      {npcHud?.near&&!npcOpen&&!mapOpen&&!guideOpen&&!slideHud?.riding&&<button className="npc-talk-button" onClick={()=>{engine.current?.pause();engine.current?.npcGesture('Greeting');setNpcOpen(true);}}><MessageCircle size={19}/>{nameWith(npcHud.name)} 이야기</button>}
+      {slideHud?.near&&active&&!mapOpen&&!guideOpen&&!npcOpen&&<button className="npc-talk-button slide-ride-button" onClick={()=>engine.current?.slideAction('ride')}><MoveDownRight size={19}/>돌미끄럼틀 타기</button>}
+      {slideHud?.riding&&!mapOpen&&<aside className="monorail-panel slide-panel" aria-label="돌미끄럼틀 탑승">
+        <strong>돌미끄럼틀</strong>
+        <p aria-live="polite">{slideHud.landed?'착지 매트에 도착했어요':!active?'잠시 멈췄습니다':`${slideHud.speed} km/h · 내려가는 중`}</p>
+        <progress aria-label="미끄럼틀 진행" max={1} value={slideHud.progress}/>
+        <div className="boat-actions">{!active&&<button onClick={()=>engine.current?.start()}>이어서 내려가기</button>}<button onClick={()=>engine.current?.slideAction('skip')}>건너뛰고 내리기</button></div>
+      </aside>}
       {npcOpen&&npcHud&&<NpcConversation key={npcHud.script} name={npcHud.name} destinationId={destinationId} scriptId={npcHud.script} onGesture={gesture=>engine.current?.npcGesture(gesture)} onClose={()=>{setNpcOpen(false);engine.current?.start();}}/>}
       {active && <><div className="crosshair" aria-hidden="true" />{!boatHud?.aboard&&!railHud?.aboard&&!railHud?.near&&<div className="place-card"><span className="place-icon"><MapPin size={18} /></span><div><span>{view.indoor ? '실내' : '현재 위치'}</span><strong>{view.place}</strong>{view.detail&&<p>{view.detail}</p>}</div></div>}
-        {!railHud?.aboard&&<div className="touch-controls" aria-label="이동 버튼"><span className="touch-label">{boatHud?.mode==='helm'?'조종':'이동'}</span><button aria-label="앞으로" {...press('KeyW')}><ArrowUp /></button><div><button aria-label="왼쪽으로" {...press('KeyA')}><ArrowLeft /></button><button aria-label="뒤로" {...press('KeyS')}><ArrowDown /></button><button aria-label="오른쪽으로" {...press('KeyD')}><ArrowRight /></button></div></div>}<div className="turn-controls" aria-label="시선 버튼"><span className="touch-label">시선</span><div><button aria-label="왼쪽 보기" {...press('KeyQ')}>↶</button><button aria-label="오른쪽 보기" {...press('KeyE')}>↷</button></div></div></>}
+        {!railHud?.aboard&&!slideHud?.riding&&<div className="touch-controls" aria-label="이동 버튼"><span className="touch-label">{boatHud?.mode==='helm'?'조종':'이동'}</span><button aria-label="앞으로" {...press('KeyW')}><ArrowUp /></button><div><button aria-label="왼쪽으로" {...press('KeyA')}><ArrowLeft /></button><button aria-label="뒤로" {...press('KeyS')}><ArrowDown /></button><button aria-label="오른쪽으로" {...press('KeyD')}><ArrowRight /></button></div></div>}<div className="turn-controls" aria-label="시선 버튼"><span className="touch-label">시선</span><div><button aria-label="왼쪽 보기" {...press('KeyQ')}>↶</button><button aria-label="오른쪽 보기" {...press('KeyE')}>↷</button></div></div></>}
       {railHud&&(railHud.near||railHud.aboard)&&!overview&&!mapOpen&&<aside className="monorail-panel" aria-label="모노레일 탑승과 운행">
         <strong>{railHud.aboard?'빛가람 모노레일':railHud.stations.find(s=>s.id===railHud.near)?.name}</strong>
         <p>{!active&&railHud.target?'운행을 잠시 멈췄습니다':railHud.target?`${railHud.stations.find(s=>s.id===railHud.target)?.name}으로 ${railHud.speed>0?'운행 중':'출발 준비 중'}`:railHud.door<.98?'문을 열고 있습니다':railHud.station===railHud.near||railHud.aboard?'정차 중 · 탑승문이 열렸습니다':'다른 승강장에 정차 중입니다'}</p>

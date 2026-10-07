@@ -179,3 +179,5 @@ kbd { font-family:inherit; font-size:12px; border:1px solid #6a7f652b; border-ra
 .minimap-toggle { position:absolute; right:36px; top:124px; display:flex; align-items:center; gap:7px; padding:11px 14px; border:1px solid #fff; border-radius:12px; background:#fcfdf5e8; color:#285444; backdrop-filter:blur(12px); font-size:13px; cursor:pointer; }
 @media(max-width:800px) { .minimap-toggle { right:20px; top:95px; } }
 @media(max-width:520px) { .minimap-toggle { right:16px; top:85px; padding:10px; } .welcome.welcome-compact { left:16px; right:auto; bottom:125px; width:210px; padding:8px; } }
+.slide-ride-button { bottom:150px; }
+.slide-panel { bottom:96px; }
